@@ -1,7 +1,7 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：2024-07-10 10:49:31
+# 创建时间：2024-07-10 10:58:23
 # 使用模版：ACL4SSR_Mini.ini
 # 节点数量：8
 # 节点类型：hysteria2
@@ -1960,7 +1960,7 @@ rules:
 # HBO_GO_HKG
 # HWTV
 # Hulu
-# Hulu日本
+# HuluJapan
 # ITV
 # JOOX
 # Japonx
