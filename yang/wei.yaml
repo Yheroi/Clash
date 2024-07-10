@@ -94,7 +94,7 @@ proxies:
   - {"name":"韩国2","type":"hysteria2","server":"152.70.234.101","port":443,"password":"135718ae-aa92-4a10-b4d9-8edca3ad23bf","sni":"www.bing.com","skip-cert-verify":true}
   - {"name":"韩国3","type":"hysteria2","server":"193.122.106.44","port":443,"password":"135718ae-aa92-4a10-b4d9-8edca3ad23bf","sni":"www.bing.com","skip-cert-verify":true}
   - {"name":"美国","type":"hysteria2","server":"45.58.32.222","port":34110,"password":"dca335ea-6676-463c-825d-430f66ab4422","sni":"us.china-embassy.gov.cn","skip-cert-verify":true}
-  - {"name":"Japan","type":"hysteria2","server":"dj1.yiyiyun.top","port":37480,"password":"2d068322-b0e3-4c35-991e-58d46d8775f8","sni":"bing.com","skip-cert-verify":true}
+  - {"name":"日本","type":"hysteria2","server":"dj1.yiyiyun.top","port":37480,"password":"2d068322-b0e3-4c35-991e-58d46d8775f8","sni":"bing.com","skip-cert-verify":true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -108,7 +108,7 @@ proxy-groups:
       - 韩国2
       - 韩国3
       - 美国
-      - Japan
+      - 日本
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -122,7 +122,7 @@ proxy-groups:
       - 韩国2
       - 韩国3
       - 美国
-      - Japan
+      - 日本
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -147,7 +147,7 @@ proxy-groups:
       - 韩国2
       - 韩国3
       - 美国
-      - Japan
+      - 日本
 
 rules:
 # 本地/局域网地址
@@ -1960,7 +1960,7 @@ rules:
 # HBO_GO_HKG
 # HWTV
 # Hulu
-# HuluJapan
+# Hulu日本
 # ITV
 # JOOX
 # Japonx
