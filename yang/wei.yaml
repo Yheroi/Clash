@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：2024-07-11 09:44:45
+# 创建时间：2024-07-11 09:49:19
 # 使用模版：ACL4SSR_Mini.ini
-# 节点数量：23
+# 节点数量：20
 # 节点类型：hysteria2
 # !!当前配置文件请使用基于 Clash.Meta 内核程序
 ####################################
@@ -87,87 +87,78 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"新加坡_1","type":"hysteria2","server":"yup.441122.xyz","port":43660,"password":"2d068322-b0e3-4c35-991e-58d46d8775f8","sni":"yup.441122.xyz","skip-cert-verify":true}
-  - {"name":"新加坡_2","type":"hysteria2","server":"ynb.441122.xyz","port":46535,"password":"2d068322-b0e3-4c35-991e-58d46d8775f8","sni":"ynb.441122.xyz","skip-cert-verify":true}
-  - {"name":"新加坡_4","type":"hysteria2","server":"ynn.441166.xyz","port":44320,"password":"2d068322-b0e3-4c35-991e-58d46d8775f8","sni":"ynn.441166.xyz","skip-cert-verify":true}
-  - {"name":"新加坡_6","type":"hysteria2","server":"yup.441122.xyz","port":40815,"password":"2d068322-b0e3-4c35-991e-58d46d8775f8","sni":"yup.441122.xyz","skip-cert-verify":true}
-  - {"name":"新加坡_7","type":"hysteria2","server":"ynn.441166.xyz","port":41576,"password":"2d068322-b0e3-4c35-991e-58d46d8775f8","sni":"ynn.441166.xyz","skip-cert-verify":true}
-  - {"name":"新加坡_8","type":"hysteria2","server":"ynb.441122.xyz","port":42299,"password":"2d068322-b0e3-4c35-991e-58d46d8775f8","sni":"ynb.441122.xyz","skip-cert-verify":true}
-  - {"name":"日本_12","type":"hysteria2","server":"onejp.888553.xyz","port":31584,"password":"2d068322-b0e3-4c35-991e-58d46d8775f8","sni":"onejp.888553.xyz","skip-cert-verify":true}
-  - {"name":"日本_13","type":"hysteria2","server":"dj1.yiyiyun.top","port":34081,"password":"2d068322-b0e3-4c35-991e-58d46d8775f8","sni":"bing.com","skip-cert-verify":true}
-  - {"name":"美国_14","type":"hysteria2","server":"107.174.192.54","port":65500,"password":"dca335ea-6676-463c-825d-430f66ab4422","sni":"us.china-embassy.gov.cn","skip-cert-verify":true}
-  - {"name":"美国_16","type":"hysteria2","server":"us-01.worldfirst.eu.org","port":44300,"password":"d357239c-eb91-4256-9c6d-82919928a4db","sni":"us-01.worldfirst.eu.org","skip-cert-verify":true}
-  - {"name":"美国_17","type":"hysteria2","server":"45.58.32.222","port":34110,"password":"dca335ea-6676-463c-825d-430f66ab4422","sni":"us.china-embassy.gov.cn","skip-cert-verify":true}
-  - {"name":"美国_18","type":"hysteria2","server":"45.58.38.57","port":23121,"password":"dca335ea-6676-463c-825d-430f66ab4422","sni":"us.china-embassy.gov.cn","skip-cert-verify":true}
-  - {"name":"美国_19","type":"hysteria2","server":"104.245.36.213","port":35233,"password":"dca335ea-6676-463c-825d-430f66ab4422","sni":"us.china-embassy.gov.cn","skip-cert-verify":true}
-  - {"name":"美国_20","type":"hysteria2","server":"45.58.32.9","port":21456,"password":"dca335ea-6676-463c-825d-430f66ab4422","sni":"us.china-embassy.gov.cn","skip-cert-verify":true}
-  - {"name":"未知_21","type":"hysteria2","server":"048.888553.xyz","port":38372,"password":"2d068322-b0e3-4c35-991e-58d46d8775f8","sni":"048.888553.xyz","skip-cert-verify":true}
-  - {"name":"美国_22","type":"hysteria2","server":"wtt.888553.xyz","port":55345,"password":"2d068322-b0e3-4c35-991e-58d46d8775f8","sni":"wtt.888553.xyz","skip-cert-verify":true}
-  - {"name":"韩国_23","type":"hysteria2","server":"zz.worldfirst.eu.org","port":46610,"password":"d357239c-eb91-4256-9c6d-82919928a4db","sni":"us-01.worldfirst.eu.org","skip-cert-verify":true}
-  - {"name":"美国_24","type":"hysteria2","server":"wtt.888553.xyz","port":50831,"password":"2d068322-b0e3-4c35-991e-58d46d8775f8","sni":"wtt.888553.xyz","skip-cert-verify":true}
-  - {"name":"加拿大_25","type":"hysteria2","server":"142.171.95.114","port":42237,"password":"dca335ea-6676-463c-825d-430f66ab4422","sni":"us.china-embassy.gov.cn","skip-cert-verify":true}
-  - {"name":"未知_26","type":"hysteria2","server":"048.888553.xyz","port":36714,"password":"2d068322-b0e3-4c35-991e-58d46d8775f8","sni":"048.888553.xyz","skip-cert-verify":true}
-  - {"name":"美国_33","type":"hysteria2","server":"164.92.89.228","port":443,"password":"936a5f7d-5037-4640-9e50-92f944337cbb","sni":"hyus.freeapp.buzz","skip-cert-verify":true}
-  - {"name":"美国_34","type":"hysteria2","server":"164.92.108.195","port":8443,"password":"936a5f7d-5037-4640-9e50-92f944337cbb","sni":"hyus2.freeapp.buzz","skip-cert-verify":true}
-  - {"name":"新加坡_10","type":"hysteria2","server":"54.254.57.33","port":65500,"password":"dca335ea-6676-463c-825d-430f66ab4422","sni":"amazon.com","skip-cert-verify":true}
+  - {"name":"新加坡1","type":"hysteria2","server":"yup.441122.xyz","port":43660,"password":"2d068322-b0e3-4c35-991e-58d46d8775f8","sni":"yup.441122.xyz","skip-cert-verify":true}
+  - {"name":"新加坡2","type":"hysteria2","server":"ynb.441122.xyz","port":46535,"password":"2d068322-b0e3-4c35-991e-58d46d8775f8","sni":"ynb.441122.xyz","skip-cert-verify":true}
+  - {"name":"新加坡3","type":"hysteria2","server":"ynn.441166.xyz","port":44320,"password":"2d068322-b0e3-4c35-991e-58d46d8775f8","sni":"ynn.441166.xyz","skip-cert-verify":true}
+  - {"name":"新加坡4","type":"hysteria2","server":"yup.441122.xyz","port":40815,"password":"2d068322-b0e3-4c35-991e-58d46d8775f8","sni":"yup.441122.xyz","skip-cert-verify":true}
+  - {"name":"新加坡5","type":"hysteria2","server":"ynb.441122.xyz","port":42299,"password":"2d068322-b0e3-4c35-991e-58d46d8775f8","sni":"ynb.441122.xyz","skip-cert-verify":true}
+  - {"name":"新加坡6","type":"hysteria2","server":"54.254.57.33","port":65500,"password":"dca335ea-6676-463c-825d-430f66ab4422","sni":"amazon.com","skip-cert-verify":true}
+  - {"name":"美国1","type":"hysteria2","server":"107.174.192.54","port":65500,"password":"dca335ea-6676-463c-825d-430f66ab4422","sni":"us.china-embassy.gov.cn","skip-cert-verify":true}
+  - {"name":"美国2","type":"hysteria2","server":"us-01.worldfirst.eu.org","port":44300,"password":"d357239c-eb91-4256-9c6d-82919928a4db","sni":"us-01.worldfirst.eu.org","skip-cert-verify":true}
+  - {"name":"美国3","type":"hysteria2","server":"45.58.32.222","port":34110,"password":"dca335ea-6676-463c-825d-430f66ab4422","sni":"us.china-embassy.gov.cn","skip-cert-verify":true}
+  - {"name":"美国4","type":"hysteria2","server":"45.58.38.57","port":23121,"password":"dca335ea-6676-463c-825d-430f66ab4422","sni":"us.china-embassy.gov.cn","skip-cert-verify":true}
+  - {"name":"美国5","type":"hysteria2","server":"104.245.36.213","port":35233,"password":"dca335ea-6676-463c-825d-430f66ab4422","sni":"us.china-embassy.gov.cn","skip-cert-verify":true}
+  - {"name":"美国6","type":"hysteria2","server":"45.58.32.9","port":21456,"password":"dca335ea-6676-463c-825d-430f66ab4422","sni":"us.china-embassy.gov.cn","skip-cert-verify":true}
+  - {"name":"美国7","type":"hysteria2","server":"048.888553.xyz","port":38372,"password":"2d068322-b0e3-4c35-991e-58d46d8775f8","sni":"048.888553.xyz","skip-cert-verify":true}
+  - {"name":"美国8","type":"hysteria2","server":"wtt.888553.xyz","port":55345,"password":"2d068322-b0e3-4c35-991e-58d46d8775f8","sni":"wtt.888553.xyz","skip-cert-verify":true}
+  - {"name":"美国9","type":"hysteria2","server":"zz.worldfirst.eu.org","port":46610,"password":"d357239c-eb91-4256-9c6d-82919928a4db","sni":"us-01.worldfirst.eu.org","skip-cert-verify":true}
+  - {"name":"美国10","type":"hysteria2","server":"wtt.888553.xyz","port":50831,"password":"2d068322-b0e3-4c35-991e-58d46d8775f8","sni":"wtt.888553.xyz","skip-cert-verify":true}
+  - {"name":"美国11","type":"hysteria2","server":"142.171.95.114","port":42237,"password":"dca335ea-6676-463c-825d-430f66ab4422","sni":"us.china-embassy.gov.cn","skip-cert-verify":true}
+  - {"name":"美国12","type":"hysteria2","server":"164.92.89.228","port":443,"password":"936a5f7d-5037-4640-9e50-92f944337cbb","sni":"hyus.freeapp.buzz","skip-cert-verify":true}
+  - {"name":"美国13","type":"hysteria2","server":"164.92.108.195","port":8443,"password":"936a5f7d-5037-4640-9e50-92f944337cbb","sni":"hyus2.freeapp.buzz","skip-cert-verify":true}
+  - {"name":"日本","type":"hysteria2","server":"onejp.888553.xyz","port":31584,"password":"2d068322-b0e3-4c35-991e-58d46d8775f8","sni":"onejp.888553.xyz","skip-cert-verify":true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 新加坡_1
-      - 新加坡_2
-      - 新加坡_4
-      - 新加坡_6
-      - 新加坡_7
-      - 新加坡_8
-      - 日本_12
-      - 日本_13
-      - 美国_14
-      - 美国_16
-      - 美国_17
-      - 美国_18
-      - 美国_19
-      - 美国_20
-      - 未知_21
-      - 美国_22
-      - 韩国_23
-      - 美国_24
-      - 加拿大_25
-      - 未知_26
-      - 美国_33
-      - 美国_34
-      - 新加坡_10
+      - 新加坡1
+      - 新加坡2
+      - 新加坡3
+      - 新加坡4
+      - 新加坡5
+      - 新加坡6
+      - 美国1
+      - 美国2
+      - 美国3
+      - 美国4
+      - 美国5
+      - 美国6
+      - 美国7
+      - 美国8
+      - 美国9
+      - 美国10
+      - 美国11
+      - 美国12
+      - 美国13
+      - 日本
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 新加坡_1
-      - 新加坡_2
-      - 新加坡_4
-      - 新加坡_6
-      - 新加坡_7
-      - 新加坡_8
-      - 日本_12
-      - 日本_13
-      - 美国_14
-      - 美国_16
-      - 美国_17
-      - 美国_18
-      - 美国_19
-      - 美国_20
-      - 未知_21
-      - 美国_22
-      - 韩国_23
-      - 美国_24
-      - 加拿大_25
-      - 未知_26
-      - 美国_33
-      - 美国_34
-      - 新加坡_10
+      - 新加坡1
+      - 新加坡2
+      - 新加坡3
+      - 新加坡4
+      - 新加坡5
+      - 新加坡6
+      - 美国1
+      - 美国2
+      - 美国3
+      - 美国4
+      - 美国5
+      - 美国6
+      - 美国7
+      - 美国8
+      - 美国9
+      - 美国10
+      - 美国11
+      - 美国12
+      - 美国13
+      - 日本
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -185,29 +176,26 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 新加坡_1
-      - 新加坡_2
-      - 新加坡_4
-      - 新加坡_6
-      - 新加坡_7
-      - 新加坡_8
-      - 日本_12
-      - 日本_13
-      - 美国_14
-      - 美国_16
-      - 美国_17
-      - 美国_18
-      - 美国_19
-      - 美国_20
-      - 未知_21
-      - 美国_22
-      - 韩国_23
-      - 美国_24
-      - 加拿大_25
-      - 未知_26
-      - 美国_33
-      - 美国_34
-      - 新加坡_10
+      - 新加坡1
+      - 新加坡2
+      - 新加坡3
+      - 新加坡4
+      - 新加坡5
+      - 新加坡6
+      - 美国1
+      - 美国2
+      - 美国3
+      - 美国4
+      - 美国5
+      - 美国6
+      - 美国7
+      - 美国8
+      - 美国9
+      - 美国10
+      - 美国11
+      - 美国12
+      - 美国13
+      - 日本
 
 rules:
 # 本地/局域网地址
