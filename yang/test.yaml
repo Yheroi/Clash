@@ -1,7 +1,7 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：2024-07-12 09:58:35
+# 创建时间：2024-07-12 10:00:43
 # 使用模版：ACL4SSR_Mini.ini
 # 节点数量：7
 # 节点类型：vmess, vless, hysteria2
@@ -88,11 +88,11 @@ dns:
 
 proxies:
   - {"name":"新加坡_21","type":"vmess","server":"sg7.wgxghhur.skynode.top","port":8443,"cipher":"auto","uuid":"fda1ef74-4329-341c-a477-f14cad182e77","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/ws?ed=2048","headers":{"host":"baiducdncmn2.inter.iqiyi.com"}}}
-  - {"name":"中国_32","type":"vless","server":"42.2.224.176","port":443,"udp":true,"uuid":"7a49ebc8-6235-36b1-b7b4-0864b95bd90a","tls":true,"servername":"tesla.com","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"zRZhlkKjUeqtIk9j6yy95aX-2krqQVyWORLv5tQkQGM"},"client-fingerprint":"chrome"}
+  - {"name":"中国_32\r","type":"vless","server":"42.2.224.176","port":443,"udp":true,"uuid":"7a49ebc8-6235-36b1-b7b4-0864b95bd90a","tls":true,"servername":"tesla.com","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"zRZhlkKjUeqtIk9j6yy95aX-2krqQVyWORLv5tQkQGM"},"client-fingerprint":"chrome"}
   - {"name":"新加坡_33","type":"vmess","server":"hk6.oufpwih1vtwz.skynode.top","port":8080,"cipher":"auto","uuid":"fda1ef74-4329-341c-a477-f14cad182e77","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/ws?ed=2048","headers":{"host":"baiducdncmn2.inter.iqiyi.com"}}}
   - {"name":"新加坡_41","type":"vmess","server":"sg2.oufpwih1vtwz.skynode.top","port":80,"cipher":"auto","uuid":"fda1ef74-4329-341c-a477-f14cad182e77","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/ws?ed=2048","headers":{"host":"baiducdncmn2.inter.iqiyi.com"}}}
-  - {"name":"中国台湾","type":"vless","server":"103.137.62.229","port":443,"uuid":"7a49ebc8-6235-36b1-b7b4-0864b95bd90a","tls":true,"servername":"tesla.com","flow":"xtls-rprx-vision","network":"tcp"}
-  - {"name":"美国1","type":"hysteria2","server":"164.92.89.228","port":443,"password":"936a5f7d-5037-4640-9e50-92f944337cbb","sni":"hyus.freeapp.buzz","skip-cert-verify":true}
+  - {"name":"中国台湾\r","type":"vless","server":"103.137.62.229","port":443,"uuid":"7a49ebc8-6235-36b1-b7b4-0864b95bd90a","tls":true,"servername":"tesla.com","flow":"xtls-rprx-vision","network":"tcp"}
+  - {"name":"美国1\r","type":"hysteria2","server":"164.92.89.228","port":443,"password":"936a5f7d-5037-4640-9e50-92f944337cbb","sni":"hyus.freeapp.buzz","skip-cert-verify":true}
   - {"name":"美国2","type":"hysteria2","server":"164.92.108.195","port":8443,"password":"936a5f7d-5037-4640-9e50-92f944337cbb","sni":"hyus2.freeapp.buzz","skip-cert-verify":true}
 proxy-groups:
   - name: 🚀 节点选择
@@ -101,11 +101,11 @@ proxy-groups:
       - ♻️ 自动选择
       - DIRECT
       - 新加坡_21
-      - 中国_32
+      - "中国_32\r"
       - 新加坡_33
       - 新加坡_41
-      - 中国台湾
-      - 美国1
+      - "中国台湾\r"
+      - "美国1\r"
       - 美国2
   - name: ♻️ 自动选择
     type: url-test
@@ -114,11 +114,11 @@ proxy-groups:
     tolerance: 50
     proxies:
       - 新加坡_21
-      - 中国_32
+      - "中国_32\r"
       - 新加坡_33
       - 新加坡_41
-      - 中国台湾
-      - 美国1
+      - "中国台湾\r"
+      - "美国1\r"
       - 美国2
   - name: 🎯 全球直连
     type: select
@@ -138,11 +138,11 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - 新加坡_21
-      - 中国_32
+      - "中国_32\r"
       - 新加坡_33
       - 新加坡_41
-      - 中国台湾
-      - 美国1
+      - "中国台湾\r"
+      - "美国1\r"
       - 美国2
 
 rules:
