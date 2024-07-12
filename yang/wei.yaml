@@ -1,10 +1,10 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：2024-07-12 10:01:33
+# 创建时间：2024-07-12 10:04:26
 # 使用模版：ACL4SSR_Mini.ini
-# 节点数量：7
-# 节点类型：vmess, vless, hysteria2
+# 节点数量：6
+# 节点类型：vless, vmess, hysteria2
 # !!当前配置文件请使用基于 Clash.Meta 内核程序
 ####################################
 mixed-port: 7890
@@ -89,7 +89,6 @@ dns:
 proxies:
   - {"name":"中国香港1","type":"vless","server":"42.2.224.176","port":443,"udp":true,"uuid":"7a49ebc8-6235-36b1-b7b4-0864b95bd90a","tls":true,"servername":"tesla.com","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"zRZhlkKjUeqtIk9j6yy95aX-2krqQVyWORLv5tQkQGM"},"client-fingerprint":"chrome"}
   - {"name":"中国香港2","type":"vmess","server":"hk6.oufpwih1vtwz.skynode.top","port":8080,"cipher":"auto","uuid":"fda1ef74-4329-341c-a477-f14cad182e77","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/ws?ed=2048","headers":{"host":"baiducdncmn2.inter.iqiyi.com"}}}
-  - {"name":"中国台湾","type":"vless","server":"103.137.62.229","port":443,"uuid":"7a49ebc8-6235-36b1-b7b4-0864b95bd90a","tls":true,"servername":"tesla.com","flow":"xtls-rprx-vision","network":"tcp"}
   - {"name":"新加坡1","type":"vmess","server":"sg7.wgxghhur.skynode.top","port":8443,"cipher":"auto","uuid":"fda1ef74-4329-341c-a477-f14cad182e77","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/ws?ed=2048","headers":{"host":"baiducdncmn2.inter.iqiyi.com"}}}
   - {"name":"新加坡2","type":"vmess","server":"sg2.oufpwih1vtwz.skynode.top","port":80,"cipher":"auto","uuid":"fda1ef74-4329-341c-a477-f14cad182e77","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/ws?ed=2048","headers":{"host":"baiducdncmn2.inter.iqiyi.com"}}}
   - {"name":"美国1","type":"hysteria2","server":"164.92.89.228","port":443,"password":"936a5f7d-5037-4640-9e50-92f944337cbb","sni":"hyus.freeapp.buzz","skip-cert-verify":true}
@@ -102,7 +101,6 @@ proxy-groups:
       - DIRECT
       - 中国香港1
       - 中国香港2
-      - 中国台湾
       - 新加坡1
       - 新加坡2
       - 美国1
@@ -115,7 +113,6 @@ proxy-groups:
     proxies:
       - 中国香港1
       - 中国香港2
-      - 中国台湾
       - 新加坡1
       - 新加坡2
       - 美国1
@@ -139,7 +136,6 @@ proxy-groups:
       - ♻️ 自动选择
       - 中国香港1
       - 中国香港2
-      - 中国台湾
       - 新加坡1
       - 新加坡2
       - 美国1
