@@ -1,10 +1,11 @@
 ####################################
 # 创建者：v2rayse.com
-# 客户端：Clash
-# 创建时间：2024-07-13 12:12:30
+# 客户端：Clash.Meta
+# 创建时间：2024-07-13 12:15:03
 # 使用模版：ACL4SSR_Mini.ini
-# 节点数量：2
-# 节点类型：trojan, ss
+# 节点数量：3
+# 节点类型：trojan, ss, vless
+# !!当前配置文件请使用基于 Clash.Meta 内核程序
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -88,6 +89,7 @@ dns:
 proxies:
   - {"name":"日本1","type":"trojan","server":"183.232.139.22","port":36931,"udp":true,"password":"RmdXQRXg","skip-cert-verify":true,"network":"tcp"}
   - {"name":"日本2","type":"ss","server":"shcub.donghui.tech","port":22638,"password":"764f7bbd-259c-43b1-996d-bf595ab21618","cipher":"aes-128-gcm"}
+  - {"name":"韩国","type":"vless","server":"49.165.150.206","port":18916,"uuid":"2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5","tls":true,"servername":"cfed.tgzdyz2.top","network":"ws","ws-opts":{"path":"/TG@ZDYZ2","headers":{"host":"cfed.tgzdyz2.top"}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -96,6 +98,7 @@ proxy-groups:
       - DIRECT
       - 日本1
       - 日本2
+      - 韩国
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -104,6 +107,7 @@ proxy-groups:
     proxies:
       - 日本1
       - 日本2
+      - 韩国
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -123,6 +127,7 @@ proxy-groups:
       - ♻️ 自动选择
       - 日本1
       - 日本2
+      - 韩国
 
 rules:
 # 本地/局域网地址
