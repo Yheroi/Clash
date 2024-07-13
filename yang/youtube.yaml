@@ -1,7 +1,7 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：2024-07-13 18:46:39
+# 创建时间：2024-07-13 18:47:35
 # 使用模版：ACL4SSR_Mini.ini
 # 节点数量：10
 # 节点类型：trojan, ss, vless, vmess
@@ -96,7 +96,7 @@ proxies:
   - {"name":"中国香港1","type":"trojan","server":"183.232.139.22","port":4027,"udp":true,"password":"RmdXQRXg","skip-cert-verify":true,"network":"tcp"}
   - {"name":"中国香港2","type":"ss","server":"02hz.rvxpwa.tech","port":35013,"password":"48d20ad2-7416-49a8-b5d4-b4f1e0a29274","cipher":"aes-256-gcm"}
   - {"name":"美国","type":"vmess","server":"bvip.hongxingdl.vip","port":19358,"cipher":"auto","uuid":"7cd29891-fe78-4f8f-8844-abb31b9d9a75","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"未知国家-4.56MB/s","type":"vmess","server":"104.19.38.18","port":2052,"cipher":"auto","uuid":"d6b6d982-d52f-465a-b988-85670b23f64a","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"github.com/Alvin9999","headers":{"host":"cdn2.freegradely.xyz"}}}
+  - {"name":"新加坡2","type":"ss","server":"47.129.0.210","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -112,7 +112,7 @@ proxy-groups:
       - 中国香港1
       - 中国香港2
       - 美国
-      - 未知国家-4.56MB/s
+      - 新加坡2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -128,7 +128,7 @@ proxy-groups:
       - 中国香港1
       - 中国香港2
       - 美国
-      - 未知国家-4.56MB/s
+      - 新加坡2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -155,7 +155,7 @@ proxy-groups:
       - 中国香港1
       - 中国香港2
       - 美国
-      - 未知国家-4.56MB/s
+      - 新加坡2
 
 rules:
 # 本地/局域网地址
