@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：2024-07-13 12:15:03
+# 创建时间：2024-07-13 12:17:07
 # 使用模版：ACL4SSR_Mini.ini
-# 节点数量：3
+# 节点数量：6
 # 节点类型：trojan, ss, vless
 # !!当前配置文件请使用基于 Clash.Meta 内核程序
 ####################################
@@ -90,6 +90,9 @@ proxies:
   - {"name":"日本1","type":"trojan","server":"183.232.139.22","port":36931,"udp":true,"password":"RmdXQRXg","skip-cert-verify":true,"network":"tcp"}
   - {"name":"日本2","type":"ss","server":"shcub.donghui.tech","port":22638,"password":"764f7bbd-259c-43b1-996d-bf595ab21618","cipher":"aes-128-gcm"}
   - {"name":"韩国","type":"vless","server":"49.165.150.206","port":18916,"uuid":"2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5","tls":true,"servername":"cfed.tgzdyz2.top","network":"ws","ws-opts":{"path":"/TG@ZDYZ2","headers":{"host":"cfed.tgzdyz2.top"}}}
+  - {"name":"1","type":"ss","server":"59.56.77.178","port":15083,"password":"hGkQ6915tD","cipher":"aes-256-cfb"}
+  - {"name":"韩国2","type":"trojan","server":"kkr100515a.go02.top","port":30056,"udp":true,"password":"M3lOal9RPR","skip-cert-verify":true}
+  - {"name":"新加坡","type":"ss","server":"18.143.107.4","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -99,6 +102,9 @@ proxy-groups:
       - 日本1
       - 日本2
       - 韩国
+      - '1'
+      - 韩国2
+      - 新加坡
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -108,6 +114,9 @@ proxy-groups:
       - 日本1
       - 日本2
       - 韩国
+      - '1'
+      - 韩国2
+      - 新加坡
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -128,6 +137,9 @@ proxy-groups:
       - 日本1
       - 日本2
       - 韩国
+      - '1'
+      - 韩国2
+      - 新加坡
 
 rules:
 # 本地/局域网地址
