@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：2024-07-13 12:47:16
+# 创建时间：2024-07-13 18:45:08
 # 使用模版：ACL4SSR_Mini.ini
-# 节点数量：9
+# 节点数量：10
 # 节点类型：trojan, ss, vless, vmess
 # !!当前配置文件请使用基于 Clash.Meta 内核程序
 ####################################
@@ -89,13 +89,14 @@ dns:
 proxies:
   - {"name":"日本1","type":"trojan","server":"183.232.139.22","port":36931,"udp":true,"password":"RmdXQRXg","skip-cert-verify":true,"network":"tcp"}
   - {"name":"日本2","type":"ss","server":"shcub.donghui.tech","port":22638,"password":"764f7bbd-259c-43b1-996d-bf595ab21618","cipher":"aes-128-gcm"}
-  - {"name":"韩国1","type":"vless","server":"49.165.150.206","port":18916,"uuid":"2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5","tls":true,"servername":"cfed.tgzdyz2.top","network":"ws","ws-opts":{"path":"/TG@ZDYZ2","headers":{"host":"cfed.tgzdyz2.top"}}}
-  - {"name":"韩国2","type":"trojan","server":"kkr100515a.go02.top","port":30056,"udp":true,"password":"M3lOal9RPR","skip-cert-verify":true}
+  - {"name":"韩国1","type":"vless","server":"49.165.150.206","port":18916,"uuid":"2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5","tls":true,"servername":"cfed.tgzdyz2.top","network":"ws","ws-opts":{"path":"/TG@ZDYZ2"}}
+  - {"name":"韩国2","type":"trojan","server":"kkr100515a.go02.top","port":30056,"udp":true,"password":"M3lOal9RPR","skip-cert-verify":true,"network":"tcp"}
   - {"name":"越南","type":"ss","server":"59.56.77.178","port":15083,"password":"hGkQ6915tD","cipher":"aes-256-cfb"}
   - {"name":"新加坡","type":"ss","server":"18.143.107.4","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"中国香港1","type":"trojan","server":"183.232.139.22","port":4027,"udp":true,"password":"RmdXQRXg","skip-cert-verify":true}
+  - {"name":"中国香港1","type":"trojan","server":"183.232.139.22","port":4027,"udp":true,"password":"RmdXQRXg","skip-cert-verify":true,"network":"tcp"}
   - {"name":"中国香港2","type":"ss","server":"02hz.rvxpwa.tech","port":35013,"password":"48d20ad2-7416-49a8-b5d4-b4f1e0a29274","cipher":"aes-256-gcm"}
   - {"name":"美国","type":"vmess","server":"bvip.hongxingdl.vip","port":19358,"cipher":"auto","uuid":"7cd29891-fe78-4f8f-8844-abb31b9d9a75","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"印度尼西亚","type":"vmess","server":"id1.ubaistore.my.id","port":80,"cipher":"auto","uuid":"7e872fff-2f77-4fa1-813b-70b2f41dd128","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/vmessws","headers":{"host":"id1.ubaistore.my.id"}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -111,6 +112,7 @@ proxy-groups:
       - 中国香港1
       - 中国香港2
       - 美国
+      - 印度尼西亚
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -126,6 +128,7 @@ proxy-groups:
       - 中国香港1
       - 中国香港2
       - 美国
+      - 印度尼西亚
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -152,6 +155,7 @@ proxy-groups:
       - 中国香港1
       - 中国香港2
       - 美国
+      - 印度尼西亚
 
 rules:
 # 本地/局域网地址
