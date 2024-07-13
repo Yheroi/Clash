@@ -1,7 +1,7 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：2024-07-13 12:18:55
+# 创建时间：2024-07-13 12:19:34
 # 使用模版：ACL4SSR_Mini.ini
 # 节点数量：8
 # 节点类型：trojan, ss, vless
@@ -94,7 +94,7 @@ proxies:
   - {"name":"越南","type":"ss","server":"59.56.77.178","port":15083,"password":"hGkQ6915tD","cipher":"aes-256-cfb"}
   - {"name":"韩国2","type":"trojan","server":"kkr100515a.go02.top","port":30056,"udp":true,"password":"M3lOal9RPR","skip-cert-verify":true}
   - {"name":"新加坡","type":"ss","server":"18.143.107.4","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"中转节点-24.95MB/s","type":"trojan","server":"183.232.139.22","port":4027,"udp":true,"password":"RmdXQRXg","skip-cert-verify":true}
+  - {"name":"中国香港","type":"trojan","server":"183.232.139.22","port":4027,"udp":true,"password":"RmdXQRXg","skip-cert-verify":true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -108,7 +108,7 @@ proxy-groups:
       - 越南
       - 韩国2
       - 新加坡
-      - 中转节点-24.95MB/s
+      - 中国香港
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -122,7 +122,7 @@ proxy-groups:
       - 越南
       - 韩国2
       - 新加坡
-      - 中转节点-24.95MB/s
+      - 中国香港
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -147,7 +147,7 @@ proxy-groups:
       - 越南
       - 韩国2
       - 新加坡
-      - 中转节点-24.95MB/s
+      - 中国香港
 
 rules:
 # 本地/局域网地址
