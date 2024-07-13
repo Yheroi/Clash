@@ -1,7 +1,7 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：2024-07-13 12:41:34
+# 创建时间：2024-07-13 12:42:30
 # 使用模版：ACL4SSR_Mini.ini
 # 节点数量：9
 # 节点类型：trojan, ss, vless, vmess
@@ -95,7 +95,7 @@ proxies:
   - {"name":"新加坡","type":"ss","server":"18.143.107.4","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
   - {"name":"中国香港","type":"trojan","server":"183.232.139.22","port":4027,"udp":true,"password":"RmdXQRXg","skip-cert-verify":true}
   - {"name":"美国","type":"vmess","server":"bvip.hongxingdl.vip","port":19358,"cipher":"auto","uuid":"7cd29891-fe78-4f8f-8844-abb31b9d9a75","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"未知国家-5.71MB/s","type":"vmess","server":"104.19.51.232","port":2086,"cipher":"auto","uuid":"29eebb60-b27b-4a9d-bba5-947763d9205e","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"github.com/Alvin9999","headers":{"host":"ip005.dtku47.xyz"}}}
+  - {"name":"中转节点-24.95MB/s","type":"trojan","server":"183.232.139.22","port":4027,"udp":true,"password":"RmdXQRXg","skip-cert-verify":true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -110,7 +110,7 @@ proxy-groups:
       - 新加坡
       - 中国香港
       - 美国
-      - 未知国家-5.71MB/s
+      - 中转节点-24.95MB/s
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -125,7 +125,7 @@ proxy-groups:
       - 新加坡
       - 中国香港
       - 美国
-      - 未知国家-5.71MB/s
+      - 中转节点-24.95MB/s
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -151,7 +151,7 @@ proxy-groups:
       - 新加坡
       - 中国香港
       - 美国
-      - 未知国家-5.71MB/s
+      - 中转节点-24.95MB/s
 
 rules:
 # 本地/局域网地址
