@@ -1,7 +1,7 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：2024-07-15 10:02:27
+# 创建时间：2024-07-15 10:03:09
 # 使用模版：ACL4SSR_Mini.ini
 # 节点数量：4
 # 节点类型：vless, hysteria2
@@ -87,30 +87,30 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"中国香港1_1","type":"vless","server":"42.2.224.176","port":443,"udp":true,"uuid":"7a49ebc8-6235-36b1-b7b4-0864b95bd90a","tls":true,"servername":"tesla.com","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"zRZhlkKjUeqtIk9j6yy95aX-2krqQVyWORLv5tQkQGM"},"client-fingerprint":"chrome"}
+  - {"name":"中国香港1","type":"vless","server":"42.2.224.176","port":443,"udp":true,"uuid":"7a49ebc8-6235-36b1-b7b4-0864b95bd90a","tls":true,"servername":"tesla.com","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"zRZhlkKjUeqtIk9j6yy95aX-2krqQVyWORLv5tQkQGM"},"client-fingerprint":"chrome"}
   - {"name":"美国1","type":"hysteria2","server":"164.92.89.228","port":443,"password":"936a5f7d-5037-4640-9e50-92f944337cbb","sni":"hyus.freeapp.buzz","skip-cert-verify":true}
   - {"name":"美国2","type":"hysteria2","server":"164.92.108.195","port":8443,"password":"936a5f7d-5037-4640-9e50-92f944337cbb","sni":"hyus2.freeapp.buzz","skip-cert-verify":true}
-  - {"name":"中国香港1_2","type":"hysteria2","server":"us-01.worldfirst.eu.org","port":44300,"password":"d357239c-eb91-4256-9c6d-82919928a4db","sni":"us-01.worldfirst.eu.org","skip-cert-verify":true}
+  - {"name":"中国香港2","type":"hysteria2","server":"us-01.worldfirst.eu.org","port":44300,"password":"d357239c-eb91-4256-9c6d-82919928a4db","sni":"us-01.worldfirst.eu.org","skip-cert-verify":true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 中国香港1_1
+      - 中国香港1
       - 美国1
       - 美国2
-      - 中国香港1_2
+      - 中国香港2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 中国香港1_1
+      - 中国香港1
       - 美国1
       - 美国2
-      - 中国香港1_2
+      - 中国香港2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -128,10 +128,10 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 中国香港1_1
+      - 中国香港1
       - 美国1
       - 美国2
-      - 中国香港1_2
+      - 中国香港2
 
 rules:
 # 本地/局域网地址
