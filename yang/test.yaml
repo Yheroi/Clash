@@ -1,7 +1,7 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：2024-07-16 18:14:39
+# 创建时间：2024-07-16 18:15:58
 # 使用模版：ACL4SSR_Mini.ini
 # 节点数量：4
 # 节点类型：vmess, vless
@@ -87,30 +87,30 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"4","type":"vmess","server":"120.232.153.37","port":42055,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"10","type":"vless","server":"42.2.224.176","port":443,"udp":true,"uuid":"7a49ebc8-6235-36b1-b7b4-0864b95bd90a","tls":true,"servername":"tesla.com","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"zRZhlkKjUeqtIk9j6yy95aX-2krqQVyWORLv5tQkQGM"},"client-fingerprint":"chrome"}
-  - {"name":"106","type":"vmess","server":"sg5g.forlive.live","port":80,"cipher":"auto","uuid":"9aeace70-8f62-4c2e-92d7-18645e6b4fea","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"tms.dingtalk.com"}}}
-  - {"name":"22","type":"vmess","server":"jp1.oufpwih1vtwz.skynode.top","port":80,"cipher":"auto","uuid":"fda1ef74-4329-341c-a477-f14cad182e77","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/ws?ed=2048","headers":{"host":"baiducdncmn2.inter.iqiyi.com"}}}
+  - {"name":"新加坡","type":"vmess","server":"sg5g.forlive.live","port":80,"cipher":"auto","uuid":"9aeace70-8f62-4c2e-92d7-18645e6b4fea","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"tms.dingtalk.com"}}}
+  - {"name":"美国","type":"vmess","server":"120.232.153.37","port":42055,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"中国香港","type":"vless","server":"42.2.224.176","port":443,"uuid":"7a49ebc8-6235-36b1-b7b4-0864b95bd90a","tls":true,"servername":"tesla.com","flow":"xtls-rprx-vision","network":"tcp"}
+  - {"name":"日本","type":"vmess","server":"jp1.oufpwih1vtwz.skynode.top","port":80,"cipher":"auto","uuid":"fda1ef74-4329-341c-a477-f14cad182e77","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/ws?ed=2048","headers":{"host":"baiducdncmn2.inter.iqiyi.com"}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - '4'
-      - '10'
-      - '106'
-      - '22'
+      - 新加坡
+      - 美国
+      - 中国香港
+      - 日本
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - '4'
-      - '10'
-      - '106'
-      - '22'
+      - 新加坡
+      - 美国
+      - 中国香港
+      - 日本
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -128,10 +128,10 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - '4'
-      - '10'
-      - '106'
-      - '22'
+      - 新加坡
+      - 美国
+      - 中国香港
+      - 日本
 
 rules:
 # 本地/局域网地址
