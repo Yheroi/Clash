@@ -1,10 +1,10 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：2024-07-15 10:14:17
+# 创建时间：2024-07-17 10:28:47
 # 使用模版：ACL4SSR_Mini.ini
-# 节点数量：4
-# 节点类型：vless, hysteria2
+# 节点数量：5
+# 节点类型：vmess, vless, hysteria2
 # !!当前配置文件请使用基于 Clash.Meta 内核程序
 ####################################
 mixed-port: 7890
@@ -87,30 +87,33 @@ dns:
       - 0.0.0.0/32
 
 proxies:
+  - {"name":"中国台湾1","type":"vmess","server":"144.48.32.10","port":30000,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/path/091615350227","headers":{"host":"www.32011779.xyz"}}}
+  - {"name":"中国台湾2","type":"vless","server":"103.137.62.229","port":443,"udp":true,"uuid":"7a49ebc8-6235-36b1-b7b4-0864b95bd90a","tls":true,"servername":"tesla.com","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"zRZhlkKjUeqtIk9j6yy95aX-2krqQVyWORLv5tQkQGM"},"client-fingerprint":"chrome"}
   - {"name":"中国香港","type":"vless","server":"42.2.224.176","port":443,"udp":true,"uuid":"7a49ebc8-6235-36b1-b7b4-0864b95bd90a","tls":true,"servername":"tesla.com","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"zRZhlkKjUeqtIk9j6yy95aX-2krqQVyWORLv5tQkQGM"},"client-fingerprint":"chrome"}
-  - {"name":"美国1","type":"hysteria2","server":"164.92.89.228","port":443,"password":"936a5f7d-5037-4640-9e50-92f944337cbb","sni":"hyus.freeapp.buzz","skip-cert-verify":true}
-  - {"name":"美国2","type":"hysteria2","server":"164.92.108.195","port":8443,"password":"936a5f7d-5037-4640-9e50-92f944337cbb","sni":"hyus2.freeapp.buzz","skip-cert-verify":true}
-  - {"name":"美国3","type":"hysteria2","server":"us-01.worldfirst.eu.org","port":44300,"password":"d357239c-eb91-4256-9c6d-82919928a4db","sni":"us-01.worldfirst.eu.org","skip-cert-verify":true}
+  - {"name":"美国1","type":"hysteria2","server":"us-01.worldfirst.eu.org","port":44300,"password":"d357239c-eb91-4256-9c6d-82919928a4db","sni":"us-01.worldfirst.eu.org","skip-cert-verify":true}
+  - {"name":"美国2","type":"hysteria2","server":"zz.worldfirst.eu.org","port":46610,"password":"d357239c-eb91-4256-9c6d-82919928a4db","sni":"us-01.worldfirst.eu.org","skip-cert-verify":true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
+      - 中国台湾1
+      - 中国台湾2
       - 中国香港
       - 美国1
       - 美国2
-      - 美国3
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
+      - 中国台湾1
+      - 中国台湾2
       - 中国香港
       - 美国1
       - 美国2
-      - 美国3
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -128,10 +131,11 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 中国台湾1
+      - 中国台湾2
       - 中国香港
       - 美国1
       - 美国2
-      - 美国3
 
 rules:
 # 本地/局域网地址
