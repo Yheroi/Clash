@@ -1,10 +1,10 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2024-07-18 14:15:36
+# 创建时间：2024-07-18 14:23:22
 # 使用模版：ACL4SSR_Mini.ini
-# 节点数量：18
-# 节点类型：vmess, ss, trojan
+# 节点数量：12
+# 节点类型：vmess, trojan, ss
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -86,72 +86,54 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"1","type":"vmess","server":"sui.forlive.live","port":21949,"cipher":"auto","uuid":"e4649346-1eed-4ea0-8ef6-355563258cea","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"tms.dingtalk.com"}}}
-  - {"name":"2","type":"ss","server":"s2.forlive.live","port":61018,"password":"86f461d5-007c-4ba1-95e9-afcd55149a16","cipher":"aes-128-gcm"}
-  - {"name":"3","type":"trojan","server":"dc0.forlive.live","port":41010,"udp":true,"password":"34c37e66-c515-41c1-8781-6b7a189ac67e","sni":"ssl.sbgfw.info","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"4","type":"vmess","server":"sui.forlive.live","port":32460,"cipher":"auto","uuid":"9e18792f-c137-406b-b735-9b7af89ad4bd","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"tms.dingtalk.com"}}}
-  - {"name":"5","type":"trojan","server":"dc0.forlive.live","port":41024,"udp":true,"password":"d8c5dfdb-f5c3-4732-8bce-85af70d32a57","sni":"ssl.sbgfw.info","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"6","type":"vmess","server":"in06.dns2024.org","port":63003,"cipher":"auto","uuid":"4ff0df2c-2092-36ab-882f-29e46fea089c","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"7","type":"vmess","server":"in06.dns2024.org","port":63004,"cipher":"auto","uuid":"4ff0df2c-2092-36ab-882f-29e46fea089c","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"8","type":"vmess","server":"pro01.dns2024.org","port":3283,"cipher":"auto","uuid":"4ff0df2c-2092-36ab-882f-29e46fea089c","alterId":0,"tls":true,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"9","type":"vmess","server":"pro01.dns2024.org","port":3293,"cipher":"auto","uuid":"4ff0df2c-2092-36ab-882f-29e46fea089c","alterId":0,"tls":true,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"10","type":"vmess","server":"in06.dns2024.org","port":63017,"cipher":"auto","uuid":"4ff0df2c-2092-36ab-882f-29e46fea089c","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"11","type":"vmess","server":"in06.dns2024.org","port":63008,"cipher":"auto","uuid":"4ff0df2c-2092-36ab-882f-29e46fea089c","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"12","type":"vmess","server":"pro01.dns2024.org","port":3073,"cipher":"auto","uuid":"4ff0df2c-2092-36ab-882f-29e46fea089c","alterId":0,"tls":true,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"13","type":"vmess","server":"pro01.dns2024.org","port":3093,"cipher":"auto","uuid":"4ff0df2c-2092-36ab-882f-29e46fea089c","alterId":0,"tls":true,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"14","type":"vmess","server":"pro01.dns2024.org","port":3023,"cipher":"auto","uuid":"4ff0df2c-2092-36ab-882f-29e46fea089c","alterId":0,"tls":true,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"15","type":"vmess","server":"pro01.dns2024.org","port":3113,"cipher":"auto","uuid":"4ff0df2c-2092-36ab-882f-29e46fea089c","alterId":0,"tls":true,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"16","type":"vmess","server":"pro01.dns2024.org","port":3203,"cipher":"auto","uuid":"4ff0df2c-2092-36ab-882f-29e46fea089c","alterId":0,"tls":true,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"17","type":"trojan","server":"okelvv.superpokemon.com","port":28342,"udp":true,"password":"epDl3yFT5CNCKazFSqAxDOAyau3IXjxl63YcZSE0248BnZ7gOa8C9pYR3weSDR","sni":"okelvv.superpokemon.com","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"18","type":"vmess","server":"120.232.153.40","port":53942,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"中国香港1","type":"vmess","server":"sui.forlive.live","port":21949,"cipher":"auto","uuid":"e4649346-1eed-4ea0-8ef6-355563258cea","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"tms.dingtalk.com"}}}
+  - {"name":"中国香港2","type":"vmess","server":"pro01.dns2024.org","port":3283,"cipher":"auto","uuid":"4ff0df2c-2092-36ab-882f-29e46fea089c","alterId":0,"tls":true,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"中国香港3","type":"vmess","server":"pro01.dns2024.org","port":3293,"cipher":"auto","uuid":"4ff0df2c-2092-36ab-882f-29e46fea089c","alterId":0,"tls":true,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"中国香港4","type":"vmess","server":"pro01.dns2024.org","port":3023,"cipher":"auto","uuid":"4ff0df2c-2092-36ab-882f-29e46fea089c","alterId":0,"tls":true,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"中国香港5","type":"vmess","server":"pro01.dns2024.org","port":3113,"cipher":"auto","uuid":"4ff0df2c-2092-36ab-882f-29e46fea089c","alterId":0,"tls":true,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"中国香港6","type":"vmess","server":"pro01.dns2024.org","port":3203,"cipher":"auto","uuid":"4ff0df2c-2092-36ab-882f-29e46fea089c","alterId":0,"tls":true,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"中国台湾","type":"vmess","server":"pro01.dns2024.org","port":3073,"cipher":"auto","uuid":"4ff0df2c-2092-36ab-882f-29e46fea089c","alterId":0,"tls":true,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"韩国1","type":"vmess","server":"sui.forlive.live","port":32460,"cipher":"auto","uuid":"9e18792f-c137-406b-b735-9b7af89ad4bd","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"tms.dingtalk.com"}}}
+  - {"name":"韩国2","type":"vmess","server":"pro01.dns2024.org","port":3093,"cipher":"auto","uuid":"4ff0df2c-2092-36ab-882f-29e46fea089c","alterId":0,"tls":true,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"新加坡","type":"trojan","server":"dc0.forlive.live","port":41024,"udp":true,"password":"d8c5dfdb-f5c3-4732-8bce-85af70d32a57","sni":"ssl.sbgfw.info","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"日本1","type":"ss","server":"s2.forlive.live","port":61018,"password":"86f461d5-007c-4ba1-95e9-afcd55149a16","cipher":"aes-128-gcm"}
+  - {"name":"日本2","type":"trojan","server":"okelvv.superpokemon.com","port":28342,"udp":true,"password":"epDl3yFT5CNCKazFSqAxDOAyau3IXjxl63YcZSE0248BnZ7gOa8C9pYR3weSDR","sni":"okelvv.superpokemon.com","skip-cert-verify":true,"network":"tcp"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - '1'
-      - '2'
-      - '3'
-      - '4'
-      - '5'
-      - '6'
-      - '7'
-      - '8'
-      - '9'
-      - '10'
-      - '11'
-      - '12'
-      - '13'
-      - '14'
-      - '15'
-      - '16'
-      - '17'
-      - '18'
+      - 中国香港1
+      - 中国香港2
+      - 中国香港3
+      - 中国香港4
+      - 中国香港5
+      - 中国香港6
+      - 中国台湾
+      - 韩国1
+      - 韩国2
+      - 新加坡
+      - 日本1
+      - 日本2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - '1'
-      - '2'
-      - '3'
-      - '4'
-      - '5'
-      - '6'
-      - '7'
-      - '8'
-      - '9'
-      - '10'
-      - '11'
-      - '12'
-      - '13'
-      - '14'
-      - '15'
-      - '16'
-      - '17'
-      - '18'
+      - 中国香港1
+      - 中国香港2
+      - 中国香港3
+      - 中国香港4
+      - 中国香港5
+      - 中国香港6
+      - 中国台湾
+      - 韩国1
+      - 韩国2
+      - 新加坡
+      - 日本1
+      - 日本2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -169,24 +151,18 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - '1'
-      - '2'
-      - '3'
-      - '4'
-      - '5'
-      - '6'
-      - '7'
-      - '8'
-      - '9'
-      - '10'
-      - '11'
-      - '12'
-      - '13'
-      - '14'
-      - '15'
-      - '16'
-      - '17'
-      - '18'
+      - 中国香港1
+      - 中国香港2
+      - 中国香港3
+      - 中国香港4
+      - 中国香港5
+      - 中国香港6
+      - 中国台湾
+      - 韩国1
+      - 韩国2
+      - 新加坡
+      - 日本1
+      - 日本2
 
 rules:
 # 本地/局域网地址
