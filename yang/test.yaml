@@ -1,10 +1,11 @@
 ####################################
 # 创建者：v2rayse.com
-# 客户端：Clash
-# 创建时间：2024-07-18 21:15:29
+# 客户端：Clash.Meta
+# 创建时间：2024-07-23 10:24:42
 # 使用模版：ACL4SSR_Mini.ini
-# 节点数量：3
-# 节点类型：ss
+# 节点数量：10
+# 节点类型：hysteria2
+# !!当前配置文件请使用基于 Clash.Meta 内核程序
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -86,27 +87,48 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"韩国2","type":"ss","server":"43.201.254.211","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"韩国1","type":"ss","server":"43.201.254.74","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"新加坡","type":"ss","server":"54.255.232.203","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"128","type":"hysteria2","server":"jp01.poke-mon.xyz","port":8088,"password":"bf34f380-d8a7-4e2c-a8b2-51f0d24dc7e4","sni":"jp01.poke-mon.xyz","skip-cert-verify":true,"obfs-password":"NzI5MTU0YTY0NmJkMDUwNQ=="}
+  - {"name":"129","type":"hysteria2","server":"sg01.poke-mon.xyz","port":8089,"password":"bf34f380-d8a7-4e2c-a8b2-51f0d24dc7e4","sni":"sg01.poke-mon.xyz","skip-cert-verify":true,"obfs-password":"MmZiNTNjYmU5NjY2Zjk0YQ=="}
+  - {"name":"130","type":"hysteria2","server":"us03.poke-mon.xyz","port":8081,"password":"bf34f380-d8a7-4e2c-a8b2-51f0d24dc7e4","sni":"us03.poke-mon.xyz","skip-cert-verify":true,"obfs-password":"YTIyMGYzN2M1MDllMzEyMA=="}
+  - {"name":"131","type":"hysteria2","server":"us02.poke-mon.xyz","port":9077,"password":"bf34f380-d8a7-4e2c-a8b2-51f0d24dc7e4","sni":"us02.poke-mon.xyz","skip-cert-verify":true,"obfs-password":"ZjYwZmViYTA3ZGM1OTc1OA=="}
+  - {"name":"132","type":"hysteria2","server":"uk01.poke-mon.xyz","port":8092,"password":"bf34f380-d8a7-4e2c-a8b2-51f0d24dc7e4","sni":"uk01.poke-mon.xyz","skip-cert-verify":true,"obfs-password":"YmEzZTFkN2M2MzY5NTViMw=="}
+  - {"name":"133","type":"hysteria2","server":"helan.poke-mon.xyz","port":8091,"password":"bf34f380-d8a7-4e2c-a8b2-51f0d24dc7e4","sni":"helan.poke-mon.xyz","skip-cert-verify":true,"obfs-password":"ZGY3MzJmZmViM2U2NTAzZA=="}
+  - {"name":"134","type":"hysteria2","server":"aodaliya.poke-mon.xyz","port":23223,"password":"bf34f380-d8a7-4e2c-a8b2-51f0d24dc7e4","sni":"aodaliya.poke-mon.xyz","skip-cert-verify":true,"obfs-password":"Y2M5ZGQyYzc2ZjNhZTlkNA=="}
+  - {"name":"135","type":"hysteria2","server":"baxi01.poke-mon.xyz","port":28087,"password":"bf34f380-d8a7-4e2c-a8b2-51f0d24dc7e4","sni":"baxi01.poke-mon.xyz","skip-cert-verify":true,"obfs-password":"ZDQxZDhjZDk4ZjAwYjIwNA=="}
+  - {"name":"136","type":"hysteria2","server":"aodili.poke-mon.xyz","port":29090,"password":"bf34f380-d8a7-4e2c-a8b2-51f0d24dc7e4","sni":"aodili.poke-mon.xyz","skip-cert-verify":true,"obfs-password":"ZDQxZDhjZDk4ZjAwYjIwNA=="}
+  - {"name":"137","type":"hysteria2","server":"fenlan.poke-mon.xyz","port":28089,"password":"bf34f380-d8a7-4e2c-a8b2-51f0d24dc7e4","sni":"fenlan.poke-mon.xyz","skip-cert-verify":true,"obfs-password":"ZDQxZDhjZDk4ZjAwYjIwNA=="}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 韩国2
-      - 韩国1
-      - 新加坡
+      - '128'
+      - '129'
+      - '130'
+      - '131'
+      - '132'
+      - '133'
+      - '134'
+      - '135'
+      - '136'
+      - '137'
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 韩国2
-      - 韩国1
-      - 新加坡
+      - '128'
+      - '129'
+      - '130'
+      - '131'
+      - '132'
+      - '133'
+      - '134'
+      - '135'
+      - '136'
+      - '137'
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -124,9 +146,16 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 韩国2
-      - 韩国1
-      - 新加坡
+      - '128'
+      - '129'
+      - '130'
+      - '131'
+      - '132'
+      - '133'
+      - '134'
+      - '135'
+      - '136'
+      - '137'
 
 rules:
 # 本地/局域网地址
