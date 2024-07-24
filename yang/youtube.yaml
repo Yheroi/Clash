@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2024-07-16 18:27:55
+# 创建时间：2024-07-24 11:29:26
 # 使用模版：ACL4SSR_Mini.ini
-# 节点数量：3
+# 节点数量：7
 # 节点类型：ss
 ####################################
 mixed-port: 7890
@@ -86,27 +86,39 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"韩国2","type":"ss","server":"43.201.254.211","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"新加坡1","type":"ss","server":"13.212.77.222","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"新加坡2","type":"ss","server":"13.212.34.140","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"日本1","type":"ss","server":"54.95.170.220","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"日本2","type":"ss","server":"18.183.77.249","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"日本3","type":"ss","server":"52.195.207.131","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
   - {"name":"韩国1","type":"ss","server":"43.201.254.74","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"新加坡","type":"ss","server":"54.255.232.203","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"韩国2","type":"ss","server":"43.201.254.211","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 韩国2
+      - 新加坡1
+      - 新加坡2
+      - 日本1
+      - 日本2
+      - 日本3
       - 韩国1
-      - 新加坡
+      - 韩国2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 韩国2
+      - 新加坡1
+      - 新加坡2
+      - 日本1
+      - 日本2
+      - 日本3
       - 韩国1
-      - 新加坡
+      - 韩国2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -124,9 +136,13 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 韩国2
+      - 新加坡1
+      - 新加坡2
+      - 日本1
+      - 日本2
+      - 日本3
       - 韩国1
-      - 新加坡
+      - 韩国2
 
 rules:
 # 本地/局域网地址
