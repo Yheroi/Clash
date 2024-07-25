@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2024-07-25 16:47:55
+# 创建时间：2024-07-25 16:51:09
 # 使用模版：ACL4SSR_Mini.ini
-# 节点数量：12
+# 节点数量：7
 # 节点类型：ss
 ####################################
 mixed-port: 7890
@@ -88,14 +88,9 @@ dns:
 proxies:
   - {"name":"新加坡1","type":"ss","server":"18.142.246.19","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
   - {"name":"新加坡2","type":"ss","server":"13.212.34.140","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"新加坡3","type":"ss","server":"13.228.79.13","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"新加坡4","type":"ss","server":"13.212.34.140","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
   - {"name":"日本1","type":"ss","server":"54.95.170.220","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
   - {"name":"日本2","type":"ss","server":"18.183.77.249","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
   - {"name":"日本3","type":"ss","server":"52.195.207.131","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"日本4","type":"ss","server":"18.183.77.249","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"日本5","type":"ss","server":"52.195.207.131","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"日本6","type":"ss","server":"54.95.170.220","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
   - {"name":"韩国1","type":"ss","server":"43.201.254.74","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
   - {"name":"韩国2","type":"ss","server":"43.201.254.211","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
 proxy-groups:
@@ -106,14 +101,9 @@ proxy-groups:
       - DIRECT
       - 新加坡1
       - 新加坡2
-      - 新加坡3
-      - 新加坡4
       - 日本1
       - 日本2
       - 日本3
-      - 日本4
-      - 日本5
-      - 日本6
       - 韩国1
       - 韩国2
   - name: ♻️ 自动选择
@@ -124,14 +114,9 @@ proxy-groups:
     proxies:
       - 新加坡1
       - 新加坡2
-      - 新加坡3
-      - 新加坡4
       - 日本1
       - 日本2
       - 日本3
-      - 日本4
-      - 日本5
-      - 日本6
       - 韩国1
       - 韩国2
   - name: 🎯 全球直连
@@ -153,14 +138,9 @@ proxy-groups:
       - ♻️ 自动选择
       - 新加坡1
       - 新加坡2
-      - 新加坡3
-      - 新加坡4
       - 日本1
       - 日本2
       - 日本3
-      - 日本4
-      - 日本5
-      - 日本6
       - 韩国1
       - 韩国2
 
