@@ -1,7 +1,7 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2024-07-29 10:00:26
+# 创建时间：2024-07-29 10:01:15
 # 使用模版：ACL4SSR_Mini.ini
 # 节点数量：18
 # 节点类型：ss
@@ -86,23 +86,23 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"SG_72","type":"ss","server":"54.169.236.64","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"_02","type":"ss","server":"13.212.113.208","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"JP_63","type":"ss","server":"3.112.220.140","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"JP_64","type":"ss","server":"176.34.0.69","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"JP_65","type":"ss","server":"52.194.250.138","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"JP_66","type":"ss","server":"52.195.207.131","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"JP_67","type":"ss","server":"18.183.77.249","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"SG_73","type":"ss","server":"54.255.211.19","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"SG_74","type":"ss","server":"188.166.214.119","port":6785,"password":"JfBqNEdvuumGkf8KNMU5g8","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"SG_75","type":"ss","server":"18.142.246.19","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"SG_76","type":"ss","server":"13.228.79.13","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"US_79","type":"ss","server":"13.212.34.140","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"US_80","type":"ss","server":"13.212.14.204","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"US_86","type":"ss","server":"47.128.150.72","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"US_85","type":"ss","server":"69.50.95.218","port":8882,"password":"kDWvXYZoTBcGkC4","cipher":"aes-256-gcm"}
-  - {"name":"US_84","type":"ss","server":"205.134.180.139","port":443,"password":"lWaGPVFjmnag","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"US_92","type":"ss","server":"69.50.95.180","port":5498,"password":"lGqs95QkFHo2NV","cipher":"aes-256-gcm"}
+  - {"name":"SG_72\r","type":"ss","server":"54.169.236.64","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"_02\r","type":"ss","server":"13.212.113.208","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"JP_63\r","type":"ss","server":"3.112.220.140","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"JP_64\r","type":"ss","server":"176.34.0.69","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"JP_65\r","type":"ss","server":"52.194.250.138","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"JP_66\r","type":"ss","server":"52.195.207.131","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"JP_67\r","type":"ss","server":"18.183.77.249","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"SG_73\r","type":"ss","server":"54.255.211.19","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"SG_74\r","type":"ss","server":"188.166.214.119","port":6785,"password":"JfBqNEdvuumGkf8KNMU5g8","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"SG_75\r","type":"ss","server":"18.142.246.19","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"SG_76\r","type":"ss","server":"13.228.79.13","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"US_79\r","type":"ss","server":"13.212.34.140","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"US_80\r","type":"ss","server":"13.212.14.204","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"US_86\r","type":"ss","server":"47.128.150.72","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"US_85\r","type":"ss","server":"69.50.95.218","port":8882,"password":"kDWvXYZoTBcGkC4","cipher":"aes-256-gcm"}
+  - {"name":"US_84\r","type":"ss","server":"205.134.180.139","port":443,"password":"lWaGPVFjmnag","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"US_92\r","type":"ss","server":"69.50.95.180","port":5498,"password":"lGqs95QkFHo2NV","cipher":"aes-256-gcm"}
   - {"name":"ZZ_115","type":"ss","server":"23.162.200.28","port":3389,"password":"Y6R9pAtvxxzmGC","cipher":"aes-256-gcm"}
 proxy-groups:
   - name: 🚀 节点选择
@@ -110,23 +110,23 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - SG_72
-      - _02
-      - JP_63
-      - JP_64
-      - JP_65
-      - JP_66
-      - JP_67
-      - SG_73
-      - SG_74
-      - SG_75
-      - SG_76
-      - US_79
-      - US_80
-      - US_86
-      - US_85
-      - US_84
-      - US_92
+      - "SG_72\r"
+      - "_02\r"
+      - "JP_63\r"
+      - "JP_64\r"
+      - "JP_65\r"
+      - "JP_66\r"
+      - "JP_67\r"
+      - "SG_73\r"
+      - "SG_74\r"
+      - "SG_75\r"
+      - "SG_76\r"
+      - "US_79\r"
+      - "US_80\r"
+      - "US_86\r"
+      - "US_85\r"
+      - "US_84\r"
+      - "US_92\r"
       - ZZ_115
   - name: ♻️ 自动选择
     type: url-test
@@ -134,23 +134,23 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - SG_72
-      - _02
-      - JP_63
-      - JP_64
-      - JP_65
-      - JP_66
-      - JP_67
-      - SG_73
-      - SG_74
-      - SG_75
-      - SG_76
-      - US_79
-      - US_80
-      - US_86
-      - US_85
-      - US_84
-      - US_92
+      - "SG_72\r"
+      - "_02\r"
+      - "JP_63\r"
+      - "JP_64\r"
+      - "JP_65\r"
+      - "JP_66\r"
+      - "JP_67\r"
+      - "SG_73\r"
+      - "SG_74\r"
+      - "SG_75\r"
+      - "SG_76\r"
+      - "US_79\r"
+      - "US_80\r"
+      - "US_86\r"
+      - "US_85\r"
+      - "US_84\r"
+      - "US_92\r"
       - ZZ_115
   - name: 🎯 全球直连
     type: select
@@ -169,23 +169,23 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - SG_72
-      - _02
-      - JP_63
-      - JP_64
-      - JP_65
-      - JP_66
-      - JP_67
-      - SG_73
-      - SG_74
-      - SG_75
-      - SG_76
-      - US_79
-      - US_80
-      - US_86
-      - US_85
-      - US_84
-      - US_92
+      - "SG_72\r"
+      - "_02\r"
+      - "JP_63\r"
+      - "JP_64\r"
+      - "JP_65\r"
+      - "JP_66\r"
+      - "JP_67\r"
+      - "SG_73\r"
+      - "SG_74\r"
+      - "SG_75\r"
+      - "SG_76\r"
+      - "US_79\r"
+      - "US_80\r"
+      - "US_86\r"
+      - "US_85\r"
+      - "US_84\r"
+      - "US_92\r"
       - ZZ_115
 
 rules:
