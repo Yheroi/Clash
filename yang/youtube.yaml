@@ -1,8 +1,8 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2024-07-30 10:56:20
-# 使用模版：ACL4SSR_Mini.ini
+# 创建时间：2024-08-05 14:24:16
+# 使用模版：ACL4SSR_Online_Mini.ini
 # 节点数量：18
 # 节点类型：ss
 ####################################
@@ -86,24 +86,24 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"新加坡1","type":"ss","server":"18.142.246.19","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"新加坡1","type":"ss","server":"13.229.87.253","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
   - {"name":"新加坡2","type":"ss","server":"13.212.34.140","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
   - {"name":"新加坡3","type":"ss","server":"13.228.79.13","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"新加坡4","type":"ss","server":"54.169.236.64","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"新加坡5","type":"ss","server":"13.214.209.23","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"新加坡6","type":"ss","server":"47.128.150.72","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"新加坡7","type":"ss","server":"54.255.211.19","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"新加坡8","type":"ss","server":"13.212.14.204","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"日本1","type":"ss","server":"18.183.77.249","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"新加坡4","type":"ss","server":"13.214.209.23","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"新加坡5","type":"ss","server":"47.128.150.72","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"新加坡6","type":"ss","server":"13.212.14.204","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"日本1","type":"ss","server":"52.69.70.123","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
   - {"name":"日本2","type":"ss","server":"52.195.207.131","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
   - {"name":"日本3","type":"ss","server":"52.69.37.205","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
   - {"name":"日本4","type":"ss","server":"3.112.220.140","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
   - {"name":"日本5","type":"ss","server":"52.194.250.138","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"日本6","type":"ss","server":"52.69.70.123","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"日本7","type":"ss","server":"176.34.0.69","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"日本8","type":"ss","server":"52.197.150.228","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"日本6","type":"ss","server":"176.34.0.69","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"日本7","type":"ss","server":"52.197.150.228","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
   - {"name":"韩国1","type":"ss","server":"43.201.254.74","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
   - {"name":"韩国2","type":"ss","server":"43.201.254.211","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"韩国3","type":"ss","server":"43.201.72.5","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"美国","type":"ss","server":"34.217.126.241","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"美国2","type":"ss","server":"52.33.38.192","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -116,8 +116,6 @@ proxy-groups:
       - 新加坡4
       - 新加坡5
       - 新加坡6
-      - 新加坡7
-      - 新加坡8
       - 日本1
       - 日本2
       - 日本3
@@ -125,9 +123,11 @@ proxy-groups:
       - 日本5
       - 日本6
       - 日本7
-      - 日本8
       - 韩国1
       - 韩国2
+      - 韩国3
+      - 美国
+      - 美国2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -140,8 +140,6 @@ proxy-groups:
       - 新加坡4
       - 新加坡5
       - 新加坡6
-      - 新加坡7
-      - 新加坡8
       - 日本1
       - 日本2
       - 日本3
@@ -149,9 +147,11 @@ proxy-groups:
       - 日本5
       - 日本6
       - 日本7
-      - 日本8
       - 韩国1
       - 韩国2
+      - 韩国3
+      - 美国
+      - 美国2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -175,8 +175,6 @@ proxy-groups:
       - 新加坡4
       - 新加坡5
       - 新加坡6
-      - 新加坡7
-      - 新加坡8
       - 日本1
       - 日本2
       - 日本3
@@ -184,9 +182,11 @@ proxy-groups:
       - 日本5
       - 日本6
       - 日本7
-      - 日本8
       - 韩国1
       - 韩国2
+      - 韩国3
+      - 美国
+      - 美国2
 
 rules:
 # 本地/局域网地址
@@ -229,6 +229,37 @@ rules:
   - DOMAIN-SUFFIX,zte.home,🎯 全球直连
   - DOMAIN-SUFFIX,tplogin.cn,🎯 全球直连
   - DOMAIN-SUFFIX,wifi.cmcc,🎯 全球直连
+# Unbreak 白名单 不应该被广告链接的网站
+# Epicgames
+# Getui
+# Google
+# Mozilla
+# Origin
+# Tencent
+# Strava
+# Umeng
+# Miui 小米
+# General
+# Hypixel Network
+# Koodo Mobile
+  - DOMAIN-SUFFIX,ol.epicgames.com,🎯 全球直连
+  - DOMAIN-SUFFIX,dizhensubao.getui.com,🎯 全球直连
+  - DOMAIN,dl.google.com,🎯 全球直连
+  - DOMAIN-SUFFIX,googletraveladservices.com,🎯 全球直连
+  - DOMAIN-SUFFIX,tracking-protection.cdn.mozilla.net,🎯 全球直连
+  - DOMAIN,origin-a.akamaihd.net,🎯 全球直连
+  - DOMAIN,fairplay.l.qq.com,🎯 全球直连
+  - DOMAIN,livew.l.qq.com,🎯 全球直连
+  - DOMAIN,vd.l.qq.com,🎯 全球直连
+  - DOMAIN,errlog.umeng.com,🎯 全球直连
+  - DOMAIN,msg.umeng.com,🎯 全球直连
+  - DOMAIN,msg.umengcloud.com,🎯 全球直连
+  - DOMAIN,tracking.miui.com,🎯 全球直连
+  - DOMAIN,app.adjust.com,🎯 全球直连
+  - DOMAIN,bdtj.tagtic.cn,🎯 全球直连
+  - DOMAIN,rewards.hypixel.net,🎯 全球直连
+  - DOMAIN-SUFFIX,koodomobile.com,🎯 全球直连
+  - DOMAIN-SUFFIX,koodomobile.ca,🎯 全球直连
 # 本碎片只包含常见广告关键字、广告联盟。无副作用，放心使用
 # 广告关键词
 # 广告联盟-国内****************
