@@ -1,7 +1,7 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2024-08-07 17:56:56
+# 创建时间：2024-08-07 17:57:49
 # 使用模版：ACL4SSR_Online_Mini.ini
 # 节点数量：22
 # 节点类型：ss
@@ -86,13 +86,6 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"日本1","type":"ss","server":"52.69.70.123","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"日本2","type":"ss","server":"52.194.188.15","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"日本3","type":"ss","server":"176.34.0.69","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"日本4","type":"ss","server":"3.112.216.172","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"日本5","type":"ss","server":"3.112.237.254","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"日本6","type":"ss","server":"13.231.36.179","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"日本7","type":"ss","server":"52.69.37.205","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
   - {"name":"新加坡1","type":"ss","server":"13.229.87.253","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
   - {"name":"新加坡2","type":"ss","server":"18.142.246.19","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
   - {"name":"新加坡3","type":"ss","server":"54.179.241.46","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
@@ -101,6 +94,13 @@ proxies:
   - {"name":"新加坡6","type":"ss","server":"13.228.79.13","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
   - {"name":"新加坡7","type":"ss","server":"13.214.209.23","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
   - {"name":"新加坡8","type":"ss","server":"13.212.14.204","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"日本1","type":"ss","server":"52.69.70.123","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"日本2","type":"ss","server":"52.194.188.15","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"日本3","type":"ss","server":"176.34.0.69","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"日本4","type":"ss","server":"3.112.216.172","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"日本5","type":"ss","server":"3.112.237.254","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"日本6","type":"ss","server":"13.231.36.179","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"日本7","type":"ss","server":"52.69.37.205","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
   - {"name":"日本8","type":"ss","server":"52.195.207.131","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
   - {"name":"日本9","type":"ss","server":"52.197.150.228","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
   - {"name":"日本10","type":"ss","server":"52.194.250.138","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
@@ -114,13 +114,6 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 日本1
-      - 日本2
-      - 日本3
-      - 日本4
-      - 日本5
-      - 日本6
-      - 日本7
       - 新加坡1
       - 新加坡2
       - 新加坡3
@@ -129,6 +122,13 @@ proxy-groups:
       - 新加坡6
       - 新加坡7
       - 新加坡8
+      - 日本1
+      - 日本2
+      - 日本3
+      - 日本4
+      - 日本5
+      - 日本6
+      - 日本7
       - 日本8
       - 日本9
       - 日本10
@@ -142,13 +142,6 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - 日本1
-      - 日本2
-      - 日本3
-      - 日本4
-      - 日本5
-      - 日本6
-      - 日本7
       - 新加坡1
       - 新加坡2
       - 新加坡3
@@ -157,6 +150,13 @@ proxy-groups:
       - 新加坡6
       - 新加坡7
       - 新加坡8
+      - 日本1
+      - 日本2
+      - 日本3
+      - 日本4
+      - 日本5
+      - 日本6
+      - 日本7
       - 日本8
       - 日本9
       - 日本10
@@ -181,13 +181,6 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 日本1
-      - 日本2
-      - 日本3
-      - 日本4
-      - 日本5
-      - 日本6
-      - 日本7
       - 新加坡1
       - 新加坡2
       - 新加坡3
@@ -196,6 +189,13 @@ proxy-groups:
       - 新加坡6
       - 新加坡7
       - 新加坡8
+      - 日本1
+      - 日本2
+      - 日本3
+      - 日本4
+      - 日本5
+      - 日本6
+      - 日本7
       - 日本8
       - 日本9
       - 日本10
