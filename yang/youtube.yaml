@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2024-08-05 14:24:16
+# 创建时间：2024-08-07 17:34:08
 # 使用模版：ACL4SSR_Online_Mini.ini
-# 节点数量：18
+# 节点数量：15
 # 节点类型：ss
 ####################################
 mixed-port: 7890
@@ -86,36 +86,29 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"新加坡1","type":"ss","server":"13.229.87.253","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"新加坡2","type":"ss","server":"13.212.34.140","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"新加坡3","type":"ss","server":"13.228.79.13","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"新加坡4","type":"ss","server":"13.214.209.23","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"新加坡5","type":"ss","server":"47.128.150.72","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"新加坡6","type":"ss","server":"13.212.14.204","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"英国","type":"ss","server":"212.102.53.193","port":443,"password":"shadowsocks","cipher":"aes-128-gcm"}
+  - {"name":"法国","type":"ss","server":"163.172.171.137","port":443,"password":"cQo3IL5VC424l2ZrvTZrVR","cipher":"chacha20-ietf-poly1305"}
   - {"name":"日本1","type":"ss","server":"52.69.70.123","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"日本2","type":"ss","server":"52.195.207.131","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"日本3","type":"ss","server":"52.69.37.205","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"日本4","type":"ss","server":"3.112.220.140","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"日本5","type":"ss","server":"52.194.250.138","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"日本6","type":"ss","server":"176.34.0.69","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"日本7","type":"ss","server":"52.197.150.228","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"韩国1","type":"ss","server":"43.201.254.74","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"韩国2","type":"ss","server":"43.201.254.211","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"韩国3","type":"ss","server":"43.201.72.5","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"日本2","type":"ss","server":"52.194.188.15","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"日本3","type":"ss","server":"176.34.0.69","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"日本4","type":"ss","server":"3.112.216.172","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"日本5","type":"ss","server":"3.112.220.140","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"日本6","type":"ss","server":"3.112.237.254","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"日本7","type":"ss","server":"13.231.36.179","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"日本8","type":"ss","server":"52.69.37.205","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"新加坡1","type":"ss","server":"13.229.87.253","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"新加坡2","type":"ss","server":"18.142.246.19","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"新加坡3","type":"ss","server":"54.179.241.46","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"新加坡4","type":"ss","server":"13.212.82.167","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
   - {"name":"美国","type":"ss","server":"34.217.126.241","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"美国2","type":"ss","server":"52.33.38.192","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 新加坡1
-      - 新加坡2
-      - 新加坡3
-      - 新加坡4
-      - 新加坡5
-      - 新加坡6
+      - 英国
+      - 法国
       - 日本1
       - 日本2
       - 日本3
@@ -123,23 +116,20 @@ proxy-groups:
       - 日本5
       - 日本6
       - 日本7
-      - 韩国1
-      - 韩国2
-      - 韩国3
+      - 日本8
+      - 新加坡1
+      - 新加坡2
+      - 新加坡3
+      - 新加坡4
       - 美国
-      - 美国2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 新加坡1
-      - 新加坡2
-      - 新加坡3
-      - 新加坡4
-      - 新加坡5
-      - 新加坡6
+      - 英国
+      - 法国
       - 日本1
       - 日本2
       - 日本3
@@ -147,11 +137,12 @@ proxy-groups:
       - 日本5
       - 日本6
       - 日本7
-      - 韩国1
-      - 韩国2
-      - 韩国3
+      - 日本8
+      - 新加坡1
+      - 新加坡2
+      - 新加坡3
+      - 新加坡4
       - 美国
-      - 美国2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -169,12 +160,8 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 新加坡1
-      - 新加坡2
-      - 新加坡3
-      - 新加坡4
-      - 新加坡5
-      - 新加坡6
+      - 英国
+      - 法国
       - 日本1
       - 日本2
       - 日本3
@@ -182,11 +169,12 @@ proxy-groups:
       - 日本5
       - 日本6
       - 日本7
-      - 韩国1
-      - 韩国2
-      - 韩国3
+      - 日本8
+      - 新加坡1
+      - 新加坡2
+      - 新加坡3
+      - 新加坡4
       - 美国
-      - 美国2
 
 rules:
 # 本地/局域网地址
