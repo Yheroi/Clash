@@ -1,7 +1,7 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2024-08-14 09:51:26
+# 创建时间：2024-08-14 09:54:22
 # 使用模版：ACL4SSR_Online_Mini.ini
 # 节点数量：8
 # 节点类型：ss, trojan
@@ -86,42 +86,42 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"日本","type":"ss","server":"52.194.250.138","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"韩国","type":"ss","server":"52.78.200.155","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
   - {"name":"新加坡1","type":"ss","server":"13.228.79.13","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
   - {"name":"新加坡2","type":"ss","server":"13.229.243.64","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
   - {"name":"新加坡3","type":"ss","server":"47.128.150.72","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"中国台湾","type":"trojan","server":"cn1.cdn.xfltd-cdn.top","port":12001,"udp":true,"password":"3698a3e7-2877-4ded-a665-d81ee3cfd449","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"中国香港1","type":"trojan","server":"cn1.cdn.xfltd-cdn.top","port":12011,"udp":true,"password":"3698a3e7-2877-4ded-a665-d81ee3cfd449","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"日本","type":"ss","server":"52.194.250.138","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"韩国","type":"ss","server":"52.78.200.155","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"中国香港1","type":"trojan","server":"cn1.cdn.xfltd-cdn.top","port":12001,"udp":true,"password":"3698a3e7-2877-4ded-a665-d81ee3cfd449","skip-cert-verify":true,"network":"tcp"}
   - {"name":"中国香港2","type":"trojan","server":"cn1.cdn.xfltd-cdn.top","port":12005,"udp":true,"password":"3698a3e7-2877-4ded-a665-d81ee3cfd449","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"中国台湾","type":"trojan","server":"cn1.cdn.xfltd-cdn.top","port":12011,"udp":true,"password":"3698a3e7-2877-4ded-a665-d81ee3cfd449","skip-cert-verify":true,"network":"tcp"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 日本
-      - 韩国
       - 新加坡1
       - 新加坡2
       - 新加坡3
-      - 中国台湾
+      - 日本
+      - 韩国
       - 中国香港1
       - 中国香港2
+      - 中国台湾
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 日本
-      - 韩国
       - 新加坡1
       - 新加坡2
       - 新加坡3
-      - 中国台湾
+      - 日本
+      - 韩国
       - 中国香港1
       - 中国香港2
+      - 中国台湾
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -139,14 +139,14 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 日本
-      - 韩国
       - 新加坡1
       - 新加坡2
       - 新加坡3
-      - 中国台湾
+      - 日本
+      - 韩国
       - 中国香港1
       - 中国香港2
+      - 中国台湾
 
 rules:
 # 本地/局域网地址
