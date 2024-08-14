@@ -1,10 +1,10 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：2024-08-14 14:32:29
+# 创建时间：2024-08-14 14:43:58
 # 使用模版：ACL4SSR_Online_Mini.ini
-# 节点数量：13
-# 节点类型：vmess, hysteria2
+# 节点数量：2
+# 节点类型：hysteria2
 # !!当前配置文件请使用基于 Clash.Meta 内核程序
 ####################################
 mixed-port: 7890
@@ -87,57 +87,24 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"1","type":"vmess","server":"8zva8-g06.jp04-3771-vm0.entry.fr0307a.art","port":449,"cipher":"auto","uuid":"98e4c039-5823-33a2-8d1f-21050d833005","alterId":1,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"2","type":"vmess","server":"oegw1-g06.jp05-6786-vm0.entry.fr0307a.art","port":46487,"cipher":"auto","uuid":"98e4c039-5823-33a2-8d1f-21050d833005","alterId":1,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"3","type":"vmess","server":"3n62a-g06.jp07-1f28-vm0.entry.fr0307a.art","port":28788,"cipher":"auto","uuid":"98e4c039-5823-33a2-8d1f-21050d833005","alterId":1,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"4","type":"vmess","server":"32ius-g06.jp01-0986-vm0.entry.fr0307a.art","port":21586,"cipher":"auto","uuid":"81b061c3-b1e8-34d5-8ac3-61ade7231eec","alterId":1,"tls":true,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"5","type":"vmess","server":"ff4z3-g06.jp05-6786-vm0.entry.fr0307a.art","port":46487,"cipher":"auto","uuid":"81b061c3-b1e8-34d5-8ac3-61ade7231eec","alterId":1,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"6","type":"vmess","server":"loxsh-g06.jp07-1f28-vm0.entry.fr0307a.art","port":28788,"cipher":"auto","uuid":"81b061c3-b1e8-34d5-8ac3-61ade7231eec","alterId":1,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"7","type":"vmess","server":"ayxcv-g03.jp04-3771-vm0.entry.fr0307a.art","port":446,"cipher":"auto","uuid":"1c36839c-e6a7-3725-a4dc-98418386160f","alterId":1,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"8","type":"vmess","server":"8rp3z-g03.jp05-6786-vm0.entry.fr0307a.art","port":46484,"cipher":"auto","uuid":"1c36839c-e6a7-3725-a4dc-98418386160f","alterId":1,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"9","type":"vmess","server":"amt0d-g03.jp01-0986-vm0.entry.fr0307a.art","port":21583,"cipher":"auto","uuid":"137c9e6e-a680-3919-8484-73af900dbb6b","alterId":1,"tls":true,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"10","type":"vmess","server":"x4va7-g03.jp05-6786-vm0.entry.fr0307a.art","port":46484,"cipher":"auto","uuid":"137c9e6e-a680-3919-8484-73af900dbb6b","alterId":1,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"11","type":"vmess","server":"t5gem-g03.jp07-1f28-vm0.entry.fr0307a.art","port":28785,"cipher":"auto","uuid":"137c9e6e-a680-3919-8484-73af900dbb6b","alterId":1,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"12","type":"hysteria2","server":"64.23.190.228","port":443,"password":"52769d89-a29e-4f59-ad98-45af8b0ae65b","sni":"hyus.freeapp.buzz","skip-cert-verify":true}
-  - {"name":"13","type":"hysteria2","server":"164.92.89.228","port":443,"password":"52769d89-a29e-4f59-ad98-45af8b0ae65b","sni":"hyus2.freeapp.buzz","skip-cert-verify":true}
+  - {"name":"美国1","type":"hysteria2","server":"64.23.190.228","port":443,"skip-cert-verify":true}
+  - {"name":"美国2","type":"hysteria2","server":"164.92.89.228","port":443,"skip-cert-verify":true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - '1'
-      - '2'
-      - '3'
-      - '4'
-      - '5'
-      - '6'
-      - '7'
-      - '8'
-      - '9'
-      - '10'
-      - '11'
-      - '12'
-      - '13'
+      - 美国1
+      - 美国2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - '1'
-      - '2'
-      - '3'
-      - '4'
-      - '5'
-      - '6'
-      - '7'
-      - '8'
-      - '9'
-      - '10'
-      - '11'
-      - '12'
-      - '13'
+      - 美国1
+      - 美国2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -155,19 +122,8 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - '1'
-      - '2'
-      - '3'
-      - '4'
-      - '5'
-      - '6'
-      - '7'
-      - '8'
-      - '9'
-      - '10'
-      - '11'
-      - '12'
-      - '13'
+      - 美国1
+      - 美国2
 
 rules:
 # 本地/局域网地址
