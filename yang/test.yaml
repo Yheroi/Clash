@@ -1,10 +1,10 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：2024-08-14 14:29:38
+# 创建时间：2024-08-14 14:32:29
 # 使用模版：ACL4SSR_Online_Mini.ini
-# 节点数量：48
-# 节点类型：hysteria2, vmess
+# 节点数量：13
+# 节点类型：vmess, hysteria2
 # !!当前配置文件请使用基于 Clash.Meta 内核程序
 ####################################
 mixed-port: 7890
@@ -87,54 +87,19 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"1","type":"hysteria2","server":"sg1.shiyuandian.shop","port":443,"password":"2855807c-ec94-4934-aab6-1f86a0c373ff","skip-cert-verify":true}
-  - {"name":"2","type":"hysteria2","server":"sg2.shiyuandian.shop","port":443,"password":"2855807c-ec94-4934-aab6-1f86a0c373ff","skip-cert-verify":true}
-  - {"name":"3","type":"hysteria2","server":"sg3.shiyuandian.shop","port":443,"password":"2855807c-ec94-4934-aab6-1f86a0c373ff","skip-cert-verify":true,"obfs-password":"PpZuZR5vKTq3SG7C"}
-  - {"name":"4","type":"hysteria2","server":"sg4.shiyuandian.shop","port":443,"password":"2855807c-ec94-4934-aab6-1f86a0c373ff","skip-cert-verify":true,"obfs-password":"PpZuZR5vKTq3SG7C"}
-  - {"name":"5","type":"hysteria2","server":"sg5.shiyuandian.shop","port":443,"password":"2855807c-ec94-4934-aab6-1f86a0c373ff","skip-cert-verify":true,"obfs-password":"g0fCTmFQ7tvoYavS"}
-  - {"name":"6","type":"hysteria2","server":"ru1.shiyuandian.shop","port":443,"password":"2855807c-ec94-4934-aab6-1f86a0c373ff","skip-cert-verify":true}
-  - {"name":"7","type":"hysteria2","server":"kr1.shiyuandian.shop","port":443,"password":"2855807c-ec94-4934-aab6-1f86a0c373ff","skip-cert-verify":true,"obfs-password":"PpZuZR5vKTq3SG7C"}
-  - {"name":"8","type":"hysteria2","server":"osaka002-a.oraclenat.cc","port":18302,"password":"2855807c-ec94-4934-aab6-1f86a0c373ff","skip-cert-verify":true}
-  - {"name":"9","type":"hysteria2","server":"us1.shiyuandian.shop","port":443,"password":"2855807c-ec94-4934-aab6-1f86a0c373ff","skip-cert-verify":true}
-  - {"name":"10","type":"hysteria2","server":"uk1.shiyuandian.shop","port":443,"password":"2855807c-ec94-4934-aab6-1f86a0c373ff","skip-cert-verify":true}
-  - {"name":"11","type":"hysteria2","server":"de1.shiyuandian.shop","port":443,"password":"2855807c-ec94-4934-aab6-1f86a0c373ff","skip-cert-verify":true}
-  - {"name":"12","type":"hysteria2","server":"in2.shiyuandian.shop","port":443,"password":"2855807c-ec94-4934-aab6-1f86a0c373ff","skip-cert-verify":true}
-  - {"name":"13","type":"hysteria2","server":"in3.shiyuandian.shop","port":443,"password":"2855807c-ec94-4934-aab6-1f86a0c373ff","skip-cert-verify":true}
-  - {"name":"14","type":"hysteria2","server":"au.shiyuandian.shop","port":443,"password":"2855807c-ec94-4934-aab6-1f86a0c373ff","skip-cert-verify":true}
-  - {"name":"15","type":"hysteria2","server":"hk2.shiyuandian.shop","port":443,"password":"2855807c-ec94-4934-aab6-1f86a0c373ff","skip-cert-verify":true}
-  - {"name":"16","type":"hysteria2","server":"vn1.shiyuandian.shop","port":443,"password":"2855807c-ec94-4934-aab6-1f86a0c373ff","skip-cert-verify":true}
-  - {"name":"17","type":"hysteria2","server":"tr1.shiyuandian.shop","port":443,"password":"2855807c-ec94-4934-aab6-1f86a0c373ff","skip-cert-verify":true}
-  - {"name":"18","type":"hysteria2","server":"il1.shiyuandian.shop","port":443,"password":"2855807c-ec94-4934-aab6-1f86a0c373ff","skip-cert-verify":true}
-  - {"name":"19","type":"vmess","server":"u0dzu-g06.jp01-0986-vm0.entry.fr0307a.art","port":21586,"cipher":"auto","uuid":"98e4c039-5823-33a2-8d1f-21050d833005","alterId":1,"tls":true,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"20","type":"vmess","server":"04j6q-g06.jp02-9a99-vm0.entry.fr0307a.art","port":11778,"cipher":"auto","uuid":"98e4c039-5823-33a2-8d1f-21050d833005","alterId":1,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"21","type":"vmess","server":"ul0qe-g06.jp03-7d22-vm0.entry.fr0307a.art","port":21586,"cipher":"auto","uuid":"98e4c039-5823-33a2-8d1f-21050d833005","alterId":1,"tls":true,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"22","type":"vmess","server":"8zva8-g06.jp04-3771-vm0.entry.fr0307a.art","port":449,"cipher":"auto","uuid":"98e4c039-5823-33a2-8d1f-21050d833005","alterId":1,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"23","type":"vmess","server":"oegw1-g06.jp05-6786-vm0.entry.fr0307a.art","port":46487,"cipher":"auto","uuid":"98e4c039-5823-33a2-8d1f-21050d833005","alterId":1,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"24","type":"vmess","server":"z37cd-g06.jp06-7c5a-vm0.entry.fr0307a.art","port":28788,"cipher":"auto","uuid":"98e4c039-5823-33a2-8d1f-21050d833005","alterId":1,"tls":true,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"25","type":"vmess","server":"3n62a-g06.jp07-1f28-vm0.entry.fr0307a.art","port":28788,"cipher":"auto","uuid":"98e4c039-5823-33a2-8d1f-21050d833005","alterId":1,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"26","type":"vmess","server":"32ius-g06.jp01-0986-vm0.entry.fr0307a.art","port":21586,"cipher":"auto","uuid":"81b061c3-b1e8-34d5-8ac3-61ade7231eec","alterId":1,"tls":true,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"27","type":"vmess","server":"mbfvd-g06.jp02-9a99-vm0.entry.fr0307a.art","port":11778,"cipher":"auto","uuid":"81b061c3-b1e8-34d5-8ac3-61ade7231eec","alterId":1,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"28","type":"vmess","server":"9h9oy-g06.jp03-7d22-vm0.entry.fr0307a.art","port":21586,"cipher":"auto","uuid":"81b061c3-b1e8-34d5-8ac3-61ade7231eec","alterId":1,"tls":true,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"29","type":"vmess","server":"nlw7h-g06.jp04-3771-vm0.entry.fr0307a.art","port":449,"cipher":"auto","uuid":"81b061c3-b1e8-34d5-8ac3-61ade7231eec","alterId":1,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"30","type":"vmess","server":"ff4z3-g06.jp05-6786-vm0.entry.fr0307a.art","port":46487,"cipher":"auto","uuid":"81b061c3-b1e8-34d5-8ac3-61ade7231eec","alterId":1,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"31","type":"vmess","server":"d00ac-g06.jp06-7c5a-vm0.entry.fr0307a.art","port":28788,"cipher":"auto","uuid":"81b061c3-b1e8-34d5-8ac3-61ade7231eec","alterId":1,"tls":true,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"32","type":"vmess","server":"loxsh-g06.jp07-1f28-vm0.entry.fr0307a.art","port":28788,"cipher":"auto","uuid":"81b061c3-b1e8-34d5-8ac3-61ade7231eec","alterId":1,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"33","type":"vmess","server":"aijiq-g03.jp01-0986-vm0.entry.fr0307a.art","port":21583,"cipher":"auto","uuid":"1c36839c-e6a7-3725-a4dc-98418386160f","alterId":1,"tls":true,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"34","type":"vmess","server":"b89jr-g03.jp02-9a99-vm0.entry.fr0307a.art","port":11775,"cipher":"auto","uuid":"1c36839c-e6a7-3725-a4dc-98418386160f","alterId":1,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"35","type":"vmess","server":"fd3z2-g03.jp03-7d22-vm0.entry.fr0307a.art","port":21583,"cipher":"auto","uuid":"1c36839c-e6a7-3725-a4dc-98418386160f","alterId":1,"tls":true,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"36","type":"vmess","server":"ayxcv-g03.jp04-3771-vm0.entry.fr0307a.art","port":446,"cipher":"auto","uuid":"1c36839c-e6a7-3725-a4dc-98418386160f","alterId":1,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"37","type":"vmess","server":"8rp3z-g03.jp05-6786-vm0.entry.fr0307a.art","port":46484,"cipher":"auto","uuid":"1c36839c-e6a7-3725-a4dc-98418386160f","alterId":1,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"38","type":"vmess","server":"xyip5-g03.jp06-7c5a-vm0.entry.fr0307a.art","port":28785,"cipher":"auto","uuid":"1c36839c-e6a7-3725-a4dc-98418386160f","alterId":1,"tls":true,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"39","type":"vmess","server":"rk86o-g03.jp07-1f28-vm0.entry.fr0307a.art","port":28785,"cipher":"auto","uuid":"1c36839c-e6a7-3725-a4dc-98418386160f","alterId":1,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"40","type":"vmess","server":"amt0d-g03.jp01-0986-vm0.entry.fr0307a.art","port":21583,"cipher":"auto","uuid":"137c9e6e-a680-3919-8484-73af900dbb6b","alterId":1,"tls":true,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"41","type":"vmess","server":"wrm3n-g03.jp02-9a99-vm0.entry.fr0307a.art","port":11775,"cipher":"auto","uuid":"137c9e6e-a680-3919-8484-73af900dbb6b","alterId":1,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"42","type":"vmess","server":"p8yzq-g03.jp03-7d22-vm0.entry.fr0307a.art","port":21583,"cipher":"auto","uuid":"137c9e6e-a680-3919-8484-73af900dbb6b","alterId":1,"tls":true,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"43","type":"vmess","server":"l4sh6-g03.jp04-3771-vm0.entry.fr0307a.art","port":446,"cipher":"auto","uuid":"137c9e6e-a680-3919-8484-73af900dbb6b","alterId":1,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"44","type":"vmess","server":"x4va7-g03.jp05-6786-vm0.entry.fr0307a.art","port":46484,"cipher":"auto","uuid":"137c9e6e-a680-3919-8484-73af900dbb6b","alterId":1,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"45","type":"vmess","server":"l5vkg-g03.jp06-7c5a-vm0.entry.fr0307a.art","port":28785,"cipher":"auto","uuid":"137c9e6e-a680-3919-8484-73af900dbb6b","alterId":1,"tls":true,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"46","type":"vmess","server":"t5gem-g03.jp07-1f28-vm0.entry.fr0307a.art","port":28785,"cipher":"auto","uuid":"137c9e6e-a680-3919-8484-73af900dbb6b","alterId":1,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"47","type":"hysteria2","server":"64.23.190.228","port":443,"password":"52769d89-a29e-4f59-ad98-45af8b0ae65b","sni":"hyus.freeapp.buzz","skip-cert-verify":true}
-  - {"name":"48","type":"hysteria2","server":"164.92.89.228","port":443,"password":"52769d89-a29e-4f59-ad98-45af8b0ae65b","sni":"hyus2.freeapp.buzz","skip-cert-verify":true}
+  - {"name":"1","type":"vmess","server":"8zva8-g06.jp04-3771-vm0.entry.fr0307a.art","port":449,"cipher":"auto","uuid":"98e4c039-5823-33a2-8d1f-21050d833005","alterId":1,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"2","type":"vmess","server":"oegw1-g06.jp05-6786-vm0.entry.fr0307a.art","port":46487,"cipher":"auto","uuid":"98e4c039-5823-33a2-8d1f-21050d833005","alterId":1,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"3","type":"vmess","server":"3n62a-g06.jp07-1f28-vm0.entry.fr0307a.art","port":28788,"cipher":"auto","uuid":"98e4c039-5823-33a2-8d1f-21050d833005","alterId":1,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"4","type":"vmess","server":"32ius-g06.jp01-0986-vm0.entry.fr0307a.art","port":21586,"cipher":"auto","uuid":"81b061c3-b1e8-34d5-8ac3-61ade7231eec","alterId":1,"tls":true,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"5","type":"vmess","server":"ff4z3-g06.jp05-6786-vm0.entry.fr0307a.art","port":46487,"cipher":"auto","uuid":"81b061c3-b1e8-34d5-8ac3-61ade7231eec","alterId":1,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"6","type":"vmess","server":"loxsh-g06.jp07-1f28-vm0.entry.fr0307a.art","port":28788,"cipher":"auto","uuid":"81b061c3-b1e8-34d5-8ac3-61ade7231eec","alterId":1,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"7","type":"vmess","server":"ayxcv-g03.jp04-3771-vm0.entry.fr0307a.art","port":446,"cipher":"auto","uuid":"1c36839c-e6a7-3725-a4dc-98418386160f","alterId":1,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"8","type":"vmess","server":"8rp3z-g03.jp05-6786-vm0.entry.fr0307a.art","port":46484,"cipher":"auto","uuid":"1c36839c-e6a7-3725-a4dc-98418386160f","alterId":1,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"9","type":"vmess","server":"amt0d-g03.jp01-0986-vm0.entry.fr0307a.art","port":21583,"cipher":"auto","uuid":"137c9e6e-a680-3919-8484-73af900dbb6b","alterId":1,"tls":true,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"10","type":"vmess","server":"x4va7-g03.jp05-6786-vm0.entry.fr0307a.art","port":46484,"cipher":"auto","uuid":"137c9e6e-a680-3919-8484-73af900dbb6b","alterId":1,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"11","type":"vmess","server":"t5gem-g03.jp07-1f28-vm0.entry.fr0307a.art","port":28785,"cipher":"auto","uuid":"137c9e6e-a680-3919-8484-73af900dbb6b","alterId":1,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"12","type":"hysteria2","server":"64.23.190.228","port":443,"password":"52769d89-a29e-4f59-ad98-45af8b0ae65b","sni":"hyus.freeapp.buzz","skip-cert-verify":true}
+  - {"name":"13","type":"hysteria2","server":"164.92.89.228","port":443,"password":"52769d89-a29e-4f59-ad98-45af8b0ae65b","sni":"hyus2.freeapp.buzz","skip-cert-verify":true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -154,41 +119,6 @@ proxy-groups:
       - '11'
       - '12'
       - '13'
-      - '14'
-      - '15'
-      - '16'
-      - '17'
-      - '18'
-      - '19'
-      - '20'
-      - '21'
-      - '22'
-      - '23'
-      - '24'
-      - '25'
-      - '26'
-      - '27'
-      - '28'
-      - '29'
-      - '30'
-      - '31'
-      - '32'
-      - '33'
-      - '34'
-      - '35'
-      - '36'
-      - '37'
-      - '38'
-      - '39'
-      - '40'
-      - '41'
-      - '42'
-      - '43'
-      - '44'
-      - '45'
-      - '46'
-      - '47'
-      - '48'
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -208,41 +138,6 @@ proxy-groups:
       - '11'
       - '12'
       - '13'
-      - '14'
-      - '15'
-      - '16'
-      - '17'
-      - '18'
-      - '19'
-      - '20'
-      - '21'
-      - '22'
-      - '23'
-      - '24'
-      - '25'
-      - '26'
-      - '27'
-      - '28'
-      - '29'
-      - '30'
-      - '31'
-      - '32'
-      - '33'
-      - '34'
-      - '35'
-      - '36'
-      - '37'
-      - '38'
-      - '39'
-      - '40'
-      - '41'
-      - '42'
-      - '43'
-      - '44'
-      - '45'
-      - '46'
-      - '47'
-      - '48'
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -273,41 +168,6 @@ proxy-groups:
       - '11'
       - '12'
       - '13'
-      - '14'
-      - '15'
-      - '16'
-      - '17'
-      - '18'
-      - '19'
-      - '20'
-      - '21'
-      - '22'
-      - '23'
-      - '24'
-      - '25'
-      - '26'
-      - '27'
-      - '28'
-      - '29'
-      - '30'
-      - '31'
-      - '32'
-      - '33'
-      - '34'
-      - '35'
-      - '36'
-      - '37'
-      - '38'
-      - '39'
-      - '40'
-      - '41'
-      - '42'
-      - '43'
-      - '44'
-      - '45'
-      - '46'
-      - '47'
-      - '48'
 
 rules:
 # 本地/局域网地址
