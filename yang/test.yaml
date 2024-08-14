@@ -1,10 +1,10 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：2024-08-14 14:49:57
+# 创建时间：2024-08-14 14:55:06
 # 使用模版：ACL4SSR_Online_Mini.ini
-# 节点数量：48
-# 节点类型：hysteria2, vmess
+# 节点数量：10
+# 节点类型：ss, trojan, hysteria2
 # !!当前配置文件请使用基于 Clash.Meta 内核程序
 ####################################
 mixed-port: 7890
@@ -87,162 +87,48 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"德国_1\r","type":"hysteria2","server":"sg1.shiyuandian.shop","port":443,"password":"2855807c-ec94-4934-aab6-1f86a0c373ff","skip-cert-verify":true}
-  - {"name":"英国_2\r","type":"hysteria2","server":"sg2.shiyuandian.shop","port":443,"password":"2855807c-ec94-4934-aab6-1f86a0c373ff","skip-cert-verify":true}
-  - {"name":"巴西_3\r","type":"hysteria2","server":"sg3.shiyuandian.shop","port":443,"password":"2855807c-ec94-4934-aab6-1f86a0c373ff","skip-cert-verify":true,"obfs-password":"PpZuZR5vKTq3SG7C"}
-  - {"name":"德国_4\r","type":"hysteria2","server":"sg4.shiyuandian.shop","port":443,"password":"2855807c-ec94-4934-aab6-1f86a0c373ff","skip-cert-verify":true,"obfs-password":"PpZuZR5vKTq3SG7C"}
-  - {"name":"英国_5\r","type":"hysteria2","server":"sg5.shiyuandian.shop","port":443,"password":"2855807c-ec94-4934-aab6-1f86a0c373ff","skip-cert-verify":true,"obfs-password":"g0fCTmFQ7tvoYavS"}
-  - {"name":"荷兰_6\r","type":"hysteria2","server":"ru1.shiyuandian.shop","port":443,"password":"2855807c-ec94-4934-aab6-1f86a0c373ff","skip-cert-verify":true}
-  - {"name":"瑞士_7\r","type":"hysteria2","server":"kr1.shiyuandian.shop","port":443,"password":"2855807c-ec94-4934-aab6-1f86a0c373ff","skip-cert-verify":true,"obfs-password":"PpZuZR5vKTq3SG7C"}
-  - {"name":"日本_8\r","type":"hysteria2","server":"osaka002-a.oraclenat.cc","port":18302,"password":"2855807c-ec94-4934-aab6-1f86a0c373ff","skip-cert-verify":true}
-  - {"name":"美国_9\r","type":"hysteria2","server":"us1.shiyuandian.shop","port":443,"password":"2855807c-ec94-4934-aab6-1f86a0c373ff","skip-cert-verify":true}
-  - {"name":"瑞典_10\r","type":"hysteria2","server":"uk1.shiyuandian.shop","port":443,"password":"2855807c-ec94-4934-aab6-1f86a0c373ff","skip-cert-verify":true}
-  - {"name":"德国_11\r","type":"hysteria2","server":"de1.shiyuandian.shop","port":443,"password":"2855807c-ec94-4934-aab6-1f86a0c373ff","skip-cert-verify":true}
-  - {"name":"瑞士_12\r","type":"hysteria2","server":"in2.shiyuandian.shop","port":443,"password":"2855807c-ec94-4934-aab6-1f86a0c373ff","skip-cert-verify":true}
-  - {"name":"英国_13\r","type":"hysteria2","server":"in3.shiyuandian.shop","port":443,"password":"2855807c-ec94-4934-aab6-1f86a0c373ff","skip-cert-verify":true}
-  - {"name":"澳大利亚_14\r","type":"hysteria2","server":"au.shiyuandian.shop","port":443,"password":"2855807c-ec94-4934-aab6-1f86a0c373ff","skip-cert-verify":true}
-  - {"name":"美国_15\r","type":"hysteria2","server":"hk2.shiyuandian.shop","port":443,"password":"2855807c-ec94-4934-aab6-1f86a0c373ff","skip-cert-verify":true}
-  - {"name":"未知_16\r","type":"hysteria2","server":"vn1.shiyuandian.shop","port":443,"password":"2855807c-ec94-4934-aab6-1f86a0c373ff","skip-cert-verify":true}
-  - {"name":"荷兰_17\r","type":"hysteria2","server":"tr1.shiyuandian.shop","port":443,"password":"2855807c-ec94-4934-aab6-1f86a0c373ff","skip-cert-verify":true}
-  - {"name":"美国_18\r","type":"hysteria2","server":"il1.shiyuandian.shop","port":443,"password":"2855807c-ec94-4934-aab6-1f86a0c373ff","skip-cert-verify":true}
-  - {"name":"日本_19","type":"vmess","server":"u0dzu-g06.jp01-0986-vm0.entry.fr0307a.art","port":21586,"cipher":"auto","uuid":"98e4c039-5823-33a2-8d1f-21050d833005","alterId":1,"tls":true,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国_20","type":"vmess","server":"04j6q-g06.jp02-9a99-vm0.entry.fr0307a.art","port":11778,"cipher":"auto","uuid":"98e4c039-5823-33a2-8d1f-21050d833005","alterId":1,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"比利时_21","type":"vmess","server":"ul0qe-g06.jp03-7d22-vm0.entry.fr0307a.art","port":21586,"cipher":"auto","uuid":"98e4c039-5823-33a2-8d1f-21050d833005","alterId":1,"tls":true,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"日本_22","type":"vmess","server":"8zva8-g06.jp04-3771-vm0.entry.fr0307a.art","port":449,"cipher":"auto","uuid":"98e4c039-5823-33a2-8d1f-21050d833005","alterId":1,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"日本_23","type":"vmess","server":"oegw1-g06.jp05-6786-vm0.entry.fr0307a.art","port":46487,"cipher":"auto","uuid":"98e4c039-5823-33a2-8d1f-21050d833005","alterId":1,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"日本_24","type":"vmess","server":"z37cd-g06.jp06-7c5a-vm0.entry.fr0307a.art","port":28788,"cipher":"auto","uuid":"98e4c039-5823-33a2-8d1f-21050d833005","alterId":1,"tls":true,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"日本_25","type":"vmess","server":"3n62a-g06.jp07-1f28-vm0.entry.fr0307a.art","port":28788,"cipher":"auto","uuid":"98e4c039-5823-33a2-8d1f-21050d833005","alterId":1,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"日本_26","type":"vmess","server":"32ius-g06.jp01-0986-vm0.entry.fr0307a.art","port":21586,"cipher":"auto","uuid":"81b061c3-b1e8-34d5-8ac3-61ade7231eec","alterId":1,"tls":true,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国_27","type":"vmess","server":"mbfvd-g06.jp02-9a99-vm0.entry.fr0307a.art","port":11778,"cipher":"auto","uuid":"81b061c3-b1e8-34d5-8ac3-61ade7231eec","alterId":1,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"比利时_28","type":"vmess","server":"9h9oy-g06.jp03-7d22-vm0.entry.fr0307a.art","port":21586,"cipher":"auto","uuid":"81b061c3-b1e8-34d5-8ac3-61ade7231eec","alterId":1,"tls":true,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"日本_29","type":"vmess","server":"nlw7h-g06.jp04-3771-vm0.entry.fr0307a.art","port":449,"cipher":"auto","uuid":"81b061c3-b1e8-34d5-8ac3-61ade7231eec","alterId":1,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"日本_30","type":"vmess","server":"ff4z3-g06.jp05-6786-vm0.entry.fr0307a.art","port":46487,"cipher":"auto","uuid":"81b061c3-b1e8-34d5-8ac3-61ade7231eec","alterId":1,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"日本_31","type":"vmess","server":"d00ac-g06.jp06-7c5a-vm0.entry.fr0307a.art","port":28788,"cipher":"auto","uuid":"81b061c3-b1e8-34d5-8ac3-61ade7231eec","alterId":1,"tls":true,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"日本_32","type":"vmess","server":"loxsh-g06.jp07-1f28-vm0.entry.fr0307a.art","port":28788,"cipher":"auto","uuid":"81b061c3-b1e8-34d5-8ac3-61ade7231eec","alterId":1,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"日本_33","type":"vmess","server":"aijiq-g03.jp01-0986-vm0.entry.fr0307a.art","port":21583,"cipher":"auto","uuid":"1c36839c-e6a7-3725-a4dc-98418386160f","alterId":1,"tls":true,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国_34","type":"vmess","server":"b89jr-g03.jp02-9a99-vm0.entry.fr0307a.art","port":11775,"cipher":"auto","uuid":"1c36839c-e6a7-3725-a4dc-98418386160f","alterId":1,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"比利时_35","type":"vmess","server":"fd3z2-g03.jp03-7d22-vm0.entry.fr0307a.art","port":21583,"cipher":"auto","uuid":"1c36839c-e6a7-3725-a4dc-98418386160f","alterId":1,"tls":true,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"日本_36","type":"vmess","server":"ayxcv-g03.jp04-3771-vm0.entry.fr0307a.art","port":446,"cipher":"auto","uuid":"1c36839c-e6a7-3725-a4dc-98418386160f","alterId":1,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"日本_37","type":"vmess","server":"8rp3z-g03.jp05-6786-vm0.entry.fr0307a.art","port":46484,"cipher":"auto","uuid":"1c36839c-e6a7-3725-a4dc-98418386160f","alterId":1,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"日本_38","type":"vmess","server":"xyip5-g03.jp06-7c5a-vm0.entry.fr0307a.art","port":28785,"cipher":"auto","uuid":"1c36839c-e6a7-3725-a4dc-98418386160f","alterId":1,"tls":true,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"日本_39","type":"vmess","server":"rk86o-g03.jp07-1f28-vm0.entry.fr0307a.art","port":28785,"cipher":"auto","uuid":"1c36839c-e6a7-3725-a4dc-98418386160f","alterId":1,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"日本_40","type":"vmess","server":"amt0d-g03.jp01-0986-vm0.entry.fr0307a.art","port":21583,"cipher":"auto","uuid":"137c9e6e-a680-3919-8484-73af900dbb6b","alterId":1,"tls":true,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国_41","type":"vmess","server":"wrm3n-g03.jp02-9a99-vm0.entry.fr0307a.art","port":11775,"cipher":"auto","uuid":"137c9e6e-a680-3919-8484-73af900dbb6b","alterId":1,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"比利时_42","type":"vmess","server":"p8yzq-g03.jp03-7d22-vm0.entry.fr0307a.art","port":21583,"cipher":"auto","uuid":"137c9e6e-a680-3919-8484-73af900dbb6b","alterId":1,"tls":true,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"日本_43","type":"vmess","server":"l4sh6-g03.jp04-3771-vm0.entry.fr0307a.art","port":446,"cipher":"auto","uuid":"137c9e6e-a680-3919-8484-73af900dbb6b","alterId":1,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"日本_44","type":"vmess","server":"x4va7-g03.jp05-6786-vm0.entry.fr0307a.art","port":46484,"cipher":"auto","uuid":"137c9e6e-a680-3919-8484-73af900dbb6b","alterId":1,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"日本_45","type":"vmess","server":"l5vkg-g03.jp06-7c5a-vm0.entry.fr0307a.art","port":28785,"cipher":"auto","uuid":"137c9e6e-a680-3919-8484-73af900dbb6b","alterId":1,"tls":true,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"日本_46","type":"vmess","server":"t5gem-g03.jp07-1f28-vm0.entry.fr0307a.art","port":28785,"cipher":"auto","uuid":"137c9e6e-a680-3919-8484-73af900dbb6b","alterId":1,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国_47\r","type":"hysteria2","server":"64.23.190.228","port":443,"password":"52769d89-a29e-4f59-ad98-45af8b0ae65b","sni":"hyus.freeapp.buzz","skip-cert-verify":true}
-  - {"name":"美国_48","type":"hysteria2","server":"164.92.89.228","port":443,"password":"52769d89-a29e-4f59-ad98-45af8b0ae65b","sni":"hyus2.freeapp.buzz","skip-cert-verify":true}
+  - {"name":"新加坡1","type":"ss","server":"13.228.79.13","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"新加坡2","type":"ss","server":"13.229.243.64","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"新加坡3","type":"ss","server":"47.128.150.72","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"日本","type":"ss","server":"52.194.250.138","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"韩国","type":"ss","server":"52.78.200.155","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"中国香港1","type":"trojan","server":"cn1.cdn.xfltd-cdn.top","port":12001,"udp":true,"password":"3698a3e7-2877-4ded-a665-d81ee3cfd449","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"中国香港2","type":"trojan","server":"cn1.cdn.xfltd-cdn.top","port":12005,"udp":true,"password":"3698a3e7-2877-4ded-a665-d81ee3cfd449","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"中国台湾","type":"trojan","server":"cn1.cdn.xfltd-cdn.top","port":12011,"udp":true,"password":"3698a3e7-2877-4ded-a665-d81ee3cfd449","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"美国1","type":"hysteria2","server":"64.23.190.228","port":443,"password":"52769d89-a29e-4f59-ad98-45af8b0ae65b","sni":"hyus.freeapp.buzz","skip-cert-verify":true}
+  - {"name":"美国2","type":"hysteria2","server":"164.92.89.228","port":443,"password":"52769d89-a29e-4f59-ad98-45af8b0ae65b","sni":"hyus2.freeapp.buzz","skip-cert-verify":true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - "德国_1\r"
-      - "英国_2\r"
-      - "巴西_3\r"
-      - "德国_4\r"
-      - "英国_5\r"
-      - "荷兰_6\r"
-      - "瑞士_7\r"
-      - "日本_8\r"
-      - "美国_9\r"
-      - "瑞典_10\r"
-      - "德国_11\r"
-      - "瑞士_12\r"
-      - "英国_13\r"
-      - "澳大利亚_14\r"
-      - "美国_15\r"
-      - "未知_16\r"
-      - "荷兰_17\r"
-      - "美国_18\r"
-      - 日本_19
-      - 美国_20
-      - 比利时_21
-      - 日本_22
-      - 日本_23
-      - 日本_24
-      - 日本_25
-      - 日本_26
-      - 美国_27
-      - 比利时_28
-      - 日本_29
-      - 日本_30
-      - 日本_31
-      - 日本_32
-      - 日本_33
-      - 美国_34
-      - 比利时_35
-      - 日本_36
-      - 日本_37
-      - 日本_38
-      - 日本_39
-      - 日本_40
-      - 美国_41
-      - 比利时_42
-      - 日本_43
-      - 日本_44
-      - 日本_45
-      - 日本_46
-      - "美国_47\r"
-      - 美国_48
+      - 新加坡1
+      - 新加坡2
+      - 新加坡3
+      - 日本
+      - 韩国
+      - 中国香港1
+      - 中国香港2
+      - 中国台湾
+      - 美国1
+      - 美国2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - "德国_1\r"
-      - "英国_2\r"
-      - "巴西_3\r"
-      - "德国_4\r"
-      - "英国_5\r"
-      - "荷兰_6\r"
-      - "瑞士_7\r"
-      - "日本_8\r"
-      - "美国_9\r"
-      - "瑞典_10\r"
-      - "德国_11\r"
-      - "瑞士_12\r"
-      - "英国_13\r"
-      - "澳大利亚_14\r"
-      - "美国_15\r"
-      - "未知_16\r"
-      - "荷兰_17\r"
-      - "美国_18\r"
-      - 日本_19
-      - 美国_20
-      - 比利时_21
-      - 日本_22
-      - 日本_23
-      - 日本_24
-      - 日本_25
-      - 日本_26
-      - 美国_27
-      - 比利时_28
-      - 日本_29
-      - 日本_30
-      - 日本_31
-      - 日本_32
-      - 日本_33
-      - 美国_34
-      - 比利时_35
-      - 日本_36
-      - 日本_37
-      - 日本_38
-      - 日本_39
-      - 日本_40
-      - 美国_41
-      - 比利时_42
-      - 日本_43
-      - 日本_44
-      - 日本_45
-      - 日本_46
-      - "美国_47\r"
-      - 美国_48
+      - 新加坡1
+      - 新加坡2
+      - 新加坡3
+      - 日本
+      - 韩国
+      - 中国香港1
+      - 中国香港2
+      - 中国台湾
+      - 美国1
+      - 美国2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -260,54 +146,16 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "德国_1\r"
-      - "英国_2\r"
-      - "巴西_3\r"
-      - "德国_4\r"
-      - "英国_5\r"
-      - "荷兰_6\r"
-      - "瑞士_7\r"
-      - "日本_8\r"
-      - "美国_9\r"
-      - "瑞典_10\r"
-      - "德国_11\r"
-      - "瑞士_12\r"
-      - "英国_13\r"
-      - "澳大利亚_14\r"
-      - "美国_15\r"
-      - "未知_16\r"
-      - "荷兰_17\r"
-      - "美国_18\r"
-      - 日本_19
-      - 美国_20
-      - 比利时_21
-      - 日本_22
-      - 日本_23
-      - 日本_24
-      - 日本_25
-      - 日本_26
-      - 美国_27
-      - 比利时_28
-      - 日本_29
-      - 日本_30
-      - 日本_31
-      - 日本_32
-      - 日本_33
-      - 美国_34
-      - 比利时_35
-      - 日本_36
-      - 日本_37
-      - 日本_38
-      - 日本_39
-      - 日本_40
-      - 美国_41
-      - 比利时_42
-      - 日本_43
-      - 日本_44
-      - 日本_45
-      - 日本_46
-      - "美国_47\r"
-      - 美国_48
+      - 新加坡1
+      - 新加坡2
+      - 新加坡3
+      - 日本
+      - 韩国
+      - 中国香港1
+      - 中国香港2
+      - 中国台湾
+      - 美国1
+      - 美国2
 
 rules:
 # 本地/局域网地址
