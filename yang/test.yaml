@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2024-08-19 13:52:42
+# 创建时间：2024-08-19 13:54:09
 # 使用模版：ACL4SSR_Online_Mini.ini
-# 节点数量：9
+# 节点数量：8
 # 节点类型：ss
 ####################################
 mixed-port: 7890
@@ -87,9 +87,8 @@ dns:
 
 proxies:
   - {"name":"新加坡1","type":"ss","server":"13.212.34.140","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"新加坡2","type":"ss","server":"13.228.79.13","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"新加坡3","type":"ss","server":"54.169.236.64","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"新加坡6","type":"ss","server":"47.128.150.72","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"新加坡2","type":"ss","server":"54.169.236.64","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"新加坡3","type":"ss","server":"47.128.150.72","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
   - {"name":"日本1","type":"ss","server":"52.69.37.205","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
   - {"name":"日本2（YouTube）","type":"ss","server":"52.194.250.138","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
   - {"name":"日本3","type":"ss","server":"52.69.70.123","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
@@ -104,7 +103,6 @@ proxy-groups:
       - 新加坡1
       - 新加坡2
       - 新加坡3
-      - 新加坡6
       - 日本1
       - 日本2（YouTube）
       - 日本3
@@ -119,7 +117,6 @@ proxy-groups:
       - 新加坡1
       - 新加坡2
       - 新加坡3
-      - 新加坡6
       - 日本1
       - 日本2（YouTube）
       - 日本3
@@ -145,7 +142,6 @@ proxy-groups:
       - 新加坡1
       - 新加坡2
       - 新加坡3
-      - 新加坡6
       - 日本1
       - 日本2（YouTube）
       - 日本3
