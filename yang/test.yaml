@@ -1,11 +1,10 @@
 ####################################
 # 创建者：v2rayse.com
-# 客户端：Clash.Meta
-# 创建时间：2024-08-23 11:31:35
+# 客户端：Clash
+# 创建时间：2024-08-23 11:42:31
 # 使用模版：ACL4SSR_Online_Mini.ini
-# 节点数量：43
-# 节点类型：ss, vless, vmess
-# !!当前配置文件请使用基于 Clash.Meta 内核程序
+# 节点数量：19
+# 节点类型：ss
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -87,147 +86,75 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"1","type":"ss","server":"cm3.bocchi.ooo","port":46023,"password":"9392b533-d62a-46d4-b013-46ee9d9f0b06","cipher":"aes-128-gcm"}
-  - {"name":"2","type":"ss","server":"cm3.bocchi.ooo","port":39155,"password":"9392b533-d62a-46d4-b013-46ee9d9f0b06","cipher":"aes-128-gcm"}
-  - {"name":"3","type":"ss","server":"cm3.bocchi.ooo","port":12251,"password":"9392b533-d62a-46d4-b013-46ee9d9f0b06","cipher":"aes-128-gcm"}
-  - {"name":"4","type":"ss","server":"cm3.bocchi.ooo","port":41687,"password":"9392b533-d62a-46d4-b013-46ee9d9f0b06","cipher":"aes-128-gcm"}
-  - {"name":"5","type":"ss","server":"cm3.bocchi.ooo","port":10174,"password":"9392b533-d62a-46d4-b013-46ee9d9f0b06","cipher":"aes-128-gcm"}
-  - {"name":"6","type":"ss","server":"cm3.bocchi.ooo","port":10176,"password":"9392b533-d62a-46d4-b013-46ee9d9f0b06","cipher":"aes-128-gcm"}
-  - {"name":"7","type":"ss","server":"cm3.bocchi.ooo","port":10175,"password":"9392b533-d62a-46d4-b013-46ee9d9f0b06","cipher":"aes-128-gcm"}
-  - {"name":"8","type":"ss","server":"cm3.bocchi.ooo","port":10955,"password":"9392b533-d62a-46d4-b013-46ee9d9f0b06","cipher":"aes-128-gcm"}
-  - {"name":"9","type":"ss","server":"cm3.bocchi.ooo","port":28575,"password":"9392b533-d62a-46d4-b013-46ee9d9f0b06","cipher":"aes-128-gcm"}
-  - {"name":"10","type":"ss","server":"cm3.bocchi.ooo","port":19750,"password":"9392b533-d62a-46d4-b013-46ee9d9f0b06","cipher":"aes-128-gcm"}
-  - {"name":"11","type":"ss","server":"cm3.bocchi.ooo","port":19751,"password":"9392b533-d62a-46d4-b013-46ee9d9f0b06","cipher":"aes-128-gcm"}
-  - {"name":"12","type":"ss","server":"cm3.bocchi.ooo","port":21513,"password":"9392b533-d62a-46d4-b013-46ee9d9f0b06","cipher":"aes-128-gcm"}
-  - {"name":"13","type":"ss","server":"cm3.bocchi.ooo","port":45681,"password":"9392b533-d62a-46d4-b013-46ee9d9f0b06","cipher":"aes-128-gcm"}
-  - {"name":"14","type":"ss","server":"cm3.bocchi.ooo","port":25655,"password":"9392b533-d62a-46d4-b013-46ee9d9f0b06","cipher":"aes-128-gcm"}
-  - {"name":"15","type":"ss","server":"cm3.bocchi.ooo","port":33535,"password":"9392b533-d62a-46d4-b013-46ee9d9f0b06","cipher":"aes-128-gcm"}
-  - {"name":"16","type":"ss","server":"cm3.bocchi.ooo","port":13533,"password":"9392b533-d62a-46d4-b013-46ee9d9f0b06","cipher":"aes-128-gcm"}
-  - {"name":"17","type":"ss","server":"cm3.bocchi.ooo","port":11601,"password":"9392b533-d62a-46d4-b013-46ee9d9f0b06","cipher":"aes-128-gcm"}
-  - {"name":"18","type":"ss","server":"zjcu3.bocchi.ooo","port":35481,"password":"9392b533-d62a-46d4-b013-46ee9d9f0b06","cipher":"aes-128-gcm"}
-  - {"name":"19","type":"ss","server":"zjcu3.bocchi.ooo","port":31322,"password":"9392b533-d62a-46d4-b013-46ee9d9f0b06","cipher":"aes-128-gcm"}
-  - {"name":"20","type":"ss","server":"zjcu3.bocchi.ooo","port":31325,"password":"9392b533-d62a-46d4-b013-46ee9d9f0b06","cipher":"aes-128-gcm"}
-  - {"name":"21","type":"ss","server":"zjcu3.bocchi.ooo","port":31326,"password":"9392b533-d62a-46d4-b013-46ee9d9f0b06","cipher":"aes-128-gcm"}
-  - {"name":"22","type":"ss","server":"zjcu3.bocchi.ooo","port":15734,"password":"9392b533-d62a-46d4-b013-46ee9d9f0b06","cipher":"aes-128-gcm"}
-  - {"name":"23","type":"ss","server":"zjcu3.bocchi.ooo","port":11311,"password":"9392b533-d62a-46d4-b013-46ee9d9f0b06","cipher":"aes-128-gcm"}
-  - {"name":"24","type":"ss","server":"zjcu3.bocchi.ooo","port":46389,"password":"9392b533-d62a-46d4-b013-46ee9d9f0b06","cipher":"aes-128-gcm"}
-  - {"name":"25","type":"ss","server":"zjcu3.bocchi.ooo","port":17463,"password":"9392b533-d62a-46d4-b013-46ee9d9f0b06","cipher":"aes-128-gcm"}
-  - {"name":"26","type":"ss","server":"tjcu3.bocchi.ooo","port":41326,"password":"9392b533-d62a-46d4-b013-46ee9d9f0b06","cipher":"aes-128-gcm"}
-  - {"name":"27","type":"ss","server":"zjcu3.bocchi.ooo","port":33541,"password":"9392b533-d62a-46d4-b013-46ee9d9f0b06","cipher":"aes-128-gcm"}
-  - {"name":"28","type":"ss","server":"tjcu3.bocchi.ooo","port":33537,"password":"9392b533-d62a-46d4-b013-46ee9d9f0b06","cipher":"aes-128-gcm"}
-  - {"name":"29","type":"ss","server":"tjcu3.bocchi.ooo","port":33985,"password":"9392b533-d62a-46d4-b013-46ee9d9f0b06","cipher":"aes-128-gcm"}
-  - {"name":"30","type":"ss","server":"tjcu3.bocchi.ooo","port":33538,"password":"9392b533-d62a-46d4-b013-46ee9d9f0b06","cipher":"aes-128-gcm"}
-  - {"name":"31","type":"ss","server":"tjcu3.bocchi.ooo","port":33536,"password":"9392b533-d62a-46d4-b013-46ee9d9f0b06","cipher":"aes-128-gcm"}
-  - {"name":"32","type":"ss","server":"tjcu3.bocchi.ooo","port":33539,"password":"9392b533-d62a-46d4-b013-46ee9d9f0b06","cipher":"aes-128-gcm"}
-  - {"name":"33","type":"ss","server":"tjcu3.bocchi.ooo","port":33543,"password":"9392b533-d62a-46d4-b013-46ee9d9f0b06","cipher":"aes-128-gcm"}
-  - {"name":"34","type":"vless","server":"47.238.115.89","port":443,"uuid":"174eb9cf-838e-4bb4-9667-4b2bb832f319","tls":true,"servername":"hk-al-1.wymv.top","network":"tcp"}
-  - {"name":"35","type":"vmess","server":"64.110.85.212","port":22710,"cipher":"auto","uuid":"d6402546-1d4f-4f65-8d5a-6d0944f767d3","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":""}}
-  - {"name":"36","type":"vmess","server":"130.61.108.67","port":44260,"cipher":"auto","uuid":"d6402546-1d4f-4f65-8d5a-6d0944f767d3","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":""}}
-  - {"name":"37","type":"vmess","server":"146.235.52.217","port":56860,"cipher":"auto","uuid":"d6402546-1d4f-4f65-8d5a-6d0944f767d3","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":""}}
-  - {"name":"38","type":"vmess","server":"rnus1.uaqserver.icu","port":2083,"cipher":"auto","uuid":"d6402546-1d4f-4f65-8d5a-6d0944f767d3","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"rnus1.uaqserver.icu"}}}
-  - {"name":"39","type":"vmess","server":"speed.marisalnc.com","port":80,"cipher":"auto","uuid":"b937a088-b1aa-3440-85a9-3922ff23c993","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/cloudflare.com","headers":{"host":"BAIUS1.ssl12.xyz"}}}
-  - {"name":"40","type":"vmess","server":"speed.marisalnc.com","port":2082,"cipher":"auto","uuid":"b937a088-b1aa-3440-85a9-3922ff23c993","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/cloudflare.com","headers":{"host":"BAIUS2.ssl12.xyz"}}}
-  - {"name":"41","type":"vmess","server":"speed.marisalnc.com","port":2086,"cipher":"auto","uuid":"b937a088-b1aa-3440-85a9-3922ff23c993","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/cloudflare.com","headers":{"host":"BAIUS2.ssl12.xyz"}}}
-  - {"name":"42","type":"vmess","server":"speed.marisalnc.com","port":2052,"cipher":"auto","uuid":"b937a088-b1aa-3440-85a9-3922ff23c993","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/cloudflare.com","headers":{"host":"BAIUS1.ssl12.xyz"}}}
-  - {"name":"43","type":"vmess","server":"speed.marisalnc.com","port":8080,"cipher":"auto","uuid":"b937a088-b1aa-3440-85a9-3922ff23c993","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/cloudflare.com","headers":{"host":"BAIUS2.ssl12.xyz"}}}
+  - {"name":"中国香港7","type":"ss","server":"cm3.bocchi.ooo","port":10955,"password":"9392b533-d62a-46d4-b013-46ee9d9f0b06","cipher":"aes-128-gcm"}
+  - {"name":"中国香港6","type":"ss","server":"cm3.bocchi.ooo","port":10175,"password":"9392b533-d62a-46d4-b013-46ee9d9f0b06","cipher":"aes-128-gcm"}
+  - {"name":"中国香港5","type":"ss","server":"cm3.bocchi.ooo","port":10174,"password":"9392b533-d62a-46d4-b013-46ee9d9f0b06","cipher":"aes-128-gcm"}
+  - {"name":"中国香港4","type":"ss","server":"cm3.bocchi.ooo","port":41687,"password":"9392b533-d62a-46d4-b013-46ee9d9f0b06","cipher":"aes-128-gcm"}
+  - {"name":"中国香港3","type":"ss","server":"cm3.bocchi.ooo","port":12251,"password":"9392b533-d62a-46d4-b013-46ee9d9f0b06","cipher":"aes-128-gcm"}
+  - {"name":"中国香港2","type":"ss","server":"cm3.bocchi.ooo","port":39155,"password":"9392b533-d62a-46d4-b013-46ee9d9f0b06","cipher":"aes-128-gcm"}
+  - {"name":"中国香港1","type":"ss","server":"cm3.bocchi.ooo","port":46023,"password":"9392b533-d62a-46d4-b013-46ee9d9f0b06","cipher":"aes-128-gcm"}
+  - {"name":"日本1（YouTube）","type":"ss","server":"52.197.150.228","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"日本2（YouTube）\r","type":"ss","server":"52.194.250.138","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"日本3","type":"ss","server":"52.199.182.245","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"日本4","type":"ss","server":"52.194.189.140","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"日本5","type":"ss","server":"18.179.174.165","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"日本6","type":"ss","server":"3.112.220.140","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"日本7","type":"ss","server":"57.180.28.226","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"日本8","type":"ss","server":"43.207.118.251","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"日本9","type":"ss","server":"52.69.37.205","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"日本10","type":"ss","server":"176.34.0.69","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"新加坡1\r","type":"ss","server":"13.212.34.140","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"新加坡2\r","type":"ss","server":"54.169.236.64","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - '1'
-      - '2'
-      - '3'
-      - '4'
-      - '5'
-      - '6'
-      - '7'
-      - '8'
-      - '9'
-      - '10'
-      - '11'
-      - '12'
-      - '13'
-      - '14'
-      - '15'
-      - '16'
-      - '17'
-      - '18'
-      - '19'
-      - '20'
-      - '21'
-      - '22'
-      - '23'
-      - '24'
-      - '25'
-      - '26'
-      - '27'
-      - '28'
-      - '29'
-      - '30'
-      - '31'
-      - '32'
-      - '33'
-      - '34'
-      - '35'
-      - '36'
-      - '37'
-      - '38'
-      - '39'
-      - '40'
-      - '41'
-      - '42'
-      - '43'
+      - 中国香港7
+      - 中国香港6
+      - 中国香港5
+      - 中国香港4
+      - 中国香港3
+      - 中国香港2
+      - 中国香港1
+      - 日本1（YouTube）
+      - "日本2（YouTube）\r"
+      - 日本3
+      - 日本4
+      - 日本5
+      - 日本6
+      - 日本7
+      - 日本8
+      - 日本9
+      - 日本10
+      - "新加坡1\r"
+      - "新加坡2\r"
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - '1'
-      - '2'
-      - '3'
-      - '4'
-      - '5'
-      - '6'
-      - '7'
-      - '8'
-      - '9'
-      - '10'
-      - '11'
-      - '12'
-      - '13'
-      - '14'
-      - '15'
-      - '16'
-      - '17'
-      - '18'
-      - '19'
-      - '20'
-      - '21'
-      - '22'
-      - '23'
-      - '24'
-      - '25'
-      - '26'
-      - '27'
-      - '28'
-      - '29'
-      - '30'
-      - '31'
-      - '32'
-      - '33'
-      - '34'
-      - '35'
-      - '36'
-      - '37'
-      - '38'
-      - '39'
-      - '40'
-      - '41'
-      - '42'
-      - '43'
+      - 中国香港7
+      - 中国香港6
+      - 中国香港5
+      - 中国香港4
+      - 中国香港3
+      - 中国香港2
+      - 中国香港1
+      - 日本1（YouTube）
+      - "日本2（YouTube）\r"
+      - 日本3
+      - 日本4
+      - 日本5
+      - 日本6
+      - 日本7
+      - 日本8
+      - 日本9
+      - 日本10
+      - "新加坡1\r"
+      - "新加坡2\r"
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -245,49 +172,25 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - '1'
-      - '2'
-      - '3'
-      - '4'
-      - '5'
-      - '6'
-      - '7'
-      - '8'
-      - '9'
-      - '10'
-      - '11'
-      - '12'
-      - '13'
-      - '14'
-      - '15'
-      - '16'
-      - '17'
-      - '18'
-      - '19'
-      - '20'
-      - '21'
-      - '22'
-      - '23'
-      - '24'
-      - '25'
-      - '26'
-      - '27'
-      - '28'
-      - '29'
-      - '30'
-      - '31'
-      - '32'
-      - '33'
-      - '34'
-      - '35'
-      - '36'
-      - '37'
-      - '38'
-      - '39'
-      - '40'
-      - '41'
-      - '42'
-      - '43'
+      - 中国香港7
+      - 中国香港6
+      - 中国香港5
+      - 中国香港4
+      - 中国香港3
+      - 中国香港2
+      - 中国香港1
+      - 日本1（YouTube）
+      - "日本2（YouTube）\r"
+      - 日本3
+      - 日本4
+      - 日本5
+      - 日本6
+      - 日本7
+      - 日本8
+      - 日本9
+      - 日本10
+      - "新加坡1\r"
+      - "新加坡2\r"
 
 rules:
 # 本地/局域网地址
