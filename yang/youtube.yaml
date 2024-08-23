@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2024-08-23 11:29:33
+# 创建时间：2024-08-23 11:42:59
 # 使用模版：ACL4SSR_Online_Mini.ini
-# 节点数量：12
+# 节点数量：19
 # 节点类型：ss
 ####################################
 mixed-port: 7890
@@ -86,6 +86,13 @@ dns:
       - 0.0.0.0/32
 
 proxies:
+  - {"name":"中国香港7","type":"ss","server":"cm3.bocchi.ooo","port":10955,"password":"9392b533-d62a-46d4-b013-46ee9d9f0b06","cipher":"aes-128-gcm"}
+  - {"name":"中国香港6","type":"ss","server":"cm3.bocchi.ooo","port":10175,"password":"9392b533-d62a-46d4-b013-46ee9d9f0b06","cipher":"aes-128-gcm"}
+  - {"name":"中国香港5","type":"ss","server":"cm3.bocchi.ooo","port":10174,"password":"9392b533-d62a-46d4-b013-46ee9d9f0b06","cipher":"aes-128-gcm"}
+  - {"name":"中国香港4","type":"ss","server":"cm3.bocchi.ooo","port":41687,"password":"9392b533-d62a-46d4-b013-46ee9d9f0b06","cipher":"aes-128-gcm"}
+  - {"name":"中国香港3","type":"ss","server":"cm3.bocchi.ooo","port":12251,"password":"9392b533-d62a-46d4-b013-46ee9d9f0b06","cipher":"aes-128-gcm"}
+  - {"name":"中国香港2","type":"ss","server":"cm3.bocchi.ooo","port":39155,"password":"9392b533-d62a-46d4-b013-46ee9d9f0b06","cipher":"aes-128-gcm"}
+  - {"name":"中国香港1","type":"ss","server":"cm3.bocchi.ooo","port":46023,"password":"9392b533-d62a-46d4-b013-46ee9d9f0b06","cipher":"aes-128-gcm"}
   - {"name":"日本1（YouTube）","type":"ss","server":"52.197.150.228","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
   - {"name":"日本2（YouTube）\r","type":"ss","server":"52.194.250.138","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
   - {"name":"日本3","type":"ss","server":"52.199.182.245","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
@@ -104,6 +111,13 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - DIRECT
+      - 中国香港7
+      - 中国香港6
+      - 中国香港5
+      - 中国香港4
+      - 中国香港3
+      - 中国香港2
+      - 中国香港1
       - 日本1（YouTube）
       - "日本2（YouTube）\r"
       - 日本3
@@ -122,6 +136,13 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
+      - 中国香港7
+      - 中国香港6
+      - 中国香港5
+      - 中国香港4
+      - 中国香港3
+      - 中国香港2
+      - 中国香港1
       - 日本1（YouTube）
       - "日本2（YouTube）\r"
       - 日本3
@@ -151,6 +172,13 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 中国香港7
+      - 中国香港6
+      - 中国香港5
+      - 中国香港4
+      - 中国香港3
+      - 中国香港2
+      - 中国香港1
       - 日本1（YouTube）
       - "日本2（YouTube）\r"
       - 日本3
