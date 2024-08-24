@@ -86,7 +86,7 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"官网：znetvpn.com | 日期 08-24","type":"vmess","server":"gwnode.plzdonotnotice.com","port":11104,"uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-opts":{"path":"/6","headers":{"Host":"live.bilibili.com"}}}
+  - {"name":"官网：znetvpn.com | 日期 08-24","type":"vmess","server":"gwnode.plzdonotnotice.com","port":11104,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
   - {"name":"Unlimited-台湾 | 无限流量节点","type":"vmess","server":"twhinet01.fastbiubiu.com","port":5085,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":2,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
   - {"name":"Unlimited-新加坡 | 无限流量节点","type":"vmess","server":"unsg01.ajdkjaljdj.xyz","port":5135,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
   - {"name":"Unlimited-美国 | 无限流量节点","type":"vmess","server":"unus01.ajdkjaljdj.xyz","port":1131,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
