@@ -1,7 +1,7 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2024-08-24 21:11:21
+# 创建时间：2024-08-24 21:16:12
 # 使用模版：ACL4SSR_Online_Mini.ini
 # 节点数量：204
 # 节点类型：vmess, ssr
@@ -86,7 +86,7 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"官网：znetvpn.com | 日期 08-24","type":"vmess","server":"gwnode.plzdonotnotice.com","port":11104,"uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-opts":{"path":"/6","headers":{"Host":"live.bilibili.com"}}}
+  - {"name":"官网：znetvpn.com | 日期 08-24","type":"vmess","server":"gwnode.plzdonotnotice.com","port":11104,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
   - {"name":"Unlimited-台湾 | 无限流量节点","type":"vmess","server":"twhinet01.fastbiubiu.com","port":5085,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":2,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
   - {"name":"Unlimited-新加坡 | 无限流量节点","type":"vmess","server":"unsg01.ajdkjaljdj.xyz","port":5135,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
   - {"name":"Unlimited-美国 | 无限流量节点","type":"vmess","server":"unus01.ajdkjaljdj.xyz","port":1131,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
@@ -187,7 +187,7 @@ proxies:
   - {"name":"VIP | 欧洲-克罗地亚01 |【1.8x】","type":"vmess","server":"pl03.tencentstudent.com","port":25871,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
   - {"name":"VIP | 欧洲-卢森堡01 |【1.5x】","type":"vmess","server":"ddns01.aliyunstudent.com","port":23301,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
   - {"name":"VIP | 欧洲-土耳其01 |【1.3x】","type":"vmess","server":"ddns01.aliyunstudent.com","port":1311,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
-  - {"name":"VIP | 欧洲-土耳其02 |【1.3x】","type":"vmess","server":"ddns01.aliyunstudent.com","port":1312,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
+  - {"name":"VIP | 欧洲-土耳其02 |【1.5x】解锁Netflix","type":"vmess","server":"ddns01.aliyunstudent.com","port":1312,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
   - {"name":"VIP | 欧洲-土耳其03 |【1.5x】解锁Netflix","type":"vmess","server":"ddns01.aliyunstudent.com","port":5603,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
   - {"name":"VIP | 欧洲-希腊01 |【1x】","type":"vmess","server":"ddns01.aliyunstudent.com","port":20003,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
   - {"name":"VIP | 欧洲-德国01 |【0.7x】","type":"vmess","server":"govct01.ucloudstudent.com","port":11511,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
@@ -397,7 +397,7 @@ proxy-groups:
       - VIP | 欧洲-克罗地亚01 |【1.8x】
       - VIP | 欧洲-卢森堡01 |【1.5x】
       - VIP | 欧洲-土耳其01 |【1.3x】
-      - VIP | 欧洲-土耳其02 |【1.3x】
+      - VIP | 欧洲-土耳其02 |【1.5x】解锁Netflix
       - VIP | 欧洲-土耳其03 |【1.5x】解锁Netflix
       - VIP | 欧洲-希腊01 |【1x】
       - VIP | 欧洲-德国01 |【0.7x】
@@ -607,7 +607,7 @@ proxy-groups:
       - VIP | 欧洲-克罗地亚01 |【1.8x】
       - VIP | 欧洲-卢森堡01 |【1.5x】
       - VIP | 欧洲-土耳其01 |【1.3x】
-      - VIP | 欧洲-土耳其02 |【1.3x】
+      - VIP | 欧洲-土耳其02 |【1.5x】解锁Netflix
       - VIP | 欧洲-土耳其03 |【1.5x】解锁Netflix
       - VIP | 欧洲-希腊01 |【1x】
       - VIP | 欧洲-德国01 |【0.7x】
@@ -828,7 +828,7 @@ proxy-groups:
       - VIP | 欧洲-克罗地亚01 |【1.8x】
       - VIP | 欧洲-卢森堡01 |【1.5x】
       - VIP | 欧洲-土耳其01 |【1.3x】
-      - VIP | 欧洲-土耳其02 |【1.3x】
+      - VIP | 欧洲-土耳其02 |【1.5x】解锁Netflix
       - VIP | 欧洲-土耳其03 |【1.5x】解锁Netflix
       - VIP | 欧洲-希腊01 |【1x】
       - VIP | 欧洲-德国01 |【0.7x】
