@@ -105,6 +105,7 @@ proxy-groups:
     type: select
     proxies:
       - ♻️ 自动选择
+      - 打个胶先
       - 新加坡1
       - 新加坡2
       - 日本1
