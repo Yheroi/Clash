@@ -1,10 +1,10 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2024-08-25 16:31:05
-# 使用模版：ACL4SSR_Online_Mini.ini
-# 节点数量：15
-# 节点类型：ss
+# 创建时间：2024-08-26 16:01:36
+# 使用模版：ACL4SSR_Mini.ini
+# 节点数量：44
+# 节点类型：ss, trojan, vmess
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -86,63 +86,150 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"新加坡1\r","type":"ss","server":"13.212.34.140","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"新加坡2\r","type":"ss","server":"54.169.236.64","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"日本1（YouTube）","type":"ss","server":"52.197.150.228","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"日本2（YouTube）\r","type":"ss","server":"52.194.250.138","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"日本3","type":"ss","server":"52.199.182.245","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"日本4","type":"ss","server":"52.194.189.140","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"日本5","type":"ss","server":"18.179.174.165","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"日本6","type":"ss","server":"3.112.220.140","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"日本7","type":"ss","server":"3.112.7.26","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"日本8","type":"ss","server":"43.207.118.251","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"日本9","type":"ss","server":"52.69.37.205","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"日本10","type":"ss","server":"176.34.0.69","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"日本11","type":"ss","server":"18.183.77.249","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"日本12","type":"ss","server":"3.112.13.193","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"日本13","type":"ss","server":"54.95.170.220","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"_01\r","type":"ss","server":"35.87.4.77","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"_02\r","type":"ss","server":"34.219.154.160","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"_03\r","type":"ss","server":"18.236.64.79","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"_04\r","type":"ss","server":"35.87.35.207","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"DE_52\r","type":"trojan","server":"18.199.3.16","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"EC_53\r","type":"ss","server":"179.49.5.114","port":989,"password":"f8f7aCzcPKbsF8p3","cipher":"aes-256-cfb"}
+  - {"name":"FR_54\r","type":"ss","server":"54.37.18.75","port":7002,"password":"RexnBgU7EV5ADxG","cipher":"aes-256-gcm"}
+  - {"name":"FR_55\r","type":"ss","server":"54.37.18.75","port":8000,"password":"KixLvKzwjekG00rm","cipher":"aes-256-gcm"}
+  - {"name":"FR_56\r","type":"ss","server":"54.37.18.75","port":443,"password":"pKEW8JPByTVTLtM","cipher":"aes-256-gcm"}
+  - {"name":"FR_57\r","type":"ss","server":"54.37.18.75","port":8888,"password":"Y6R9pAtvxxzmGC","cipher":"aes-256-gcm"}
+  - {"name":"IE_62\r","type":"trojan","server":"54.73.169.86","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"IE_63\r","type":"trojan","server":"34.246.78.167","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"JP_64\r","type":"ss","server":"3.112.13.193","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"JP_65\r","type":"ss","server":"3.112.7.26","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"JP_66\r","type":"ss","server":"3.112.220.140","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"JP_67\r","type":"ss","server":"52.194.189.140","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"JP_68\r","type":"ss","server":"18.183.77.249","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"JP_69\r","type":"ss","server":"54.95.170.220","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"JP_70\r","type":"ss","server":"176.34.0.69","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"LT_72\r","type":"ss","server":"46.183.185.15","port":989,"password":"f8f7aCzcPKbsF8p3","cipher":"aes-256-cfb"}
+  - {"name":"RU_73\r","type":"ss","server":"62.133.63.21","port":65262,"password":"d9DLBO1pa2LhAq72M4kYSA","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"RU_74\r","type":"ss","server":"89.185.84.34","port":51348,"password":"yeKtZW31qXeZbAz8HsH4zFui7aseIogssEK7X9XZsLZcUjw6","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"RU_75\r","type":"ss","server":"89.23.110.74","port":61194,"password":"b6c1SLjkYreTBKr8AnD3Op","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"SG_77\r","type":"ss","server":"54.169.236.64","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"SG_78\r","type":"ss","server":"13.228.79.13","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"TR_79\r","type":"ss","server":"185.123.101.241","port":989,"password":"f8f7aCzcPKbsF8p3","cipher":"aes-256-cfb"}
+  - {"name":"UA_83\r","type":"trojan","server":"82.117.226.218","port":12001,"udp":true,"password":"3698a3e7-2877-4ded-a665-d81ee3cfd449","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"UA_85\r","type":"trojan","server":"cn1.cdn.xfltd-cdn.top","port":12001,"udp":true,"password":"3698a3e7-2877-4ded-a665-d81ee3cfd449","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"US_88\r","type":"ss","server":"13.212.34.140","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"US_89\r","type":"ss","server":"35.87.49.176","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"US_90\r","type":"ss","server":"184.170.241.194","port":443,"password":"shadowsocks","cipher":"aes-128-cfb"}
+  - {"name":"US_91\r","type":"ss","server":"167.88.61.235","port":6679,"password":"TEzjfAYq2IjtuoS","cipher":"aes-256-gcm"}
+  - {"name":"US_92\r","type":"ss","server":"34.221.171.67","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"US_93\r","type":"ss","server":"35.87.154.95","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"US_94\r","type":"ss","server":"172.99.190.186","port":8090,"password":"PCnnH6SQSnfoS27","cipher":"aes-256-gcm"}
+  - {"name":"US_95\r","type":"ss","server":"38.75.136.21","port":5003,"password":"g5MeD6Ft3CWlJId","cipher":"aes-256-gcm"}
+  - {"name":"US_96\r","type":"ss","server":"15.204.87.225","port":7306,"password":"FoOiGlkAA9yPEGP","cipher":"aes-256-gcm"}
+  - {"name":"US_97\r","type":"ss","server":"38.114.114.158","port":443,"password":"pKEW8JPByTVTLtM","cipher":"aes-256-gcm"}
+  - {"name":"US_98\r","type":"ss","server":"34.219.130.214","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"US_99\r","type":"ss","server":"13.214.209.23","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"US_100\r","type":"ss","server":"38.86.135.31","port":5498,"password":"lGqs95QkFHo2NV","cipher":"aes-256-gcm"}
+  - {"name":"US_101\r","type":"ss","server":"38.86.135.31","port":5001,"password":"Y6R9pAtvxxzmGC","cipher":"aes-256-gcm"}
+  - {"name":"US_111","type":"vmess","server":"104.16.68.38","port":2052,"cipher":"auto","uuid":"76221bfb-e92f-4e80-81c5-6fe48f50ac0b","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/glweidf.sbs/linkws"}}
+  - {"name":"US_123","type":"vmess","server":"104.16.60.8","port":2095,"cipher":"auto","uuid":"05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/obdii.cfd/linkws"}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - "新加坡1\r"
-      - "新加坡2\r"
-      - 日本1（YouTube）
-      - "日本2（YouTube）\r"
-      - 日本3
-      - 日本4
-      - 日本5
-      - 日本6
-      - 日本7
-      - 日本8
-      - 日本9
-      - 日本10
-      - 日本11
-      - 日本12
-      - 日本13
+      - "_01\r"
+      - "_02\r"
+      - "_03\r"
+      - "_04\r"
+      - "DE_52\r"
+      - "EC_53\r"
+      - "FR_54\r"
+      - "FR_55\r"
+      - "FR_56\r"
+      - "FR_57\r"
+      - "IE_62\r"
+      - "IE_63\r"
+      - "JP_64\r"
+      - "JP_65\r"
+      - "JP_66\r"
+      - "JP_67\r"
+      - "JP_68\r"
+      - "JP_69\r"
+      - "JP_70\r"
+      - "LT_72\r"
+      - "RU_73\r"
+      - "RU_74\r"
+      - "RU_75\r"
+      - "SG_77\r"
+      - "SG_78\r"
+      - "TR_79\r"
+      - "UA_83\r"
+      - "UA_85\r"
+      - "US_88\r"
+      - "US_89\r"
+      - "US_90\r"
+      - "US_91\r"
+      - "US_92\r"
+      - "US_93\r"
+      - "US_94\r"
+      - "US_95\r"
+      - "US_96\r"
+      - "US_97\r"
+      - "US_98\r"
+      - "US_99\r"
+      - "US_100\r"
+      - "US_101\r"
+      - US_111
+      - US_123
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - "新加坡1\r"
-      - "新加坡2\r"
-      - 日本1（YouTube）
-      - "日本2（YouTube）\r"
-      - 日本3
-      - 日本4
-      - 日本5
-      - 日本6
-      - 日本7
-      - 日本8
-      - 日本9
-      - 日本10
-      - 日本11
-      - 日本12
-      - 日本13
+      - "_01\r"
+      - "_02\r"
+      - "_03\r"
+      - "_04\r"
+      - "DE_52\r"
+      - "EC_53\r"
+      - "FR_54\r"
+      - "FR_55\r"
+      - "FR_56\r"
+      - "FR_57\r"
+      - "IE_62\r"
+      - "IE_63\r"
+      - "JP_64\r"
+      - "JP_65\r"
+      - "JP_66\r"
+      - "JP_67\r"
+      - "JP_68\r"
+      - "JP_69\r"
+      - "JP_70\r"
+      - "LT_72\r"
+      - "RU_73\r"
+      - "RU_74\r"
+      - "RU_75\r"
+      - "SG_77\r"
+      - "SG_78\r"
+      - "TR_79\r"
+      - "UA_83\r"
+      - "UA_85\r"
+      - "US_88\r"
+      - "US_89\r"
+      - "US_90\r"
+      - "US_91\r"
+      - "US_92\r"
+      - "US_93\r"
+      - "US_94\r"
+      - "US_95\r"
+      - "US_96\r"
+      - "US_97\r"
+      - "US_98\r"
+      - "US_99\r"
+      - "US_100\r"
+      - "US_101\r"
+      - US_111
+      - US_123
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -160,21 +247,50 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "新加坡1\r"
-      - "新加坡2\r"
-      - 日本1（YouTube）
-      - "日本2（YouTube）\r"
-      - 日本3
-      - 日本4
-      - 日本5
-      - 日本6
-      - 日本7
-      - 日本8
-      - 日本9
-      - 日本10
-      - 日本11
-      - 日本12
-      - 日本13
+      - "_01\r"
+      - "_02\r"
+      - "_03\r"
+      - "_04\r"
+      - "DE_52\r"
+      - "EC_53\r"
+      - "FR_54\r"
+      - "FR_55\r"
+      - "FR_56\r"
+      - "FR_57\r"
+      - "IE_62\r"
+      - "IE_63\r"
+      - "JP_64\r"
+      - "JP_65\r"
+      - "JP_66\r"
+      - "JP_67\r"
+      - "JP_68\r"
+      - "JP_69\r"
+      - "JP_70\r"
+      - "LT_72\r"
+      - "RU_73\r"
+      - "RU_74\r"
+      - "RU_75\r"
+      - "SG_77\r"
+      - "SG_78\r"
+      - "TR_79\r"
+      - "UA_83\r"
+      - "UA_85\r"
+      - "US_88\r"
+      - "US_89\r"
+      - "US_90\r"
+      - "US_91\r"
+      - "US_92\r"
+      - "US_93\r"
+      - "US_94\r"
+      - "US_95\r"
+      - "US_96\r"
+      - "US_97\r"
+      - "US_98\r"
+      - "US_99\r"
+      - "US_100\r"
+      - "US_101\r"
+      - US_111
+      - US_123
 
 rules:
 # 本地/局域网地址
@@ -217,37 +333,6 @@ rules:
   - DOMAIN-SUFFIX,zte.home,🎯 全球直连
   - DOMAIN-SUFFIX,tplogin.cn,🎯 全球直连
   - DOMAIN-SUFFIX,wifi.cmcc,🎯 全球直连
-# Unbreak 白名单 不应该被广告链接的网站
-# Epicgames
-# Getui
-# Google
-# Mozilla
-# Origin
-# Tencent
-# Strava
-# Umeng
-# Miui 小米
-# General
-# Hypixel Network
-# Koodo Mobile
-  - DOMAIN-SUFFIX,ol.epicgames.com,🎯 全球直连
-  - DOMAIN-SUFFIX,dizhensubao.getui.com,🎯 全球直连
-  - DOMAIN,dl.google.com,🎯 全球直连
-  - DOMAIN-SUFFIX,googletraveladservices.com,🎯 全球直连
-  - DOMAIN-SUFFIX,tracking-protection.cdn.mozilla.net,🎯 全球直连
-  - DOMAIN,origin-a.akamaihd.net,🎯 全球直连
-  - DOMAIN,fairplay.l.qq.com,🎯 全球直连
-  - DOMAIN,livew.l.qq.com,🎯 全球直连
-  - DOMAIN,vd.l.qq.com,🎯 全球直连
-  - DOMAIN,errlog.umeng.com,🎯 全球直连
-  - DOMAIN,msg.umeng.com,🎯 全球直连
-  - DOMAIN,msg.umengcloud.com,🎯 全球直连
-  - DOMAIN,tracking.miui.com,🎯 全球直连
-  - DOMAIN,app.adjust.com,🎯 全球直连
-  - DOMAIN,bdtj.tagtic.cn,🎯 全球直连
-  - DOMAIN,rewards.hypixel.net,🎯 全球直连
-  - DOMAIN-SUFFIX,koodomobile.com,🎯 全球直连
-  - DOMAIN-SUFFIX,koodomobile.ca,🎯 全球直连
 # 本碎片只包含常见广告关键字、广告联盟。无副作用，放心使用
 # 广告关键词
 # 广告联盟-国内****************
