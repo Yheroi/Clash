@@ -1,10 +1,10 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：2024-08-29 17:13:43
+# 创建时间：2024-08-30 10:07:14
 # 使用模版：ACL4SSR_Mini.ini
-# 节点数量：81
-# 节点类型：hysteria2, vless, vmess, ss
+# 节点数量：34
+# 节点类型：hysteria2
 # !!当前配置文件请使用基于 Clash.Meta 内核程序
 ####################################
 mixed-port: 7890
@@ -87,261 +87,120 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"英国_1","type":"hysteria2","server":"hy5.hy2yydsapi.top","port":8443,"password":"8518a01f-a05d-4a50-8760-9c5d041aac5e","sni":"hy5.hy2yydsapi.top","skip-cert-verify":true}
-  - {"name":"英国_2","type":"hysteria2","server":"hy5.hy2yydsapi.top","port":8088,"password":"8518a01f-a05d-4a50-8760-9c5d041aac5e","sni":"hy5.hy2yydsapi.top","skip-cert-verify":true}
-  - {"name":"美国_3","type":"vless","server":"hy2.hy2yydsapi.top","port":8080,"udp":true,"uuid":"8518a01f-a05d-4a50-8760-9c5d041aac5e","tls":true,"servername":"www.python.org","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"n7YGTRf8PzsFzQLsfPTAatsrd9Ws50ETDTKUG6p8nx8","short-id":"607e67b1"},"client-fingerprint":"safari"}
-  - {"name":"美国_4","type":"vless","server":"hy1.hy2yydsapi.top","port":8080,"udp":true,"uuid":"8518a01f-a05d-4a50-8760-9c5d041aac5e","tls":true,"servername":"www.python.org","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"n7YGTRf8PzsFzQLsfPTAatsrd9Ws50ETDTKUG6p8nx8","short-id":"607e67b1"},"client-fingerprint":"edge"}
-  - {"name":"美国_5","type":"vless","server":"hy3.hy2yydsapi.top","port":8080,"udp":true,"uuid":"8518a01f-a05d-4a50-8760-9c5d041aac5e","tls":true,"servername":"www.python.org","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"n7YGTRf8PzsFzQLsfPTAatsrd9Ws50ETDTKUG6p8nx8","short-id":"607e67b1"},"client-fingerprint":"firefox"}
-  - {"name":"美国_6","type":"hysteria2","server":"hy2.hy2yydsapi.top","port":8443,"password":"8518a01f-a05d-4a50-8760-9c5d041aac5e","sni":"hy2.hy2yydsapi.top","skip-cert-verify":true}
-  - {"name":"美国_7","type":"hysteria2","server":"hy1.hy2yydsapi.top","port":8443,"password":"8518a01f-a05d-4a50-8760-9c5d041aac5e","sni":"hy1.hy2yydsapi.top","skip-cert-verify":true}
-  - {"name":"美国_8","type":"hysteria2","server":"hy3.hy2yydsapi.top","port":8443,"password":"8518a01f-a05d-4a50-8760-9c5d041aac5e","sni":"hy3.hy2yydsapi.top","skip-cert-verify":true}
-  - {"name":"美国_9","type":"vmess","server":"hy2.hy2yydsapi.top","port":8081,"cipher":"auto","uuid":"8518a01f-a05d-4a50-8760-9c5d041aac5e","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"hy2.hy2yydsapi.top"}}}
-  - {"name":"美国_10","type":"vmess","server":"hy1.hy2yydsapi.top","port":8081,"cipher":"auto","uuid":"8518a01f-a05d-4a50-8760-9c5d041aac5e","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"hy1.hy2yydsapi.top"}}}
-  - {"name":"美国_11","type":"vmess","server":"hy3.hy2yydsapi.top","port":8081,"cipher":"auto","uuid":"8518a01f-a05d-4a50-8760-9c5d041aac5e","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"hy3.hy2yydsapi.top"}}}
-  - {"name":"俄罗斯_12","type":"hysteria2","server":"hkyyds.bpjc.tgbpjc520.site","port":20000,"password":"d4ef4929-230b-461e-8c7c-8f7536ac4249","sni":"hkyyds.bpjc.tgbpjc520.site","skip-cert-verify":true}
-  - {"name":"法国_13","type":"hysteria2","server":"aktw1.tgbpjc520.site","port":443,"password":"d4ef4929-230b-461e-8c7c-8f7536ac4249","sni":"aktw1.tgbpjc520.site","skip-cert-verify":true}
-  - {"name":"日本_14","type":"hysteria2","server":"bpjcjapan.tgbpjc520.site","port":20000,"password":"d4ef4929-230b-461e-8c7c-8f7536ac4249","sni":"bpjcjapan.tgbpjc520.site","skip-cert-verify":true}
-  - {"name":"美国_15","type":"vless","server":"3f555281-a1b3-43ff-afed-b7e5d553d1e2.tgbpjc520.site","port":8080,"uuid":"d4ef4929-230b-461e-8c7c-8f7536ac4249","tls":true,"servername":"sg.tgbpjc520.site","network":"ws","ws-opts":{"path":"/?ed=2048"}}
-  - {"name":"美国_16","type":"vless","server":"3f555281-a1b3-43ff-afed-b7e5d553d1e2.tgbpjc520.site","port":80,"uuid":"d4ef4929-230b-461e-8c7c-8f7536ac4249","tls":true,"servername":"us.tgbpjc520.site","network":"ws","ws-opts":{"path":"/?ed=2048"}}
-  - {"name":"中国_17","type":"ss","server":"happy.alicenetwork.cloud","port":60100,"password":"976ff121-6851-433f-87a8-06d1700d2145","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"中国_18","type":"ss","server":"happy.alicenetwork.cloud","port":60101,"password":"976ff121-6851-433f-87a8-06d1700d2145","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"中国_19","type":"ss","server":"happy.alicenetwork.cloud","port":60102,"password":"976ff121-6851-433f-87a8-06d1700d2145","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"中国_20","type":"ss","server":"happy.alicenetwork.cloud","port":60103,"password":"976ff121-6851-433f-87a8-06d1700d2145","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"中国_21","type":"ss","server":"happy.alicenetwork.cloud","port":60104,"password":"976ff121-6851-433f-87a8-06d1700d2145","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"中国_22","type":"ss","server":"happy.alicenetwork.cloud","port":60106,"password":"976ff121-6851-433f-87a8-06d1700d2145","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"中国_23","type":"ss","server":"happy.alicenetwork.cloud","port":60107,"password":"976ff121-6851-433f-87a8-06d1700d2145","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"中国_24","type":"ss","server":"happy.alicenetwork.cloud","port":60108,"password":"976ff121-6851-433f-87a8-06d1700d2145","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"中国_25","type":"ss","server":"happy.alicenetwork.cloud","port":60110,"password":"976ff121-6851-433f-87a8-06d1700d2145","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"中国_26","type":"ss","server":"happy.alicenetwork.cloud","port":60111,"password":"976ff121-6851-433f-87a8-06d1700d2145","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"中国_27","type":"ss","server":"happy.alicenetwork.cloud","port":60112,"password":"976ff121-6851-433f-87a8-06d1700d2145","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"中国_28","type":"ss","server":"happy.alicenetwork.cloud","port":60113,"password":"976ff121-6851-433f-87a8-06d1700d2145","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"中国_29","type":"ss","server":"happy.alicenetwork.cloud","port":60114,"password":"976ff121-6851-433f-87a8-06d1700d2145","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"中国_30","type":"ss","server":"happy.alicenetwork.cloud","port":60115,"password":"976ff121-6851-433f-87a8-06d1700d2145","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"中国_31","type":"ss","server":"happy.alicenetwork.cloud","port":60116,"password":"976ff121-6851-433f-87a8-06d1700d2145","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"韩国_32","type":"hysteria2","server":"cc.sux.lol","port":443,"password":"28f8ac2c-95ce-409b-b85b-efc0f218bc86","skip-cert-verify":true}
-  - {"name":"美国_33","type":"hysteria2","server":"jnd.tiktokcn.xyz","port":443,"password":"28f8ac2c-95ce-409b-b85b-efc0f218bc86","skip-cert-verify":true}
-  - {"name":"英国_34","type":"hysteria2","server":"ruidian.tiktokcn.xyz","port":443,"password":"28f8ac2c-95ce-409b-b85b-efc0f218bc86","skip-cert-verify":true}
-  - {"name":"美国_35","type":"hysteria2","server":"zzxg.tiktokcn.xyz","port":443,"password":"28f8ac2c-95ce-409b-b85b-efc0f218bc86","skip-cert-verify":true}
-  - {"name":"美国_36","type":"hysteria2","server":"mtl.tiktokcn.xyz","port":443,"password":"28f8ac2c-95ce-409b-b85b-efc0f218bc86","skip-cert-verify":true}
-  - {"name":"美国_37","type":"hysteria2","server":"flkf.tiktokcn.xyz","port":443,"password":"28f8ac2c-95ce-409b-b85b-efc0f218bc86","skip-cert-verify":true}
-  - {"name":"美国_38","type":"hysteria2","server":"shs1.sux.lol","port":443,"password":"28f8ac2c-95ce-409b-b85b-efc0f218bc86","skip-cert-verify":true}
-  - {"name":"美国_39","type":"hysteria2","server":"shs2.sux.lol","port":443,"password":"28f8ac2c-95ce-409b-b85b-efc0f218bc86","skip-cert-verify":true}
-  - {"name":"美国_40","type":"hysteria2","server":"xjp1.tiktokcn.xyz","port":443,"password":"28f8ac2c-95ce-409b-b85b-efc0f218bc86","skip-cert-verify":true}
-  - {"name":"立陶宛_41","type":"vmess","server":"cdn.cngfw.online","port":2053,"cipher":"auto","uuid":"28f8ac2c-95ce-409b-b85b-efc0f218bc86","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"yx1.tiktokcn.xyz"}}}
-  - {"name":"中国_42","type":"ss","server":"36.140.92.227","port":10351,"password":"28f8ac2c-95ce-409b-b85b-efc0f218bc86","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"美国_43","type":"hysteria2","server":"us003.panghu.buzz","port":20000,"password":"487d21a6-b047-4fa0-a40d-de944401b2f9","sni":"bing.com","skip-cert-verify":true}
-  - {"name":"加拿大_44","type":"hysteria2","server":"us001.panghu.buzz","port":20000,"password":"487d21a6-b047-4fa0-a40d-de944401b2f9","sni":"bing.com","skip-cert-verify":true}
-  - {"name":"美国_45","type":"hysteria2","server":"us002.panghu.buzz","port":20000,"password":"487d21a6-b047-4fa0-a40d-de944401b2f9","sni":"bing.com","skip-cert-verify":true}
-  - {"name":"美国_46","type":"hysteria2","server":"hk001.panghu.buzz","port":20000,"password":"487d21a6-b047-4fa0-a40d-de944401b2f9","sni":"bing.com","skip-cert-verify":true}
-  - {"name":"中国_47","type":"hysteria2","server":"hk002.panghu.buzz","port":5000,"password":"487d21a6-b047-4fa0-a40d-de944401b2f9","sni":"bing.com","skip-cert-verify":true}
-  - {"name":"印度_48","type":"hysteria2","server":"jp001.panghu.buzz","port":5000,"password":"487d21a6-b047-4fa0-a40d-de944401b2f9","sni":"bing.com","skip-cert-verify":true}
-  - {"name":"印度_49","type":"hysteria2","server":"sg001.panghu.buzz","port":5000,"password":"487d21a6-b047-4fa0-a40d-de944401b2f9","sni":"bing.com","skip-cert-verify":true}
-  - {"name":"荷兰_50","type":"hysteria2","server":"els001.panghu.buzz","port":20000,"password":"487d21a6-b047-4fa0-a40d-de944401b2f9","sni":"bing.com","skip-cert-verify":true}
-  - {"name":"伊朗_51","type":"hysteria2","server":"tr.panghu.buzz","port":16951,"password":"487d21a6-b047-4fa0-a40d-de944401b2f9","sni":"bing.com","skip-cert-verify":true}
-  - {"name":"印度_52","type":"hysteria2","server":"vn001.panghu.buzz","port":18621,"password":"487d21a6-b047-4fa0-a40d-de944401b2f9","sni":"bing.com","skip-cert-verify":true}
-  - {"name":"荷兰_53","type":"hysteria2","server":"th.panghu.buzz","port":20000,"password":"487d21a6-b047-4fa0-a40d-de944401b2f9","sni":"bing.com","skip-cert-verify":true}
-  - {"name":"德国_54","type":"hysteria2","server":"de001.panghu.buzz","port":20000,"password":"487d21a6-b047-4fa0-a40d-de944401b2f9","sni":"bing.com","skip-cert-verify":true}
-  - {"name":"美国_55","type":"vmess","server":"panghu.panghu.buzz","port":2052,"cipher":"auto","uuid":"487d21a6-b047-4fa0-a40d-de944401b2f9","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"alq.panghu.buzz"}}}
-  - {"name":"美国_56","type":"vmess","server":"panghu1.panghu.buzz","port":2052,"cipher":"auto","uuid":"487d21a6-b047-4fa0-a40d-de944401b2f9","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"alq.panghu.buzz"}}}
-  - {"name":"美国_57","type":"vmess","server":"panghu3.panghu.buzz","port":2052,"cipher":"auto","uuid":"487d21a6-b047-4fa0-a40d-de944401b2f9","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"alq.panghu.buzz"}}}
-  - {"name":"哥斯达黎加_58","type":"vmess","server":"bx1.panghu.buzz","port":30200,"cipher":"auto","uuid":"487d21a6-b047-4fa0-a40d-de944401b2f9","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"bing.com"}}}
-  - {"name":"新加坡_59","type":"ss","server":"54.169.236.64","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"美国_60","type":"ss","server":"3.112.216.172","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"日本_61","type":"ss","server":"52.197.108.167","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"日本_62","type":"ss","server":"52.197.150.228","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"美国_63","type":"ss","server":"3.112.237.254","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"日本_64","type":"ss","server":"13.231.238.109","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"美国_65","type":"ss","server":"13.212.34.140","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"新加坡_66","type":"ss","server":"13.229.243.64","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"美国_67","type":"ss","server":"13.212.82.167","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"美国_68","type":"ss","server":"34.223.226.135","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"美国_69","type":"ss","server":"54.188.30.108","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"美国_70","type":"ss","server":"47.128.150.72","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"美国_71","type":"ss","server":"35.85.60.143","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"美国_72","type":"ss","server":"54.202.197.222","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"美国_73","type":"ss","server":"35.162.162.122","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"美国_74","type":"ss","server":"35.87.4.77","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"美国_75","type":"ss","server":"35.87.154.95","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"中国_76","type":"vmess","server":"relay.catomation.uk","port":60013,"cipher":"auto","uuid":"c5c40a6c-8c96-32e2-ba22-07e694f67584","alterId":1,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"download.skycn.com"}}}
-  - {"name":"中国_77","type":"vmess","server":"relay.catomation.uk","port":60021,"cipher":"auto","uuid":"c5c40a6c-8c96-32e2-ba22-07e694f67584","alterId":1,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"download.skycn.com"}}}
-  - {"name":"中国_78","type":"vmess","server":"relay.catomation.uk","port":60016,"cipher":"auto","uuid":"c5c40a6c-8c96-32e2-ba22-07e694f67584","alterId":1,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"download.skycn.com"}}}
-  - {"name":"中国_79","type":"vmess","server":"relay.catomation.uk","port":60017,"cipher":"auto","uuid":"c5c40a6c-8c96-32e2-ba22-07e694f67584","alterId":1,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"download.skycn.com"}}}
-  - {"name":"中国_80","type":"vmess","server":"relay.catomation.uk","port":60018,"cipher":"auto","uuid":"c5c40a6c-8c96-32e2-ba22-07e694f67584","alterId":1,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"download.skycn.com"}}}
-  - {"name":"中国_81","type":"vmess","server":"direct.catomation.uk","port":80,"cipher":"auto","uuid":"c5c40a6c-8c96-32e2-ba22-07e694f67584","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"download.skycn.com"}}}
+  - {"name":"自动最优(hy2)-网址vp0.org","type":"hysteria2","server":"best.networklinkpro.net","port":25840,"password":"df5220f5-df3f-4a53-95e4-9cb022cb3b7a","skip-cert-verify":true}
+  - {"name":"🇺🇸 5美国波特兰-全网优化(hy2)","type":"hysteria2","server":"5us.networklinkpro.net","port":23807,"password":"df5220f5-df3f-4a53-95e4-9cb022cb3b7a","skip-cert-verify":true}
+  - {"name":"🇺🇸 6美国圣何塞集群-全网优化(hy2)","type":"hysteria2","server":"6us.networklinkpro.net","port":21558,"password":"df5220f5-df3f-4a53-95e4-9cb022cb3b7a","skip-cert-verify":true}
+  - {"name":"🇺🇸 16美国凤凰城集群-联通优化(hy2)","type":"hysteria2","server":"16us.networklinkpro.net","port":25170,"password":"df5220f5-df3f-4a53-95e4-9cb022cb3b7a","skip-cert-verify":true}
+  - {"name":"🇺🇸 28美国东部-全网优化(hy2)","type":"hysteria2","server":"28us.networklinkpro.net","port":22367,"password":"df5220f5-df3f-4a53-95e4-9cb022cb3b7a","skip-cert-verify":true}
+  - {"name":"🇺🇸 38美国洛杉矶-全网优化(hy2)","type":"hysteria2","server":"38us.networklinkpro.net","port":25762,"password":"df5220f5-df3f-4a53-95e4-9cb022cb3b7a","skip-cert-verify":true}
+  - {"name":"🇰🇷 7韩国春川集群-联通/移动(hy2)","type":"hysteria2","server":"7kr.networklinkpro.net","port":22826,"password":"df5220f5-df3f-4a53-95e4-9cb022cb3b7a","skip-cert-verify":true}
+  - {"name":"🇰🇷 8韩国首尔-全网优化(hy2)","type":"hysteria2","server":"8kr.networklinkpro.net","port":23850,"password":"df5220f5-df3f-4a53-95e4-9cb022cb3b7a","skip-cert-verify":true}
+  - {"name":"🇰🇷 35韩国首尔集群-电信/联通(hy2)","type":"hysteria2","server":"35kr.networklinkpro.net","port":21100,"password":"df5220f5-df3f-4a53-95e4-9cb022cb3b7a","skip-cert-verify":true}
+  - {"name":"🇦🇪 10阿联酋集群-电信/移动(hy2)","type":"hysteria2","server":"10uae.networklinkpro.net","port":21414,"password":"df5220f5-df3f-4a53-95e4-9cb022cb3b7a","skip-cert-verify":true}
+  - {"name":"🇩🇪 11德国-全网优化(hy2)","type":"hysteria2","server":"11de.networklinkpro.net","port":23391,"password":"df5220f5-df3f-4a53-95e4-9cb022cb3b7a","skip-cert-verify":true}
+  - {"name":"🇬🇧 12英国-全网优化(hy2)","type":"hysteria2","server":"12uk.networklinkpro.net","port":25170,"password":"df5220f5-df3f-4a53-95e4-9cb022cb3b7a","skip-cert-verify":true}
+  - {"name":"🇮🇳 13印度孟买-电信/联通(hy2)","type":"hysteria2","server":"13in.networklinkpro.net","port":25436,"password":"df5220f5-df3f-4a53-95e4-9cb022cb3b7a","skip-cert-verify":true}
+  - {"name":"🇸🇬 14新加坡集群-全网优化(hy2)","type":"hysteria2","server":"14sg.networklinkpro.net","port":24745,"password":"df5220f5-df3f-4a53-95e4-9cb022cb3b7a","skip-cert-verify":true}
+  - {"name":"🇸🇬 15新加坡集群-联通/移动(hy2)","type":"hysteria2","server":"15sg.networklinkpro.net","port":23103,"password":"df5220f5-df3f-4a53-95e4-9cb022cb3b7a","skip-cert-verify":true}
+  - {"name":"🇷🇺 17俄罗斯-电信/联通(hy2)","type":"hysteria2","server":"17ru.networklinkpro.net","port":23284,"password":"df5220f5-df3f-4a53-95e4-9cb022cb3b7a","skip-cert-verify":true}
+  - {"name":"🇯🇵 9日本大版集群-电信/移动(hy2)","type":"hysteria2","server":"9jp.networklinkpro.net","port":21965,"password":"df5220f5-df3f-4a53-95e4-9cb022cb3b7a","skip-cert-verify":true}
+  - {"name":"🇯🇵 18日本东京集群-联通/移动(hy2)","type":"hysteria2","server":"18jp.networklinkpro.net","port":22443,"password":"df5220f5-df3f-4a53-95e4-9cb022cb3b7a","skip-cert-verify":true}
+  - {"name":"🇯🇵 19日本东京-联通/移动(hy2)","type":"hysteria2","server":"19jp.networklinkpro.net","port":23829,"password":"df5220f5-df3f-4a53-95e4-9cb022cb3b7a","skip-cert-verify":true}
+  - {"name":"🇦🇺 20澳洲-电信/移动(hy2)","type":"hysteria2","server":"20au.networklinkpro.net","port":23972,"password":"df5220f5-df3f-4a53-95e4-9cb022cb3b7a","skip-cert-verify":true}
+  - {"name":"🇧🇷 22巴西-联通/移动(hy2)","type":"hysteria2","server":"22br.networklinkpro.net","port":24831,"password":"df5220f5-df3f-4a53-95e4-9cb022cb3b7a","skip-cert-verify":true}
+  - {"name":"🇮🇱 23以色列-联通/移动(hy2)","type":"hysteria2","server":"23il.networklinkpro.net","port":24691,"password":"df5220f5-df3f-4a53-95e4-9cb022cb3b7a","skip-cert-verify":true}
+  - {"name":"🇹🇷 24土耳其-电信/联通(hy2)","type":"hysteria2","server":"24tr.networklinkpro.net","port":24107,"password":"df5220f5-df3f-4a53-95e4-9cb022cb3b7a","skip-cert-verify":true}
+  - {"name":"🇦🇷 25阿根廷-联通/移动(hy2)","type":"hysteria2","server":"25ar.networklinkpro.net","port":24502,"password":"df5220f5-df3f-4a53-95e4-9cb022cb3b7a","skip-cert-verify":true}
+  - {"name":"🇳🇱 26荷兰-全网优化(hy2)","type":"hysteria2","server":"26nl.networklinkpro.net","port":22801,"password":"df5220f5-df3f-4a53-95e4-9cb022cb3b7a","skip-cert-verify":true}
+  - {"name":"🇫🇷 27法国-全网优化(hy2)","type":"hysteria2","server":"27fr.networklinkpro.net","port":21185,"password":"df5220f5-df3f-4a53-95e4-9cb022cb3b7a","skip-cert-verify":true}
+  - {"name":"🇨🇱 29智利-全网优化(hy2)","type":"hysteria2","server":"29chi.networklinkpro.net","port":21219,"password":"df5220f5-df3f-4a53-95e4-9cb022cb3b7a","skip-cert-verify":true}
+  - {"name":"🇮🇹 30意大利-全网优化(hy2)","type":"hysteria2","server":"30it.networklinkpro.net","port":22530,"password":"df5220f5-df3f-4a53-95e4-9cb022cb3b7a","skip-cert-verify":true}
+  - {"name":"🇸🇪 31瑞典-电信/移动(hy2)","type":"hysteria2","server":"31se.networklinkpro.net","port":21104,"password":"df5220f5-df3f-4a53-95e4-9cb022cb3b7a","skip-cert-verify":true}
+  - {"name":"🇿🇦 32南非-约翰内斯堡(hy2)","type":"hysteria2","server":"32za.networklinkpro.net","port":22174,"password":"df5220f5-df3f-4a53-95e4-9cb022cb3b7a","skip-cert-verify":true}
+  - {"name":"🇨🇦 33加拿大-全网优化(hy2)","type":"hysteria2","server":"33ca.networklinkpro.net","port":23372,"password":"df5220f5-df3f-4a53-95e4-9cb022cb3b7a","skip-cert-verify":true}
+  - {"name":"🇨🇭 34瑞士-全网优化(hy2)","type":"hysteria2","server":"34ch.networklinkpro.net","port":22426,"password":"df5220f5-df3f-4a53-95e4-9cb022cb3b7a","skip-cert-verify":true}
+  - {"name":"🇪🇸 36西班牙-电信/联通(hy2)","type":"hysteria2","server":"36es.networklinkpro.net","port":21209,"password":"df5220f5-df3f-4a53-95e4-9cb022cb3b7a","skip-cert-verify":true}
+  - {"name":"🇲🇽 37墨西哥-电信/联通(hy2)","type":"hysteria2","server":"37mx.networklinkpro.net","port":23462,"password":"df5220f5-df3f-4a53-95e4-9cb022cb3b7a","skip-cert-verify":true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 英国_1
-      - 英国_2
-      - 美国_3
-      - 美国_4
-      - 美国_5
-      - 美国_6
-      - 美国_7
-      - 美国_8
-      - 美国_9
-      - 美国_10
-      - 美国_11
-      - 俄罗斯_12
-      - 法国_13
-      - 日本_14
-      - 美国_15
-      - 美国_16
-      - 中国_17
-      - 中国_18
-      - 中国_19
-      - 中国_20
-      - 中国_21
-      - 中国_22
-      - 中国_23
-      - 中国_24
-      - 中国_25
-      - 中国_26
-      - 中国_27
-      - 中国_28
-      - 中国_29
-      - 中国_30
-      - 中国_31
-      - 韩国_32
-      - 美国_33
-      - 英国_34
-      - 美国_35
-      - 美国_36
-      - 美国_37
-      - 美国_38
-      - 美国_39
-      - 美国_40
-      - 立陶宛_41
-      - 中国_42
-      - 美国_43
-      - 加拿大_44
-      - 美国_45
-      - 美国_46
-      - 中国_47
-      - 印度_48
-      - 印度_49
-      - 荷兰_50
-      - 伊朗_51
-      - 印度_52
-      - 荷兰_53
-      - 德国_54
-      - 美国_55
-      - 美国_56
-      - 美国_57
-      - 哥斯达黎加_58
-      - 新加坡_59
-      - 美国_60
-      - 日本_61
-      - 日本_62
-      - 美国_63
-      - 日本_64
-      - 美国_65
-      - 新加坡_66
-      - 美国_67
-      - 美国_68
-      - 美国_69
-      - 美国_70
-      - 美国_71
-      - 美国_72
-      - 美国_73
-      - 美国_74
-      - 美国_75
-      - 中国_76
-      - 中国_77
-      - 中国_78
-      - 中国_79
-      - 中国_80
-      - 中国_81
+      - 自动最优(hy2)-网址vp0.org
+      - 🇺🇸 5美国波特兰-全网优化(hy2)
+      - 🇺🇸 6美国圣何塞集群-全网优化(hy2)
+      - 🇺🇸 16美国凤凰城集群-联通优化(hy2)
+      - 🇺🇸 28美国东部-全网优化(hy2)
+      - 🇺🇸 38美国洛杉矶-全网优化(hy2)
+      - 🇰🇷 7韩国春川集群-联通/移动(hy2)
+      - 🇰🇷 8韩国首尔-全网优化(hy2)
+      - 🇰🇷 35韩国首尔集群-电信/联通(hy2)
+      - 🇦🇪 10阿联酋集群-电信/移动(hy2)
+      - 🇩🇪 11德国-全网优化(hy2)
+      - 🇬🇧 12英国-全网优化(hy2)
+      - 🇮🇳 13印度孟买-电信/联通(hy2)
+      - 🇸🇬 14新加坡集群-全网优化(hy2)
+      - 🇸🇬 15新加坡集群-联通/移动(hy2)
+      - 🇷🇺 17俄罗斯-电信/联通(hy2)
+      - 🇯🇵 9日本大版集群-电信/移动(hy2)
+      - 🇯🇵 18日本东京集群-联通/移动(hy2)
+      - 🇯🇵 19日本东京-联通/移动(hy2)
+      - 🇦🇺 20澳洲-电信/移动(hy2)
+      - 🇧🇷 22巴西-联通/移动(hy2)
+      - 🇮🇱 23以色列-联通/移动(hy2)
+      - 🇹🇷 24土耳其-电信/联通(hy2)
+      - 🇦🇷 25阿根廷-联通/移动(hy2)
+      - 🇳🇱 26荷兰-全网优化(hy2)
+      - 🇫🇷 27法国-全网优化(hy2)
+      - 🇨🇱 29智利-全网优化(hy2)
+      - 🇮🇹 30意大利-全网优化(hy2)
+      - 🇸🇪 31瑞典-电信/移动(hy2)
+      - 🇿🇦 32南非-约翰内斯堡(hy2)
+      - 🇨🇦 33加拿大-全网优化(hy2)
+      - 🇨🇭 34瑞士-全网优化(hy2)
+      - 🇪🇸 36西班牙-电信/联通(hy2)
+      - 🇲🇽 37墨西哥-电信/联通(hy2)
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 英国_1
-      - 英国_2
-      - 美国_3
-      - 美国_4
-      - 美国_5
-      - 美国_6
-      - 美国_7
-      - 美国_8
-      - 美国_9
-      - 美国_10
-      - 美国_11
-      - 俄罗斯_12
-      - 法国_13
-      - 日本_14
-      - 美国_15
-      - 美国_16
-      - 中国_17
-      - 中国_18
-      - 中国_19
-      - 中国_20
-      - 中国_21
-      - 中国_22
-      - 中国_23
-      - 中国_24
-      - 中国_25
-      - 中国_26
-      - 中国_27
-      - 中国_28
-      - 中国_29
-      - 中国_30
-      - 中国_31
-      - 韩国_32
-      - 美国_33
-      - 英国_34
-      - 美国_35
-      - 美国_36
-      - 美国_37
-      - 美国_38
-      - 美国_39
-      - 美国_40
-      - 立陶宛_41
-      - 中国_42
-      - 美国_43
-      - 加拿大_44
-      - 美国_45
-      - 美国_46
-      - 中国_47
-      - 印度_48
-      - 印度_49
-      - 荷兰_50
-      - 伊朗_51
-      - 印度_52
-      - 荷兰_53
-      - 德国_54
-      - 美国_55
-      - 美国_56
-      - 美国_57
-      - 哥斯达黎加_58
-      - 新加坡_59
-      - 美国_60
-      - 日本_61
-      - 日本_62
-      - 美国_63
-      - 日本_64
-      - 美国_65
-      - 新加坡_66
-      - 美国_67
-      - 美国_68
-      - 美国_69
-      - 美国_70
-      - 美国_71
-      - 美国_72
-      - 美国_73
-      - 美国_74
-      - 美国_75
-      - 中国_76
-      - 中国_77
-      - 中国_78
-      - 中国_79
-      - 中国_80
-      - 中国_81
+      - 自动最优(hy2)-网址vp0.org
+      - 🇺🇸 5美国波特兰-全网优化(hy2)
+      - 🇺🇸 6美国圣何塞集群-全网优化(hy2)
+      - 🇺🇸 16美国凤凰城集群-联通优化(hy2)
+      - 🇺🇸 28美国东部-全网优化(hy2)
+      - 🇺🇸 38美国洛杉矶-全网优化(hy2)
+      - 🇰🇷 7韩国春川集群-联通/移动(hy2)
+      - 🇰🇷 8韩国首尔-全网优化(hy2)
+      - 🇰🇷 35韩国首尔集群-电信/联通(hy2)
+      - 🇦🇪 10阿联酋集群-电信/移动(hy2)
+      - 🇩🇪 11德国-全网优化(hy2)
+      - 🇬🇧 12英国-全网优化(hy2)
+      - 🇮🇳 13印度孟买-电信/联通(hy2)
+      - 🇸🇬 14新加坡集群-全网优化(hy2)
+      - 🇸🇬 15新加坡集群-联通/移动(hy2)
+      - 🇷🇺 17俄罗斯-电信/联通(hy2)
+      - 🇯🇵 9日本大版集群-电信/移动(hy2)
+      - 🇯🇵 18日本东京集群-联通/移动(hy2)
+      - 🇯🇵 19日本东京-联通/移动(hy2)
+      - 🇦🇺 20澳洲-电信/移动(hy2)
+      - 🇧🇷 22巴西-联通/移动(hy2)
+      - 🇮🇱 23以色列-联通/移动(hy2)
+      - 🇹🇷 24土耳其-电信/联通(hy2)
+      - 🇦🇷 25阿根廷-联通/移动(hy2)
+      - 🇳🇱 26荷兰-全网优化(hy2)
+      - 🇫🇷 27法国-全网优化(hy2)
+      - 🇨🇱 29智利-全网优化(hy2)
+      - 🇮🇹 30意大利-全网优化(hy2)
+      - 🇸🇪 31瑞典-电信/移动(hy2)
+      - 🇿🇦 32南非-约翰内斯堡(hy2)
+      - 🇨🇦 33加拿大-全网优化(hy2)
+      - 🇨🇭 34瑞士-全网优化(hy2)
+      - 🇪🇸 36西班牙-电信/联通(hy2)
+      - 🇲🇽 37墨西哥-电信/联通(hy2)
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -359,87 +218,40 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 英国_1
-      - 英国_2
-      - 美国_3
-      - 美国_4
-      - 美国_5
-      - 美国_6
-      - 美国_7
-      - 美国_8
-      - 美国_9
-      - 美国_10
-      - 美国_11
-      - 俄罗斯_12
-      - 法国_13
-      - 日本_14
-      - 美国_15
-      - 美国_16
-      - 中国_17
-      - 中国_18
-      - 中国_19
-      - 中国_20
-      - 中国_21
-      - 中国_22
-      - 中国_23
-      - 中国_24
-      - 中国_25
-      - 中国_26
-      - 中国_27
-      - 中国_28
-      - 中国_29
-      - 中国_30
-      - 中国_31
-      - 韩国_32
-      - 美国_33
-      - 英国_34
-      - 美国_35
-      - 美国_36
-      - 美国_37
-      - 美国_38
-      - 美国_39
-      - 美国_40
-      - 立陶宛_41
-      - 中国_42
-      - 美国_43
-      - 加拿大_44
-      - 美国_45
-      - 美国_46
-      - 中国_47
-      - 印度_48
-      - 印度_49
-      - 荷兰_50
-      - 伊朗_51
-      - 印度_52
-      - 荷兰_53
-      - 德国_54
-      - 美国_55
-      - 美国_56
-      - 美国_57
-      - 哥斯达黎加_58
-      - 新加坡_59
-      - 美国_60
-      - 日本_61
-      - 日本_62
-      - 美国_63
-      - 日本_64
-      - 美国_65
-      - 新加坡_66
-      - 美国_67
-      - 美国_68
-      - 美国_69
-      - 美国_70
-      - 美国_71
-      - 美国_72
-      - 美国_73
-      - 美国_74
-      - 美国_75
-      - 中国_76
-      - 中国_77
-      - 中国_78
-      - 中国_79
-      - 中国_80
-      - 中国_81
+      - 自动最优(hy2)-网址vp0.org
+      - 🇺🇸 5美国波特兰-全网优化(hy2)
+      - 🇺🇸 6美国圣何塞集群-全网优化(hy2)
+      - 🇺🇸 16美国凤凰城集群-联通优化(hy2)
+      - 🇺🇸 28美国东部-全网优化(hy2)
+      - 🇺🇸 38美国洛杉矶-全网优化(hy2)
+      - 🇰🇷 7韩国春川集群-联通/移动(hy2)
+      - 🇰🇷 8韩国首尔-全网优化(hy2)
+      - 🇰🇷 35韩国首尔集群-电信/联通(hy2)
+      - 🇦🇪 10阿联酋集群-电信/移动(hy2)
+      - 🇩🇪 11德国-全网优化(hy2)
+      - 🇬🇧 12英国-全网优化(hy2)
+      - 🇮🇳 13印度孟买-电信/联通(hy2)
+      - 🇸🇬 14新加坡集群-全网优化(hy2)
+      - 🇸🇬 15新加坡集群-联通/移动(hy2)
+      - 🇷🇺 17俄罗斯-电信/联通(hy2)
+      - 🇯🇵 9日本大版集群-电信/移动(hy2)
+      - 🇯🇵 18日本东京集群-联通/移动(hy2)
+      - 🇯🇵 19日本东京-联通/移动(hy2)
+      - 🇦🇺 20澳洲-电信/移动(hy2)
+      - 🇧🇷 22巴西-联通/移动(hy2)
+      - 🇮🇱 23以色列-联通/移动(hy2)
+      - 🇹🇷 24土耳其-电信/联通(hy2)
+      - 🇦🇷 25阿根廷-联通/移动(hy2)
+      - 🇳🇱 26荷兰-全网优化(hy2)
+      - 🇫🇷 27法国-全网优化(hy2)
+      - 🇨🇱 29智利-全网优化(hy2)
+      - 🇮🇹 30意大利-全网优化(hy2)
+      - 🇸🇪 31瑞典-电信/移动(hy2)
+      - 🇿🇦 32南非-约翰内斯堡(hy2)
+      - 🇨🇦 33加拿大-全网优化(hy2)
+      - 🇨🇭 34瑞士-全网优化(hy2)
+      - 🇪🇸 36西班牙-电信/联通(hy2)
+      - 🇲🇽 37墨西哥-电信/联通(hy2)
 
 rules:
 # 本地/局域网地址
@@ -805,7 +617,6 @@ rules:
   - DOMAIN-SUFFIX,rtbasia.com,🛑 全球拦截
   - DOMAIN-SUFFIX,sanya1.com,🛑 全球拦截
   - DOMAIN-SUFFIX,scupio.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,serving-sys.com,🛑 全球拦截
   - DOMAIN-SUFFIX,shuiguo.com,🛑 全球拦截
   - DOMAIN-SUFFIX,shuzilm.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,similarweb.com,🛑 全球拦截
@@ -873,6 +684,7 @@ rules:
   - DOMAIN-SUFFIX,wqmobile.com,🛑 全球拦截
   - DOMAIN-SUFFIX,wrating.com,🛑 全球拦截
   - DOMAIN-SUFFIX,wumii.cn,🛑 全球拦截
+  - DOMAIN-SUFFIX,wwads.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,xcy8.com,🛑 全球拦截
   - DOMAIN-SUFFIX,xdrig.com,🛑 全球拦截
   - DOMAIN-SUFFIX,xiaozhen.com,🛑 全球拦截
@@ -906,7 +718,6 @@ rules:
   - DOMAIN-SUFFIX,zhjfad.com,🛑 全球拦截
   - DOMAIN-SUFFIX,zqzxz.com,🛑 全球拦截
   - DOMAIN-SUFFIX,zzsx8.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,wwads.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,acuityplatform.com,🛑 全球拦截
   - DOMAIN-SUFFIX,ad-stir.com,🛑 全球拦截
   - DOMAIN-SUFFIX,ad-survey.com,🛑 全球拦截
@@ -2232,7 +2043,7 @@ rules:
   - IP-CIDR6,2001:b28:f23d::/48,🚀 节点选择,no-resolve
   - IP-CIDR6,2001:b28:f23f::/48,🚀 节点选择,no-resolve
 # 内容：国外媒体列表
-# 更新：2024-06-30 11:02:56
+# 更新：2024-08-27 13:51:18
 # 数量：367条
 # ABC
 # AbemaTV
@@ -2254,6 +2065,7 @@ rules:
 # Hulu
 # HuluJapan
 # ITV
+# Iwara
 # JOOX
 # Japonx
 # KKBOX
@@ -2438,6 +2250,7 @@ rules:
   - DOMAIN,itvpnpmobile-a.akamaihd.net,🚀 节点选择
   - DOMAIN-SUFFIX,itv.com,🚀 节点选择
   - DOMAIN-SUFFIX,itvstatic.com,🚀 节点选择
+  - DOMAIN-SUFFIX,iwara.tv,🚀 节点选择
 #   - USER-AGENT,JOOX*,🚀 节点选择
 #   - USER-AGENT,WeMusic*,🚀 节点选择
   - DOMAIN-KEYWORD,jooxweb-api,🚀 节点选择
@@ -2546,7 +2359,6 @@ rules:
   - DOMAIN-SUFFIX,olevod.tv,🚀 节点选择
   - DOMAIN-SUFFIX,olevodtv.com,🚀 节点选择
   - DOMAIN-KEYWORD,openai,🚀 节点选择
-  - DOMAIN,gemini.google.com,🚀 节点选择
   - DOMAIN-SUFFIX,auth0.com,🚀 节点选择
   - DOMAIN-SUFFIX,challenges.cloudflare.com,🚀 节点选择
   - DOMAIN-SUFFIX,chatgpt.com,🚀 节点选择
@@ -2656,12 +2468,14 @@ rules:
 # BBC
 # Claude
 # Developer 开发者常用国外网站、镜像和论坛
+# Docker
 # Discord
 # Facebook
 # Github
 # Google
 # GoogleCNProxyIP 谷歌中国服务 services.googleapis.cn
 # Instagram
+# Iwara
 # Kakao Talk
 # Line
 # OpenAi
@@ -2882,6 +2696,13 @@ rules:
   - DOMAIN-SUFFIX,spring.io,🚀 节点选择
   - DOMAIN-SUFFIX,spring.net,🚀 节点选择
   - DOMAIN-SUFFIX,stackoverflow.com,🚀 节点选择
+  - DOMAIN,d1q6f0aelx0por.cloudfront.net,🚀 节点选择
+  - DOMAIN,d2wy8f7a9ursnm.cloudfront.net,🚀 节点选择
+  - DOMAIN,d36jcksde1wxzq.cloudfront.net,🚀 节点选择
+  - DOMAIN-SUFFIX,compose-spec.io,🚀 节点选择
+  - DOMAIN-SUFFIX,docker.com,🚀 节点选择
+  - DOMAIN-SUFFIX,docker.io,🚀 节点选择
+  - DOMAIN-SUFFIX,dockerhub.com,🚀 节点选择
   - DOMAIN-SUFFIX,discord.co,🚀 节点选择
   - DOMAIN-SUFFIX,discord.com,🚀 节点选择
   - DOMAIN-SUFFIX,discord.gg,🚀 节点选择
@@ -2955,6 +2776,7 @@ rules:
   - DOMAIN-SUFFIX,cdninstagram.com,🚀 节点选择
   - DOMAIN-SUFFIX,instagram.com,🚀 节点选择
   - DOMAIN-SUFFIX,instagr.am,🚀 节点选择
+  - DOMAIN-SUFFIX,iwara.tv,🚀 节点选择
   - DOMAIN-SUFFIX,kakao.com,🚀 节点选择
   - DOMAIN-SUFFIX,kakao.co.kr,🚀 节点选择
   - DOMAIN-SUFFIX,kakaocdn.net,🚀 节点选择
@@ -3315,6 +3137,8 @@ rules:
   - DOMAIN-SUFFIX,didialift.com,🎯 全球直连
   - DOMAIN-SUFFIX,didiglobal.com,🎯 全球直连
   - DOMAIN-SUFFIX,udache.com,🎯 全球直连
+  - DOMAIN-SUFFIX,bytefcdnrd.com,🎯 全球直连
+  - DOMAIN-SUFFIX,edgesrv.com,🎯 全球直连
   - DOMAIN-SUFFIX,douyu.com,🎯 全球直连
   - DOMAIN-SUFFIX,douyu.tv,🎯 全球直连
   - DOMAIN-SUFFIX,douyuscdn.com,🎯 全球直连
@@ -3624,6 +3448,7 @@ rules:
   - DOMAIN-SUFFIX,kaola.com,🎯 全球直连
   - DOMAIN-SUFFIX,knewone.com,🎯 全球直连
   - DOMAIN-SUFFIX,koowo.com,🎯 全球直连
+  - DOMAIN-SUFFIX,koyso.com,🎯 全球直连
   - DOMAIN-SUFFIX,ksyungslb.com,🎯 全球直连
   - DOMAIN-SUFFIX,kuaidi100.com,🎯 全球直连
   - DOMAIN-SUFFIX,kugou.com,🎯 全球直连
