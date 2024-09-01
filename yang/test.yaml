@@ -1,10 +1,10 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：2024-08-31 12:28:18
+# 创建时间：2024-09-01 22:09:11
 # 使用模版：ACL4SSR_Mini.ini
-# 节点数量：58
-# 节点类型：vmess, hysteria2, ss, trojan
+# 节点数量：27
+# 节点类型：vmess, hysteria2
 # !!当前配置文件请使用基于 Clash.Meta 内核程序
 ####################################
 mixed-port: 7890
@@ -94,57 +94,26 @@ proxies:
   - {"name":"公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ _5","type":"vmess","server":"relay.catomation.uk","port":60018,"cipher":"auto","uuid":"c5c40a6c-8c96-32e2-ba22-07e694f67584","alterId":1,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"download.skycn.com"}}}
   - {"name":"公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ _6","type":"vmess","server":"direct.catomation.uk","port":80,"cipher":"auto","uuid":"c5c40a6c-8c96-32e2-ba22-07e694f67584","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"download.skycn.com"}}}
   - {"name":"公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ _7","type":"vmess","server":"direct.catomation.uk","port":80,"cipher":"auto","uuid":"c5c40a6c-8c96-32e2-ba22-07e694f67584","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"download.skycn.com"}}}
-  - {"name":"公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ _8","type":"hysteria2","server":"shs.556855.xyz","port":52100,"password":"cdd7e050-2ec5-4e45-b804-aa2609fe8fbe","sni":"shs.556855.xyz","skip-cert-verify":true}
-  - {"name":"公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ _9","type":"hysteria2","server":"fhc.556855.xyz","port":52100,"password":"cdd7e050-2ec5-4e45-b804-aa2609fe8fbe","sni":"fhc.556855.xyz","skip-cert-verify":true}
-  - {"name":"公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ _10","type":"hysteria2","server":"xjp.556855.xyz","port":52100,"password":"cdd7e050-2ec5-4e45-b804-aa2609fe8fbe","sni":"xjp.556855.xyz","skip-cert-verify":true}
-  - {"name":"公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ _11","type":"hysteria2","server":"cc.556855.xyz","port":52100,"password":"cdd7e050-2ec5-4e45-b804-aa2609fe8fbe","sni":"cc.556855.xyz","skip-cert-verify":true}
-  - {"name":"公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ _12","type":"hysteria2","server":"ld.556855.xyz","port":52100,"password":"cdd7e050-2ec5-4e45-b804-aa2609fe8fbe","sni":"ld.556855.xyz","skip-cert-verify":true}
-  - {"name":"公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ _13","type":"hysteria2","server":"zjg.556855.xyz","port":52100,"password":"cdd7e050-2ec5-4e45-b804-aa2609fe8fbe","sni":"zjg.556855.xyz","skip-cert-verify":true}
-  - {"name":"公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ _14","type":"hysteria2","server":"shs.556855.xyz","port":52100,"password":"54310c21-8220-42cb-b76d-301ad9d4a0ee","sni":"shs.556855.xyz","skip-cert-verify":true}
-  - {"name":"公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ _15","type":"hysteria2","server":"fhc.556855.xyz","port":52100,"password":"54310c21-8220-42cb-b76d-301ad9d4a0ee","sni":"fhc.556855.xyz","skip-cert-verify":true}
-  - {"name":"公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ _16","type":"hysteria2","server":"xjp.556855.xyz","port":52100,"password":"54310c21-8220-42cb-b76d-301ad9d4a0ee","sni":"xjp.556855.xyz","skip-cert-verify":true}
-  - {"name":"公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ _17","type":"hysteria2","server":"cc.556855.xyz","port":52100,"password":"54310c21-8220-42cb-b76d-301ad9d4a0ee","sni":"cc.556855.xyz","skip-cert-verify":true}
-  - {"name":"公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ _18","type":"hysteria2","server":"ld.556855.xyz","port":52100,"password":"54310c21-8220-42cb-b76d-301ad9d4a0ee","sni":"ld.556855.xyz","skip-cert-verify":true}
-  - {"name":"公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ _19","type":"hysteria2","server":"zjg.556855.xyz","port":52100,"password":"54310c21-8220-42cb-b76d-301ad9d4a0ee","sni":"zjg.556855.xyz","skip-cert-verify":true}
-  - {"name":"公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ _20","type":"hysteria2","server":"shs.556855.xyz","port":52100,"password":"19a62afa-fb7e-44d4-ac9b-db5edf6709fd","sni":"shs.556855.xyz","skip-cert-verify":true}
-  - {"name":"公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ _21","type":"hysteria2","server":"fhc.556855.xyz","port":52100,"password":"19a62afa-fb7e-44d4-ac9b-db5edf6709fd","sni":"fhc.556855.xyz","skip-cert-verify":true}
-  - {"name":"公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ _22","type":"hysteria2","server":"xjp.556855.xyz","port":52100,"password":"19a62afa-fb7e-44d4-ac9b-db5edf6709fd","sni":"xjp.556855.xyz","skip-cert-verify":true}
-  - {"name":"公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ _23","type":"hysteria2","server":"cc.556855.xyz","port":52100,"password":"19a62afa-fb7e-44d4-ac9b-db5edf6709fd","sni":"cc.556855.xyz","skip-cert-verify":true}
-  - {"name":"公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ _24","type":"hysteria2","server":"ld.556855.xyz","port":52100,"password":"19a62afa-fb7e-44d4-ac9b-db5edf6709fd","sni":"ld.556855.xyz","skip-cert-verify":true}
-  - {"name":"公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ _25","type":"hysteria2","server":"zjg.556855.xyz","port":52100,"password":"19a62afa-fb7e-44d4-ac9b-db5edf6709fd","sni":"zjg.556855.xyz","skip-cert-verify":true}
-  - {"name":"公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ _26","type":"hysteria2","server":"shs.556855.xyz","port":52100,"password":"c2f0b4e3-4cba-4cb9-9a7e-43c1e951fb10","sni":"shs.556855.xyz","skip-cert-verify":true}
-  - {"name":"公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ _27","type":"hysteria2","server":"fhc.556855.xyz","port":52100,"password":"c2f0b4e3-4cba-4cb9-9a7e-43c1e951fb10","sni":"fhc.556855.xyz","skip-cert-verify":true}
-  - {"name":"公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ _28","type":"hysteria2","server":"xjp.556855.xyz","port":52100,"password":"c2f0b4e3-4cba-4cb9-9a7e-43c1e951fb10","sni":"xjp.556855.xyz","skip-cert-verify":true}
-  - {"name":"公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ _29","type":"hysteria2","server":"cc.556855.xyz","port":52100,"password":"c2f0b4e3-4cba-4cb9-9a7e-43c1e951fb10","sni":"cc.556855.xyz","skip-cert-verify":true}
-  - {"name":"公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ _30","type":"hysteria2","server":"ld.556855.xyz","port":52100,"password":"c2f0b4e3-4cba-4cb9-9a7e-43c1e951fb10","sni":"ld.556855.xyz","skip-cert-verify":true}
-  - {"name":"公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ _31","type":"hysteria2","server":"zjg.556855.xyz","port":52100,"password":"c2f0b4e3-4cba-4cb9-9a7e-43c1e951fb10","sni":"zjg.556855.xyz","skip-cert-verify":true}
-  - {"name":"公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ 1","type":"ss","server":"32015.download666.win","port":32015,"password":"541200f4-3c26-4ee0-b5e0-d86253b1ef54","cipher":"aes-128-gcm"}
-  - {"name":"公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ 2","type":"ss","server":"hkv2.939.aawm.top","port":32029,"password":"541200f4-3c26-4ee0-b5e0-d86253b1ef54","cipher":"aes-128-gcm"}
-  - {"name":"公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ 3","type":"ss","server":"lr888.113001.xyz","port":32119,"password":"541200f4-3c26-4ee0-b5e0-d86253b1ef54","cipher":"aes-128-gcm"}
-  - {"name":"公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ 4","type":"ss","server":"abcd1fg.113001.xyz","port":32017,"password":"541200f4-3c26-4ee0-b5e0-d86253b1ef54","cipher":"aes-128-gcm"}
-  - {"name":"公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ 5","type":"ss","server":"183.232.159.215","port":32034,"password":"541200f4-3c26-4ee0-b5e0-d86253b1ef54","cipher":"aes-128-gcm"}
-  - {"name":"公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ 6","type":"ss","server":"32038.113001.xyz","port":32038,"password":"541200f4-3c26-4ee0-b5e0-d86253b1ef54","cipher":"aes-128-gcm"}
-  - {"name":"公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ 7","type":"ss","server":"t2666.113001.xyz","port":32009,"password":"541200f4-3c26-4ee0-b5e0-d86253b1ef54","cipher":"aes-128-gcm"}
-  - {"name":"公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ 8","type":"ss","server":"32023.wm1.113002.xyz","port":32023,"password":"541200f4-3c26-4ee0-b5e0-d86253b1ef54","cipher":"aes-128-gcm"}
-  - {"name":"公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ 9","type":"ss","server":"183.232.159.215","port":32044,"password":"541200f4-3c26-4ee0-b5e0-d86253b1ef54","cipher":"aes-128-gcm"}
-  - {"name":"公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ 10","type":"ss","server":"32048.113002.xyz","port":32048,"password":"541200f4-3c26-4ee0-b5e0-d86253b1ef54","cipher":"aes-128-gcm"}
-  - {"name":"公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ 11","type":"trojan","server":"21011.wm1.113003.xyz","port":21011,"udp":true,"password":"541200f4-3c26-4ee0-b5e0-d86253b1ef54","sni":"sg01.191898.xyz","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ 12","type":"trojan","server":"183.232.159.215","port":21013,"udp":true,"password":"541200f4-3c26-4ee0-b5e0-d86253b1ef54","sni":"16998.downloadbt.directory","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ 13","type":"ss","server":"80012.113002.xyz","port":32003,"password":"541200f4-3c26-4ee0-b5e0-d86253b1ef54","cipher":"aes-128-gcm"}
-  - {"name":"公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ 14","type":"ss","server":"183.232.159.215","port":32050,"password":"541200f4-3c26-4ee0-b5e0-d86253b1ef54","cipher":"aes-128-gcm"}
-  - {"name":"公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ 15","type":"ss","server":"221.131.165.48","port":32036,"password":"541200f4-3c26-4ee0-b5e0-d86253b1ef54","cipher":"aes-128-gcm"}
-  - {"name":"公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ 16","type":"ss","server":"35701.113002.xyz","port":32005,"password":"541200f4-3c26-4ee0-b5e0-d86253b1ef54","cipher":"aes-128-gcm"}
-  - {"name":"公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ 17","type":"ss","server":"390.wm1.113002.xyz","port":32042,"password":"541200f4-3c26-4ee0-b5e0-d86253b1ef54","cipher":"aes-128-gcm"}
-  - {"name":"公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ 18","type":"ss","server":"183.232.159.215","port":32152,"password":"541200f4-3c26-4ee0-b5e0-d86253b1ef54","cipher":"aes-128-gcm"}
-  - {"name":"公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ 19","type":"trojan","server":"183.232.159.215","port":21009,"udp":true,"password":"541200f4-3c26-4ee0-b5e0-d86253b1ef54","sni":"9713.download897.cc","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ 20","type":"ss","server":"32040.wm1.113002.xyz","port":32040,"password":"541200f4-3c26-4ee0-b5e0-d86253b1ef54","cipher":"aes-128-gcm"}
-  - {"name":"公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ 21","type":"ss","server":"183.232.159.215","port":32013,"password":"541200f4-3c26-4ee0-b5e0-d86253b1ef54","cipher":"aes-128-gcm"}
-  - {"name":"公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ 22","type":"ss","server":"32025.wm1.113002.xyz","port":32025,"password":"541200f4-3c26-4ee0-b5e0-d86253b1ef54","cipher":"aes-128-gcm"}
-  - {"name":"公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ 23","type":"ss","server":"11993.113002.xyz","port":32011,"password":"541200f4-3c26-4ee0-b5e0-d86253b1ef54","cipher":"aes-128-gcm"}
-  - {"name":"公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ 24","type":"ss","server":"11903.113001.xyz","port":32007,"password":"541200f4-3c26-4ee0-b5e0-d86253b1ef54","cipher":"aes-128-gcm"}
-  - {"name":"公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ 25","type":"ss","server":"32054.download666.win","port":32054,"password":"541200f4-3c26-4ee0-b5e0-d86253b1ef54","cipher":"aes-128-gcm"}
-  - {"name":"公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ 26","type":"ss","server":"32032.download666.win","port":32032,"password":"541200f4-3c26-4ee0-b5e0-d86253b1ef54","cipher":"aes-128-gcm"}
-  - {"name":"公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ 27","type":"ss","server":"183.232.159.215","port":32021,"password":"541200f4-3c26-4ee0-b5e0-d86253b1ef54","cipher":"aes-128-gcm"}
+  - {"name":"公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ 1","type":"vmess","server":"hkjpkrsg.diao.icu","port":2052,"cipher":"auto","uuid":"ffb3bfff-3535-4a22-9839-9ec9e5f00545","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"kr.diao.icu"}}}
+  - {"name":"公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ 2","type":"vmess","server":"hkjpkrsg.diao.icu","port":2052,"cipher":"auto","uuid":"ffb3bfff-3535-4a22-9839-9ec9e5f00545","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"kr.diao.icu"}}}
+  - {"name":"公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ 3","type":"vmess","server":"hkjpkrsg.diao.icu","port":2052,"cipher":"auto","uuid":"ffb3bfff-3535-4a22-9839-9ec9e5f00545","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"kr.diao.icu"}}}
+  - {"name":"公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ 4","type":"vmess","server":"hkjpkrsg.diao.icu","port":2052,"cipher":"auto","uuid":"ffb3bfff-3535-4a22-9839-9ec9e5f00545","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"kr.diao.icu"}}}
+  - {"name":"公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ 5","type":"hysteria2","server":"192.3.176.62","port":44001,"password":"ffb3bfff-3535-4a22-9839-9ec9e5f00545","sni":"www.bing.com","skip-cert-verify":true}
+  - {"name":"公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ 6","type":"hysteria2","server":"107.174.52.143","port":44011,"password":"ffb3bfff-3535-4a22-9839-9ec9e5f00545","sni":"www.bing.com","skip-cert-verify":true}
+  - {"name":"公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ 7","type":"hysteria2","server":"141.11.125.174","port":44003,"password":"ffb3bfff-3535-4a22-9839-9ec9e5f00545","sni":"www.bing.com","skip-cert-verify":true}
+  - {"name":"公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ 8","type":"hysteria2","server":"109.71.253.46","port":20201,"password":"ffb3bfff-3535-4a22-9839-9ec9e5f00545","skip-cert-verify":true}
+  - {"name":"公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ 9","type":"hysteria2","server":"158.179.214.1","port":44010,"password":"ffb3bfff-3535-4a22-9839-9ec9e5f00545","sni":"www.bing.com","skip-cert-verify":true}
+  - {"name":"公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ 10","type":"vmess","server":"usus.diao.icu","port":2052,"cipher":"auto","uuid":"ffb3bfff-3535-4a22-9839-9ec9e5f00545","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"jp.diao.icu"}}}
+  - {"name":"公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ 11","type":"vmess","server":"hkjpkrsg.diao.icu","port":2052,"cipher":"auto","uuid":"ffb3bfff-3535-4a22-9839-9ec9e5f00545","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"jp2.diao.icu"}}}
+  - {"name":"公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ 12","type":"vmess","server":"usus.diao.icu","port":2052,"cipher":"auto","uuid":"ffb3bfff-3535-4a22-9839-9ec9e5f00545","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"kr.diao.icu"}}}
+  - {"name":"公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ 13","type":"vmess","server":"hkjpkrsg.diao.icu","port":2052,"cipher":"auto","uuid":"ffb3bfff-3535-4a22-9839-9ec9e5f00545","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"kr2.diao.icu"}}}
+  - {"name":"公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ 14","type":"vmess","server":"hkjpkrsg.diao.icu","port":2052,"cipher":"auto","uuid":"ffb3bfff-3535-4a22-9839-9ec9e5f00545","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"kr2.diao.icu"}}}
+  - {"name":"公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ 15","type":"vmess","server":"hkjpkrsg.diao.icu","port":2052,"cipher":"auto","uuid":"ffb3bfff-3535-4a22-9839-9ec9e5f00545","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"kr2.diao.icu"}}}
+  - {"name":"公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ 16","type":"vmess","server":"usus.diao.icu","port":2052,"cipher":"auto","uuid":"ffb3bfff-3535-4a22-9839-9ec9e5f00545","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"sg.diao.icu"}}}
+  - {"name":"公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ 17","type":"vmess","server":"hkjpkrsg.diao.icu","port":2052,"cipher":"auto","uuid":"ffb3bfff-3535-4a22-9839-9ec9e5f00545","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"sg2.diao.icu"}}}
+  - {"name":"公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ 18","type":"vmess","server":"usus.diao.icu","port":2052,"cipher":"auto","uuid":"ffb3bfff-3535-4a22-9839-9ec9e5f00545","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"us.diao.icu"}}}
+  - {"name":"公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ 19","type":"vmess","server":"usus.diao.icu","port":2052,"cipher":"auto","uuid":"ffb3bfff-3535-4a22-9839-9ec9e5f00545","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"us2.diao.icu"}}}
+  - {"name":"公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ 20","type":"vmess","server":"usus.diao.icu","port":2052,"cipher":"auto","uuid":"ffb3bfff-3535-4a22-9839-9ec9e5f00545","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"us.diao.icu"}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -158,30 +127,6 @@ proxy-groups:
       - 公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ _5
       - 公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ _6
       - 公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ _7
-      - 公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ _8
-      - 公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ _9
-      - 公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ _10
-      - 公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ _11
-      - 公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ _12
-      - 公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ _13
-      - 公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ _14
-      - 公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ _15
-      - 公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ _16
-      - 公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ _17
-      - 公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ _18
-      - 公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ _19
-      - 公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ _20
-      - 公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ _21
-      - 公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ _22
-      - 公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ _23
-      - 公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ _24
-      - 公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ _25
-      - 公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ _26
-      - 公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ _27
-      - 公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ _28
-      - 公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ _29
-      - 公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ _30
-      - 公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ _31
       - 公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ 1
       - 公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ 2
       - 公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ 3
@@ -202,13 +147,6 @@ proxy-groups:
       - 公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ 18
       - 公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ 19
       - 公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ 20
-      - 公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ 21
-      - 公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ 22
-      - 公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ 23
-      - 公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ 24
-      - 公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ 25
-      - 公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ 26
-      - 公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ 27
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -222,30 +160,6 @@ proxy-groups:
       - 公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ _5
       - 公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ _6
       - 公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ _7
-      - 公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ _8
-      - 公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ _9
-      - 公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ _10
-      - 公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ _11
-      - 公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ _12
-      - 公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ _13
-      - 公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ _14
-      - 公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ _15
-      - 公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ _16
-      - 公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ _17
-      - 公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ _18
-      - 公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ _19
-      - 公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ _20
-      - 公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ _21
-      - 公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ _22
-      - 公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ _23
-      - 公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ _24
-      - 公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ _25
-      - 公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ _26
-      - 公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ _27
-      - 公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ _28
-      - 公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ _29
-      - 公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ _30
-      - 公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ _31
       - 公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ 1
       - 公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ 2
       - 公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ 3
@@ -266,13 +180,6 @@ proxy-groups:
       - 公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ 18
       - 公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ 19
       - 公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ 20
-      - 公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ 21
-      - 公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ 22
-      - 公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ 23
-      - 公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ 24
-      - 公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ 25
-      - 公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ 26
-      - 公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ 27
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -297,30 +204,6 @@ proxy-groups:
       - 公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ _5
       - 公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ _6
       - 公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ _7
-      - 公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ _8
-      - 公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ _9
-      - 公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ _10
-      - 公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ _11
-      - 公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ _12
-      - 公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ _13
-      - 公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ _14
-      - 公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ _15
-      - 公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ _16
-      - 公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ _17
-      - 公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ _18
-      - 公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ _19
-      - 公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ _20
-      - 公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ _21
-      - 公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ _22
-      - 公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ _23
-      - 公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ _24
-      - 公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ _25
-      - 公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ _26
-      - 公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ _27
-      - 公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ _28
-      - 公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ _29
-      - 公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ _30
-      - 公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ _31
       - 公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ 1
       - 公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ 2
       - 公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ 3
@@ -341,13 +224,6 @@ proxy-groups:
       - 公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ 18
       - 公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ 19
       - 公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ 20
-      - 公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ 21
-      - 公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ 22
-      - 公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ 23
-      - 公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ 24
-      - 公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ 25
-      - 公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ 26
-      - 公益官网 https://github.com/Cry1ngMan/1 获取新订阅⚡️ 27
 
 rules:
 # 本地/局域网地址
