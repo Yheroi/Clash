@@ -1,10 +1,10 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：2024-09-02 09:45:51
+# 创建时间：2024-09-02 09:56:31
 # 使用模版：ACL4SSR_Mini.ini
 # 节点数量：12
-# 节点类型：vless, hysteria2, vmess, trojan, ss
+# 节点类型：vmess, vless, hysteria2, trojan, ss
 # !!当前配置文件请使用基于 Clash.Meta 内核程序
 ####################################
 mixed-port: 7890
@@ -87,54 +87,54 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"新加坡_1","type":"vless","server":"sg3.speed-mitce.top","port":10013,"udp":true,"uuid":"DF21D493-8754-48FB-A4A8-AFE1E9260903","tls":true,"servername":"s0.awsstatic.com","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"dR1QmDjsiujobG0AxdPdsom9gNkgf8qnJglB49-XclM","short-id":"01fc5e98a68e5e7b"},"client-fingerprint":"chrome"}
-  - {"name":"新加坡_2","type":"vless","server":"sg4.speed-mitce.top","port":10014,"udp":true,"uuid":"DF21D493-8754-48FB-A4A8-AFE1E9260903","tls":true,"servername":"s0.awsstatic.com","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"dR1QmDjsiujobG0AxdPdsom9gNkgf8qnJglB49-XclM","short-id":"01fc5e98a68e5e7b"},"client-fingerprint":"chrome"}
-  - {"name":"新加坡_3","type":"vless","server":"sg5.speed-mitce.top","port":10015,"udp":true,"uuid":"DF21D493-8754-48FB-A4A8-AFE1E9260903","tls":true,"servername":"s0.awsstatic.com","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"dR1QmDjsiujobG0AxdPdsom9gNkgf8qnJglB49-XclM","short-id":"01fc5e98a68e5e7b"},"client-fingerprint":"chrome"}
-  - {"name":"美国_4","type":"hysteria2","server":"129.159.97.206","port":443,"password":"f8e66f27-46e0-4b86-8c2b-1b58a1e6f8c9","sni":"cn.cremedelamer.com","skip-cert-verify":true}
-  - {"name":"瑞士_5","type":"hysteria2","server":"141.148.182.2","port":443,"password":"f8e66f27-46e0-4b86-8c2b-1b58a1e6f8c9","sni":"cn.cremedelamer.com","skip-cert-verify":true}
-  - {"name":"澳大利亚_6","type":"hysteria2","server":"129.154.53.232","port":443,"password":"f8e66f27-46e0-4b86-8c2b-1b58a1e6f8c9","sni":"cn.cremedelamer.com","skip-cert-verify":true}
-  - {"name":"中国_7","type":"vmess","server":"183.236.49.201","port":29767,"cipher":"auto","uuid":"c8c638a2-93f5-49a0-92eb-b5db91a3fa08","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"中国_8","type":"vmess","server":"123.88.148.36","port":44806,"cipher":"auto","uuid":"097a6823-7f18-4034-8fd2-1ccbe23aa0bc","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"中国_9","type":"trojan","server":"36.150.27.97","port":24508,"udp":true,"password":"a26276aa-16db-4fe2-bb23-e02746cf6be2","sni":"node2.leluocloud.com","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"中国_10","type":"vmess","server":"120.232.153.40","port":52442,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"中国_11","type":"vmess","server":"183.236.48.163","port":54882,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"中国_12","type":"ss","server":"happy.alicenetwork.cloud","port":60106,"password":"976ff121-6851-433f-87a8-06d1700d2145","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"中国香港4","type":"vmess","server":"183.236.48.163","port":54882,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"中国香港3","type":"vmess","server":"120.232.153.40","port":52442,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"中国香港1","type":"vmess","server":"183.236.49.201","port":29767,"cipher":"auto","uuid":"c8c638a2-93f5-49a0-92eb-b5db91a3fa08","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"中国香港2","type":"vmess","server":"123.88.148.36","port":44806,"cipher":"auto","uuid":"097a6823-7f18-4034-8fd2-1ccbe23aa0bc","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"新加坡1","type":"vless","server":"sg3.speed-mitce.top","port":10013,"uuid":"DF21D493-8754-48FB-A4A8-AFE1E9260903","tls":true,"servername":"s0.awsstatic.com","flow":"xtls-rprx-vision","network":"tcp"}
+  - {"name":"新加坡2","type":"vless","server":"sg4.speed-mitce.top","port":10014,"uuid":"DF21D493-8754-48FB-A4A8-AFE1E9260903","tls":true,"servername":"s0.awsstatic.com","flow":"xtls-rprx-vision","network":"tcp"}
+  - {"name":"新加坡3","type":"vless","server":"sg5.speed-mitce.top","port":10015,"uuid":"DF21D493-8754-48FB-A4A8-AFE1E9260903","tls":true,"servername":"s0.awsstatic.com","flow":"xtls-rprx-vision","network":"tcp"}
+  - {"name":"美国1","type":"hysteria2","server":"129.159.97.206","port":443,"skip-cert-verify":true}
+  - {"name":"美国2","type":"hysteria2","server":"141.148.182.2","port":443,"skip-cert-verify":true}
+  - {"name":"韩国","type":"hysteria2","server":"129.154.53.232","port":443,"skip-cert-verify":true}
+  - {"name":"日本","type":"trojan","server":"36.150.27.97","port":24508,"udp":true,"password":"a26276aa-16db-4fe2-bb23-e02746cf6be2","sni":"node2.leluocloud.com","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"新加坡4","type":"ss","server":"happy.alicenetwork.cloud","port":60106,"password":"976ff121-6851-433f-87a8-06d1700d2145","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 新加坡_1
-      - 新加坡_2
-      - 新加坡_3
-      - 美国_4
-      - 瑞士_5
-      - 澳大利亚_6
-      - 中国_7
-      - 中国_8
-      - 中国_9
-      - 中国_10
-      - 中国_11
-      - 中国_12
+      - 中国香港4
+      - 中国香港3
+      - 中国香港1
+      - 中国香港2
+      - 新加坡1
+      - 新加坡2
+      - 新加坡3
+      - 美国1
+      - 美国2
+      - 韩国
+      - 日本
+      - 新加坡4
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 新加坡_1
-      - 新加坡_2
-      - 新加坡_3
-      - 美国_4
-      - 瑞士_5
-      - 澳大利亚_6
-      - 中国_7
-      - 中国_8
-      - 中国_9
-      - 中国_10
-      - 中国_11
-      - 中国_12
+      - 中国香港4
+      - 中国香港3
+      - 中国香港1
+      - 中国香港2
+      - 新加坡1
+      - 新加坡2
+      - 新加坡3
+      - 美国1
+      - 美国2
+      - 韩国
+      - 日本
+      - 新加坡4
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -152,18 +152,18 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 新加坡_1
-      - 新加坡_2
-      - 新加坡_3
-      - 美国_4
-      - 瑞士_5
-      - 澳大利亚_6
-      - 中国_7
-      - 中国_8
-      - 中国_9
-      - 中国_10
-      - 中国_11
-      - 中国_12
+      - 中国香港4
+      - 中国香港3
+      - 中国香港1
+      - 中国香港2
+      - 新加坡1
+      - 新加坡2
+      - 新加坡3
+      - 美国1
+      - 美国2
+      - 韩国
+      - 日本
+      - 新加坡4
 
 rules:
 # 本地/局域网地址
