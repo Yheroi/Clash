@@ -1,10 +1,11 @@
 ####################################
 # 创建者：v2rayse.com
-# 客户端：Clash
-# 创建时间：2024-08-25 16:33:52
-# 使用模版：ACL4SSR_Online_Mini.ini
-# 节点数量：14
-# 节点类型：ss
+# 客户端：Clash.Meta
+# 创建时间：2024-09-02 09:59:20
+# 使用模版：ACL4SSR_Mini.ini
+# 节点数量：12
+# 节点类型：vmess, vless, ss, hysteria2, trojan
+# !!当前配置文件请使用基于 Clash.Meta 内核程序
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -86,60 +87,54 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"新加坡1","type":"ss","server":"13.212.34.140","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"新加坡2","type":"ss","server":"54.169.236.64","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"日本1","type":"ss","server":"52.197.150.228","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"日本2","type":"ss","server":"52.194.250.138","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"日本3","type":"ss","server":"52.199.182.245","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"日本4","type":"ss","server":"52.194.189.140","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"日本5","type":"ss","server":"18.179.174.165","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"日本6","type":"ss","server":"3.112.220.140","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"日本7","type":"ss","server":"3.112.7.26","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"日本8","type":"ss","server":"43.207.118.251","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"日本9","type":"ss","server":"52.69.37.205","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"日本10","type":"ss","server":"176.34.0.69","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"日本11","type":"ss","server":"18.183.77.249","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"日本12","type":"ss","server":"3.112.13.193","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"中国香港1","type":"vmess","server":"183.236.49.201","port":29767,"cipher":"auto","uuid":"c8c638a2-93f5-49a0-92eb-b5db91a3fa08","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"中国香港2","type":"vmess","server":"123.88.148.36","port":44806,"cipher":"auto","uuid":"097a6823-7f18-4034-8fd2-1ccbe23aa0bc","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"中国香港3","type":"vmess","server":"120.232.153.40","port":52442,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"中国香港4","type":"vmess","server":"183.236.48.163","port":54882,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"新加坡1","type":"vless","server":"sg3.speed-mitce.top","port":10013,"udp":true,"uuid":"DF21D493-8754-48FB-A4A8-AFE1E9260903","tls":true,"servername":"s0.awsstatic.com","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"dR1QmDjsiujobG0AxdPdsom9gNkgf8qnJglB49-XclM","short-id":"01fc5e98a68e5e7b"},"client-fingerprint":"chrome"}
+  - {"name":"新加坡2","type":"vless","server":"sg4.speed-mitce.top","port":10014,"udp":true,"uuid":"DF21D493-8754-48FB-A4A8-AFE1E9260903","tls":true,"servername":"s0.awsstatic.com","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"dR1QmDjsiujobG0AxdPdsom9gNkgf8qnJglB49-XclM","short-id":"01fc5e98a68e5e7b"},"client-fingerprint":"chrome"}
+  - {"name":"新加坡3","type":"vless","server":"sg5.speed-mitce.top","port":10015,"udp":true,"uuid":"DF21D493-8754-48FB-A4A8-AFE1E9260903","tls":true,"servername":"s0.awsstatic.com","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"dR1QmDjsiujobG0AxdPdsom9gNkgf8qnJglB49-XclM","short-id":"01fc5e98a68e5e7b"},"client-fingerprint":"chrome"}
+  - {"name":"新加坡4","type":"ss","server":"happy.alicenetwork.cloud","port":60106,"password":"976ff121-6851-433f-87a8-06d1700d2145","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"美国1","type":"hysteria2","server":"129.159.97.206","port":443,"password":"f8e66f27-46e0-4b86-8c2b-1b58a1e6f8c9","sni":"cn.cremedelamer.com","skip-cert-verify":true}
+  - {"name":"美国2","type":"hysteria2","server":"141.148.182.2","port":443,"password":"f8e66f27-46e0-4b86-8c2b-1b58a1e6f8c9","sni":"cn.cremedelamer.com","skip-cert-verify":true}
+  - {"name":"韩国","type":"hysteria2","server":"129.154.53.232","port":443,"password":"f8e66f27-46e0-4b86-8c2b-1b58a1e6f8c9","sni":"cn.cremedelamer.com","skip-cert-verify":true}
+  - {"name":"日本","type":"trojan","server":"36.150.27.97","port":24508,"udp":true,"password":"a26276aa-16db-4fe2-bb23-e02746cf6be2","sni":"node2.leluocloud.com","skip-cert-verify":true,"network":"tcp"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
+      - 中国香港1
+      - 中国香港2
+      - 中国香港3
+      - 中国香港4
       - 新加坡1
       - 新加坡2
-      - 日本1
-      - 日本2
-      - 日本3
-      - 日本4
-      - 日本5
-      - 日本6
-      - 日本7
-      - 日本8
-      - 日本9
-      - 日本10
-      - 日本11
-      - 日本12
+      - 新加坡3
+      - 新加坡4
+      - 美国1
+      - 美国2
+      - 韩国
+      - 日本
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
+      - 中国香港1
+      - 中国香港2
+      - 中国香港3
+      - 中国香港4
       - 新加坡1
       - 新加坡2
-      - 日本1
-      - 日本2
-      - 日本3
-      - 日本4
-      - 日本5
-      - 日本6
-      - 日本7
-      - 日本8
-      - 日本9
-      - 日本10
-      - 日本11
-      - 日本12
+      - 新加坡3
+      - 新加坡4
+      - 美国1
+      - 美国2
+      - 韩国
+      - 日本
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -157,20 +152,18 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 中国香港1
+      - 中国香港2
+      - 中国香港3
+      - 中国香港4
       - 新加坡1
       - 新加坡2
-      - 日本1
-      - 日本2
-      - 日本3
-      - 日本4
-      - 日本5
-      - 日本6
-      - 日本7
-      - 日本8
-      - 日本9
-      - 日本10
-      - 日本11
-      - 日本12
+      - 新加坡3
+      - 新加坡4
+      - 美国1
+      - 美国2
+      - 韩国
+      - 日本
 
 rules:
 # 本地/局域网地址
@@ -213,37 +206,6 @@ rules:
   - DOMAIN-SUFFIX,zte.home,🎯 全球直连
   - DOMAIN-SUFFIX,tplogin.cn,🎯 全球直连
   - DOMAIN-SUFFIX,wifi.cmcc,🎯 全球直连
-# Unbreak 白名单 不应该被广告链接的网站
-# Epicgames
-# Getui
-# Google
-# Mozilla
-# Origin
-# Tencent
-# Strava
-# Umeng
-# Miui 小米
-# General
-# Hypixel Network
-# Koodo Mobile
-  - DOMAIN-SUFFIX,ol.epicgames.com,🎯 全球直连
-  - DOMAIN-SUFFIX,dizhensubao.getui.com,🎯 全球直连
-  - DOMAIN,dl.google.com,🎯 全球直连
-  - DOMAIN-SUFFIX,googletraveladservices.com,🎯 全球直连
-  - DOMAIN-SUFFIX,tracking-protection.cdn.mozilla.net,🎯 全球直连
-  - DOMAIN,origin-a.akamaihd.net,🎯 全球直连
-  - DOMAIN,fairplay.l.qq.com,🎯 全球直连
-  - DOMAIN,livew.l.qq.com,🎯 全球直连
-  - DOMAIN,vd.l.qq.com,🎯 全球直连
-  - DOMAIN,errlog.umeng.com,🎯 全球直连
-  - DOMAIN,msg.umeng.com,🎯 全球直连
-  - DOMAIN,msg.umengcloud.com,🎯 全球直连
-  - DOMAIN,tracking.miui.com,🎯 全球直连
-  - DOMAIN,app.adjust.com,🎯 全球直连
-  - DOMAIN,bdtj.tagtic.cn,🎯 全球直连
-  - DOMAIN,rewards.hypixel.net,🎯 全球直连
-  - DOMAIN-SUFFIX,koodomobile.com,🎯 全球直连
-  - DOMAIN-SUFFIX,koodomobile.ca,🎯 全球直连
 # 本碎片只包含常见广告关键字、广告联盟。无副作用，放心使用
 # 广告关键词
 # 广告联盟-国内****************
@@ -567,7 +529,6 @@ rules:
   - DOMAIN-SUFFIX,rtbasia.com,🛑 全球拦截
   - DOMAIN-SUFFIX,sanya1.com,🛑 全球拦截
   - DOMAIN-SUFFIX,scupio.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,serving-sys.com,🛑 全球拦截
   - DOMAIN-SUFFIX,shuiguo.com,🛑 全球拦截
   - DOMAIN-SUFFIX,shuzilm.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,similarweb.com,🛑 全球拦截
@@ -635,6 +596,7 @@ rules:
   - DOMAIN-SUFFIX,wqmobile.com,🛑 全球拦截
   - DOMAIN-SUFFIX,wrating.com,🛑 全球拦截
   - DOMAIN-SUFFIX,wumii.cn,🛑 全球拦截
+  - DOMAIN-SUFFIX,wwads.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,xcy8.com,🛑 全球拦截
   - DOMAIN-SUFFIX,xdrig.com,🛑 全球拦截
   - DOMAIN-SUFFIX,xiaozhen.com,🛑 全球拦截
@@ -668,7 +630,6 @@ rules:
   - DOMAIN-SUFFIX,zhjfad.com,🛑 全球拦截
   - DOMAIN-SUFFIX,zqzxz.com,🛑 全球拦截
   - DOMAIN-SUFFIX,zzsx8.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,wwads.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,acuityplatform.com,🛑 全球拦截
   - DOMAIN-SUFFIX,ad-stir.com,🛑 全球拦截
   - DOMAIN-SUFFIX,ad-survey.com,🛑 全球拦截
@@ -1994,7 +1955,7 @@ rules:
   - IP-CIDR6,2001:b28:f23d::/48,🚀 节点选择,no-resolve
   - IP-CIDR6,2001:b28:f23f::/48,🚀 节点选择,no-resolve
 # 内容：国外媒体列表
-# 更新：2024-06-30 11:02:56
+# 更新：2024-08-27 13:51:18
 # 数量：367条
 # ABC
 # AbemaTV
@@ -2016,6 +1977,7 @@ rules:
 # Hulu
 # HuluJapan
 # ITV
+# Iwara
 # JOOX
 # Japonx
 # KKBOX
@@ -2200,6 +2162,7 @@ rules:
   - DOMAIN,itvpnpmobile-a.akamaihd.net,🚀 节点选择
   - DOMAIN-SUFFIX,itv.com,🚀 节点选择
   - DOMAIN-SUFFIX,itvstatic.com,🚀 节点选择
+  - DOMAIN-SUFFIX,iwara.tv,🚀 节点选择
 #   - USER-AGENT,JOOX*,🚀 节点选择
 #   - USER-AGENT,WeMusic*,🚀 节点选择
   - DOMAIN-KEYWORD,jooxweb-api,🚀 节点选择
@@ -2308,7 +2271,6 @@ rules:
   - DOMAIN-SUFFIX,olevod.tv,🚀 节点选择
   - DOMAIN-SUFFIX,olevodtv.com,🚀 节点选择
   - DOMAIN-KEYWORD,openai,🚀 节点选择
-  - DOMAIN,gemini.google.com,🚀 节点选择
   - DOMAIN-SUFFIX,auth0.com,🚀 节点选择
   - DOMAIN-SUFFIX,challenges.cloudflare.com,🚀 节点选择
   - DOMAIN-SUFFIX,chatgpt.com,🚀 节点选择
@@ -2418,12 +2380,14 @@ rules:
 # BBC
 # Claude
 # Developer 开发者常用国外网站、镜像和论坛
+# Docker
 # Discord
 # Facebook
 # Github
 # Google
 # GoogleCNProxyIP 谷歌中国服务 services.googleapis.cn
 # Instagram
+# Iwara
 # Kakao Talk
 # Line
 # OpenAi
@@ -2644,6 +2608,13 @@ rules:
   - DOMAIN-SUFFIX,spring.io,🚀 节点选择
   - DOMAIN-SUFFIX,spring.net,🚀 节点选择
   - DOMAIN-SUFFIX,stackoverflow.com,🚀 节点选择
+  - DOMAIN,d1q6f0aelx0por.cloudfront.net,🚀 节点选择
+  - DOMAIN,d2wy8f7a9ursnm.cloudfront.net,🚀 节点选择
+  - DOMAIN,d36jcksde1wxzq.cloudfront.net,🚀 节点选择
+  - DOMAIN-SUFFIX,compose-spec.io,🚀 节点选择
+  - DOMAIN-SUFFIX,docker.com,🚀 节点选择
+  - DOMAIN-SUFFIX,docker.io,🚀 节点选择
+  - DOMAIN-SUFFIX,dockerhub.com,🚀 节点选择
   - DOMAIN-SUFFIX,discord.co,🚀 节点选择
   - DOMAIN-SUFFIX,discord.com,🚀 节点选择
   - DOMAIN-SUFFIX,discord.gg,🚀 节点选择
@@ -2717,6 +2688,7 @@ rules:
   - DOMAIN-SUFFIX,cdninstagram.com,🚀 节点选择
   - DOMAIN-SUFFIX,instagram.com,🚀 节点选择
   - DOMAIN-SUFFIX,instagr.am,🚀 节点选择
+  - DOMAIN-SUFFIX,iwara.tv,🚀 节点选择
   - DOMAIN-SUFFIX,kakao.com,🚀 节点选择
   - DOMAIN-SUFFIX,kakao.co.kr,🚀 节点选择
   - DOMAIN-SUFFIX,kakaocdn.net,🚀 节点选择
@@ -3077,6 +3049,8 @@ rules:
   - DOMAIN-SUFFIX,didialift.com,🎯 全球直连
   - DOMAIN-SUFFIX,didiglobal.com,🎯 全球直连
   - DOMAIN-SUFFIX,udache.com,🎯 全球直连
+  - DOMAIN-SUFFIX,bytefcdnrd.com,🎯 全球直连
+  - DOMAIN-SUFFIX,edgesrv.com,🎯 全球直连
   - DOMAIN-SUFFIX,douyu.com,🎯 全球直连
   - DOMAIN-SUFFIX,douyu.tv,🎯 全球直连
   - DOMAIN-SUFFIX,douyuscdn.com,🎯 全球直连
@@ -3386,6 +3360,7 @@ rules:
   - DOMAIN-SUFFIX,kaola.com,🎯 全球直连
   - DOMAIN-SUFFIX,knewone.com,🎯 全球直连
   - DOMAIN-SUFFIX,koowo.com,🎯 全球直连
+  - DOMAIN-SUFFIX,koyso.com,🎯 全球直连
   - DOMAIN-SUFFIX,ksyungslb.com,🎯 全球直连
   - DOMAIN-SUFFIX,kuaidi100.com,🎯 全球直连
   - DOMAIN-SUFFIX,kugou.com,🎯 全球直连
