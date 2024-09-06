@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2024-09-02 09:41:04
+# 创建时间：2024-09-06 09:38:59
 # 使用模版：ACL4SSR_Mini.ini
-# 节点数量：1
+# 节点数量：7
 # 节点类型：ss
 ####################################
 mixed-port: 7890
@@ -86,21 +86,39 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"JP_30\r","type":"ss","server":"54.95.170.220","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"新加坡1","type":"ss","server":"13.229.78.228","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"新加坡2","type":"ss","server":"3.1.205.177","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"新加坡3","type":"ss","server":"18.143.75.166","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"日本1","type":"ss","server":"57.180.28.226","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"日本2","type":"ss","server":"54.95.170.220","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"韩国1","type":"ss","server":"43.201.112.173","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"韩国2","type":"ss","server":"52.78.220.233","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - "JP_30\r"
+      - 新加坡1
+      - 新加坡2
+      - 新加坡3
+      - 日本1
+      - 日本2
+      - 韩国1
+      - 韩国2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - "JP_30\r"
+      - 新加坡1
+      - 新加坡2
+      - 新加坡3
+      - 日本1
+      - 日本2
+      - 韩国1
+      - 韩国2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -118,7 +136,13 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "JP_30\r"
+      - 新加坡1
+      - 新加坡2
+      - 新加坡3
+      - 日本1
+      - 日本2
+      - 韩国1
+      - 韩国2
 
 rules:
 # 本地/局域网地址
