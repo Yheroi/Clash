@@ -1,10 +1,10 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：2024-09-06 09:57:49
+# 创建时间：2024-09-06 15:07:35
 # 使用模版：ACL4SSR_Mini.ini
-# 节点数量：22
-# 节点类型：vmess, hysteria2, ss, vless
+# 节点数量：18
+# 节点类型：hysteria2, ss, vless
 # !!当前配置文件请使用基于 Clash.Meta 内核程序
 ####################################
 mixed-port: 7890
@@ -87,9 +87,6 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"中国香港1","type":"vmess","server":"123.88.148.36","port":44806,"cipher":"auto","uuid":"097a6823-7f18-4034-8fd2-1ccbe23aa0bc","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"中国香港2","type":"vmess","server":"120.232.153.40","port":52442,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"中国香港3","type":"vmess","server":"183.236.48.163","port":54882,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
   - {"name":"中国台湾","type":"hysteria2","server":"tw1.wish.ml","port":30102,"password":"a8ba7a5f-8ca6-406a-bc79-92efa7326ed1","skip-cert-verify":true}
   - {"name":"新加坡1","type":"ss","server":"13.229.78.228","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
   - {"name":"新加坡2","type":"ss","server":"3.1.205.177","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
@@ -107,17 +104,13 @@ proxies:
   - {"name":"韩国3","type":"hysteria2","server":"kr2.wish.ml","port":30102,"password":"a8ba7a5f-8ca6-406a-bc79-92efa7326ed1","skip-cert-verify":true}
   - {"name":"韩国4","type":"hysteria2","server":"129.154.53.232","port":443,"password":"f8e66f27-46e0-4b86-8c2b-1b58a1e6f8c9","sni":"cn.cremedelamer.com","skip-cert-verify":true}
   - {"name":"日本1","type":"ss","server":"57.180.28.226","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"日本2","type":"ss","server":"54.95.170.220","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"日本3","type":"hysteria2","server":"jp1.wish.ml","port":30102,"password":"a8ba7a5f-8ca6-406a-bc79-92efa7326ed1","skip-cert-verify":true}
+  - {"name":"日本2","type":"hysteria2","server":"jp1.wish.ml","port":30102,"password":"a8ba7a5f-8ca6-406a-bc79-92efa7326ed1","skip-cert-verify":true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 中国香港1
-      - 中国香港2
-      - 中国香港3
       - 中国台湾
       - 新加坡1
       - 新加坡2
@@ -136,16 +129,12 @@ proxy-groups:
       - 韩国4
       - 日本1
       - 日本2
-      - 日本3
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 中国香港1
-      - 中国香港2
-      - 中国香港3
       - 中国台湾
       - 新加坡1
       - 新加坡2
@@ -164,7 +153,6 @@ proxy-groups:
       - 韩国4
       - 日本1
       - 日本2
-      - 日本3
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -182,9 +170,6 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 中国香港1
-      - 中国香港2
-      - 中国香港3
       - 中国台湾
       - 新加坡1
       - 新加坡2
@@ -203,7 +188,6 @@ proxy-groups:
       - 韩国4
       - 日本1
       - 日本2
-      - 日本3
 
 rules:
 # 本地/局域网地址
