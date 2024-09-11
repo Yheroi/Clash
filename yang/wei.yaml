@@ -1,10 +1,10 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：2024-09-06 15:07:35
+# 创建时间：2024-09-11 10:16:28
 # 使用模版：ACL4SSR_Mini.ini
-# 节点数量：18
-# 节点类型：hysteria2, ss, vless
+# 节点数量：8
+# 节点类型：hysteria2
 # !!当前配置文件请使用基于 Clash.Meta 内核程序
 ####################################
 mixed-port: 7890
@@ -87,72 +87,42 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"中国台湾","type":"hysteria2","server":"tw1.wish.ml","port":30102,"password":"a8ba7a5f-8ca6-406a-bc79-92efa7326ed1","skip-cert-verify":true}
-  - {"name":"新加坡1","type":"ss","server":"13.229.78.228","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"新加坡2","type":"ss","server":"3.1.205.177","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"新加坡3","type":"ss","server":"18.143.75.166","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"新加坡4","type":"vless","server":"sg3.speed-mitce.top","port":10013,"udp":true,"uuid":"DF21D493-8754-48FB-A4A8-AFE1E9260903","tls":true,"servername":"s0.awsstatic.com","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"dR1QmDjsiujobG0AxdPdsom9gNkgf8qnJglB49-XclM","short-id":"01fc5e98a68e5e7b"},"client-fingerprint":"chrome"}
-  - {"name":"新加坡5","type":"vless","server":"sg4.speed-mitce.top","port":10014,"udp":true,"uuid":"DF21D493-8754-48FB-A4A8-AFE1E9260903","tls":true,"servername":"s0.awsstatic.com","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"dR1QmDjsiujobG0AxdPdsom9gNkgf8qnJglB49-XclM","short-id":"01fc5e98a68e5e7b"},"client-fingerprint":"chrome"}
-  - {"name":"新加坡6","type":"vless","server":"sg5.speed-mitce.top","port":10015,"udp":true,"uuid":"DF21D493-8754-48FB-A4A8-AFE1E9260903","tls":true,"servername":"s0.awsstatic.com","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"dR1QmDjsiujobG0AxdPdsom9gNkgf8qnJglB49-XclM","short-id":"01fc5e98a68e5e7b"},"client-fingerprint":"chrome"}
-  - {"name":"新加坡7","type":"ss","server":"happy.alicenetwork.cloud","port":60106,"password":"976ff121-6851-433f-87a8-06d1700d2145","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"迪拜","type":"hysteria2","server":"ae1.wish.ml","port":30102,"password":"a8ba7a5f-8ca6-406a-bc79-92efa7326ed1","sni":"du.wish.ml","skip-cert-verify":true}
-  - {"name":"美国1","type":"hysteria2","server":"129.159.97.206","port":443,"password":"f8e66f27-46e0-4b86-8c2b-1b58a1e6f8c9","sni":"cn.cremedelamer.com","skip-cert-verify":true}
-  - {"name":"美国2","type":"hysteria2","server":"141.148.182.2","port":443,"password":"f8e66f27-46e0-4b86-8c2b-1b58a1e6f8c9","sni":"cn.cremedelamer.com","skip-cert-verify":true}
-  - {"name":"美国3","type":"hysteria2","server":"216.73.156.50","port":5001,"password":"2e54fc3d-ec13-4c1f-baf6-ddc08043438f","sni":"d1--cn-gotcha204-4.bilivideo.com","skip-cert-verify":true}
-  - {"name":"韩国1","type":"ss","server":"43.201.112.173","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"韩国2","type":"ss","server":"52.78.220.233","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"韩国3","type":"hysteria2","server":"kr2.wish.ml","port":30102,"password":"a8ba7a5f-8ca6-406a-bc79-92efa7326ed1","skip-cert-verify":true}
-  - {"name":"韩国4","type":"hysteria2","server":"129.154.53.232","port":443,"password":"f8e66f27-46e0-4b86-8c2b-1b58a1e6f8c9","sni":"cn.cremedelamer.com","skip-cert-verify":true}
-  - {"name":"日本1","type":"ss","server":"57.180.28.226","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"日本2","type":"hysteria2","server":"jp1.wish.ml","port":30102,"password":"a8ba7a5f-8ca6-406a-bc79-92efa7326ed1","skip-cert-verify":true}
+  - {"name":"韩国1","type":"hysteria2","server":"193.123.242.61","port":443,"password":"6ca91fad-f684-4cdf-b4b1-3f3ff71cb290","sni":"api.push.apple.com","skip-cert-verify":true}
+  - {"name":"韩国2","type":"hysteria2","server":"193.123.229.26","port":443,"password":"e4d84650-3f4a-4c3e-9ab7-f00e5591896f","sni":"www.hoyoverse.com","skip-cert-verify":true}
+  - {"name":"韩国3","type":"hysteria2","server":"193.122.113.204","port":443,"password":"6ca91fad-f684-4cdf-b4b1-3f3ff71cb290","sni":"www.apple.com","skip-cert-verify":true}
+  - {"name":"韩国4","type":"hysteria2","server":"152.70.234.12","port":443,"password":"6ca91fad-f684-4cdf-b4b1-3f3ff71cb290","sni":"api.push.apple.com","skip-cert-verify":true}
+  - {"name":"韩国5","type":"hysteria2","server":"132.226.171.133","port":443,"password":"03c8bef4-8d11-4cf4-a35a-b4df0afb6a93","sni":"www.bing.com","skip-cert-verify":true}
+  - {"name":"韩国6","type":"hysteria2","server":"193.122.106.44","port":443,"password":"03c8bef4-8d11-4cf4-a35a-b4df0afb6a93","sni":"www.bing.com","skip-cert-verify":true}
+  - {"name":"韩国7","type":"hysteria2","server":"152.70.234.101","port":443,"password":"03c8bef4-8d11-4cf4-a35a-b4df0afb6a93","sni":"www.bing.com","skip-cert-verify":true}
+  - {"name":"韩国8","type":"hysteria2","server":"146.56.174.194","port":443,"password":"6ca91fad-f684-4cdf-b4b1-3f3ff71cb290","sni":"api.push.apple.com","skip-cert-verify":true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 中国台湾
-      - 新加坡1
-      - 新加坡2
-      - 新加坡3
-      - 新加坡4
-      - 新加坡5
-      - 新加坡6
-      - 新加坡7
-      - 迪拜
-      - 美国1
-      - 美国2
-      - 美国3
       - 韩国1
       - 韩国2
       - 韩国3
       - 韩国4
-      - 日本1
-      - 日本2
+      - 韩国5
+      - 韩国6
+      - 韩国7
+      - 韩国8
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 中国台湾
-      - 新加坡1
-      - 新加坡2
-      - 新加坡3
-      - 新加坡4
-      - 新加坡5
-      - 新加坡6
-      - 新加坡7
-      - 迪拜
-      - 美国1
-      - 美国2
-      - 美国3
       - 韩国1
       - 韩国2
       - 韩国3
       - 韩国4
-      - 日本1
-      - 日本2
+      - 韩国5
+      - 韩国6
+      - 韩国7
+      - 韩国8
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -170,24 +140,14 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 中国台湾
-      - 新加坡1
-      - 新加坡2
-      - 新加坡3
-      - 新加坡4
-      - 新加坡5
-      - 新加坡6
-      - 新加坡7
-      - 迪拜
-      - 美国1
-      - 美国2
-      - 美国3
       - 韩国1
       - 韩国2
       - 韩国3
       - 韩国4
-      - 日本1
-      - 日本2
+      - 韩国5
+      - 韩国6
+      - 韩国7
+      - 韩国8
 
 rules:
 # 本地/局域网地址
