@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2024-09-06 09:38:59
-# 使用模版：ACL4SSR_Mini.ini
-# 节点数量：7
+# 创建时间：2024-09-12 11:03:16
+# 使用模版：ACL4SSR_Online_Mini.ini
+# 节点数量：4
 # 节点类型：ss
 ####################################
 mixed-port: 7890
@@ -88,11 +88,8 @@ dns:
 proxies:
   - {"name":"新加坡1","type":"ss","server":"13.229.78.228","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
   - {"name":"新加坡2","type":"ss","server":"3.1.205.177","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"新加坡3","type":"ss","server":"18.143.75.166","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
   - {"name":"日本1","type":"ss","server":"57.180.28.226","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"日本2","type":"ss","server":"54.95.170.220","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
   - {"name":"韩国1","type":"ss","server":"43.201.112.173","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"韩国2","type":"ss","server":"52.78.220.233","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -101,11 +98,8 @@ proxy-groups:
       - DIRECT
       - 新加坡1
       - 新加坡2
-      - 新加坡3
       - 日本1
-      - 日本2
       - 韩国1
-      - 韩国2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -114,11 +108,8 @@ proxy-groups:
     proxies:
       - 新加坡1
       - 新加坡2
-      - 新加坡3
       - 日本1
-      - 日本2
       - 韩国1
-      - 韩国2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -138,11 +129,8 @@ proxy-groups:
       - ♻️ 自动选择
       - 新加坡1
       - 新加坡2
-      - 新加坡3
       - 日本1
-      - 日本2
       - 韩国1
-      - 韩国2
 
 rules:
 # 本地/局域网地址
@@ -185,6 +173,37 @@ rules:
   - DOMAIN-SUFFIX,zte.home,🎯 全球直连
   - DOMAIN-SUFFIX,tplogin.cn,🎯 全球直连
   - DOMAIN-SUFFIX,wifi.cmcc,🎯 全球直连
+# Unbreak 白名单 不应该被广告链接的网站
+# Epicgames
+# Getui
+# Google
+# Mozilla
+# Origin
+# Tencent
+# Strava
+# Umeng
+# Miui 小米
+# General
+# Hypixel Network
+# Koodo Mobile
+  - DOMAIN-SUFFIX,ol.epicgames.com,🎯 全球直连
+  - DOMAIN-SUFFIX,dizhensubao.getui.com,🎯 全球直连
+  - DOMAIN,dl.google.com,🎯 全球直连
+  - DOMAIN-SUFFIX,googletraveladservices.com,🎯 全球直连
+  - DOMAIN-SUFFIX,tracking-protection.cdn.mozilla.net,🎯 全球直连
+  - DOMAIN,origin-a.akamaihd.net,🎯 全球直连
+  - DOMAIN,fairplay.l.qq.com,🎯 全球直连
+  - DOMAIN,livew.l.qq.com,🎯 全球直连
+  - DOMAIN,vd.l.qq.com,🎯 全球直连
+  - DOMAIN,errlog.umeng.com,🎯 全球直连
+  - DOMAIN,msg.umeng.com,🎯 全球直连
+  - DOMAIN,msg.umengcloud.com,🎯 全球直连
+  - DOMAIN,tracking.miui.com,🎯 全球直连
+  - DOMAIN,app.adjust.com,🎯 全球直连
+  - DOMAIN,bdtj.tagtic.cn,🎯 全球直连
+  - DOMAIN,rewards.hypixel.net,🎯 全球直连
+  - DOMAIN-SUFFIX,koodomobile.com,🎯 全球直连
+  - DOMAIN-SUFFIX,koodomobile.ca,🎯 全球直连
 # 本碎片只包含常见广告关键字、广告联盟。无副作用，放心使用
 # 广告关键词
 # 广告联盟-国内****************
