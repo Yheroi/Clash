@@ -1,10 +1,10 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：2024-09-12 11:25:42
+# 创建时间：2024-09-13 13:44:45
 # 使用模版：ACL4SSR_Online_Mini.ini
-# 节点数量：8
-# 节点类型：hysteria2
+# 节点数量：12
+# 节点类型：hysteria2, vmess
 # !!当前配置文件请使用基于 Clash.Meta 内核程序
 ####################################
 mixed-port: 7890
@@ -87,14 +87,18 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"韩国1","type":"hysteria2","server":"193.123.242.61","port":443,"password":"6ca91fad-f684-4cdf-b4b1-3f3ff71cb290","sni":"api.push.apple.com","skip-cert-verify":true}
-  - {"name":"韩国2","type":"hysteria2","server":"193.123.229.26","port":443,"password":"e4d84650-3f4a-4c3e-9ab7-f00e5591896f","sni":"www.hoyoverse.com","skip-cert-verify":true}
-  - {"name":"韩国3","type":"hysteria2","server":"193.122.113.204","port":443,"password":"6ca91fad-f684-4cdf-b4b1-3f3ff71cb290","sni":"www.apple.com","skip-cert-verify":true}
-  - {"name":"韩国4","type":"hysteria2","server":"152.70.234.12","port":443,"password":"6ca91fad-f684-4cdf-b4b1-3f3ff71cb290","sni":"api.push.apple.com","skip-cert-verify":true}
-  - {"name":"韩国5","type":"hysteria2","server":"132.226.171.133","port":443,"password":"03c8bef4-8d11-4cf4-a35a-b4df0afb6a93","sni":"www.bing.com","skip-cert-verify":true}
-  - {"name":"韩国6","type":"hysteria2","server":"193.122.106.44","port":443,"password":"03c8bef4-8d11-4cf4-a35a-b4df0afb6a93","sni":"www.bing.com","skip-cert-verify":true}
-  - {"name":"韩国7","type":"hysteria2","server":"152.70.234.101","port":443,"password":"03c8bef4-8d11-4cf4-a35a-b4df0afb6a93","sni":"www.bing.com","skip-cert-verify":true}
-  - {"name":"韩国8","type":"hysteria2","server":"146.56.174.194","port":443,"password":"6ca91fad-f684-4cdf-b4b1-3f3ff71cb290","sni":"api.push.apple.com","skip-cert-verify":true}
+  - {"name":"韩国1","type":"hysteria2","server":"132.226.171.133","port":443,"password":"03c8bef4-8d11-4cf4-a35a-b4df0afb6a93","sni":"www.bing.com","skip-cert-verify":true}
+  - {"name":"韩国2","type":"hysteria2","server":"152.70.234.101","port":443,"password":"03c8bef4-8d11-4cf4-a35a-b4df0afb6a93","sni":"www.bing.com","skip-cert-verify":true}
+  - {"name":"韩国3","type":"hysteria2","server":"193.122.106.44","port":443,"password":"03c8bef4-8d11-4cf4-a35a-b4df0afb6a93","sni":"www.bing.com","skip-cert-verify":true}
+  - {"name":"韩国4","type":"hysteria2","server":"193.123.242.61","port":443,"password":"37c2d91f-c2bc-47a8-ab16-f5fc48c80dd2","sni":"api.push.apple.com","skip-cert-verify":true}
+  - {"name":"韩国5","type":"hysteria2","server":"146.56.174.194","port":443,"password":"37c2d91f-c2bc-47a8-ab16-f5fc48c80dd2","sni":"api.push.apple.com","skip-cert-verify":true}
+  - {"name":"韩国6","type":"hysteria2","server":"193.122.113.204","port":443,"password":"37c2d91f-c2bc-47a8-ab16-f5fc48c80dd2","sni":"www.apple.com","skip-cert-verify":true}
+  - {"name":"韩国7","type":"hysteria2","server":"152.69.225.196","port":443,"password":"37c2d91f-c2bc-47a8-ab16-f5fc48c80dd2","sni":"www.apple.com","skip-cert-verify":true}
+  - {"name":"韩国8","type":"hysteria2","server":"152.70.234.12","port":443,"password":"6ca91fad-f684-4cdf-b4b1-3f3ff71cb290","sni":"api.push.apple.com","skip-cert-verify":true}
+  - {"name":"巴黎","type":"hysteria2","server":"139.185.51.61","port":443,"password":"37c2d91f-c2bc-47a8-ab16-f5fc48c80dd2","sni":"www.apple.com","skip-cert-verify":true}
+  - {"name":"迪拜","type":"hysteria2","server":"193.123.76.84","port":443,"password":"37c2d91f-c2bc-47a8-ab16-f5fc48c80dd2","sni":"www.apple.com","skip-cert-verify":true}
+  - {"name":"日本1","type":"hysteria2","server":"138.3.208.201","port":443,"password":"03c8bef4-8d11-4cf4-a35a-b4df0afb6a93","sni":"www.bing.com","skip-cert-verify":true}
+  - {"name":"日本2","type":"vmess","server":"33.wgyddns.com","port":43007,"cipher":"auto","uuid":"24aa28ca-7986-3024-9daf-00eec6212f3b","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -109,6 +113,10 @@ proxy-groups:
       - 韩国6
       - 韩国7
       - 韩国8
+      - 巴黎
+      - 迪拜
+      - 日本1
+      - 日本2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -123,6 +131,10 @@ proxy-groups:
       - 韩国6
       - 韩国7
       - 韩国8
+      - 巴黎
+      - 迪拜
+      - 日本1
+      - 日本2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -148,6 +160,10 @@ proxy-groups:
       - 韩国6
       - 韩国7
       - 韩国8
+      - 巴黎
+      - 迪拜
+      - 日本1
+      - 日本2
 
 rules:
 # 本地/局域网地址
