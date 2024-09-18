@@ -1,10 +1,11 @@
 ####################################
 # 创建者：v2rayse.com
-# 客户端：Clash
-# 创建时间：2024-09-18 11:19:39
+# 客户端：Clash.Meta
+# 创建时间：2024-09-18 16:47:08
 # 使用模版：ACL4SSR_Mini.ini
-# 节点数量：45
-# 节点类型：ss
+# 节点数量：5
+# 节点类型：hysteria2, vmess
+# !!当前配置文件请使用基于 Clash.Meta 内核程序
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -86,153 +87,33 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"新加坡_1","type":"ss","server":"7e67684.b1.glados-config.net","port":2377,"password":"t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv","cipher":"chacha20-ietf-poly1305","plugin":"obfs","plugin-opts":{"mode":"tls","host":"7e67684.dl.fastly.net:161750"}}
-  - {"name":"美国_1","type":"ss","server":"7e67684.b2.glados-config.net","port":2377,"password":"t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv","cipher":"chacha20-ietf-poly1305","plugin":"obfs","plugin-opts":{"mode":"tls","host":"7e67684.dl.nvidia.com:161750"}}
-  - {"name":"新加坡_2","type":"ss","server":"7e67684.b3.glados-config.net","port":2377,"password":"t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv","cipher":"chacha20-ietf-poly1305","plugin":"obfs","plugin-opts":{"mode":"tls","host":"7e67684.dl.microsoft.it:161750"}}
-  - {"name":"新加坡_3","type":"ss","server":"7e67684.b4.glados-config.net","port":2377,"password":"t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv","cipher":"chacha20-ietf-poly1305","plugin":"obfs","plugin-opts":{"mode":"tls","host":"7e67684.dl.nvidia.com:161750"}}
-  - {"name":"新加坡_4","type":"ss","server":"7e67684.b5.glados-config.net","port":2377,"password":"t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv","cipher":"chacha20-ietf-poly1305","plugin":"obfs","plugin-opts":{"mode":"tls","host":"7e67684.dl.nintendo.net:161750"}}
-  - {"name":"新加坡_5","type":"ss","server":"7e67684.b6.glados-config.net","port":2377,"password":"t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv","cipher":"chacha20-ietf-poly1305","plugin":"obfs","plugin-opts":{"mode":"tls","host":"7e67684.dl.microsoft.jp:161750"}}
-  - {"name":"美国_2","type":"ss","server":"7e67684.b7.glados-config.net","port":2377,"password":"t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv","cipher":"chacha20-ietf-poly1305","plugin":"obfs","plugin-opts":{"mode":"tls","host":"7e67684.dl.nintendo.eu:161750"}}
-  - {"name":"新加坡_6","type":"ss","server":"7e67684.b8.glados-config.net","port":2377,"password":"t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv","cipher":"chacha20-ietf-poly1305","plugin":"obfs","plugin-opts":{"mode":"tls","host":"7e67684.dl.microsoft.lv:161750"}}
-  - {"name":"新加坡_7","type":"ss","server":"7e67684.b9.glados-config.net","port":2377,"password":"t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv","cipher":"chacha20-ietf-poly1305","plugin":"obfs","plugin-opts":{"mode":"tls","host":"7e67684.dl.microsoft.lv:161750"}}
-  - {"name":"俄罗斯_1","type":"ss","server":"7e67684.u1.glados-config.net","port":2377,"password":"t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv","cipher":"chacha20-ietf-poly1305","plugin":"obfs","plugin-opts":{"mode":"tls","host":"7e67684.dl.blizzard.com:161750"}}
-  - {"name":"俄罗斯_2","type":"ss","server":"7e67684.u2.glados-config.net","port":2377,"password":"t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv","cipher":"chacha20-ietf-poly1305","plugin":"obfs","plugin-opts":{"mode":"tls","host":"7e67684.dl.nvidia.com:161750"}}
-  - {"name":"俄罗斯_3","type":"ss","server":"7e67684.u3.glados-config.net","port":2377,"password":"t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv","cipher":"chacha20-ietf-poly1305","plugin":"obfs","plugin-opts":{"mode":"tls","host":"7e67684.dl.microsoft.lt:161750"}}
-  - {"name":"俄罗斯_4","type":"ss","server":"7e67684.u4.glados-config.net","port":2377,"password":"t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv","cipher":"chacha20-ietf-poly1305","plugin":"obfs","plugin-opts":{"mode":"tls","host":"7e67684.dl.nintendo.eu:161750"}}
-  - {"name":"俄罗斯_5","type":"ss","server":"7e67684.u5.glados-config.net","port":2377,"password":"t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv","cipher":"chacha20-ietf-poly1305","plugin":"obfs","plugin-opts":{"mode":"tls","host":"7e67684.dl.microsoft.ee:161750"}}
-  - {"name":"俄罗斯_6","type":"ss","server":"7e67684.u6.glados-config.net","port":2377,"password":"t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv","cipher":"chacha20-ietf-poly1305","plugin":"obfs","plugin-opts":{"mode":"tls","host":"7e67684.dl.fastly.net:161750"}}
-  - {"name":"日本_1","type":"ss","server":"7e67684.j1.glados-config.net","port":2377,"password":"t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv","cipher":"chacha20-ietf-poly1305","plugin":"obfs","plugin-opts":{"mode":"tls","host":"7e67684.dl.microsoft.dk:161750"}}
-  - {"name":"日本_2","type":"ss","server":"7e67684.j2.glados-config.net","port":2377,"password":"t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv","cipher":"chacha20-ietf-poly1305","plugin":"obfs","plugin-opts":{"mode":"tls","host":"7e67684.dl.microsoft.lt:161750"}}
-  - {"name":"日本_3","type":"ss","server":"7e67684.j3.glados-config.net","port":2377,"password":"t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv","cipher":"chacha20-ietf-poly1305","plugin":"obfs","plugin-opts":{"mode":"tls","host":"7e67684.dl.blizzard.com:161750"}}
-  - {"name":"中国_1","type":"ss","server":"7e67684.t1.glados-config.net","port":2377,"password":"t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv","cipher":"chacha20-ietf-poly1305","plugin":"obfs","plugin-opts":{"mode":"tls","host":"7e67684.dl.microsoft.cz:161750"}}
-  - {"name":"中国_2","type":"ss","server":"7e67684.t2.glados-config.net","port":2377,"password":"t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv","cipher":"chacha20-ietf-poly1305","plugin":"obfs","plugin-opts":{"mode":"tls","host":"7e67684.dl.microsoft.io:161750"}}
-  - {"name":"中国_3","type":"ss","server":"7e67684.t3.glados-config.net","port":2377,"password":"t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv","cipher":"chacha20-ietf-poly1305","plugin":"obfs","plugin-opts":{"mode":"tls","host":"7e67684.dl.nintendo.it:161750"}}
-  - {"name":"中国_4","type":"ss","server":"7e67684.t4.glados-config.net","port":2377,"password":"t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv","cipher":"chacha20-ietf-poly1305","plugin":"obfs","plugin-opts":{"mode":"tls","host":"7e67684.dl.microsoft.com:161750"}}
-  - {"name":"中国_5","type":"ss","server":"7e67684.t5.glados-config.net","port":2377,"password":"t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv","cipher":"chacha20-ietf-poly1305","plugin":"obfs","plugin-opts":{"mode":"tls","host":"7e67684.dl.microsoft.eu:161750"}}
-  - {"name":"中国_6","type":"ss","server":"7e67684.t6.glados-config.net","port":2377,"password":"t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv","cipher":"chacha20-ietf-poly1305","plugin":"obfs","plugin-opts":{"mode":"tls","host":"7e67684.dl.microsoft.hu:161750"}}
-  - {"name":"新加坡_8","type":"ss","server":"7e67684.s1.glados-config.net","port":2377,"password":"t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv","cipher":"chacha20-ietf-poly1305","plugin":"obfs","plugin-opts":{"mode":"tls","host":"7e67684.dl.nintendo.jp:161750"}}
-  - {"name":"新加坡_9","type":"ss","server":"7e67684.s2.glados-config.net","port":2377,"password":"t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv","cipher":"chacha20-ietf-poly1305","plugin":"obfs","plugin-opts":{"mode":"tls","host":"7e67684.dl.nintendo.jp:161750"}}
-  - {"name":"新加坡_10","type":"ss","server":"7e67684.s3.glados-config.net","port":2377,"password":"t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv","cipher":"chacha20-ietf-poly1305","plugin":"obfs","plugin-opts":{"mode":"tls","host":"7e67684.dl.fastly.net:161750"}}
-  - {"name":"英国_1","type":"ss","server":"7e67684.h1.glados-config.net","port":2377,"password":"t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv","cipher":"chacha20-ietf-poly1305","plugin":"obfs","plugin-opts":{"mode":"tls","host":"7e67684.dl.fastly.net:161750"}}
-  - {"name":"英国_2","type":"ss","server":"7e67684.h2.glados-config.net","port":2377,"password":"t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv","cipher":"chacha20-ietf-poly1305","plugin":"obfs","plugin-opts":{"mode":"tls","host":"7e67684.dl.microsoft.es:161750"}}
-  - {"name":"英国_3","type":"ss","server":"7e67684.h3.glados-config.net","port":2377,"password":"t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv","cipher":"chacha20-ietf-poly1305","plugin":"obfs","plugin-opts":{"mode":"tls","host":"7e67684.dl.microsoft.de:161750"}}
-  - {"name":"英国_4","type":"ss","server":"7e67684.e1.glados-config.net","port":2377,"password":"t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv","cipher":"chacha20-ietf-poly1305","plugin":"obfs","plugin-opts":{"mode":"tls","host":"7e67684.dl.nintendo.eu:161750"}}
-  - {"name":"英国_5","type":"ss","server":"7e67684.e2.glados-config.net","port":2377,"password":"t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv","cipher":"chacha20-ietf-poly1305","plugin":"obfs","plugin-opts":{"mode":"tls","host":"7e67684.dl.nintendo.eu:161750"}}
-  - {"name":"英国_6","type":"ss","server":"7e67684.e3.glados-config.net","port":2377,"password":"t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv","cipher":"chacha20-ietf-poly1305","plugin":"obfs","plugin-opts":{"mode":"tls","host":"7e67684.dl.blizzard.com:161750"}}
-  - {"name":"俄罗斯_7","type":"ss","server":"7e67684.da.glados-config.net","port":2377,"password":"t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv","cipher":"chacha20-ietf-poly1305","plugin":"obfs","plugin-opts":{"mode":"tls","host":"7e67684.dl.microsoft.it:161750"}}
-  - {"name":"俄罗斯_8","type":"ss","server":"7e67684.db.glados-config.net","port":2377,"password":"t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv","cipher":"chacha20-ietf-poly1305","plugin":"obfs","plugin-opts":{"mode":"tls","host":"7e67684.dl.microsoft.it:161750"}}
-  - {"name":"俄罗斯_9","type":"ss","server":"7e67684.dc.glados-config.net","port":2377,"password":"t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv","cipher":"chacha20-ietf-poly1305","plugin":"obfs","plugin-opts":{"mode":"tls","host":"7e67684.dl.nintendo.net:161750"}}
-  - {"name":"美国_3","type":"ss","server":"7e67684.f1.glados-config.net","port":2377,"password":"t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv","cipher":"chacha20-ietf-poly1305","plugin":"obfs","plugin-opts":{"mode":"tls","host":"7e67684.dl.fastly.net.net:161750"}}
-  - {"name":"美国_4","type":"ss","server":"7e67684.f2.glados-config.net","port":2377,"password":"t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv","cipher":"chacha20-ietf-poly1305","plugin":"obfs","plugin-opts":{"mode":"tls","host":"7e67684.dl.microsoft.is.net:161750"}}
-  - {"name":"美国_5","type":"ss","server":"7e67684.f3.glados-config.net","port":2377,"password":"t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv","cipher":"chacha20-ietf-poly1305","plugin":"obfs","plugin-opts":{"mode":"tls","host":"7e67684.dl.nintendo.jp.net:161750"}}
-  - {"name":"美国_6","type":"ss","server":"7e67684.qa.glados-config.com","port":8880,"password":"t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv","cipher":"chacha20-ietf-poly1305","plugin":"v2ray-plugin","plugin-opts":{"mode":"websocket","host":"trump.moss.network","path":"/9daad54c-7685-402c-8a97-e6a04ec7cb11/connect","mux":true}}
-  - {"name":"美国_7","type":"ss","server":"7e67684.qb.glados-config.com","port":8880,"password":"t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv","cipher":"chacha20-ietf-poly1305","plugin":"v2ray-plugin","plugin-opts":{"mode":"websocket","host":"trump.moss.network","path":"/9daad54c-7685-402c-8a97-e6a04ec7cb11/connect","mux":true}}
-  - {"name":"美国_8","type":"ss","server":"7e67684.qc.glados-config.com","port":8880,"password":"t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv","cipher":"chacha20-ietf-poly1305","plugin":"v2ray-plugin","plugin-opts":{"mode":"websocket","host":"trump.moss.network","path":"/9daad54c-7685-402c-8a97-e6a04ec7cb11/connect","mux":true}}
-  - {"name":"美国_9","type":"ss","server":"7e67684.qd.glados-config.com","port":8880,"password":"t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv","cipher":"chacha20-ietf-poly1305","plugin":"v2ray-plugin","plugin-opts":{"mode":"websocket","host":"uk.moss.network","path":"/9daad54c-7685-402c-8a97-e6a04ec7cb11/connect","mux":true}}
-  - {"name":"美国_10","type":"ss","server":"7e67684.qe.glados-config.com","port":8880,"password":"t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv","cipher":"chacha20-ietf-poly1305","plugin":"v2ray-plugin","plugin-opts":{"mode":"websocket","host":"uk.moss.network","path":"/9daad54c-7685-402c-8a97-e6a04ec7cb11/connect","mux":true}}
-  - {"name":"美国_11","type":"ss","server":"7e67684.qf.glados-config.com","port":8880,"password":"t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv","cipher":"chacha20-ietf-poly1305","plugin":"v2ray-plugin","plugin-opts":{"mode":"websocket","host":"uk.moss.network","path":"/9daad54c-7685-402c-8a97-e6a04ec7cb11/connect","mux":true}}
+  - {"name":"中国香港1","type":"hysteria2","server":"mts9.zqjc.org","port":55215,"password":"babb421e-38ee-4c97-9d5c-c93bfc9be444","sni":"mts9.zqjc.org","skip-cert-verify":true}
+  - {"name":"中国香港2","type":"hysteria2","server":"mts1.zqjc.org","port":55215,"password":"babb421e-38ee-4c97-9d5c-c93bfc9be444","sni":"mts1.zqjc.org","skip-cert-verify":true}
+  - {"name":"中国香港3","type":"hysteria2","server":"mts2.zqjc.org","port":55215,"password":"babb421e-38ee-4c97-9d5c-c93bfc9be444","sni":"mts2.zqjc.org","skip-cert-verify":true}
+  - {"name":"中国香港4","type":"hysteria2","server":"mts4.zqjc.org","port":55215,"password":"babb421e-38ee-4c97-9d5c-c93bfc9be444","sni":"mts4.zqjc.org","skip-cert-verify":true}
+  - {"name":"中国香港5","type":"vmess","server":"120.232.153.40","port":52442,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 新加坡_1
-      - 美国_1
-      - 新加坡_2
-      - 新加坡_3
-      - 新加坡_4
-      - 新加坡_5
-      - 美国_2
-      - 新加坡_6
-      - 新加坡_7
-      - 俄罗斯_1
-      - 俄罗斯_2
-      - 俄罗斯_3
-      - 俄罗斯_4
-      - 俄罗斯_5
-      - 俄罗斯_6
-      - 日本_1
-      - 日本_2
-      - 日本_3
-      - 中国_1
-      - 中国_2
-      - 中国_3
-      - 中国_4
-      - 中国_5
-      - 中国_6
-      - 新加坡_8
-      - 新加坡_9
-      - 新加坡_10
-      - 英国_1
-      - 英国_2
-      - 英国_3
-      - 英国_4
-      - 英国_5
-      - 英国_6
-      - 俄罗斯_7
-      - 俄罗斯_8
-      - 俄罗斯_9
-      - 美国_3
-      - 美国_4
-      - 美国_5
-      - 美国_6
-      - 美国_7
-      - 美国_8
-      - 美国_9
-      - 美国_10
-      - 美国_11
+      - 中国香港1
+      - 中国香港2
+      - 中国香港3
+      - 中国香港4
+      - 中国香港5
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 新加坡_1
-      - 美国_1
-      - 新加坡_2
-      - 新加坡_3
-      - 新加坡_4
-      - 新加坡_5
-      - 美国_2
-      - 新加坡_6
-      - 新加坡_7
-      - 俄罗斯_1
-      - 俄罗斯_2
-      - 俄罗斯_3
-      - 俄罗斯_4
-      - 俄罗斯_5
-      - 俄罗斯_6
-      - 日本_1
-      - 日本_2
-      - 日本_3
-      - 中国_1
-      - 中国_2
-      - 中国_3
-      - 中国_4
-      - 中国_5
-      - 中国_6
-      - 新加坡_8
-      - 新加坡_9
-      - 新加坡_10
-      - 英国_1
-      - 英国_2
-      - 英国_3
-      - 英国_4
-      - 英国_5
-      - 英国_6
-      - 俄罗斯_7
-      - 俄罗斯_8
-      - 俄罗斯_9
-      - 美国_3
-      - 美国_4
-      - 美国_5
-      - 美国_6
-      - 美国_7
-      - 美国_8
-      - 美国_9
-      - 美国_10
-      - 美国_11
+      - 中国香港1
+      - 中国香港2
+      - 中国香港3
+      - 中国香港4
+      - 中国香港5
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -250,51 +131,11 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 新加坡_1
-      - 美国_1
-      - 新加坡_2
-      - 新加坡_3
-      - 新加坡_4
-      - 新加坡_5
-      - 美国_2
-      - 新加坡_6
-      - 新加坡_7
-      - 俄罗斯_1
-      - 俄罗斯_2
-      - 俄罗斯_3
-      - 俄罗斯_4
-      - 俄罗斯_5
-      - 俄罗斯_6
-      - 日本_1
-      - 日本_2
-      - 日本_3
-      - 中国_1
-      - 中国_2
-      - 中国_3
-      - 中国_4
-      - 中国_5
-      - 中国_6
-      - 新加坡_8
-      - 新加坡_9
-      - 新加坡_10
-      - 英国_1
-      - 英国_2
-      - 英国_3
-      - 英国_4
-      - 英国_5
-      - 英国_6
-      - 俄罗斯_7
-      - 俄罗斯_8
-      - 俄罗斯_9
-      - 美国_3
-      - 美国_4
-      - 美国_5
-      - 美国_6
-      - 美国_7
-      - 美国_8
-      - 美国_9
-      - 美国_10
-      - 美国_11
+      - 中国香港1
+      - 中国香港2
+      - 中国香港3
+      - 中国香港4
+      - 中国香港5
 
 rules:
 # 本地/局域网地址
