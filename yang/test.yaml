@@ -1,11 +1,10 @@
 ####################################
 # 创建者：v2rayse.com
-# 客户端：Clash.Meta
-# 创建时间：2024-09-18 15:22:59
+# 客户端：Clash
+# 创建时间：2024-09-18 15:24:43
 # 使用模版：ACL4SSR_Mini.ini
-# 节点数量：60
-# 节点类型：hysteria2
-# !!当前配置文件请使用基于 Clash.Meta 内核程序
+# 节点数量：30
+# 节点类型：vmess
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -87,198 +86,108 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"美国_1","type":"hysteria2","server":"107.175.124.172","port":50000,"password":"8c7252e0-9f8c-4614-88cb-c7d3110ec624","sni":"v2.chatpro.icu","skip-cert-verify":true,"obfs-password":"N2IwNzRhZTY1ZWI0NTQyMw=="}
-  - {"name":"美国_2","type":"hysteria2","server":"us-02.worldfirst.eu.org","port":44300,"password":"19a97665-11fa-46e7-9bec-3d5d9eae0631","skip-cert-verify":true}
-  - {"name":"美国_3","type":"hysteria2","server":"us-03.worldfirst.eu.org","port":44300,"password":"0678d734-ceff-463a-b784-6630d27d425d","sni":"us-01.worldfirst.eu.org","skip-cert-verify":true}
-  - {"name":"美国_4","type":"hysteria2","server":"mts9.zqjc.org","port":55215,"password":"babb421e-38ee-4c97-9d5c-c93bfc9be444","sni":"mts9.zqjc.org","skip-cert-verify":true}
-  - {"name":"美国_5","type":"hysteria2","server":"mts1.zqjc.org","port":55215,"password":"babb421e-38ee-4c97-9d5c-c93bfc9be444","sni":"mts1.zqjc.org","skip-cert-verify":true}
-  - {"name":"美国_6","type":"hysteria2","server":"mts2.zqjc.org","port":55215,"password":"babb421e-38ee-4c97-9d5c-c93bfc9be444","sni":"mts2.zqjc.org","skip-cert-verify":true}
-  - {"name":"美国_7","type":"hysteria2","server":"mts4.zqjc.org","port":55215,"password":"babb421e-38ee-4c97-9d5c-c93bfc9be444","sni":"mts4.zqjc.org","skip-cert-verify":true}
-  - {"name":"保加利亚_8","type":"hysteria2","server":"hk-gdfkkt2ngzrfci5czp08.pithecia.com","port":443,"password":"86c51bde-ba1b-4560-abe2-66463d536636","sni":"oss.pithecia.com","skip-cert-verify":true}
-  - {"name":"巴西_9","type":"hysteria2","server":"sbl1.556855.xyz","port":52100,"password":"2b8be919-1a80-49f0-8c88-5c0cc9b6664b","sni":"sbl1.556855.xyz","skip-cert-verify":true}
-  - {"name":"巴西_10","type":"hysteria2","server":"sbl.556855.xyz","port":443,"password":"2b8be919-1a80-49f0-8c88-5c0cc9b6664b","sni":"sbl.556855.xyz","skip-cert-verify":true}
-  - {"name":"德国_11","type":"hysteria2","server":"ms.556855.xyz","port":443,"password":"2b8be919-1a80-49f0-8c88-5c0cc9b6664b","sni":"ms.556855.xyz","skip-cert-verify":true}
-  - {"name":"巴西_12","type":"hysteria2","server":"jp.556855.xyz","port":443,"password":"2b8be919-1a80-49f0-8c88-5c0cc9b6664b","sni":"jp.556855.xyz","skip-cert-verify":true}
-  - {"name":"荷兰_13","type":"hysteria2","server":"ld.556855.xyz","port":443,"password":"2b8be919-1a80-49f0-8c88-5c0cc9b6664b","sni":"ld.556855.xyz","skip-cert-verify":true}
-  - {"name":"德国_14","type":"hysteria2","server":"flkf.556855.xyz","port":443,"password":"2b8be919-1a80-49f0-8c88-5c0cc9b6664b","sni":"flkf.556855.xyz","skip-cert-verify":true}
-  - {"name":"法国_15","type":"hysteria2","server":"snc.556855.xyz","port":443,"password":"2b8be919-1a80-49f0-8c88-5c0cc9b6664b","sni":"snc.556855.xyz","skip-cert-verify":true}
-  - {"name":"英国_16","type":"hysteria2","server":"fhc.556855.xyz","port":443,"password":"2b8be919-1a80-49f0-8c88-5c0cc9b6664b","sni":"fhc.556855.xyz","skip-cert-verify":true}
-  - {"name":"美国_17","type":"hysteria2","server":"zjg.556855.xyz","port":443,"password":"2b8be919-1a80-49f0-8c88-5c0cc9b6664b","sni":"zjg.556855.xyz","skip-cert-verify":true}
-  - {"name":"美国_18","type":"hysteria2","server":"shs.556855.xyz","port":443,"password":"2b8be919-1a80-49f0-8c88-5c0cc9b6664b","sni":"shs.556855.xyz","skip-cert-verify":true}
-  - {"name":"美国_19","type":"hysteria2","server":"xjp.556855.xyz","port":443,"password":"2b8be919-1a80-49f0-8c88-5c0cc9b6664b","sni":"xjp.556855.xyz","skip-cert-verify":true}
-  - {"name":"美国_20","type":"hysteria2","server":"xn.556855.xyz","port":521,"password":"2b8be919-1a80-49f0-8c88-5c0cc9b6664b","sni":"xn.556855.xyz","skip-cert-verify":true}
-  - {"name":"美国_21","type":"hysteria2","server":"129.159.97.206","port":443,"password":"32c9b2bf-3d9d-4580-b483-7754ade6acbb","sni":"cn.cremedelamer.com","skip-cert-verify":true}
-  - {"name":"瑞士_22","type":"hysteria2","server":"141.148.182.2","port":443,"password":"32c9b2bf-3d9d-4580-b483-7754ade6acbb","sni":"cn.cremedelamer.com","skip-cert-verify":true}
-  - {"name":"美国_23","type":"hysteria2","server":"192.9.165.40","port":443,"password":"32c9b2bf-3d9d-4580-b483-7754ade6acbb","sni":"cn.cremedelamer.com","skip-cert-verify":true}
-  - {"name":"美国_24","type":"hysteria2","server":"192.9.179.140","port":443,"password":"32c9b2bf-3d9d-4580-b483-7754ade6acbb","sni":"cn.cremedelamer.com","skip-cert-verify":true}
-  - {"name":"澳大利亚_25","type":"hysteria2","server":"129.154.53.232","port":443,"password":"32c9b2bf-3d9d-4580-b483-7754ade6acbb","sni":"cn.cremedelamer.com","skip-cert-verify":true}
-  - {"name":"美国_26","type":"hysteria2","server":"140.245.27.220","port":443,"password":"32c9b2bf-3d9d-4580-b483-7754ade6acbb","sni":"cn.cremedelamer.com","skip-cert-verify":true}
-  - {"name":"瑞士_27","type":"hysteria2","server":"141.148.222.181","port":443,"password":"32c9b2bf-3d9d-4580-b483-7754ade6acbb","sni":"cn.cremedelamer.com","skip-cert-verify":true}
-  - {"name":"美国_28","type":"hysteria2","server":"168.75.68.172","port":443,"password":"32c9b2bf-3d9d-4580-b483-7754ade6acbb","sni":"cn.cremedelamer.com","skip-cert-verify":true}
-  - {"name":"哥斯达黎加_29","type":"hysteria2","server":"144.22.197.28","port":443,"password":"32c9b2bf-3d9d-4580-b483-7754ade6acbb","sni":"cn.cremedelamer.com","skip-cert-verify":true}
-  - {"name":"中国_30","type":"hysteria2","server":"pochan.ddnshk01.868891.xyz","port":443,"password":"c5e768aa-2e30-403a-9c61-9fc103ccd93b","sni":"pochan.ddnshk01.868891.xyz","skip-cert-verify":true}
-  - {"name":"印度_31","type":"hysteria2","server":"pochanddnsjp01.868891.xyz","port":443,"password":"c5e768aa-2e30-403a-9c61-9fc103ccd93b","sni":"pochanddnsjp01.868891.xyz","skip-cert-verify":true}
-  - {"name":"印度_32","type":"hysteria2","server":"pochan.ddnssg01.868891.xyz","port":443,"password":"c5e768aa-2e30-403a-9c61-9fc103ccd93b","sni":"pochan.ddnssg01.868891.xyz","skip-cert-verify":true}
-  - {"name":"美国_33","type":"hysteria2","server":"shs2233.yjy.lol","port":443,"password":"84e8d4ad-d1ae-450b-8e27-8a62d6836524","skip-cert-verify":true}
-  - {"name":"美国_34","type":"hysteria2","server":"shs1111.yjy.lol","port":443,"password":"84e8d4ad-d1ae-450b-8e27-8a62d6836524","skip-cert-verify":true}
-  - {"name":"韩国_35","type":"hysteria2","server":"shouer50.yjy.lol","port":443,"password":"84e8d4ad-d1ae-450b-8e27-8a62d6836524","skip-cert-verify":true}
-  - {"name":"日本_36","type":"hysteria2","server":"cc.sux.lol","port":443,"password":"84e8d4ad-d1ae-450b-8e27-8a62d6836524","skip-cert-verify":true}
-  - {"name":"英国_37","type":"hysteria2","server":"shate.tiktokcn.xyz","port":443,"password":"84e8d4ad-d1ae-450b-8e27-8a62d6836524","skip-cert-verify":true}
-  - {"name":"日本_38","type":"hysteria2","server":"shouer4gbps.yjy.lol","port":443,"password":"84e8d4ad-d1ae-450b-8e27-8a62d6836524","skip-cert-verify":true}
-  - {"name":"澳大利亚_39","type":"hysteria2","server":"shouer500.yjy.lol","port":443,"password":"84e8d4ad-d1ae-450b-8e27-8a62d6836524","skip-cert-verify":true}
-  - {"name":"美国_40","type":"hysteria2","server":"poxi.yjy.lol","port":443,"password":"84e8d4ad-d1ae-450b-8e27-8a62d6836524","skip-cert-verify":true}
-  - {"name":"美国_41","type":"hysteria2","server":"xjp222.yjy.lol","port":443,"password":"84e8d4ad-d1ae-450b-8e27-8a62d6836524","skip-cert-verify":true}
-  - {"name":"美国_42","type":"hysteria2","server":"xxjjpp.yjy.lol","port":443,"password":"84e8d4ad-d1ae-450b-8e27-8a62d6836524","skip-cert-verify":true}
-  - {"name":"美国_43","type":"hysteria2","server":"xjp444.yjy.lol","port":443,"password":"84e8d4ad-d1ae-450b-8e27-8a62d6836524","skip-cert-verify":true}
-  - {"name":"美国_44","type":"hysteria2","server":"mtl.tiktokcn.xyz","port":443,"password":"84e8d4ad-d1ae-450b-8e27-8a62d6836524","skip-cert-verify":true}
-  - {"name":"英国_45","type":"hysteria2","server":"ruidian.tiktokcn.xyz","port":443,"password":"84e8d4ad-d1ae-450b-8e27-8a62d6836524","skip-cert-verify":true}
-  - {"name":"美国_46","type":"hysteria2","server":"zzxg.tiktokcn.xyz","port":443,"password":"84e8d4ad-d1ae-450b-8e27-8a62d6836524","skip-cert-verify":true}
-  - {"name":"英国_47","type":"hysteria2","server":"82.152.142.69","port":3341,"password":"f206702e","sni":"www.bing.com","skip-cert-verify":true}
-  - {"name":"中国_48","type":"hysteria2","server":"hk13falco45yunyoo197.693149.xyz","port":8080,"password":"d8cf79eb-9ae9-4ecf-90d6-3a007e23c556","skip-cert-verify":true}
-  - {"name":"法国_49","type":"hysteria2","server":"hy5.hy2yydsapi.top","port":8443,"password":"977532c3-d4d1-4065-b94d-3f036138ad81","sni":"hy5.hy2yydsapi.top","skip-cert-verify":true}
-  - {"name":"法国_50","type":"hysteria2","server":"hy5.hy2yydsapi.top","port":8088,"password":"977532c3-d4d1-4065-b94d-3f036138ad81","sni":"hy5.hy2yydsapi.top","skip-cert-verify":true}
-  - {"name":"美国_51","type":"hysteria2","server":"hy2.hy2yydsapi.top","port":8443,"password":"977532c3-d4d1-4065-b94d-3f036138ad81","sni":"hy2.hy2yydsapi.top","skip-cert-verify":true}
-  - {"name":"美国_52","type":"hysteria2","server":"hy1.hy2yydsapi.top","port":8443,"password":"977532c3-d4d1-4065-b94d-3f036138ad81","sni":"hy1.hy2yydsapi.top","skip-cert-verify":true}
-  - {"name":"美国_53","type":"hysteria2","server":"hy3.hy2yydsapi.top","port":8443,"password":"977532c3-d4d1-4065-b94d-3f036138ad81","sni":"hy3.hy2yydsapi.top","skip-cert-verify":true}
-  - {"name":"美国_54","type":"hysteria2","server":"tw02falco1660akm198117.693149.xyz","port":34106,"password":"d8cf79eb-9ae9-4ecf-90d6-3a007e23c556","skip-cert-verify":true}
-  - {"name":"中国_55","type":"hysteria2","server":"hk002.panghu.buzz","port":5000,"password":"1197e394-785d-4ed0-b378-c789907f6ea0","sni":"bing.com","skip-cert-verify":true}
-  - {"name":"印度_56","type":"hysteria2","server":"jp001.panghu.buzz","port":5000,"password":"1197e394-785d-4ed0-b378-c789907f6ea0","sni":"bing.com","skip-cert-verify":true}
-  - {"name":"印度_57","type":"hysteria2","server":"sg001.panghu.buzz","port":5000,"password":"1197e394-785d-4ed0-b378-c789907f6ea0","sni":"bing.com","skip-cert-verify":true}
-  - {"name":"中国_58","type":"hysteria2","server":"hkyyds.bpjc.tgbpjc520.site","port":65535,"password":"961177d9-f9f2-4944-a1c2-dc0f0fe009aa","sni":"visa.cn","skip-cert-verify":true}
-  - {"name":"印度_59","type":"hysteria2","server":"bpjcjapan.tgbpjc520.site","port":65535,"password":"961177d9-f9f2-4944-a1c2-dc0f0fe009aa","sni":"visa.cn","skip-cert-verify":true}
-  - {"name":"印度_60","type":"hysteria2","server":"sg.tgbpjc520.site","port":65535,"password":"961177d9-f9f2-4944-a1c2-dc0f0fe009aa","sni":"visa.cn","skip-cert-verify":true}
+  - {"name":"4","type":"vmess","server":"104.26.5.67","port":2086,"cipher":"auto","uuid":"e9e3cc13-db48-4cc1-8c24-7626439a5339","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"github.com/Alvin9999","headers":{"host":"ip1.1789034.xyz"}}}
+  - {"name":"5","type":"vmess","server":"104.26.5.145","port":2086,"cipher":"auto","uuid":"e9e3cc13-db48-4cc1-8c24-7626439a5339","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"github.com/Alvin9999","headers":{"host":"ip1.1789034.xyz"}}}
+  - {"name":"20","type":"vmess","server":"89.185.26.20","port":25578,"cipher":"auto","uuid":"02168ccc-7554-40fb-a8a2-0d8d9e73daad","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"21","type":"vmess","server":"172.67.74.112","port":2086,"cipher":"auto","uuid":"e9e3cc13-db48-4cc1-8c24-7626439a5339","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"github.com/Alvin9999","headers":{"host":"ip11.freegradely.xyz"}}}
+  - {"name":"22","type":"vmess","server":"104.26.5.103","port":2086,"cipher":"auto","uuid":"e9e3cc13-db48-4cc1-8c24-7626439a5339","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"github.com/Alvin9999","headers":{"host":"ip1.1789034.xyz"}}}
+  - {"name":"23","type":"vmess","server":"104.26.12.31","port":2086,"cipher":"auto","uuid":"e9e3cc13-db48-4cc1-8c24-7626439a5339","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"github.com/Alvin9999","headers":{"host":"ip1.1789034.xyz"}}}
+  - {"name":"24","type":"vmess","server":"104.26.5.123","port":2086,"cipher":"auto","uuid":"e9e3cc13-db48-4cc1-8c24-7626439a5339","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"github.com/Alvin9999","headers":{"host":"ip1.1789034.xyz"}}}
+  - {"name":"27","type":"vmess","server":"172.67.71.187","port":2086,"cipher":"auto","uuid":"e9e3cc13-db48-4cc1-8c24-7626439a5339","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"github.com/Alvin9999","headers":{"host":"ip1.1789034.xyz"}}}
+  - {"name":"28","type":"vmess","server":"104.26.5.66","port":2086,"cipher":"auto","uuid":"e9e3cc13-db48-4cc1-8c24-7626439a5339","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"github.com/Alvin9999","headers":{"host":"ip1.1789034.xyz"}}}
+  - {"name":"33","type":"vmess","server":"104.26.12.140","port":2086,"cipher":"auto","uuid":"e9e3cc13-db48-4cc1-8c24-7626439a5339","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"github.com/Alvin9999","headers":{"host":"ip1.1789034.xyz"}}}
+  - {"name":"36","type":"vmess","server":"104.26.5.90","port":2086,"cipher":"auto","uuid":"e9e3cc13-db48-4cc1-8c24-7626439a5339","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"github.com/Alvin9999","headers":{"host":"ip1.1789034.xyz"}}}
+  - {"name":"46","type":"vmess","server":"104.26.5.57","port":2086,"cipher":"auto","uuid":"e9e3cc13-db48-4cc1-8c24-7626439a5339","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"github.com/Alvin9999","headers":{"host":"ip1.1789034.xyz"}}}
+  - {"name":"48","type":"vmess","server":"104.26.13.31","port":2086,"cipher":"auto","uuid":"e9e3cc13-db48-4cc1-8c24-7626439a5339","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"github.com/Alvin9999","headers":{"host":"ip1.1789034.xyz"}}}
+  - {"name":"50","type":"vmess","server":"japan.com","port":2086,"cipher":"auto","uuid":"e9e3cc13-db48-4cc1-8c24-7626439a5339","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"github.com/Alvin9999","headers":{"host":"ip1.1789034.xyz"}}}
+  - {"name":"58","type":"vmess","server":"172.64.167.8","port":2086,"cipher":"auto","uuid":"e9e3cc13-db48-4cc1-8c24-7626439a5339","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"github.com/Alvin9999","headers":{"host":"ip2.1457230.xyz"}}}
+  - {"name":"90","type":"vmess","server":"104.18.92.48","port":2095,"cipher":"auto","uuid":"f7b0719e-617b-4f6f-9676-a1fb11f23b64","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/?ed=1024","headers":{"host":"krcdn.fask511.cfd"}}}
+  - {"name":"95","type":"vmess","server":"120.232.153.40","port":52442,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"96","type":"vmess","server":"118.107.245.23","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/path/292806223002","headers":{"host":"www.85515806.xyz"}}}
+  - {"name":"97","type":"vmess","server":"awetdfgs_cdn.hfhfb.homes","port":2086,"cipher":"auto","uuid":"c6e003c6-d962-4769-840c-536fd77171dd","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/?ed=1024","headers":{"host":"mgcdn.hfhfb.homes"}}}
+  - {"name":"98","type":"vmess","server":"103.81.86.159","port":80,"cipher":"auto","uuid":"c6e003c6-d962-4769-840c-536fd77171dd","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"tms.dingtalk.com"}}}
+  - {"name":"99","type":"vmess","server":"mdlzz.hfhfb.homes","port":8003,"cipher":"auto","uuid":"c6e003c6-d962-4769-840c-536fd77171dd","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/?ed=512","headers":{"host":"tms.dingtalk.com"}}}
+  - {"name":"100","type":"vmess","server":"xgone.hfhfb.homes","port":80,"cipher":"auto","uuid":"c6e003c6-d962-4769-840c-536fd77171dd","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/?ed=512","headers":{"host":"tms.dingtalk.com"}}}
+  - {"name":"101","type":"vmess","server":"elsone.hfhfb.homes","port":80,"cipher":"auto","uuid":"c6e003c6-d962-4769-840c-536fd77171dd","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/?ed=512","headers":{"host":"tms.dingtalk.com"}}}
+  - {"name":"121","type":"vmess","server":"219.151.179.107","port":58002,"cipher":"auto","uuid":"1ce3667b-5016-4311-8c82-c629137c5c55","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"123","type":"vmess","server":"log.bpminecraft.com","port":2086,"cipher":"auto","uuid":"86c51bde-ba1b-4560-abe2-66463d536636","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"aktw.pmcloud.top"}}}
+  - {"name":"124","type":"vmess","server":"www.digitalocean.com","port":2086,"cipher":"auto","uuid":"86c51bde-ba1b-4560-abe2-66463d536636","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"lnjp.pmcloud.top"}}}
+  - {"name":"125","type":"vmess","server":"log.bpminecraft.com","port":8880,"cipher":"auto","uuid":"86c51bde-ba1b-4560-abe2-66463d536636","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"lnus.pmcloud.top"}}}
+  - {"name":"126","type":"vmess","server":"www.digitalocean.com","port":8880,"cipher":"auto","uuid":"86c51bde-ba1b-4560-abe2-66463d536636","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"lnus.pmcloud.top"}}}
+  - {"name":"200","type":"vmess","server":"bgroup.node4.v.nodelist-airport.com","port":50001,"cipher":"auto","uuid":"2155145a-b1b5-443a-8977-670f6bd10f02","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"201","type":"vmess","server":"bgroup.node2.v.nodelist-airport.com","port":50001,"cipher":"auto","uuid":"2155145a-b1b5-443a-8977-670f6bd10f02","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 美国_1
-      - 美国_2
-      - 美国_3
-      - 美国_4
-      - 美国_5
-      - 美国_6
-      - 美国_7
-      - 保加利亚_8
-      - 巴西_9
-      - 巴西_10
-      - 德国_11
-      - 巴西_12
-      - 荷兰_13
-      - 德国_14
-      - 法国_15
-      - 英国_16
-      - 美国_17
-      - 美国_18
-      - 美国_19
-      - 美国_20
-      - 美国_21
-      - 瑞士_22
-      - 美国_23
-      - 美国_24
-      - 澳大利亚_25
-      - 美国_26
-      - 瑞士_27
-      - 美国_28
-      - 哥斯达黎加_29
-      - 中国_30
-      - 印度_31
-      - 印度_32
-      - 美国_33
-      - 美国_34
-      - 韩国_35
-      - 日本_36
-      - 英国_37
-      - 日本_38
-      - 澳大利亚_39
-      - 美国_40
-      - 美国_41
-      - 美国_42
-      - 美国_43
-      - 美国_44
-      - 英国_45
-      - 美国_46
-      - 英国_47
-      - 中国_48
-      - 法国_49
-      - 法国_50
-      - 美国_51
-      - 美国_52
-      - 美国_53
-      - 美国_54
-      - 中国_55
-      - 印度_56
-      - 印度_57
-      - 中国_58
-      - 印度_59
-      - 印度_60
+      - '4'
+      - '5'
+      - '20'
+      - '21'
+      - '22'
+      - '23'
+      - '24'
+      - '27'
+      - '28'
+      - '33'
+      - '36'
+      - '46'
+      - '48'
+      - '50'
+      - '58'
+      - '90'
+      - '95'
+      - '96'
+      - '97'
+      - '98'
+      - '99'
+      - '100'
+      - '101'
+      - '121'
+      - '123'
+      - '124'
+      - '125'
+      - '126'
+      - '200'
+      - '201'
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 美国_1
-      - 美国_2
-      - 美国_3
-      - 美国_4
-      - 美国_5
-      - 美国_6
-      - 美国_7
-      - 保加利亚_8
-      - 巴西_9
-      - 巴西_10
-      - 德国_11
-      - 巴西_12
-      - 荷兰_13
-      - 德国_14
-      - 法国_15
-      - 英国_16
-      - 美国_17
-      - 美国_18
-      - 美国_19
-      - 美国_20
-      - 美国_21
-      - 瑞士_22
-      - 美国_23
-      - 美国_24
-      - 澳大利亚_25
-      - 美国_26
-      - 瑞士_27
-      - 美国_28
-      - 哥斯达黎加_29
-      - 中国_30
-      - 印度_31
-      - 印度_32
-      - 美国_33
-      - 美国_34
-      - 韩国_35
-      - 日本_36
-      - 英国_37
-      - 日本_38
-      - 澳大利亚_39
-      - 美国_40
-      - 美国_41
-      - 美国_42
-      - 美国_43
-      - 美国_44
-      - 英国_45
-      - 美国_46
-      - 英国_47
-      - 中国_48
-      - 法国_49
-      - 法国_50
-      - 美国_51
-      - 美国_52
-      - 美国_53
-      - 美国_54
-      - 中国_55
-      - 印度_56
-      - 印度_57
-      - 中国_58
-      - 印度_59
-      - 印度_60
+      - '4'
+      - '5'
+      - '20'
+      - '21'
+      - '22'
+      - '23'
+      - '24'
+      - '27'
+      - '28'
+      - '33'
+      - '36'
+      - '46'
+      - '48'
+      - '50'
+      - '58'
+      - '90'
+      - '95'
+      - '96'
+      - '97'
+      - '98'
+      - '99'
+      - '100'
+      - '101'
+      - '121'
+      - '123'
+      - '124'
+      - '125'
+      - '126'
+      - '200'
+      - '201'
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -296,66 +205,36 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 美国_1
-      - 美国_2
-      - 美国_3
-      - 美国_4
-      - 美国_5
-      - 美国_6
-      - 美国_7
-      - 保加利亚_8
-      - 巴西_9
-      - 巴西_10
-      - 德国_11
-      - 巴西_12
-      - 荷兰_13
-      - 德国_14
-      - 法国_15
-      - 英国_16
-      - 美国_17
-      - 美国_18
-      - 美国_19
-      - 美国_20
-      - 美国_21
-      - 瑞士_22
-      - 美国_23
-      - 美国_24
-      - 澳大利亚_25
-      - 美国_26
-      - 瑞士_27
-      - 美国_28
-      - 哥斯达黎加_29
-      - 中国_30
-      - 印度_31
-      - 印度_32
-      - 美国_33
-      - 美国_34
-      - 韩国_35
-      - 日本_36
-      - 英国_37
-      - 日本_38
-      - 澳大利亚_39
-      - 美国_40
-      - 美国_41
-      - 美国_42
-      - 美国_43
-      - 美国_44
-      - 英国_45
-      - 美国_46
-      - 英国_47
-      - 中国_48
-      - 法国_49
-      - 法国_50
-      - 美国_51
-      - 美国_52
-      - 美国_53
-      - 美国_54
-      - 中国_55
-      - 印度_56
-      - 印度_57
-      - 中国_58
-      - 印度_59
-      - 印度_60
+      - '4'
+      - '5'
+      - '20'
+      - '21'
+      - '22'
+      - '23'
+      - '24'
+      - '27'
+      - '28'
+      - '33'
+      - '36'
+      - '46'
+      - '48'
+      - '50'
+      - '58'
+      - '90'
+      - '95'
+      - '96'
+      - '97'
+      - '98'
+      - '99'
+      - '100'
+      - '101'
+      - '121'
+      - '123'
+      - '124'
+      - '125'
+      - '126'
+      - '200'
+      - '201'
 
 rules:
 # 本地/局域网地址
