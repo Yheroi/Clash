@@ -1,10 +1,11 @@
 ####################################
 # 创建者：v2rayse.com
-# 客户端：Clash
-# 创建时间：2024-09-19 13:51:24
+# 客户端：Clash.Meta
+# 创建时间：2024-09-20 18:02:14
 # 使用模版：ACL4SSR_Mini.ini
-# 节点数量：20
-# 节点类型：vmess
+# 节点数量：5
+# 节点类型：hysteria2, vmess
+# !!当前配置文件请使用基于 Clash.Meta 内核程序
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -86,78 +87,33 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"14","type":"vmess","server":"104.26.5.67","port":2086,"cipher":"auto","uuid":"e9e3cc13-db48-4cc1-8c24-7626439a5339","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"github.com/Alvin9999","headers":{"host":"ip1.1789034.xyz"}}}
-  - {"name":"15","type":"vmess","server":"104.26.5.145","port":2086,"cipher":"auto","uuid":"e9e3cc13-db48-4cc1-8c24-7626439a5339","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"github.com/Alvin9999","headers":{"host":"ip1.1789034.xyz"}}}
-  - {"name":"97","type":"vmess","server":"104.18.92.48","port":2095,"cipher":"auto","uuid":"f7b0719e-617b-4f6f-9676-a1fb11f23b64","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/?ed=1024","headers":{"host":"krcdn.fask511.cfd"}}}
-  - {"name":"104","type":"vmess","server":"120.232.153.40","port":52442,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"105","type":"vmess","server":"118.107.245.23","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/path/292806223002","headers":{"host":"www.85515806.xyz"}}}
-  - {"name":"106","type":"vmess","server":"awetdfgs_cdn.hfhfb.homes","port":2086,"cipher":"auto","uuid":"c6e003c6-d962-4769-840c-536fd77171dd","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/?ed=1024","headers":{"host":"mgcdn.hfhfb.homes"}}}
-  - {"name":"107","type":"vmess","server":"103.81.86.159","port":80,"cipher":"auto","uuid":"c6e003c6-d962-4769-840c-536fd77171dd","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"tms.dingtalk.com"}}}
-  - {"name":"108","type":"vmess","server":"mdlzz.hfhfb.homes","port":8003,"cipher":"auto","uuid":"c6e003c6-d962-4769-840c-536fd77171dd","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/?ed=512","headers":{"host":"tms.dingtalk.com"}}}
-  - {"name":"109","type":"vmess","server":"xgone.hfhfb.homes","port":80,"cipher":"auto","uuid":"c6e003c6-d962-4769-840c-536fd77171dd","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/?ed=512","headers":{"host":"tms.dingtalk.com"}}}
-  - {"name":"110","type":"vmess","server":"elsone.hfhfb.homes","port":80,"cipher":"auto","uuid":"c6e003c6-d962-4769-840c-536fd77171dd","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/?ed=512","headers":{"host":"tms.dingtalk.com"}}}
-  - {"name":"111","type":"vmess","server":"103.81.86.159","port":80,"cipher":"auto","uuid":"c6e003c6-d962-4769-840c-536fd77171dd","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"tms.dingtalk.com"}}}
-  - {"name":"112","type":"vmess","server":"mdlzz.hfhfb.homes","port":8003,"cipher":"auto","uuid":"c6e003c6-d962-4769-840c-536fd77171dd","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/?ed=512","headers":{"host":"tms.dingtalk.com"}}}
-  - {"name":"113","type":"vmess","server":"xgone.hfhfb.homes","port":80,"cipher":"auto","uuid":"c6e003c6-d962-4769-840c-536fd77171dd","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/?ed=512","headers":{"host":"tms.dingtalk.com"}}}
-  - {"name":"147","type":"vmess","server":"219.151.179.107","port":58002,"cipher":"auto","uuid":"1ce3667b-5016-4311-8c82-c629137c5c55","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"149","type":"vmess","server":"log.bpminecraft.com","port":2086,"cipher":"auto","uuid":"86c51bde-ba1b-4560-abe2-66463d536636","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"aktw.pmcloud.top"}}}
-  - {"name":"150","type":"vmess","server":"www.digitalocean.com","port":2086,"cipher":"auto","uuid":"86c51bde-ba1b-4560-abe2-66463d536636","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"lnjp.pmcloud.top"}}}
-  - {"name":"151","type":"vmess","server":"log.bpminecraft.com","port":8880,"cipher":"auto","uuid":"86c51bde-ba1b-4560-abe2-66463d536636","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"lnus.pmcloud.top"}}}
-  - {"name":"152","type":"vmess","server":"www.digitalocean.com","port":8880,"cipher":"auto","uuid":"86c51bde-ba1b-4560-abe2-66463d536636","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"lnus.pmcloud.top"}}}
-  - {"name":"267","type":"vmess","server":"bgroup.node4.v.nodelist-airport.com","port":50001,"cipher":"auto","uuid":"2155145a-b1b5-443a-8977-670f6bd10f02","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"268","type":"vmess","server":"bgroup.node2.v.nodelist-airport.com","port":50001,"cipher":"auto","uuid":"2155145a-b1b5-443a-8977-670f6bd10f02","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"中国香港1","type":"hysteria2","server":"mts9.zqjc.org","port":55215,"password":"babb421e-38ee-4c97-9d5c-c93bfc9be444","sni":"mts9.zqjc.org","skip-cert-verify":true}
+  - {"name":"中国香港2","type":"hysteria2","server":"mts1.zqjc.org","port":55215,"password":"babb421e-38ee-4c97-9d5c-c93bfc9be444","sni":"mts1.zqjc.org","skip-cert-verify":true}
+  - {"name":"中国香港3","type":"hysteria2","server":"mts2.zqjc.org","port":55215,"password":"babb421e-38ee-4c97-9d5c-c93bfc9be444","sni":"mts2.zqjc.org","skip-cert-verify":true}
+  - {"name":"中国香港4","type":"hysteria2","server":"mts4.zqjc.org","port":55215,"password":"babb421e-38ee-4c97-9d5c-c93bfc9be444","sni":"mts4.zqjc.org","skip-cert-verify":true}
+  - {"name":"中国香港5","type":"vmess","server":"120.232.153.40","port":52442,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - '14'
-      - '15'
-      - '97'
-      - '104'
-      - '105'
-      - '106'
-      - '107'
-      - '108'
-      - '109'
-      - '110'
-      - '111'
-      - '112'
-      - '113'
-      - '147'
-      - '149'
-      - '150'
-      - '151'
-      - '152'
-      - '267'
-      - '268'
+      - 中国香港1
+      - 中国香港2
+      - 中国香港3
+      - 中国香港4
+      - 中国香港5
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - '14'
-      - '15'
-      - '97'
-      - '104'
-      - '105'
-      - '106'
-      - '107'
-      - '108'
-      - '109'
-      - '110'
-      - '111'
-      - '112'
-      - '113'
-      - '147'
-      - '149'
-      - '150'
-      - '151'
-      - '152'
-      - '267'
-      - '268'
+      - 中国香港1
+      - 中国香港2
+      - 中国香港3
+      - 中国香港4
+      - 中国香港5
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -175,26 +131,11 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - '14'
-      - '15'
-      - '97'
-      - '104'
-      - '105'
-      - '106'
-      - '107'
-      - '108'
-      - '109'
-      - '110'
-      - '111'
-      - '112'
-      - '113'
-      - '147'
-      - '149'
-      - '150'
-      - '151'
-      - '152'
-      - '267'
-      - '268'
+      - 中国香港1
+      - 中国香港2
+      - 中国香港3
+      - 中国香港4
+      - 中国香港5
 
 rules:
 # 本地/局域网地址
