@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2024-09-25 14:14:49
+# 创建时间：2024-09-25 14:52:11
 # 使用模版：ACL4SSR_Mini.ini
-# 节点数量：18
+# 节点数量：9
 # 节点类型：vmess
 ####################################
 mixed-port: 7890
@@ -86,72 +86,45 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"新加坡-标准-04","type":"vmess","server":"cdn.node1.znetbet985.top","port":20024,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
-  - {"name":"新加坡-标准-03","type":"vmess","server":"cdn.node1.znetbet985.top","port":20023,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
-  - {"name":"新加坡-标准-02","type":"vmess","server":"cdn.node1.znetbet985.top","port":20022,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
-  - {"name":"新加坡-标准-01","type":"vmess","server":"cdn.node1.znetbet985.top","port":20021,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
-  - {"name":"日本-标准-01","type":"vmess","server":"cdn.node2.znetbet985.top","port":30001,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
-  - {"name":"日本-标准-02","type":"vmess","server":"cdn.node2.znetbet985.top","port":30002,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
-  - {"name":"日本-标准-03","type":"vmess","server":"cdn.node2.znetbet985.top","port":30003,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
-  - {"name":"日本-标准-04","type":"vmess","server":"cdn.node2.znetbet985.top","port":30004,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
-  - {"name":"日本-标准-05","type":"vmess","server":"cdn.node2.znetbet985.top","port":30005,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
-  - {"name":"韩国-标准-01","type":"vmess","server":"cdn.node2.znetbet985.top","port":30021,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
-  - {"name":"韩国-标准-02","type":"vmess","server":"cdn.node2.znetbet985.top","port":30022,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
-  - {"name":"韩国-标准-03","type":"vmess","server":"cdn.node2.znetbet985.top","port":30023,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
-  - {"name":"韩国-标准-04","type":"vmess","server":"cdn.node2.znetbet985.top","port":30024,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
-  - {"name":"香港-标准-01","type":"vmess","server":"cdn.node1.znetbet985.top","port":20001,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
-  - {"name":"香港-标准-02","type":"vmess","server":"cdn.node1.znetbet985.top","port":20002,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
-  - {"name":"香港-标准-03","type":"vmess","server":"cdn.node1.znetbet985.top","port":20003,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
-  - {"name":"香港-标准-04","type":"vmess","server":"cdn.node1.znetbet985.top","port":20004,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
-  - {"name":"香港-标准-05","type":"vmess","server":"cdn.node1.znetbet985.top","port":20005,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
+  - {"name":"香港01","type":"vmess","server":"cdn.node1.znetbet985.top","port":20001,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
+  - {"name":"香港02","type":"vmess","server":"cdn.node1.znetbet985.top","port":20002,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
+  - {"name":"香港03","type":"vmess","server":"cdn.node1.znetbet985.top","port":20003,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
+  - {"name":"香港04","type":"vmess","server":"cdn.node1.znetbet985.top","port":20004,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
+  - {"name":"香港05","type":"vmess","server":"cdn.node1.znetbet985.top","port":20005,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
+  - {"name":"新加坡01","type":"vmess","server":"cdn.node1.znetbet985.top","port":20021,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
+  - {"name":"新加坡02","type":"vmess","server":"cdn.node1.znetbet985.top","port":20022,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
+  - {"name":"新加坡03","type":"vmess","server":"cdn.node1.znetbet985.top","port":20023,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
+  - {"name":"新加坡04","type":"vmess","server":"cdn.node1.znetbet985.top","port":20024,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 新加坡-标准-04
-      - 新加坡-标准-03
-      - 新加坡-标准-02
-      - 新加坡-标准-01
-      - 日本-标准-01
-      - 日本-标准-02
-      - 日本-标准-03
-      - 日本-标准-04
-      - 日本-标准-05
-      - 韩国-标准-01
-      - 韩国-标准-02
-      - 韩国-标准-03
-      - 韩国-标准-04
-      - 香港-标准-01
-      - 香港-标准-02
-      - 香港-标准-03
-      - 香港-标准-04
-      - 香港-标准-05
+      - 香港01
+      - 香港02
+      - 香港03
+      - 香港04
+      - 香港05
+      - 新加坡01
+      - 新加坡02
+      - 新加坡03
+      - 新加坡04
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 新加坡-标准-04
-      - 新加坡-标准-03
-      - 新加坡-标准-02
-      - 新加坡-标准-01
-      - 日本-标准-01
-      - 日本-标准-02
-      - 日本-标准-03
-      - 日本-标准-04
-      - 日本-标准-05
-      - 韩国-标准-01
-      - 韩国-标准-02
-      - 韩国-标准-03
-      - 韩国-标准-04
-      - 香港-标准-01
-      - 香港-标准-02
-      - 香港-标准-03
-      - 香港-标准-04
-      - 香港-标准-05
+      - 香港01
+      - 香港02
+      - 香港03
+      - 香港04
+      - 香港05
+      - 新加坡01
+      - 新加坡02
+      - 新加坡03
+      - 新加坡04
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -169,24 +142,15 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 新加坡-标准-04
-      - 新加坡-标准-03
-      - 新加坡-标准-02
-      - 新加坡-标准-01
-      - 日本-标准-01
-      - 日本-标准-02
-      - 日本-标准-03
-      - 日本-标准-04
-      - 日本-标准-05
-      - 韩国-标准-01
-      - 韩国-标准-02
-      - 韩国-标准-03
-      - 韩国-标准-04
-      - 香港-标准-01
-      - 香港-标准-02
-      - 香港-标准-03
-      - 香港-标准-04
-      - 香港-标准-05
+      - 香港01
+      - 香港02
+      - 香港03
+      - 香港04
+      - 香港05
+      - 新加坡01
+      - 新加坡02
+      - 新加坡03
+      - 新加坡04
 
 rules:
 # 本地/局域网地址
