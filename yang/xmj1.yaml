@@ -1,7 +1,7 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2024-09-25 14:16:26
+# 创建时间：2024-09-25 14:32:12
 # 使用模版：ACL4SSR_Mini.ini
 # 节点数量：13
 # 节点类型：vmess
@@ -86,57 +86,57 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"VIP | 东南亚-新加坡01 |【0.5x】解锁Netflix","type":"vmess","server":"cnyd.azurestudent.com","port":1391,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
-  - {"name":"VIP | 东南亚-新加坡02 |【0.5x】解锁Netflix","type":"vmess","server":"cnyd.azurestudent.com","port":1392,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
-  - {"name":"VIP | 东南亚-新加坡03 |【0.5x】解锁Netflix","type":"vmess","server":"cnyd.azurestudent.com","port":1393,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
-  - {"name":"VIP | 东南亚-新加坡04 |【1.3x】IEPL","type":"vmess","server":"ddns01.aliyunstudent.com","port":1394,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
-  - {"name":"VIP | 东南亚-新加坡05 |【1.5x】","type":"vmess","server":"ddns01.aliyunstudent.com","port":1395,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
-  - {"name":"VIP | 亚洲-香港01 |【0.5x】","type":"vmess","server":"cnyd.azurestudent.com","port":1051,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
-  - {"name":"VIP | 亚洲-香港02 |【0.7x】","type":"vmess","server":"cnyd.azurestudent.com","port":1052,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
-  - {"name":"VIP | 亚洲-香港03 |【1.3x】IEPL","type":"vmess","server":"cnyd.azurestudent.com","port":1883,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
-  - {"name":"VIP | 亚洲-香港04 |【1.3x】IEPL","type":"vmess","server":"ddns01.aliyunstudent.com","port":1884,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
-  - {"name":"VIP | 亚洲-香港05 |【1.3x】IEPL","type":"vmess","server":"ddns01.aliyunstudent.com","port":36269,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
-  - {"name":"VIP | 亚洲-香港06 |【1.3x】IEPL","type":"vmess","server":"ddns01.aliyunstudent.com","port":1056,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
-  - {"name":"VIP | 亚洲-香港07 |【1.5x】IEPL","type":"vmess","server":"ddns01.aliyunstudent.com","port":1057,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
-  - {"name":"VIP | 亚洲-香港08 |【1.5x】IEPL","type":"vmess","server":"ddns01.aliyunstudent.com","port":1058,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
+  - {"name":"香港01","type":"vmess","server":"cnyd.azurestudent.com","port":1051,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
+  - {"name":"香港02","type":"vmess","server":"cnyd.azurestudent.com","port":1052,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
+  - {"name":"香港03","type":"vmess","server":"cnyd.azurestudent.com","port":1883,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
+  - {"name":"香港04","type":"vmess","server":"ddns01.aliyunstudent.com","port":1884,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
+  - {"name":"香港05","type":"vmess","server":"ddns01.aliyunstudent.com","port":36269,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
+  - {"name":"香港06","type":"vmess","server":"ddns01.aliyunstudent.com","port":1056,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
+  - {"name":"香港07","type":"vmess","server":"ddns01.aliyunstudent.com","port":1057,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
+  - {"name":"香港08","type":"vmess","server":"ddns01.aliyunstudent.com","port":1058,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
+  - {"name":"新加坡01","type":"vmess","server":"cnyd.azurestudent.com","port":1391,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
+  - {"name":"新加坡02","type":"vmess","server":"cnyd.azurestudent.com","port":1392,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
+  - {"name":"新加坡03","type":"vmess","server":"cnyd.azurestudent.com","port":1393,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
+  - {"name":"新加坡04","type":"vmess","server":"ddns01.aliyunstudent.com","port":1394,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
+  - {"name":"新加坡05","type":"vmess","server":"ddns01.aliyunstudent.com","port":1395,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - VIP | 东南亚-新加坡01 |【0.5x】解锁Netflix
-      - VIP | 东南亚-新加坡02 |【0.5x】解锁Netflix
-      - VIP | 东南亚-新加坡03 |【0.5x】解锁Netflix
-      - VIP | 东南亚-新加坡04 |【1.3x】IEPL
-      - VIP | 东南亚-新加坡05 |【1.5x】
-      - VIP | 亚洲-香港01 |【0.5x】
-      - VIP | 亚洲-香港02 |【0.7x】
-      - VIP | 亚洲-香港03 |【1.3x】IEPL
-      - VIP | 亚洲-香港04 |【1.3x】IEPL
-      - VIP | 亚洲-香港05 |【1.3x】IEPL
-      - VIP | 亚洲-香港06 |【1.3x】IEPL
-      - VIP | 亚洲-香港07 |【1.5x】IEPL
-      - VIP | 亚洲-香港08 |【1.5x】IEPL
+      - 香港01
+      - 香港02
+      - 香港03
+      - 香港04
+      - 香港05
+      - 香港06
+      - 香港07
+      - 香港08
+      - 新加坡01
+      - 新加坡02
+      - 新加坡03
+      - 新加坡04
+      - 新加坡05
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - VIP | 东南亚-新加坡01 |【0.5x】解锁Netflix
-      - VIP | 东南亚-新加坡02 |【0.5x】解锁Netflix
-      - VIP | 东南亚-新加坡03 |【0.5x】解锁Netflix
-      - VIP | 东南亚-新加坡04 |【1.3x】IEPL
-      - VIP | 东南亚-新加坡05 |【1.5x】
-      - VIP | 亚洲-香港01 |【0.5x】
-      - VIP | 亚洲-香港02 |【0.7x】
-      - VIP | 亚洲-香港03 |【1.3x】IEPL
-      - VIP | 亚洲-香港04 |【1.3x】IEPL
-      - VIP | 亚洲-香港05 |【1.3x】IEPL
-      - VIP | 亚洲-香港06 |【1.3x】IEPL
-      - VIP | 亚洲-香港07 |【1.5x】IEPL
-      - VIP | 亚洲-香港08 |【1.5x】IEPL
+      - 香港01
+      - 香港02
+      - 香港03
+      - 香港04
+      - 香港05
+      - 香港06
+      - 香港07
+      - 香港08
+      - 新加坡01
+      - 新加坡02
+      - 新加坡03
+      - 新加坡04
+      - 新加坡05
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -154,19 +154,19 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - VIP | 东南亚-新加坡01 |【0.5x】解锁Netflix
-      - VIP | 东南亚-新加坡02 |【0.5x】解锁Netflix
-      - VIP | 东南亚-新加坡03 |【0.5x】解锁Netflix
-      - VIP | 东南亚-新加坡04 |【1.3x】IEPL
-      - VIP | 东南亚-新加坡05 |【1.5x】
-      - VIP | 亚洲-香港01 |【0.5x】
-      - VIP | 亚洲-香港02 |【0.7x】
-      - VIP | 亚洲-香港03 |【1.3x】IEPL
-      - VIP | 亚洲-香港04 |【1.3x】IEPL
-      - VIP | 亚洲-香港05 |【1.3x】IEPL
-      - VIP | 亚洲-香港06 |【1.3x】IEPL
-      - VIP | 亚洲-香港07 |【1.5x】IEPL
-      - VIP | 亚洲-香港08 |【1.5x】IEPL
+      - 香港01
+      - 香港02
+      - 香港03
+      - 香港04
+      - 香港05
+      - 香港06
+      - 香港07
+      - 香港08
+      - 新加坡01
+      - 新加坡02
+      - 新加坡03
+      - 新加坡04
+      - 新加坡05
 
 rules:
 # 本地/局域网地址
