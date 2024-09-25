@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2024-09-25 14:49:47
+# 创建时间：2024-09-25 14:51:49
 # 使用模版：ACL4SSR_Mini.ini
-# 节点数量：9
+# 节点数量：13
 # 节点类型：vmess
 ####################################
 mixed-port: 7890
@@ -86,15 +86,19 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"香港01","type":"vmess","server":"cdn.node1.znetbet985.top","port":20001,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
-  - {"name":"香港02","type":"vmess","server":"cdn.node1.znetbet985.top","port":20002,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
-  - {"name":"香港03","type":"vmess","server":"cdn.node1.znetbet985.top","port":20003,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
-  - {"name":"香港04","type":"vmess","server":"cdn.node1.znetbet985.top","port":20004,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
-  - {"name":"香港05","type":"vmess","server":"cdn.node1.znetbet985.top","port":20005,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
-  - {"name":"新加坡01","type":"vmess","server":"cdn.node1.znetbet985.top","port":20021,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
-  - {"name":"新加坡02","type":"vmess","server":"cdn.node1.znetbet985.top","port":20022,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
-  - {"name":"新加坡03","type":"vmess","server":"cdn.node1.znetbet985.top","port":20023,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
-  - {"name":"新加坡04","type":"vmess","server":"cdn.node1.znetbet985.top","port":20024,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
+  - {"name":"香港01","type":"vmess","server":"cnyd.azurestudent.com","port":1051,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
+  - {"name":"香港02","type":"vmess","server":"cnyd.azurestudent.com","port":1052,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
+  - {"name":"香港03","type":"vmess","server":"cnyd.azurestudent.com","port":1883,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
+  - {"name":"香港04","type":"vmess","server":"ddns01.aliyunstudent.com","port":1884,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
+  - {"name":"香港05","type":"vmess","server":"ddns01.aliyunstudent.com","port":36269,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
+  - {"name":"香港06","type":"vmess","server":"ddns01.aliyunstudent.com","port":1056,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
+  - {"name":"香港07","type":"vmess","server":"ddns01.aliyunstudent.com","port":1057,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
+  - {"name":"香港08","type":"vmess","server":"ddns01.aliyunstudent.com","port":1058,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
+  - {"name":"新加坡01","type":"vmess","server":"cnyd.azurestudent.com","port":1391,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
+  - {"name":"新加坡02","type":"vmess","server":"cnyd.azurestudent.com","port":1392,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
+  - {"name":"新加坡03","type":"vmess","server":"cnyd.azurestudent.com","port":1393,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
+  - {"name":"新加坡04","type":"vmess","server":"ddns01.aliyunstudent.com","port":1394,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
+  - {"name":"新加坡05","type":"vmess","server":"ddns01.aliyunstudent.com","port":1395,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -106,10 +110,14 @@ proxy-groups:
       - 香港03
       - 香港04
       - 香港05
+      - 香港06
+      - 香港07
+      - 香港08
       - 新加坡01
       - 新加坡02
       - 新加坡03
       - 新加坡04
+      - 新加坡05
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -121,10 +129,14 @@ proxy-groups:
       - 香港03
       - 香港04
       - 香港05
+      - 香港06
+      - 香港07
+      - 香港08
       - 新加坡01
       - 新加坡02
       - 新加坡03
       - 新加坡04
+      - 新加坡05
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -147,10 +159,14 @@ proxy-groups:
       - 香港03
       - 香港04
       - 香港05
+      - 香港06
+      - 香港07
+      - 香港08
       - 新加坡01
       - 新加坡02
       - 新加坡03
       - 新加坡04
+      - 新加坡05
 
 rules:
 # 本地/局域网地址
