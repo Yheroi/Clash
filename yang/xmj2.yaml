@@ -1,7 +1,7 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2024-09-21 16:08:39
+# 创建时间：2024-09-25 14:14:49
 # 使用模版：ACL4SSR_Mini.ini
 # 节点数量：18
 # 节点类型：vmess
@@ -86,72 +86,72 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"新加坡-标准-01 | 解锁ChatGPT\t","type":"vmess","server":"pl02.ggystudent.com","port":5000,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
-  - {"name":"新加坡-标准-02 | 解锁ChatGPT\t","type":"vmess","server":"pl02.ggystudent.com","port":5001,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
-  - {"name":"新加坡-标准-03 | 解锁ChatGPT\t","type":"vmess","server":"pl02.ggystudent.com","port":31111,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
-  - {"name":"新加坡-标准-04 | 解锁ChatGPT\t","type":"vmess","server":"pl02.ggystudent.com","port":31112,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
-  - {"name":"香港-标准-01","type":"vmess","server":"pl02.ggystudent.com","port":22100,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
-  - {"name":"香港-标准-02","type":"vmess","server":"pl02.ggystudent.com","port":22200,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
-  - {"name":"香港-标准-03","type":"vmess","server":"pl02.ggystudent.com","port":22300,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
-  - {"name":"香港-标准-04","type":"vmess","server":"pl02.ggystudent.com","port":22304,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
-  - {"name":"香港-标准-05","type":"vmess","server":"pl02.ggystudent.com","port":22305,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
-  - {"name":"日本-标准-01 | 解锁Abema、Netflix和ChatGPT","type":"vmess","server":"pl02.ggystudent.com","port":16100,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
-  - {"name":"日本-标准-02 | 解锁Abema、Netflix和ChatGPT","type":"vmess","server":"pl02.ggystudent.com","port":16200,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
-  - {"name":"日本-标准-03 | 解锁Abema、Netflix和ChatGPT","type":"vmess","server":"pl02.ggystudent.com","port":16300,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
-  - {"name":"日本-标准-04 | 解锁Abema、Netflix和ChatGPT","type":"vmess","server":"pl02.ggystudent.com","port":16401,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
-  - {"name":"日本-标准-05 | 解锁Abema、Netflix和ChatGPT","type":"vmess","server":"pl02.ggystudent.com","port":16500,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
-  - {"name":"韩国-标准-01","type":"vmess","server":"cnyd02.azurestudent.com","port":24100,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
-  - {"name":"韩国-标准-02","type":"vmess","server":"cnyd02.azurestudent.com","port":24200,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
-  - {"name":"韩国-标准-03","type":"vmess","server":"cnyd02.azurestudent.com","port":24300,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
-  - {"name":"韩国-标准-04","type":"vmess","server":"cnyd02.azurestudent.com","port":24400,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
+  - {"name":"新加坡-标准-04","type":"vmess","server":"cdn.node1.znetbet985.top","port":20024,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
+  - {"name":"新加坡-标准-03","type":"vmess","server":"cdn.node1.znetbet985.top","port":20023,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
+  - {"name":"新加坡-标准-02","type":"vmess","server":"cdn.node1.znetbet985.top","port":20022,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
+  - {"name":"新加坡-标准-01","type":"vmess","server":"cdn.node1.znetbet985.top","port":20021,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
+  - {"name":"日本-标准-01","type":"vmess","server":"cdn.node2.znetbet985.top","port":30001,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
+  - {"name":"日本-标准-02","type":"vmess","server":"cdn.node2.znetbet985.top","port":30002,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
+  - {"name":"日本-标准-03","type":"vmess","server":"cdn.node2.znetbet985.top","port":30003,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
+  - {"name":"日本-标准-04","type":"vmess","server":"cdn.node2.znetbet985.top","port":30004,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
+  - {"name":"日本-标准-05","type":"vmess","server":"cdn.node2.znetbet985.top","port":30005,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
+  - {"name":"韩国-标准-01","type":"vmess","server":"cdn.node2.znetbet985.top","port":30021,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
+  - {"name":"韩国-标准-02","type":"vmess","server":"cdn.node2.znetbet985.top","port":30022,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
+  - {"name":"韩国-标准-03","type":"vmess","server":"cdn.node2.znetbet985.top","port":30023,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
+  - {"name":"韩国-标准-04","type":"vmess","server":"cdn.node2.znetbet985.top","port":30024,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
+  - {"name":"香港-标准-01","type":"vmess","server":"cdn.node1.znetbet985.top","port":20001,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
+  - {"name":"香港-标准-02","type":"vmess","server":"cdn.node1.znetbet985.top","port":20002,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
+  - {"name":"香港-标准-03","type":"vmess","server":"cdn.node1.znetbet985.top","port":20003,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
+  - {"name":"香港-标准-04","type":"vmess","server":"cdn.node1.znetbet985.top","port":20004,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
+  - {"name":"香港-标准-05","type":"vmess","server":"cdn.node1.znetbet985.top","port":20005,"cipher":"auto","uuid":"b31fa433-25a0-3747-a374-2c4347682348","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6"}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - "新加坡-标准-01 | 解锁ChatGPT\t"
-      - "新加坡-标准-02 | 解锁ChatGPT\t"
-      - "新加坡-标准-03 | 解锁ChatGPT\t"
-      - "新加坡-标准-04 | 解锁ChatGPT\t"
+      - 新加坡-标准-04
+      - 新加坡-标准-03
+      - 新加坡-标准-02
+      - 新加坡-标准-01
+      - 日本-标准-01
+      - 日本-标准-02
+      - 日本-标准-03
+      - 日本-标准-04
+      - 日本-标准-05
+      - 韩国-标准-01
+      - 韩国-标准-02
+      - 韩国-标准-03
+      - 韩国-标准-04
       - 香港-标准-01
       - 香港-标准-02
       - 香港-标准-03
       - 香港-标准-04
       - 香港-标准-05
-      - 日本-标准-01 | 解锁Abema、Netflix和ChatGPT
-      - 日本-标准-02 | 解锁Abema、Netflix和ChatGPT
-      - 日本-标准-03 | 解锁Abema、Netflix和ChatGPT
-      - 日本-标准-04 | 解锁Abema、Netflix和ChatGPT
-      - 日本-标准-05 | 解锁Abema、Netflix和ChatGPT
-      - 韩国-标准-01
-      - 韩国-标准-02
-      - 韩国-标准-03
-      - 韩国-标准-04
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - "新加坡-标准-01 | 解锁ChatGPT\t"
-      - "新加坡-标准-02 | 解锁ChatGPT\t"
-      - "新加坡-标准-03 | 解锁ChatGPT\t"
-      - "新加坡-标准-04 | 解锁ChatGPT\t"
+      - 新加坡-标准-04
+      - 新加坡-标准-03
+      - 新加坡-标准-02
+      - 新加坡-标准-01
+      - 日本-标准-01
+      - 日本-标准-02
+      - 日本-标准-03
+      - 日本-标准-04
+      - 日本-标准-05
+      - 韩国-标准-01
+      - 韩国-标准-02
+      - 韩国-标准-03
+      - 韩国-标准-04
       - 香港-标准-01
       - 香港-标准-02
       - 香港-标准-03
       - 香港-标准-04
       - 香港-标准-05
-      - 日本-标准-01 | 解锁Abema、Netflix和ChatGPT
-      - 日本-标准-02 | 解锁Abema、Netflix和ChatGPT
-      - 日本-标准-03 | 解锁Abema、Netflix和ChatGPT
-      - 日本-标准-04 | 解锁Abema、Netflix和ChatGPT
-      - 日本-标准-05 | 解锁Abema、Netflix和ChatGPT
-      - 韩国-标准-01
-      - 韩国-标准-02
-      - 韩国-标准-03
-      - 韩国-标准-04
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -169,24 +169,24 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "新加坡-标准-01 | 解锁ChatGPT\t"
-      - "新加坡-标准-02 | 解锁ChatGPT\t"
-      - "新加坡-标准-03 | 解锁ChatGPT\t"
-      - "新加坡-标准-04 | 解锁ChatGPT\t"
+      - 新加坡-标准-04
+      - 新加坡-标准-03
+      - 新加坡-标准-02
+      - 新加坡-标准-01
+      - 日本-标准-01
+      - 日本-标准-02
+      - 日本-标准-03
+      - 日本-标准-04
+      - 日本-标准-05
+      - 韩国-标准-01
+      - 韩国-标准-02
+      - 韩国-标准-03
+      - 韩国-标准-04
       - 香港-标准-01
       - 香港-标准-02
       - 香港-标准-03
       - 香港-标准-04
       - 香港-标准-05
-      - 日本-标准-01 | 解锁Abema、Netflix和ChatGPT
-      - 日本-标准-02 | 解锁Abema、Netflix和ChatGPT
-      - 日本-标准-03 | 解锁Abema、Netflix和ChatGPT
-      - 日本-标准-04 | 解锁Abema、Netflix和ChatGPT
-      - 日本-标准-05 | 解锁Abema、Netflix和ChatGPT
-      - 韩国-标准-01
-      - 韩国-标准-02
-      - 韩国-标准-03
-      - 韩国-标准-04
 
 rules:
 # 本地/局域网地址
