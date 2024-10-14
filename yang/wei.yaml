@@ -1,10 +1,10 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：2024-10-14 22:35:50
+# 创建时间：2024-10-14 22:36:40
 # 使用模版：ACL4SSR_Mini.ini
-# 节点数量：15
-# 节点类型：hysteria2, vmess
+# 节点数量：1
+# 节点类型：hysteria2
 # !!当前配置文件请使用基于 Clash.Meta 内核程序
 ####################################
 mixed-port: 7890
@@ -87,63 +87,21 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"新加坡_1","type":"hysteria2","server":"sg01.poke-mon.xyz","port":443,"password":"f42222b3-3950-4831-8d17-ece3b02a5485","sni":"www.bing.com","skip-cert-verify":true,"obfs-password":"MmZiNTNjYmU5NjY2Zjk0YQ=="}
-  - {"name":"新加坡_2","type":"hysteria2","server":"sg02.poke-mon.xyz","port":443,"password":"f42222b3-3950-4831-8d17-ece3b02a5485","sni":"www.bing.com","skip-cert-verify":true,"obfs-password":"ZDQxZDhjZDk4ZjAwYjIwNA=="}
-  - {"name":"美国_3","type":"hysteria2","server":"hk01.poke-mon.xyz","port":443,"password":"f42222b3-3950-4831-8d17-ece3b02a5485","sni":"www.bing.com","skip-cert-verify":true,"obfs-password":"ZDQxZDhjZDk4ZjAwYjIwNA=="}
-  - {"name":"英国_4","type":"hysteria2","server":"hk03.poke-mon.xyz","port":443,"password":"b2f9862c-769d-4342-9a94-f6d9a9024ad5","sni":"www.bing.com","skip-cert-verify":true,"obfs-password":"ZDQxZDhjZDk4ZjAwYjIwNA=="}
-  - {"name":"日本_5","type":"hysteria2","server":"jp01.poke-mon.xyz","port":443,"password":"7d876dcf-96f6-474e-a9c8-1a1b24f4fd82","sni":"www.bing.com","skip-cert-verify":true,"obfs-password":"NzI5MTU0YTY0NmJkMDUwNQ=="}
-  - {"name":"美国_6","type":"hysteria2","server":"jp02.poke-mon.xyz","port":443,"password":"b2f9862c-769d-4342-9a94-f6d9a9024ad5","sni":"www.bing.com","skip-cert-verify":true,"obfs-password":"ZDQxZDhjZDk4ZjAwYjIwNA=="}
-  - {"name":"美国_7","type":"hysteria2","server":"us01.poke-mon.xyz","port":443,"password":"b2f9862c-769d-4342-9a94-f6d9a9024ad5","sni":"www.bing.com","skip-cert-verify":true,"obfs-password":"YTIyMGYzN2M1MDllMzEyMA=="}
-  - {"name":"美国_8","type":"hysteria2","server":"us02.poke-mon.xyz","port":443,"password":"f42222b3-3950-4831-8d17-ece3b02a5485","sni":"www.bing.com","skip-cert-verify":true,"obfs-password":"ZjYwZmViYTA3ZGM1OTc1OA=="}
-  - {"name":"美国_9","type":"hysteria2","server":"helan.poke-mon.xyz","port":443,"password":"f42222b3-3950-4831-8d17-ece3b02a5485","sni":"helan.poke-mon.xyz","skip-cert-verify":true,"obfs-password":"ZGY3MzJmZmViM2U2NTAzZA=="}
-  - {"name":"美国_10","type":"hysteria2","server":"yindu01.poke-mon.xyz","port":443,"password":"f42222b3-3950-4831-8d17-ece3b02a5485","sni":"www.bing.com","skip-cert-verify":true,"obfs-password":"ZDQxZDhjZDk4ZjAwYjIwNA=="}
-  - {"name":"德国_11","type":"hysteria2","server":"deguo.poke-mon.xyz","port":443,"password":"f42222b3-3950-4831-8d17-ece3b02a5485","sni":"deguo.poke-mon.xyz","skip-cert-verify":true,"obfs-password":"ZDQxZDhjZDk4ZjAwYjIwNA=="}
-  - {"name":"澳大利亚_12","type":"hysteria2","server":"aodaliya.poke-mon.xyz","port":443,"password":"f42222b3-3950-4831-8d17-ece3b02a5485","sni":"aodaliya.poke-mon.xyz","skip-cert-verify":true,"obfs-password":"Y2M5ZGQyYzc2ZjNhZTlkNA=="}
-  - {"name":"德国_13","type":"hysteria2","server":"jianada01.poke-mon.xyz","port":443,"password":"f42222b3-3950-4831-8d17-ece3b02a5485","sni":"jianada01.poke-mon.xyz","skip-cert-verify":true,"obfs-password":"ZDQxZDhjZDk4ZjAwYjIwNA=="}
-  - {"name":"未知_14","type":"vmess","server":"cfd.ipa.monster","port":8080,"cipher":"auto","uuid":"67ac24bc-75b4-4925-abeb-7e253119c1d8","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/52pokemon?ed=2560","headers":{"host":"tw01vm.mypokeworld.link"}}}
-  - {"name":"美国_15","type":"vmess","server":"ipdx.52pokemon.cc","port":8080,"cipher":"auto","uuid":"67ac24bc-75b4-4925-abeb-7e253119c1d8","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/52pokemon?ed=2560","headers":{"host":"tw01vm.mypokeworld.link"}}}
+  - {"name":"美国_24","type":"hysteria2","server":"jp2.trojanws.xyz","port":8080,"password":"c5110090-c3a2-429e-b9b8-072b6535be1b","sni":"jp2.trojanws.xyz","skip-cert-verify":true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 新加坡_1
-      - 新加坡_2
-      - 美国_3
-      - 英国_4
-      - 日本_5
-      - 美国_6
-      - 美国_7
-      - 美国_8
-      - 美国_9
-      - 美国_10
-      - 德国_11
-      - 澳大利亚_12
-      - 德国_13
-      - 未知_14
-      - 美国_15
+      - 美国_24
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 新加坡_1
-      - 新加坡_2
-      - 美国_3
-      - 英国_4
-      - 日本_5
-      - 美国_6
-      - 美国_7
-      - 美国_8
-      - 美国_9
-      - 美国_10
-      - 德国_11
-      - 澳大利亚_12
-      - 德国_13
-      - 未知_14
-      - 美国_15
+      - 美国_24
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -161,21 +119,7 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 新加坡_1
-      - 新加坡_2
-      - 美国_3
-      - 英国_4
-      - 日本_5
-      - 美国_6
-      - 美国_7
-      - 美国_8
-      - 美国_9
-      - 美国_10
-      - 德国_11
-      - 澳大利亚_12
-      - 德国_13
-      - 未知_14
-      - 美国_15
+      - 美国_24
 
 rules:
 # 本地/局域网地址
