@@ -1,10 +1,11 @@
 ####################################
 # 创建者：v2rayse.com
-# 客户端：Clash
-# 创建时间：2024-10-08 11:28:39
+# 客户端：Clash.Meta
+# 创建时间：2024-10-15 09:34:16
 # 使用模版：ACL4SSR_Mini.ini
-# 节点数量：24
-# 节点类型：ss
+# 节点数量：59
+# 节点类型：hysteria2
+# !!当前配置文件请使用基于 Clash.Meta 内核程序
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -86,90 +87,195 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"🇭🇰|香港01\r_1","type":"ss","server":"cdn.node1.lilisi.link","port":10001,"password":"26f959e3-1a5e-3b3d-b4cd-fe04c80902bd","cipher":"aes-128-gcm"}
-  - {"name":"🇭🇰|香港02\r_1","type":"ss","server":"cdn.node1.lilisi.link","port":10002,"password":"26f959e3-1a5e-3b3d-b4cd-fe04c80902bd","cipher":"aes-128-gcm"}
-  - {"name":"🇭🇰|香港03\r_1","type":"ss","server":"cdn.node1.lilisi.link","port":10003,"password":"26f959e3-1a5e-3b3d-b4cd-fe04c80902bd","cipher":"aes-128-gcm"}
-  - {"name":"🇭🇰|香港04\r_1","type":"ss","server":"cdn.node1.lilisi.link","port":10004,"password":"26f959e3-1a5e-3b3d-b4cd-fe04c80902bd","cipher":"aes-128-gcm"}
-  - {"name":"🇭🇰|香港05\r_1","type":"ss","server":"cdn.node1.lilisi.link","port":10005,"password":"26f959e3-1a5e-3b3d-b4cd-fe04c80902bd","cipher":"aes-128-gcm"}
-  - {"name":"🇭🇰|香港01\r_2","type":"ss","server":"cdn.zx.lilisi.link","port":10001,"password":"26f959e3-1a5e-3b3d-b4cd-fe04c80902bd","cipher":"aes-128-gcm"}
-  - {"name":"🇭🇰|香港02\r_2","type":"ss","server":"cdn.zx.lilisi.link","port":10002,"password":"26f959e3-1a5e-3b3d-b4cd-fe04c80902bd","cipher":"aes-128-gcm"}
-  - {"name":"🇭🇰|香港03\r_2","type":"ss","server":"cdn.zx.lilisi.link","port":10003,"password":"26f959e3-1a5e-3b3d-b4cd-fe04c80902bd","cipher":"aes-128-gcm"}
-  - {"name":"🇭🇰|香港04\r_2","type":"ss","server":"cdn.zx.lilisi.link","port":10004,"password":"26f959e3-1a5e-3b3d-b4cd-fe04c80902bd","cipher":"aes-128-gcm"}
-  - {"name":"🇭🇰|香港05\r_2","type":"ss","server":"cdn.zx.lilisi.link","port":10005,"password":"26f959e3-1a5e-3b3d-b4cd-fe04c80902bd","cipher":"aes-128-gcm"}
-  - {"name":"🇸🇬|新加坡01\r_1","type":"ss","server":"cdn.node1.lilisi.link","port":10021,"password":"26f959e3-1a5e-3b3d-b4cd-fe04c80902bd","cipher":"aes-128-gcm"}
-  - {"name":"🇸🇬|新加坡02\r_1","type":"ss","server":"cdn.node1.lilisi.link","port":10022,"password":"26f959e3-1a5e-3b3d-b4cd-fe04c80902bd","cipher":"aes-128-gcm"}
-  - {"name":"🇸🇬|新加坡03\r_1","type":"ss","server":"cdn.node1.lilisi.link","port":10023,"password":"26f959e3-1a5e-3b3d-b4cd-fe04c80902bd","cipher":"aes-128-gcm"}
-  - {"name":"🇸🇬|新加坡04\r_1","type":"ss","server":"cdn.node1.lilisi.link","port":10024,"password":"26f959e3-1a5e-3b3d-b4cd-fe04c80902bd","cipher":"aes-128-gcm"}
-  - {"name":"🇸🇬|新加坡05\r_1","type":"ss","server":"cdn.node1.lilisi.link","port":10025,"password":"26f959e3-1a5e-3b3d-b4cd-fe04c80902bd","cipher":"aes-128-gcm"}
-  - {"name":"🇸🇬|新加坡01\r_2","type":"ss","server":"cdn.node3.lilisi.link","port":10021,"password":"26f959e3-1a5e-3b3d-b4cd-fe04c80902bd","cipher":"aes-128-gcm"}
-  - {"name":"🇸🇬|新加坡02\r_2","type":"ss","server":"cdn.node3.lilisi.link","port":10022,"password":"26f959e3-1a5e-3b3d-b4cd-fe04c80902bd","cipher":"aes-128-gcm"}
-  - {"name":"🇸🇬|新加坡03\r_2","type":"ss","server":"cdn.node3.lilisi.link","port":10023,"password":"26f959e3-1a5e-3b3d-b4cd-fe04c80902bd","cipher":"aes-128-gcm"}
-  - {"name":"🇸🇬|新加坡04\r_2","type":"ss","server":"cdn.node3.lilisi.link","port":10024,"password":"26f959e3-1a5e-3b3d-b4cd-fe04c80902bd","cipher":"aes-128-gcm"}
-  - {"name":"🇸🇬|新加坡05\r_2","type":"ss","server":"cdn.node3.lilisi.link","port":10025,"password":"26f959e3-1a5e-3b3d-b4cd-fe04c80902bd","cipher":"aes-128-gcm"}
-  - {"name":"🇮🇩|印尼01\r_1","type":"ss","server":"cdn.node1.lilisi.link","port":10051,"password":"26f959e3-1a5e-3b3d-b4cd-fe04c80902bd","cipher":"aes-128-gcm"}
-  - {"name":"🇮🇩|印尼02\r_1","type":"ss","server":"cdn.node1.lilisi.link","port":10052,"password":"26f959e3-1a5e-3b3d-b4cd-fe04c80902bd","cipher":"aes-128-gcm"}
-  - {"name":"🇮🇩|印尼01\r_2","type":"ss","server":"cdn.node3.lilisi.link","port":10051,"password":"26f959e3-1a5e-3b3d-b4cd-fe04c80902bd","cipher":"aes-128-gcm"}
-  - {"name":"🇮🇩|印尼02\r_2","type":"ss","server":"cdn.node3.lilisi.link","port":10052,"password":"26f959e3-1a5e-3b3d-b4cd-fe04c80902bd","cipher":"aes-128-gcm"}
+  - {"name":"1","type":"hysteria2","server":"sbl1.556855.xyz","port":52100,"password":"b9fca762-c072-4298-b261-a3c5e6f04510","sni":"sbl1.556855.xyz","skip-cert-verify":true}
+  - {"name":"2","type":"hysteria2","server":"163.123.192.149","port":443,"password":"e9bcbbe9-5056-4cb2-be14-3ea8d43d07eb","skip-cert-verify":true}
+  - {"name":"3","type":"hysteria2","server":"163.123.192.62","port":443,"password":"e9bcbbe9-5056-4cb2-be14-3ea8d43d07eb","skip-cert-verify":true}
+  - {"name":"4","type":"hysteria2","server":"163.123.192.151","port":443,"password":"e9bcbbe9-5056-4cb2-be14-3ea8d43d07eb","skip-cert-verify":true}
+  - {"name":"5","type":"hysteria2","server":"163.123.192.152","port":443,"password":"e9bcbbe9-5056-4cb2-be14-3ea8d43d07eb","skip-cert-verify":true}
+  - {"name":"6","type":"hysteria2","server":"jpa.kuailian9.cyou","port":49146,"password":"9849c2e7-1692-41e6-87e1-20225bc8368f","skip-cert-verify":true}
+  - {"name":"7","type":"hysteria2","server":"hka.kuailian9.cyou","port":33463,"password":"9849c2e7-1692-41e6-87e1-20225bc8368f","skip-cert-verify":true}
+  - {"name":"8","type":"hysteria2","server":"usa.kuailian9.cyou","port":34022,"password":"9849c2e7-1692-41e6-87e1-20225bc8368f","skip-cert-verify":true}
+  - {"name":"9","type":"hysteria2","server":"www.sunlian.online","port":36716,"password":"9849c2e7-1692-41e6-87e1-20225bc8368f","skip-cert-verify":true}
+  - {"name":"10","type":"hysteria2","server":"hk-01.snangua.com","port":443,"password":"52d39308-a21b-45de-bdd4-c7cf1abdf839","skip-cert-verify":true}
+  - {"name":"11","type":"hysteria2","server":"jp-01.snangua.com","port":443,"password":"52d39308-a21b-45de-bdd4-c7cf1abdf839","skip-cert-verify":true}
+  - {"name":"12","type":"hysteria2","server":"kr-01.snangua.com","port":443,"password":"52d39308-a21b-45de-bdd4-c7cf1abdf839","skip-cert-verify":true}
+  - {"name":"13","type":"hysteria2","server":"us-01.snangua.com","port":443,"password":"52d39308-a21b-45de-bdd4-c7cf1abdf839","skip-cert-verify":true}
+  - {"name":"14","type":"hysteria2","server":"uk-01.snangua.com","port":443,"password":"52d39308-a21b-45de-bdd4-c7cf1abdf839","skip-cert-verify":true}
+  - {"name":"15","type":"hysteria2","server":"ny11.putao666.top","port":40001,"password":"395e2d81-ac30-4863-8900-8555b955b638","skip-cert-verify":true}
+  - {"name":"16","type":"hysteria2","server":"172.104.39.213","port":40001,"password":"395e2d81-ac30-4863-8900-8555b955b638","skip-cert-verify":true}
+  - {"name":"17","type":"hysteria2","server":"172.104.39.213","port":40002,"password":"395e2d81-ac30-4863-8900-8555b955b638","skip-cert-verify":true}
+  - {"name":"18","type":"hysteria2","server":"139.177.187.212","port":40003,"password":"395e2d81-ac30-4863-8900-8555b955b638","skip-cert-verify":true}
+  - {"name":"19","type":"hysteria2","server":"139.177.187.212","port":40004,"password":"395e2d81-ac30-4863-8900-8555b955b638","skip-cert-verify":true}
+  - {"name":"20","type":"hysteria2","server":"172.104.55.107","port":40005,"password":"395e2d81-ac30-4863-8900-8555b955b638","skip-cert-verify":true}
+  - {"name":"21","type":"hysteria2","server":"172.104.55.107","port":40006,"password":"395e2d81-ac30-4863-8900-8555b955b638","skip-cert-verify":true}
+  - {"name":"22","type":"hysteria2","server":"172.104.185.176","port":40007,"password":"395e2d81-ac30-4863-8900-8555b955b638","skip-cert-verify":true}
+  - {"name":"23","type":"hysteria2","server":"172.104.185.187","port":40008,"password":"395e2d81-ac30-4863-8900-8555b955b638","skip-cert-verify":true}
+  - {"name":"24","type":"hysteria2","server":"jp11.putao666.top","port":40001,"password":"395e2d81-ac30-4863-8900-8555b955b638","skip-cert-verify":true}
+  - {"name":"25","type":"hysteria2","server":"jp11.putao666.top","port":40002,"password":"395e2d81-ac30-4863-8900-8555b955b638","skip-cert-verify":true}
+  - {"name":"26","type":"hysteria2","server":"jp22.putao666.top","port":40003,"password":"395e2d81-ac30-4863-8900-8555b955b638","skip-cert-verify":true}
+  - {"name":"27","type":"hysteria2","server":"jp22.putao666.top","port":40004,"password":"395e2d81-ac30-4863-8900-8555b955b638","skip-cert-verify":true}
+  - {"name":"28","type":"hysteria2","server":"jp33.putao666.top","port":40005,"password":"395e2d81-ac30-4863-8900-8555b955b638","skip-cert-verify":true}
+  - {"name":"29","type":"hysteria2","server":"jp33.putao666.top","port":40006,"password":"395e2d81-ac30-4863-8900-8555b955b638","skip-cert-verify":true}
+  - {"name":"30","type":"hysteria2","server":"ny11.putao666.top","port":40002,"password":"395e2d81-ac30-4863-8900-8555b955b638","skip-cert-verify":true}
+  - {"name":"31","type":"hysteria2","server":"107.175.213.204","port":40003,"password":"395e2d81-ac30-4863-8900-8555b955b638","skip-cert-verify":true}
+  - {"name":"32","type":"hysteria2","server":"107.175.213.204","port":40004,"password":"395e2d81-ac30-4863-8900-8555b955b638","skip-cert-verify":true}
+  - {"name":"33","type":"hysteria2","server":"aws-sgsg.aikunapp.com","port":5001,"password":"96cad374-7573-4463-8804-4665c2c3d932","sni":"d1--cn-gotcha204-4.bilivideo.com","skip-cert-verify":true}
+  - {"name":"34","type":"hysteria2","server":"shy35.zqjc.cloud","port":55215,"password":"c5a870ed-08a0-4198-a568-23abbb95d1a4","sni":"shy35.zqjc.cloud","skip-cert-verify":true}
+  - {"name":"35","type":"hysteria2","server":"217.142.190.72","port":44111,"password":"23df7f08-2331-4b17-817d-af11007a1128","sni":"www.bing.com","skip-cert-verify":true}
+  - {"name":"36","type":"hysteria2","server":"45.76.0.86","port":443,"password":"1f17cdf0578a2860","skip-cert-verify":true,"obfs-password":"4b817757"}
+  - {"name":"37","type":"hysteria2","server":"193.123.241.149","port":443,"password":"e9bcbbe9-5056-4cb2-be14-3ea8d43d07eb","skip-cert-verify":true}
+  - {"name":"38","type":"hysteria2","server":"74.48.101.73","port":443,"password":"eb32a435-348f-4290-baba-944c88e5b8cf","sni":"50889b0.184835.xyz","skip-cert-verify":true}
+  - {"name":"39","type":"hysteria2","server":"45.11.3.136","port":443,"password":"eb32a435-348f-4290-baba-944c88e5b8cf","sni":"dig-los1.184835.xyz","skip-cert-verify":true}
+  - {"name":"40","type":"hysteria2","server":"45.11.0.119","port":443,"password":"eb32a435-348f-4290-baba-944c88e5b8cf","sni":"dig-los2.184835.xyz","skip-cert-verify":true}
+  - {"name":"41","type":"hysteria2","server":"45.11.0.121","port":443,"password":"eb32a435-348f-4290-baba-944c88e5b8cf","sni":"dig-los3.184835.xyz","skip-cert-verify":true}
+  - {"name":"42","type":"hysteria2","server":"193.42.63.85","port":443,"password":"eb32a435-348f-4290-baba-944c88e5b8cf","sni":"7cccca2.2633458.xyz","skip-cert-verify":true}
+  - {"name":"43","type":"hysteria2","server":"45.88.42.93","port":443,"password":"eb32a435-348f-4290-baba-944c88e5b8cf","sni":"raloar-sg1.4560816.xyz","skip-cert-verify":true}
+  - {"name":"44","type":"hysteria2","server":"45.88.42.94","port":443,"password":"eb32a435-348f-4290-baba-944c88e5b8cf","sni":"raloar-sg2.4560816.xyz","skip-cert-verify":true}
+  - {"name":"45","type":"hysteria2","server":"45.88.42.96","port":443,"password":"eb32a435-348f-4290-baba-944c88e5b8cf","sni":"raloar-sg3.4560816.xyz","skip-cert-verify":true}
+  - {"name":"46","type":"hysteria2","server":"jp2.trojanws.xyz","port":8080,"password":"c5110090-c3a2-429e-b9b8-072b6535be1b","sni":"jp2.trojanws.xyz","skip-cert-verify":true}
+  - {"name":"47","type":"hysteria2","server":"sg01.poke-mon.xyz","port":443,"password":"f42222b3-3950-4831-8d17-ece3b02a5485","sni":"www.bing.com","skip-cert-verify":true,"obfs-password":"MmZiNTNjYmU5NjY2Zjk0YQ=="}
+  - {"name":"48","type":"hysteria2","server":"sg02.poke-mon.xyz","port":443,"password":"f42222b3-3950-4831-8d17-ece3b02a5485","sni":"www.bing.com","skip-cert-verify":true,"obfs-password":"ZDQxZDhjZDk4ZjAwYjIwNA=="}
+  - {"name":"49","type":"hysteria2","server":"hk01.poke-mon.xyz","port":443,"password":"f42222b3-3950-4831-8d17-ece3b02a5485","sni":"www.bing.com","skip-cert-verify":true,"obfs-password":"ZDQxZDhjZDk4ZjAwYjIwNA=="}
+  - {"name":"50","type":"hysteria2","server":"hk03.poke-mon.xyz","port":443,"password":"b2f9862c-769d-4342-9a94-f6d9a9024ad5","sni":"www.bing.com","skip-cert-verify":true,"obfs-password":"ZDQxZDhjZDk4ZjAwYjIwNA=="}
+  - {"name":"51","type":"hysteria2","server":"jp01.poke-mon.xyz","port":443,"password":"7d876dcf-96f6-474e-a9c8-1a1b24f4fd82","sni":"www.bing.com","skip-cert-verify":true,"obfs-password":"NzI5MTU0YTY0NmJkMDUwNQ=="}
+  - {"name":"52","type":"hysteria2","server":"jp02.poke-mon.xyz","port":443,"password":"b2f9862c-769d-4342-9a94-f6d9a9024ad5","sni":"www.bing.com","skip-cert-verify":true,"obfs-password":"ZDQxZDhjZDk4ZjAwYjIwNA=="}
+  - {"name":"53","type":"hysteria2","server":"us01.poke-mon.xyz","port":443,"password":"b2f9862c-769d-4342-9a94-f6d9a9024ad5","sni":"www.bing.com","skip-cert-verify":true,"obfs-password":"YTIyMGYzN2M1MDllMzEyMA=="}
+  - {"name":"54","type":"hysteria2","server":"us02.poke-mon.xyz","port":443,"password":"f42222b3-3950-4831-8d17-ece3b02a5485","sni":"www.bing.com","skip-cert-verify":true,"obfs-password":"ZjYwZmViYTA3ZGM1OTc1OA=="}
+  - {"name":"55","type":"hysteria2","server":"helan.poke-mon.xyz","port":443,"password":"f42222b3-3950-4831-8d17-ece3b02a5485","sni":"helan.poke-mon.xyz","skip-cert-verify":true,"obfs-password":"ZGY3MzJmZmViM2U2NTAzZA=="}
+  - {"name":"56","type":"hysteria2","server":"yindu01.poke-mon.xyz","port":443,"password":"f42222b3-3950-4831-8d17-ece3b02a5485","sni":"www.bing.com","skip-cert-verify":true,"obfs-password":"ZDQxZDhjZDk4ZjAwYjIwNA=="}
+  - {"name":"57","type":"hysteria2","server":"deguo.poke-mon.xyz","port":443,"password":"f42222b3-3950-4831-8d17-ece3b02a5485","sni":"deguo.poke-mon.xyz","skip-cert-verify":true,"obfs-password":"ZDQxZDhjZDk4ZjAwYjIwNA=="}
+  - {"name":"58","type":"hysteria2","server":"aodaliya.poke-mon.xyz","port":443,"password":"f42222b3-3950-4831-8d17-ece3b02a5485","sni":"aodaliya.poke-mon.xyz","skip-cert-verify":true,"obfs-password":"Y2M5ZGQyYzc2ZjNhZTlkNA=="}
+  - {"name":"59","type":"hysteria2","server":"jianada01.poke-mon.xyz","port":443,"password":"f42222b3-3950-4831-8d17-ece3b02a5485","sni":"jianada01.poke-mon.xyz","skip-cert-verify":true,"obfs-password":"ZDQxZDhjZDk4ZjAwYjIwNA=="}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - "🇭🇰|香港01\r_1"
-      - "🇭🇰|香港02\r_1"
-      - "🇭🇰|香港03\r_1"
-      - "🇭🇰|香港04\r_1"
-      - "🇭🇰|香港05\r_1"
-      - "🇭🇰|香港01\r_2"
-      - "🇭🇰|香港02\r_2"
-      - "🇭🇰|香港03\r_2"
-      - "🇭🇰|香港04\r_2"
-      - "🇭🇰|香港05\r_2"
-      - "🇸🇬|新加坡01\r_1"
-      - "🇸🇬|新加坡02\r_1"
-      - "🇸🇬|新加坡03\r_1"
-      - "🇸🇬|新加坡04\r_1"
-      - "🇸🇬|新加坡05\r_1"
-      - "🇸🇬|新加坡01\r_2"
-      - "🇸🇬|新加坡02\r_2"
-      - "🇸🇬|新加坡03\r_2"
-      - "🇸🇬|新加坡04\r_2"
-      - "🇸🇬|新加坡05\r_2"
-      - "🇮🇩|印尼01\r_1"
-      - "🇮🇩|印尼02\r_1"
-      - "🇮🇩|印尼01\r_2"
-      - "🇮🇩|印尼02\r_2"
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      - '6'
+      - '7'
+      - '8'
+      - '9'
+      - '10'
+      - '11'
+      - '12'
+      - '13'
+      - '14'
+      - '15'
+      - '16'
+      - '17'
+      - '18'
+      - '19'
+      - '20'
+      - '21'
+      - '22'
+      - '23'
+      - '24'
+      - '25'
+      - '26'
+      - '27'
+      - '28'
+      - '29'
+      - '30'
+      - '31'
+      - '32'
+      - '33'
+      - '34'
+      - '35'
+      - '36'
+      - '37'
+      - '38'
+      - '39'
+      - '40'
+      - '41'
+      - '42'
+      - '43'
+      - '44'
+      - '45'
+      - '46'
+      - '47'
+      - '48'
+      - '49'
+      - '50'
+      - '51'
+      - '52'
+      - '53'
+      - '54'
+      - '55'
+      - '56'
+      - '57'
+      - '58'
+      - '59'
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - "🇭🇰|香港01\r_1"
-      - "🇭🇰|香港02\r_1"
-      - "🇭🇰|香港03\r_1"
-      - "🇭🇰|香港04\r_1"
-      - "🇭🇰|香港05\r_1"
-      - "🇭🇰|香港01\r_2"
-      - "🇭🇰|香港02\r_2"
-      - "🇭🇰|香港03\r_2"
-      - "🇭🇰|香港04\r_2"
-      - "🇭🇰|香港05\r_2"
-      - "🇸🇬|新加坡01\r_1"
-      - "🇸🇬|新加坡02\r_1"
-      - "🇸🇬|新加坡03\r_1"
-      - "🇸🇬|新加坡04\r_1"
-      - "🇸🇬|新加坡05\r_1"
-      - "🇸🇬|新加坡01\r_2"
-      - "🇸🇬|新加坡02\r_2"
-      - "🇸🇬|新加坡03\r_2"
-      - "🇸🇬|新加坡04\r_2"
-      - "🇸🇬|新加坡05\r_2"
-      - "🇮🇩|印尼01\r_1"
-      - "🇮🇩|印尼02\r_1"
-      - "🇮🇩|印尼01\r_2"
-      - "🇮🇩|印尼02\r_2"
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      - '6'
+      - '7'
+      - '8'
+      - '9'
+      - '10'
+      - '11'
+      - '12'
+      - '13'
+      - '14'
+      - '15'
+      - '16'
+      - '17'
+      - '18'
+      - '19'
+      - '20'
+      - '21'
+      - '22'
+      - '23'
+      - '24'
+      - '25'
+      - '26'
+      - '27'
+      - '28'
+      - '29'
+      - '30'
+      - '31'
+      - '32'
+      - '33'
+      - '34'
+      - '35'
+      - '36'
+      - '37'
+      - '38'
+      - '39'
+      - '40'
+      - '41'
+      - '42'
+      - '43'
+      - '44'
+      - '45'
+      - '46'
+      - '47'
+      - '48'
+      - '49'
+      - '50'
+      - '51'
+      - '52'
+      - '53'
+      - '54'
+      - '55'
+      - '56'
+      - '57'
+      - '58'
+      - '59'
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -187,30 +293,65 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "🇭🇰|香港01\r_1"
-      - "🇭🇰|香港02\r_1"
-      - "🇭🇰|香港03\r_1"
-      - "🇭🇰|香港04\r_1"
-      - "🇭🇰|香港05\r_1"
-      - "🇭🇰|香港01\r_2"
-      - "🇭🇰|香港02\r_2"
-      - "🇭🇰|香港03\r_2"
-      - "🇭🇰|香港04\r_2"
-      - "🇭🇰|香港05\r_2"
-      - "🇸🇬|新加坡01\r_1"
-      - "🇸🇬|新加坡02\r_1"
-      - "🇸🇬|新加坡03\r_1"
-      - "🇸🇬|新加坡04\r_1"
-      - "🇸🇬|新加坡05\r_1"
-      - "🇸🇬|新加坡01\r_2"
-      - "🇸🇬|新加坡02\r_2"
-      - "🇸🇬|新加坡03\r_2"
-      - "🇸🇬|新加坡04\r_2"
-      - "🇸🇬|新加坡05\r_2"
-      - "🇮🇩|印尼01\r_1"
-      - "🇮🇩|印尼02\r_1"
-      - "🇮🇩|印尼01\r_2"
-      - "🇮🇩|印尼02\r_2"
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      - '6'
+      - '7'
+      - '8'
+      - '9'
+      - '10'
+      - '11'
+      - '12'
+      - '13'
+      - '14'
+      - '15'
+      - '16'
+      - '17'
+      - '18'
+      - '19'
+      - '20'
+      - '21'
+      - '22'
+      - '23'
+      - '24'
+      - '25'
+      - '26'
+      - '27'
+      - '28'
+      - '29'
+      - '30'
+      - '31'
+      - '32'
+      - '33'
+      - '34'
+      - '35'
+      - '36'
+      - '37'
+      - '38'
+      - '39'
+      - '40'
+      - '41'
+      - '42'
+      - '43'
+      - '44'
+      - '45'
+      - '46'
+      - '47'
+      - '48'
+      - '49'
+      - '50'
+      - '51'
+      - '52'
+      - '53'
+      - '54'
+      - '55'
+      - '56'
+      - '57'
+      - '58'
+      - '59'
 
 rules:
 # 本地/局域网地址
