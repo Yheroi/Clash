@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：2024-10-14 22:36:40
+# 创建时间：2024-10-15 09:43:22
 # 使用模版：ACL4SSR_Mini.ini
-# 节点数量：1
+# 节点数量：10
 # 节点类型：hysteria2
 # !!当前配置文件请使用基于 Clash.Meta 内核程序
 ####################################
@@ -87,21 +87,48 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"美国_24","type":"hysteria2","server":"jp2.trojanws.xyz","port":8080,"password":"c5110090-c3a2-429e-b9b8-072b6535be1b","sni":"jp2.trojanws.xyz","skip-cert-verify":true}
+  - {"name":"美国1","type":"hysteria2","server":"163.123.192.151","port":443,"password":"e9bcbbe9-5056-4cb2-be14-3ea8d43d07eb","skip-cert-verify":true}
+  - {"name":"美国2","type":"hysteria2","server":"usa.kuailian9.cyou","port":34022,"password":"9849c2e7-1692-41e6-87e1-20225bc8368f","skip-cert-verify":true}
+  - {"name":"美国3","type":"hysteria2","server":"74.48.101.73","port":443,"password":"eb32a435-348f-4290-baba-944c88e5b8cf","sni":"50889b0.184835.xyz","skip-cert-verify":true}
+  - {"name":"美国4","type":"hysteria2","server":"45.11.3.136","port":443,"password":"eb32a435-348f-4290-baba-944c88e5b8cf","sni":"dig-los1.184835.xyz","skip-cert-verify":true}
+  - {"name":"美国5","type":"hysteria2","server":"45.11.0.121","port":443,"password":"eb32a435-348f-4290-baba-944c88e5b8cf","sni":"dig-los3.184835.xyz","skip-cert-verify":true}
+  - {"name":"日本1","type":"hysteria2","server":"jp11.putao666.top","port":40002,"password":"395e2d81-ac30-4863-8900-8555b955b638","skip-cert-verify":true}
+  - {"name":"日本2","type":"hysteria2","server":"jp22.putao666.top","port":40004,"password":"395e2d81-ac30-4863-8900-8555b955b638","skip-cert-verify":true}
+  - {"name":"日本3","type":"hysteria2","server":"jp33.putao666.top","port":40005,"password":"395e2d81-ac30-4863-8900-8555b955b638","skip-cert-verify":true}
+  - {"name":"日本4","type":"hysteria2","server":"jp33.putao666.top","port":40006,"password":"395e2d81-ac30-4863-8900-8555b955b638","skip-cert-verify":true}
+  - {"name":"日本5","type":"hysteria2","server":"jp2.trojanws.xyz","port":8080,"password":"c5110090-c3a2-429e-b9b8-072b6535be1b","sni":"jp2.trojanws.xyz","skip-cert-verify":true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 美国_24
+      - 美国1
+      - 美国2
+      - 美国3
+      - 美国4
+      - 美国5
+      - 日本1
+      - 日本2
+      - 日本3
+      - 日本4
+      - 日本5
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 美国_24
+      - 美国1
+      - 美国2
+      - 美国3
+      - 美国4
+      - 美国5
+      - 日本1
+      - 日本2
+      - 日本3
+      - 日本4
+      - 日本5
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -119,7 +146,16 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 美国_24
+      - 美国1
+      - 美国2
+      - 美国3
+      - 美国4
+      - 美国5
+      - 日本1
+      - 日本2
+      - 日本3
+      - 日本4
+      - 日本5
 
 rules:
 # 本地/局域网地址
