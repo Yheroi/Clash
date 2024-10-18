@@ -1,11 +1,10 @@
 ####################################
 # 创建者：v2rayse.com
-# 客户端：Clash.Meta
-# 创建时间：2024-10-18 18:26:05
+# 客户端：Clash
+# 创建时间：2024-10-18 18:29:39
 # 使用模版：ACL4SSR_Mini.ini
-# 节点数量：10
-# 节点类型：trojan, ss, vless
-# !!当前配置文件请使用基于 Clash.Meta 内核程序
+# 节点数量：1
+# 节点类型：trojan
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -87,48 +86,21 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"未知_1","type":"trojan","server":"select-racer.sunbeam921.monster","port":443,"udp":true,"password":"3648425794742788096","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国_2","type":"ss","server":"69.50.95.218","port":8090,"password":"PCnnH6SQSnfoS27","cipher":"aes-256-gcm"}
-  - {"name":"美国_3","type":"vless","server":"151.101.130.228","port":80,"uuid":"d2b95aa8-638f-4b0e-b94e-17178cdd4d21","tls":false,"servername":"wWw.SpEeDtEsT.NeT.ZuLa.aIr.IkCoSaLeS.iR.D662599.v09.TzZLiMitT.CoM","network":"ws"}
-  - {"name":"美国_4","type":"ss","server":"69.50.95.179","port":5498,"password":"lGqs95QkFHo2NV","cipher":"aes-256-gcm"}
-  - {"name":"美国_5","type":"ss","server":"139.64.165.230","port":2376,"password":"faBAoD54k87UJG7","cipher":"aes-256-gcm"}
-  - {"name":"美国_6","type":"vless","server":"151.101.2.228","port":80,"uuid":"d2b95aa8-638f-4b0e-b94e-17178cdd4d21","tls":false,"servername":"wWw.SpEeDtEsT.NeT.ZuLa.aIr.IkCoSaLeS.iR.D662599.v09.TzZLiMitT.CoM","network":"ws"}
-  - {"name":"美国_7","type":"vless","server":"151.101.194.228","port":80,"uuid":"d2b95aa8-638f-4b0e-b94e-17178cdd4d21","tls":false,"servername":"wWw.SpEeDtEsT.NeT.ZuLa.aIr.IkCoSaLeS.iR.D662599.v15.TzZLiMitT.CoM","network":"ws"}
-  - {"name":"美国_8","type":"vless","server":"151.101.194.133","port":80,"uuid":"97cbc95d-5b0d-49b6-8ae4-b4c32e4781e2","tls":false,"servername":"Awawaw.net","network":"ws","ws-opts":{"path":"/telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER?ed=2048"}}
-  - {"name":"阿富汗_9","type":"ss","server":"185.24.151.214","port":52952,"password":"LMSNh21TrXjR2ok25Q2nE8ENT2zoBmPvka3RCCUAHZELCnWoekVjvaf89qwcRkdbxEfep2bc2aUtmnxqvF1ayQRez1JHjULj","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"美国_10","type":"trojan","server":"normal-pigeon.sheepdog670.boats","port":443,"udp":true,"password":"3648425794742788096","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"香港-unknown","type":"trojan","server":"giving-marmoset.opossum872.cfd","port":443,"udp":true,"password":"3690911436885991424","sni":"giving-marmoset.opossum872.cfd","skip-cert-verify":true,"network":"tcp"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 未知_1
-      - 美国_2
-      - 美国_3
-      - 美国_4
-      - 美国_5
-      - 美国_6
-      - 美国_7
-      - 美国_8
-      - 阿富汗_9
-      - 美国_10
+      - 香港-unknown
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 未知_1
-      - 美国_2
-      - 美国_3
-      - 美国_4
-      - 美国_5
-      - 美国_6
-      - 美国_7
-      - 美国_8
-      - 阿富汗_9
-      - 美国_10
+      - 香港-unknown
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -146,16 +118,7 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 未知_1
-      - 美国_2
-      - 美国_3
-      - 美国_4
-      - 美国_5
-      - 美国_6
-      - 美国_7
-      - 美国_8
-      - 阿富汗_9
-      - 美国_10
+      - 香港-unknown
 
 rules:
 # 本地/局域网地址
