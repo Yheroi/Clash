@@ -1,10 +1,10 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：2024-10-22 09:52:55
+# 创建时间：2024-10-22 10:03:49
 # 使用模版：ACL4SSR_Mini.ini
-# 节点数量：7
-# 节点类型：ss, trojan, ssr, hysteria2
+# 节点数量：14
+# 节点类型：http, hysteria2, ss
 # !!当前配置文件请使用基于 Clash.Meta 内核程序
 ####################################
 mixed-port: 7890
@@ -87,39 +87,60 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"中国香港1","type":"ss","server":"120.232.81.50","port":16088,"password":"hGkQ6915tD","cipher":"aes-256-cfb"}
-  - {"name":"中国香港2","type":"ss","server":"soonhk.soon.guru","port":40000,"password":"5b4aa2a3-2d45-4cc3-b8f8-02a562a37e38","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"新加坡1","type":"ss","server":"soonsgp.soon.guru","port":40005,"password":"5b4aa2a3-2d45-4cc3-b8f8-02a562a37e38","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"新加坡2","type":"trojan","server":"naiu-sg.05vr9nyqg5.download","port":13027,"udp":true,"password":"8d4a8689-e8fd-4405-9834-3f812c528db0","sni":"cloudflare.node-ssl.cdn-alibaba.com","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"日本1","type":"ssr","server":"14.152.94.40","port":8191,"password":"123456","cipher":"dummy","obfs":"plain","protocol":"auth_chain_a","protocol-param":"59869:ES8PT7"}
-  - {"name":"日本2","type":"ss","server":"soonjp.soon.guru","port":40003,"password":"5b4aa2a3-2d45-4cc3-b8f8-02a562a37e38","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"美国","type":"hysteria2","server":"163.123.192.151","port":443,"password":"e9bcbbe9-5056-4cb2-be14-3ea8d43d07eb","skip-cert-verify":true}
+  - {"name":"defaultName","type":"http","server":"sg2.epicbrowser.net","port":8888}
+  - {"name":"新加坡2 ipv6","type":"hysteria2","server":"sg-02.cloudlion.me","port":8005,"password":"1947e8a2-f868-4ef5-8024-21c9dfa27450","skip-cert-verify":true}
+  - {"name":"新加坡1 ipv6","type":"hysteria2","server":"sg-01.cloudlion.me","port":8005,"password":"1947e8a2-f868-4ef5-8024-21c9dfa27450","skip-cert-verify":true}
+  - {"name":"土耳其1 ipv6","type":"hysteria2","server":"tr-01.cloudlion.me","port":8005,"password":"1947e8a2-f868-4ef5-8024-21c9dfa27450","skip-cert-verify":true}
+  - {"name":"俄罗斯1 ipv6","type":"hysteria2","server":"ru-01.cloudlion.me","port":8005,"password":"1947e8a2-f868-4ef5-8024-21c9dfa27450","skip-cert-verify":true}
+  - {"name":"香港1 ipv6","type":"hysteria2","server":"hk-01.cloudlion.me","port":8005,"password":"1947e8a2-f868-4ef5-8024-21c9dfa27450","skip-cert-verify":true}
+  - {"name":"美国1 ipv6","type":"hysteria2","server":"us-01.cloudlion.me","port":8005,"password":"1947e8a2-f868-4ef5-8024-21c9dfa27450","skip-cert-verify":true}
+  - {"name":"----就能继续使用----","type":"ss","server":"gdgs.tarioblink.me","port":30001,"password":"f7c2180f-1a93-4d65-9e66-7ad62401f783","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"----尝试刷新线路----","type":"ss","server":"gdgs.tarioblink.me","port":30001,"password":"f7c2180f-1a93-4d65-9e66-7ad62401f783","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"套餐到期：2024-11-16","type":"ss","server":"gdgs.tarioblink.me","port":30001,"password":"f7c2180f-1a93-4d65-9e66-7ad62401f783","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"果宝特攻-免费节点-新加坡-02","type":"ss","server":"gdgs.tarioblink.me","port":30001,"password":"f7c2180f-1a93-4d65-9e66-7ad62401f783","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"----如果无法使用----","type":"ss","server":"gdgs.tarioblink.me","port":30001,"password":"f7c2180f-1a93-4d65-9e66-7ad62401f783","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"----可能是到期了----","type":"ss","server":"gdgs.tarioblink.me","port":30001,"password":"f7c2180f-1a93-4d65-9e66-7ad62401f783","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"----如果无法刷新----","type":"ss","server":"gdgs.tarioblink.me","port":30001,"password":"f7c2180f-1a93-4d65-9e66-7ad62401f783","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 中国香港1
-      - 中国香港2
-      - 新加坡1
-      - 新加坡2
-      - 日本1
-      - 日本2
-      - 美国
+      - defaultName
+      - 新加坡2 ipv6
+      - 新加坡1 ipv6
+      - 土耳其1 ipv6
+      - 俄罗斯1 ipv6
+      - 香港1 ipv6
+      - 美国1 ipv6
+      - '----就能继续使用----'
+      - '----尝试刷新线路----'
+      - 套餐到期：2024-11-16
+      - 果宝特攻-免费节点-新加坡-02
+      - '----如果无法使用----'
+      - '----可能是到期了----'
+      - '----如果无法刷新----'
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 中国香港1
-      - 中国香港2
-      - 新加坡1
-      - 新加坡2
-      - 日本1
-      - 日本2
-      - 美国
+      - defaultName
+      - 新加坡2 ipv6
+      - 新加坡1 ipv6
+      - 土耳其1 ipv6
+      - 俄罗斯1 ipv6
+      - 香港1 ipv6
+      - 美国1 ipv6
+      - '----就能继续使用----'
+      - '----尝试刷新线路----'
+      - 套餐到期：2024-11-16
+      - 果宝特攻-免费节点-新加坡-02
+      - '----如果无法使用----'
+      - '----可能是到期了----'
+      - '----如果无法刷新----'
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -137,13 +158,20 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 中国香港1
-      - 中国香港2
-      - 新加坡1
-      - 新加坡2
-      - 日本1
-      - 日本2
-      - 美国
+      - defaultName
+      - 新加坡2 ipv6
+      - 新加坡1 ipv6
+      - 土耳其1 ipv6
+      - 俄罗斯1 ipv6
+      - 香港1 ipv6
+      - 美国1 ipv6
+      - '----就能继续使用----'
+      - '----尝试刷新线路----'
+      - 套餐到期：2024-11-16
+      - 果宝特攻-免费节点-新加坡-02
+      - '----如果无法使用----'
+      - '----可能是到期了----'
+      - '----如果无法刷新----'
 
 rules:
 # 本地/局域网地址
