@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：2024-10-22 09:50:19
+# 创建时间：2024-10-22 09:52:55
 # 使用模版：ACL4SSR_Mini.ini
-# 节点数量：6
+# 节点数量：7
 # 节点类型：ss, trojan, ssr, hysteria2
 # !!当前配置文件请使用基于 Clash.Meta 内核程序
 ####################################
@@ -87,7 +87,8 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"中国香港","type":"ss","server":"120.232.81.50","port":16088,"password":"hGkQ6915tD","cipher":"aes-256-cfb"}
+  - {"name":"中国香港1","type":"ss","server":"120.232.81.50","port":16088,"password":"hGkQ6915tD","cipher":"aes-256-cfb"}
+  - {"name":"中国香港2","type":"ss","server":"soonhk.soon.guru","port":40000,"password":"5b4aa2a3-2d45-4cc3-b8f8-02a562a37e38","cipher":"chacha20-ietf-poly1305"}
   - {"name":"新加坡1","type":"ss","server":"soonsgp.soon.guru","port":40005,"password":"5b4aa2a3-2d45-4cc3-b8f8-02a562a37e38","cipher":"chacha20-ietf-poly1305"}
   - {"name":"新加坡2","type":"trojan","server":"naiu-sg.05vr9nyqg5.download","port":13027,"udp":true,"password":"8d4a8689-e8fd-4405-9834-3f812c528db0","sni":"cloudflare.node-ssl.cdn-alibaba.com","skip-cert-verify":true,"network":"tcp"}
   - {"name":"日本1","type":"ssr","server":"14.152.94.40","port":8191,"password":"123456","cipher":"dummy","obfs":"plain","protocol":"auth_chain_a","protocol-param":"59869:ES8PT7"}
@@ -99,7 +100,8 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 中国香港
+      - 中国香港1
+      - 中国香港2
       - 新加坡1
       - 新加坡2
       - 日本1
@@ -111,7 +113,8 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - 中国香港
+      - 中国香港1
+      - 中国香港2
       - 新加坡1
       - 新加坡2
       - 日本1
@@ -134,7 +137,8 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 中国香港
+      - 中国香港1
+      - 中国香港2
       - 新加坡1
       - 新加坡2
       - 日本1
