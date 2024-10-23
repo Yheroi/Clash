@@ -1,10 +1,10 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：2024-10-22 10:35:43
+# 创建时间：2024-10-23 09:33:58
 # 使用模版：111
-# 节点数量：15
-# 节点类型：hysteria2
+# 节点数量：18
+# 节点类型：hysteria2, vmess
 # !!当前配置文件请使用基于 Clash.Meta 内核程序
 ####################################
 mixed-port: 7890
@@ -47,11 +47,14 @@ proxies:
   - {"name":"中国台湾2","type":"hysteria2","server":"tw.cloudlion.me","port":50780,"password":"fbc0df2f-98bf-4ebf-a5dc-42a133519b25","skip-cert-verify":true}
   - {"name":"中国台湾3","type":"hysteria2","server":"tw.cloudlion.me","port":56918,"password":"fbc0df2f-98bf-4ebf-a5dc-42a133519b25","skip-cert-verify":true}
   - {"name":"中国台湾4","type":"hysteria2","server":"tw.cloudlion.me","port":55347,"password":"fbc0df2f-98bf-4ebf-a5dc-42a133519b25","skip-cert-verify":true}
+  - {"name":"中国台湾5","type":"hysteria2","server":"twsj.diao.icu","port":20360,"password":"ce44640b-428b-4d9e-bb50-a1d74850e5b1","sni":"www.bing.com","skip-cert-verify":true}
+  - {"name":"新加坡","type":"hysteria2","server":"217.142.190.72","port":44111,"password":"ce44640b-428b-4d9e-bb50-a1d74850e5b1","sni":"www.bing.com","skip-cert-verify":true}
   - {"name":"美国1","type":"hysteria2","server":"163.123.192.151","port":443,"password":"e9bcbbe9-5056-4cb2-be14-3ea8d43d07eb","skip-cert-verify":true}
   - {"name":"美国2","type":"hysteria2","server":"us.cloudlion.me","port":50786,"password":"fbc0df2f-98bf-4ebf-a5dc-42a133519b25","skip-cert-verify":true}
   - {"name":"美国3","type":"hysteria2","server":"us.cloudlion.me","port":56648,"password":"fbc0df2f-98bf-4ebf-a5dc-42a133519b25","skip-cert-verify":true}
   - {"name":"美国4","type":"hysteria2","server":"us.cloudlion.me","port":58800,"password":"fbc0df2f-98bf-4ebf-a5dc-42a133519b25","skip-cert-verify":true}
   - {"name":"美国5","type":"hysteria2","server":"us.cloudlion.me","port":58496,"password":"fbc0df2f-98bf-4ebf-a5dc-42a133519b25","skip-cert-verify":true}
+  - {"name":"美国6","type":"vmess","server":"usus.diao.icu","port":2053,"cipher":"auto","uuid":"ce44640b-428b-4d9e-bb50-a1d74850e5b1","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/niao?ed=2560"}}
 proxy-groups:
   - name: 节点选择
     type: select
@@ -68,11 +71,14 @@ proxy-groups:
       - 中国台湾2
       - 中国台湾3
       - 中国台湾4
+      - 中国台湾5
+      - 新加坡
       - 美国1
       - 美国2
       - 美国3
       - 美国4
       - 美国5
+      - 美国6
   - name: 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -88,11 +94,14 @@ proxy-groups:
       - 中国台湾2
       - 中国台湾3
       - 中国台湾4
+      - 中国台湾5
+      - 新加坡
       - 美国1
       - 美国2
       - 美国3
       - 美国4
       - 美国5
+      - 美国6
   - name: 故障转移
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -108,11 +117,14 @@ proxy-groups:
       - 中国台湾2
       - 中国台湾3
       - 中国台湾4
+      - 中国台湾5
+      - 新加坡
       - 美国1
       - 美国2
       - 美国3
       - 美国4
       - 美国5
+      - 美国6
 
 rules:
   - IP-CIDR,193.31.41.172/32,DIRECT,no-resolve
