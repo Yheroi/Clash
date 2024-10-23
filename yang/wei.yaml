@@ -1,8 +1,8 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：2024-10-23 09:36:50
-# 使用模版：111
+# 创建时间：2024-10-23 09:40:01
+# 使用模版：222
 # 节点数量：15
 # 节点类型：hysteria2
 # !!当前配置文件请使用基于 Clash.Meta 内核程序
@@ -57,7 +57,6 @@ proxy-groups:
     type: select
     proxies:
       - 自动选择
-      - 故障转移
       - 中国香港1
       - 中国香港2
       - 中国香港3
@@ -77,26 +76,6 @@ proxy-groups:
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 86400
-    proxies:
-      - 中国香港1
-      - 中国香港2
-      - 中国香港3
-      - 中国香港4
-      - 中国香港5
-      - 中国香港6
-      - 中国台湾1
-      - 中国台湾2
-      - 中国台湾3
-      - 中国台湾4
-      - 美国1
-      - 美国2
-      - 美国3
-      - 美国4
-      - 美国5
-  - name: 故障转移
-    type: fallback
-    url: http://www.gstatic.com/generate_204
-    interval: 7200
     proxies:
       - 中国香港1
       - 中国香港2
