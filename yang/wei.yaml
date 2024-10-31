@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：2024-10-23 09:40:01
+# 创建时间：2024-10-31 10:05:25
 # 使用模版：222
-# 节点数量：15
+# 节点数量：12
 # 节点类型：hysteria2
 # !!当前配置文件请使用基于 Clash.Meta 内核程序
 ####################################
@@ -37,61 +37,52 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"中国香港1","type":"hysteria2","server":"hk.cloudlion.me","port":51305,"password":"fbc0df2f-98bf-4ebf-a5dc-42a133519b25","skip-cert-verify":true}
-  - {"name":"中国香港2","type":"hysteria2","server":"hk.cloudlion.me","port":51736,"password":"fbc0df2f-98bf-4ebf-a5dc-42a133519b25","skip-cert-verify":true}
-  - {"name":"中国香港3","type":"hysteria2","server":"hk.cloudlion.me","port":55514,"password":"fbc0df2f-98bf-4ebf-a5dc-42a133519b25","skip-cert-verify":true}
-  - {"name":"中国香港4","type":"hysteria2","server":"hk.cloudlion.me","port":56801,"password":"fbc0df2f-98bf-4ebf-a5dc-42a133519b25","skip-cert-verify":true}
-  - {"name":"中国香港5","type":"hysteria2","server":"hk.cloudlion.me","port":56437,"password":"fbc0df2f-98bf-4ebf-a5dc-42a133519b25","skip-cert-verify":true}
-  - {"name":"中国香港6","type":"hysteria2","server":"hk.cloudlion.me","port":56685,"password":"fbc0df2f-98bf-4ebf-a5dc-42a133519b25","skip-cert-verify":true}
-  - {"name":"中国台湾1","type":"hysteria2","server":"tw.cloudlion.me","port":57971,"password":"fbc0df2f-98bf-4ebf-a5dc-42a133519b25","skip-cert-verify":true}
-  - {"name":"中国台湾2","type":"hysteria2","server":"tw.cloudlion.me","port":50780,"password":"fbc0df2f-98bf-4ebf-a5dc-42a133519b25","skip-cert-verify":true}
-  - {"name":"中国台湾3","type":"hysteria2","server":"tw.cloudlion.me","port":56918,"password":"fbc0df2f-98bf-4ebf-a5dc-42a133519b25","skip-cert-verify":true}
-  - {"name":"中国台湾4","type":"hysteria2","server":"tw.cloudlion.me","port":55347,"password":"fbc0df2f-98bf-4ebf-a5dc-42a133519b25","skip-cert-verify":true}
-  - {"name":"美国1","type":"hysteria2","server":"163.123.192.151","port":443,"password":"e9bcbbe9-5056-4cb2-be14-3ea8d43d07eb","skip-cert-verify":true}
-  - {"name":"美国2","type":"hysteria2","server":"us.cloudlion.me","port":50786,"password":"fbc0df2f-98bf-4ebf-a5dc-42a133519b25","skip-cert-verify":true}
-  - {"name":"美国3","type":"hysteria2","server":"us.cloudlion.me","port":56648,"password":"fbc0df2f-98bf-4ebf-a5dc-42a133519b25","skip-cert-verify":true}
-  - {"name":"美国4","type":"hysteria2","server":"us.cloudlion.me","port":58800,"password":"fbc0df2f-98bf-4ebf-a5dc-42a133519b25","skip-cert-verify":true}
-  - {"name":"美国5","type":"hysteria2","server":"us.cloudlion.me","port":58496,"password":"fbc0df2f-98bf-4ebf-a5dc-42a133519b25","skip-cert-verify":true}
+  - {"name":"🇨🇳 香港01","type":"hysteria2","server":"surfboard-hk.cloudlion.online","port":51343,"password":"fbc0df2f-98bf-4ebf-a5dc-42a133519b25","skip-cert-verify":true}
+  - {"name":"🇨🇳 香港02","type":"hysteria2","server":"surfboard-hk.cloudlion.online","port":57603,"password":"fbc0df2f-98bf-4ebf-a5dc-42a133519b25","skip-cert-verify":true}
+  - {"name":"🇨🇳 香港03","type":"hysteria2","server":"surfboard-hk.cloudlion.online","port":50385,"password":"fbc0df2f-98bf-4ebf-a5dc-42a133519b25","skip-cert-verify":true}
+  - {"name":"🇨🇳 香港04","type":"hysteria2","server":"surfboard-hk.cloudlion.online","port":56110,"password":"fbc0df2f-98bf-4ebf-a5dc-42a133519b25","skip-cert-verify":true}
+  - {"name":"🇨🇳 台湾01","type":"hysteria2","server":"surfboard-tw.cloudlion.online","port":55936,"password":"fbc0df2f-98bf-4ebf-a5dc-42a133519b25","skip-cert-verify":true}
+  - {"name":"🇨🇳 台湾02","type":"hysteria2","server":"surfboard-tw.cloudlion.online","port":50585,"password":"fbc0df2f-98bf-4ebf-a5dc-42a133519b25","skip-cert-verify":true}
+  - {"name":"🇨🇳 台湾03","type":"hysteria2","server":"surfboard-tw.cloudlion.online","port":52541,"password":"fbc0df2f-98bf-4ebf-a5dc-42a133519b25","skip-cert-verify":true}
+  - {"name":"🇨🇳 台湾04","type":"hysteria2","server":"surfboard-tw.cloudlion.online","port":59595,"password":"fbc0df2f-98bf-4ebf-a5dc-42a133519b25","skip-cert-verify":true}
+  - {"name":"🇺🇸 美国1","type":"hysteria2","server":"surfboard-us.cloudlion.online","port":59273,"password":"fbc0df2f-98bf-4ebf-a5dc-42a133519b25","skip-cert-verify":true}
+  - {"name":"🇺🇸 美国2","type":"hysteria2","server":"surfboard-us.cloudlion.online","port":56876,"password":"fbc0df2f-98bf-4ebf-a5dc-42a133519b25","skip-cert-verify":true}
+  - {"name":"🇺🇸 美国3","type":"hysteria2","server":"surfboard-us.cloudlion.online","port":55022,"password":"fbc0df2f-98bf-4ebf-a5dc-42a133519b25","skip-cert-verify":true}
+  - {"name":"🇺🇸 美国4","type":"hysteria2","server":"surfboard-us.cloudlion.online","port":50701,"password":"fbc0df2f-98bf-4ebf-a5dc-42a133519b25","skip-cert-verify":true}
 proxy-groups:
   - name: 节点选择
     type: select
     proxies:
       - 自动选择
-      - 中国香港1
-      - 中国香港2
-      - 中国香港3
-      - 中国香港4
-      - 中国香港5
-      - 中国香港6
-      - 中国台湾1
-      - 中国台湾2
-      - 中国台湾3
-      - 中国台湾4
-      - 美国1
-      - 美国2
-      - 美国3
-      - 美国4
-      - 美国5
+      - 🇨🇳 香港01
+      - 🇨🇳 香港02
+      - 🇨🇳 香港03
+      - 🇨🇳 香港04
+      - 🇨🇳 台湾01
+      - 🇨🇳 台湾02
+      - 🇨🇳 台湾03
+      - 🇨🇳 台湾04
+      - 🇺🇸 美国1
+      - 🇺🇸 美国2
+      - 🇺🇸 美国3
+      - 🇺🇸 美国4
   - name: 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 86400
     proxies:
-      - 中国香港1
-      - 中国香港2
-      - 中国香港3
-      - 中国香港4
-      - 中国香港5
-      - 中国香港6
-      - 中国台湾1
-      - 中国台湾2
-      - 中国台湾3
-      - 中国台湾4
-      - 美国1
-      - 美国2
-      - 美国3
-      - 美国4
-      - 美国5
+      - 🇨🇳 香港01
+      - 🇨🇳 香港02
+      - 🇨🇳 香港03
+      - 🇨🇳 香港04
+      - 🇨🇳 台湾01
+      - 🇨🇳 台湾02
+      - 🇨🇳 台湾03
+      - 🇨🇳 台湾04
+      - 🇺🇸 美国1
+      - 🇺🇸 美国2
+      - 🇺🇸 美国3
+      - 🇺🇸 美国4
 
 rules:
   - IP-CIDR,193.31.41.172/32,DIRECT,no-resolve
