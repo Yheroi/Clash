@@ -1,11 +1,10 @@
 ####################################
 # 创建者：v2rayse.com
-# 客户端：Clash.Meta
-# 创建时间：2024-10-31 10:12:15
+# 客户端：Clash
+# 创建时间：2024-11-22 09:58:25
 # 使用模版：ACL4SSR.ini
-# 节点数量：12
-# 节点类型：hysteria2
-# !!当前配置文件请使用基于 Clash.Meta 内核程序
+# 节点数量：21
+# 节点类型：trojan
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -87,123 +86,186 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"🇨🇳 香港01","type":"hysteria2","server":"surfboard-hk.cloudlion.online","port":51343,"password":"fbc0df2f-98bf-4ebf-a5dc-42a133519b25","skip-cert-verify":true}
-  - {"name":"🇨🇳 香港02","type":"hysteria2","server":"surfboard-hk.cloudlion.online","port":57603,"password":"fbc0df2f-98bf-4ebf-a5dc-42a133519b25","skip-cert-verify":true}
-  - {"name":"🇨🇳 香港03","type":"hysteria2","server":"surfboard-hk.cloudlion.online","port":50385,"password":"fbc0df2f-98bf-4ebf-a5dc-42a133519b25","skip-cert-verify":true}
-  - {"name":"🇨🇳 香港04","type":"hysteria2","server":"surfboard-hk.cloudlion.online","port":56110,"password":"fbc0df2f-98bf-4ebf-a5dc-42a133519b25","skip-cert-verify":true}
-  - {"name":"🇨🇳 台湾01","type":"hysteria2","server":"surfboard-tw.cloudlion.online","port":55936,"password":"fbc0df2f-98bf-4ebf-a5dc-42a133519b25","skip-cert-verify":true}
-  - {"name":"🇨🇳 台湾02","type":"hysteria2","server":"surfboard-tw.cloudlion.online","port":50585,"password":"fbc0df2f-98bf-4ebf-a5dc-42a133519b25","skip-cert-verify":true}
-  - {"name":"🇨🇳 台湾03","type":"hysteria2","server":"surfboard-tw.cloudlion.online","port":52541,"password":"fbc0df2f-98bf-4ebf-a5dc-42a133519b25","skip-cert-verify":true}
-  - {"name":"🇨🇳 台湾04","type":"hysteria2","server":"surfboard-tw.cloudlion.online","port":59595,"password":"fbc0df2f-98bf-4ebf-a5dc-42a133519b25","skip-cert-verify":true}
-  - {"name":"🇺🇸 美国1","type":"hysteria2","server":"surfboard-us.cloudlion.online","port":59273,"password":"fbc0df2f-98bf-4ebf-a5dc-42a133519b25","skip-cert-verify":true}
-  - {"name":"🇺🇸 美国2","type":"hysteria2","server":"surfboard-us.cloudlion.online","port":56876,"password":"fbc0df2f-98bf-4ebf-a5dc-42a133519b25","skip-cert-verify":true}
-  - {"name":"🇺🇸 美国3","type":"hysteria2","server":"surfboard-us.cloudlion.online","port":55022,"password":"fbc0df2f-98bf-4ebf-a5dc-42a133519b25","skip-cert-verify":true}
-  - {"name":"🇺🇸 美国4","type":"hysteria2","server":"surfboard-us.cloudlion.online","port":50701,"password":"fbc0df2f-98bf-4ebf-a5dc-42a133519b25","skip-cert-verify":true}
+  - {"name":"剩余流量：0\r","type":"trojan","server":"bg.guangsu888.cc","port":21862,"udp":true,"password":"febfd1db-9c09-4b61-a482-4ba9b3143c6b","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"距离下次重置剩余：17 天\r","type":"trojan","server":"bg.guangsu888.cc","port":21862,"udp":true,"password":"febfd1db-9c09-4b61-a482-4ba9b3143c6b","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"套餐到期：2024-12-09\r","type":"trojan","server":"bg.guangsu888.cc","port":21862,"udp":true,"password":"febfd1db-9c09-4b61-a482-4ba9b3143c6b","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"续费 https://baigou999.cc/\r","type":"trojan","server":"bg.guangsu888.cc","port":21862,"udp":true,"password":"febfd1db-9c09-4b61-a482-4ba9b3143c6b","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"香港高速1\r","type":"trojan","server":"bg.guangsu888.cc","port":21863,"udp":true,"password":"febfd1db-9c09-4b61-a482-4ba9b3143c6b","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"香港高速2\r","type":"trojan","server":"bg.guangsu888.cc","port":21866,"udp":true,"password":"febfd1db-9c09-4b61-a482-4ba9b3143c6b","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"联系不上客服，清除缓存，用无痕模式打开网址！！！\r","type":"trojan","server":"bg.guangsu888.cc","port":21891,"udp":true,"password":"febfd1db-9c09-4b61-a482-4ba9b3143c6b","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"日本二 isp 解锁openai\r","type":"trojan","server":"bg.guangsu888.cc","port":21867,"udp":true,"password":"febfd1db-9c09-4b61-a482-4ba9b3143c6b","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"日本三 isp 解锁openai\r","type":"trojan","server":"bg.guangsu888.cc","port":21868,"udp":true,"password":"febfd1db-9c09-4b61-a482-4ba9b3143c6b","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"日本四 isp 解锁openai\r","type":"trojan","server":"bg.guangsu888.cc","port":21869,"udp":true,"password":"febfd1db-9c09-4b61-a482-4ba9b3143c6b","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"美国一 isp 解锁openai\r","type":"trojan","server":"bg.guangsu888.cc","port":21864,"udp":true,"password":"febfd1db-9c09-4b61-a482-4ba9b3143c6b","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"美国二 isp 解锁openai\r","type":"trojan","server":"bg.guangsu888.cc","port":21865,"udp":true,"password":"febfd1db-9c09-4b61-a482-4ba9b3143c6b","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"越南一 isp 解锁openai\r","type":"trojan","server":"bg.guangsu888.cc","port":21870,"udp":true,"password":"febfd1db-9c09-4b61-a482-4ba9b3143c6b","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"韩国二 isp 解锁openai\r","type":"trojan","server":"bg.guangsu888.cc","port":21871,"udp":true,"password":"febfd1db-9c09-4b61-a482-4ba9b3143c6b","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"韩国三 isp 解锁openai\r","type":"trojan","server":"bg.guangsu888.cc","port":21872,"udp":true,"password":"febfd1db-9c09-4b61-a482-4ba9b3143c6b","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"韩国四 isp 解锁openai\r","type":"trojan","server":"bg.guangsu888.cc","port":21873,"udp":true,"password":"febfd1db-9c09-4b61-a482-4ba9b3143c6b","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"泰国一 isp 解锁openai\r","type":"trojan","server":"bg.guangsu888.cc","port":21874,"udp":true,"password":"febfd1db-9c09-4b61-a482-4ba9b3143c6b","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"泰国二 isp 解锁openai\r","type":"trojan","server":"bg.guangsu888.cc","port":21875,"udp":true,"password":"febfd1db-9c09-4b61-a482-4ba9b3143c6b","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"英国一 isp 解锁openai\r","type":"trojan","server":"bg.guangsu888.cc","port":21876,"udp":true,"password":"febfd1db-9c09-4b61-a482-4ba9b3143c6b","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"新加坡隧道\r","type":"trojan","server":"bg.guangsu888.cc","port":21877,"udp":true,"password":"febfd1db-9c09-4b61-a482-4ba9b3143c6b","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"台湾一 isp 解锁openai\r","type":"trojan","server":"bg.guangsu888.cc","port":21878,"udp":true,"password":"febfd1db-9c09-4b61-a482-4ba9b3143c6b","skip-cert-verify":true,"network":"tcp"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇨🇳 香港01
-      - 🇨🇳 香港02
-      - 🇨🇳 香港03
-      - 🇨🇳 香港04
-      - 🇨🇳 台湾01
-      - 🇨🇳 台湾02
-      - 🇨🇳 台湾03
-      - 🇨🇳 台湾04
-      - 🇺🇸 美国1
-      - 🇺🇸 美国2
-      - 🇺🇸 美国3
-      - 🇺🇸 美国4
+      - "剩余流量：0\r"
+      - "距离下次重置剩余：17 天\r"
+      - "套餐到期：2024-12-09\r"
+      - "续费 https://baigou999.cc/\r"
+      - "香港高速1\r"
+      - "香港高速2\r"
+      - "联系不上客服，清除缓存，用无痕模式打开网址！！！\r"
+      - "日本二 isp 解锁openai\r"
+      - "日本三 isp 解锁openai\r"
+      - "日本四 isp 解锁openai\r"
+      - "美国一 isp 解锁openai\r"
+      - "美国二 isp 解锁openai\r"
+      - "越南一 isp 解锁openai\r"
+      - "韩国二 isp 解锁openai\r"
+      - "韩国三 isp 解锁openai\r"
+      - "韩国四 isp 解锁openai\r"
+      - "泰国一 isp 解锁openai\r"
+      - "泰国二 isp 解锁openai\r"
+      - "英国一 isp 解锁openai\r"
+      - "新加坡隧道\r"
+      - "台湾一 isp 解锁openai\r"
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇨🇳 香港01
-      - 🇨🇳 香港02
-      - 🇨🇳 香港03
-      - 🇨🇳 香港04
-      - 🇨🇳 台湾01
-      - 🇨🇳 台湾02
-      - 🇨🇳 台湾03
-      - 🇨🇳 台湾04
-      - 🇺🇸 美国1
-      - 🇺🇸 美国2
-      - 🇺🇸 美国3
-      - 🇺🇸 美国4
+      - "剩余流量：0\r"
+      - "距离下次重置剩余：17 天\r"
+      - "套餐到期：2024-12-09\r"
+      - "续费 https://baigou999.cc/\r"
+      - "香港高速1\r"
+      - "香港高速2\r"
+      - "联系不上客服，清除缓存，用无痕模式打开网址！！！\r"
+      - "日本二 isp 解锁openai\r"
+      - "日本三 isp 解锁openai\r"
+      - "日本四 isp 解锁openai\r"
+      - "美国一 isp 解锁openai\r"
+      - "美国二 isp 解锁openai\r"
+      - "越南一 isp 解锁openai\r"
+      - "韩国二 isp 解锁openai\r"
+      - "韩国三 isp 解锁openai\r"
+      - "韩国四 isp 解锁openai\r"
+      - "泰国一 isp 解锁openai\r"
+      - "泰国二 isp 解锁openai\r"
+      - "英国一 isp 解锁openai\r"
+      - "新加坡隧道\r"
+      - "台湾一 isp 解锁openai\r"
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇨🇳 香港01
-      - 🇨🇳 香港02
-      - 🇨🇳 香港03
-      - 🇨🇳 香港04
-      - 🇨🇳 台湾01
-      - 🇨🇳 台湾02
-      - 🇨🇳 台湾03
-      - 🇨🇳 台湾04
-      - 🇺🇸 美国1
-      - 🇺🇸 美国2
-      - 🇺🇸 美国3
-      - 🇺🇸 美国4
+      - "剩余流量：0\r"
+      - "距离下次重置剩余：17 天\r"
+      - "套餐到期：2024-12-09\r"
+      - "续费 https://baigou999.cc/\r"
+      - "香港高速1\r"
+      - "香港高速2\r"
+      - "联系不上客服，清除缓存，用无痕模式打开网址！！！\r"
+      - "日本二 isp 解锁openai\r"
+      - "日本三 isp 解锁openai\r"
+      - "日本四 isp 解锁openai\r"
+      - "美国一 isp 解锁openai\r"
+      - "美国二 isp 解锁openai\r"
+      - "越南一 isp 解锁openai\r"
+      - "韩国二 isp 解锁openai\r"
+      - "韩国三 isp 解锁openai\r"
+      - "韩国四 isp 解锁openai\r"
+      - "泰国一 isp 解锁openai\r"
+      - "泰国二 isp 解锁openai\r"
+      - "英国一 isp 解锁openai\r"
+      - "新加坡隧道\r"
+      - "台湾一 isp 解锁openai\r"
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇨🇳 香港01
-      - 🇨🇳 香港02
-      - 🇨🇳 香港03
-      - 🇨🇳 香港04
-      - 🇨🇳 台湾01
-      - 🇨🇳 台湾02
-      - 🇨🇳 台湾03
-      - 🇨🇳 台湾04
-      - 🇺🇸 美国1
-      - 🇺🇸 美国2
-      - 🇺🇸 美国3
-      - 🇺🇸 美国4
+      - "剩余流量：0\r"
+      - "距离下次重置剩余：17 天\r"
+      - "套餐到期：2024-12-09\r"
+      - "续费 https://baigou999.cc/\r"
+      - "香港高速1\r"
+      - "香港高速2\r"
+      - "联系不上客服，清除缓存，用无痕模式打开网址！！！\r"
+      - "日本二 isp 解锁openai\r"
+      - "日本三 isp 解锁openai\r"
+      - "日本四 isp 解锁openai\r"
+      - "美国一 isp 解锁openai\r"
+      - "美国二 isp 解锁openai\r"
+      - "越南一 isp 解锁openai\r"
+      - "韩国二 isp 解锁openai\r"
+      - "韩国三 isp 解锁openai\r"
+      - "韩国四 isp 解锁openai\r"
+      - "泰国一 isp 解锁openai\r"
+      - "泰国二 isp 解锁openai\r"
+      - "英国一 isp 解锁openai\r"
+      - "新加坡隧道\r"
+      - "台湾一 isp 解锁openai\r"
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇨🇳 香港01
-      - 🇨🇳 香港02
-      - 🇨🇳 香港03
-      - 🇨🇳 香港04
-      - 🇨🇳 台湾01
-      - 🇨🇳 台湾02
-      - 🇨🇳 台湾03
-      - 🇨🇳 台湾04
-      - 🇺🇸 美国1
-      - 🇺🇸 美国2
-      - 🇺🇸 美国3
-      - 🇺🇸 美国4
+      - "剩余流量：0\r"
+      - "距离下次重置剩余：17 天\r"
+      - "套餐到期：2024-12-09\r"
+      - "续费 https://baigou999.cc/\r"
+      - "香港高速1\r"
+      - "香港高速2\r"
+      - "联系不上客服，清除缓存，用无痕模式打开网址！！！\r"
+      - "日本二 isp 解锁openai\r"
+      - "日本三 isp 解锁openai\r"
+      - "日本四 isp 解锁openai\r"
+      - "美国一 isp 解锁openai\r"
+      - "美国二 isp 解锁openai\r"
+      - "越南一 isp 解锁openai\r"
+      - "韩国二 isp 解锁openai\r"
+      - "韩国三 isp 解锁openai\r"
+      - "韩国四 isp 解锁openai\r"
+      - "泰国一 isp 解锁openai\r"
+      - "泰国二 isp 解锁openai\r"
+      - "英国一 isp 解锁openai\r"
+      - "新加坡隧道\r"
+      - "台湾一 isp 解锁openai\r"
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇨🇳 香港01
-      - 🇨🇳 香港02
-      - 🇨🇳 香港03
-      - 🇨🇳 香港04
-      - 🇨🇳 台湾01
-      - 🇨🇳 台湾02
-      - 🇨🇳 台湾03
-      - 🇨🇳 台湾04
-      - 🇺🇸 美国1
-      - 🇺🇸 美国2
-      - 🇺🇸 美国3
-      - 🇺🇸 美国4
+      - "剩余流量：0\r"
+      - "距离下次重置剩余：17 天\r"
+      - "套餐到期：2024-12-09\r"
+      - "续费 https://baigou999.cc/\r"
+      - "香港高速1\r"
+      - "香港高速2\r"
+      - "联系不上客服，清除缓存，用无痕模式打开网址！！！\r"
+      - "日本二 isp 解锁openai\r"
+      - "日本三 isp 解锁openai\r"
+      - "日本四 isp 解锁openai\r"
+      - "美国一 isp 解锁openai\r"
+      - "美国二 isp 解锁openai\r"
+      - "越南一 isp 解锁openai\r"
+      - "韩国二 isp 解锁openai\r"
+      - "韩国三 isp 解锁openai\r"
+      - "韩国四 isp 解锁openai\r"
+      - "泰国一 isp 解锁openai\r"
+      - "泰国二 isp 解锁openai\r"
+      - "英国一 isp 解锁openai\r"
+      - "新加坡隧道\r"
+      - "台湾一 isp 解锁openai\r"
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -226,18 +288,27 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇨🇳 香港01
-      - 🇨🇳 香港02
-      - 🇨🇳 香港03
-      - 🇨🇳 香港04
-      - 🇨🇳 台湾01
-      - 🇨🇳 台湾02
-      - 🇨🇳 台湾03
-      - 🇨🇳 台湾04
-      - 🇺🇸 美国1
-      - 🇺🇸 美国2
-      - 🇺🇸 美国3
-      - 🇺🇸 美国4
+      - "剩余流量：0\r"
+      - "距离下次重置剩余：17 天\r"
+      - "套餐到期：2024-12-09\r"
+      - "续费 https://baigou999.cc/\r"
+      - "香港高速1\r"
+      - "香港高速2\r"
+      - "联系不上客服，清除缓存，用无痕模式打开网址！！！\r"
+      - "日本二 isp 解锁openai\r"
+      - "日本三 isp 解锁openai\r"
+      - "日本四 isp 解锁openai\r"
+      - "美国一 isp 解锁openai\r"
+      - "美国二 isp 解锁openai\r"
+      - "越南一 isp 解锁openai\r"
+      - "韩国二 isp 解锁openai\r"
+      - "韩国三 isp 解锁openai\r"
+      - "韩国四 isp 解锁openai\r"
+      - "泰国一 isp 解锁openai\r"
+      - "泰国二 isp 解锁openai\r"
+      - "英国一 isp 解锁openai\r"
+      - "新加坡隧道\r"
+      - "台湾一 isp 解锁openai\r"
 
 rules:
 # 本地/局域网地址
