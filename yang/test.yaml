@@ -1,10 +1,10 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2024-11-22 09:58:25
+# 创建时间：2024-12-02 09:55:10
 # 使用模版：ACL4SSR.ini
-# 节点数量：21
-# 节点类型：trojan
+# 节点数量：1
+# 节点类型：vmess
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -86,186 +86,46 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"剩余流量：0\r","type":"trojan","server":"bg.guangsu888.cc","port":21862,"udp":true,"password":"febfd1db-9c09-4b61-a482-4ba9b3143c6b","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"距离下次重置剩余：17 天\r","type":"trojan","server":"bg.guangsu888.cc","port":21862,"udp":true,"password":"febfd1db-9c09-4b61-a482-4ba9b3143c6b","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"套餐到期：2024-12-09\r","type":"trojan","server":"bg.guangsu888.cc","port":21862,"udp":true,"password":"febfd1db-9c09-4b61-a482-4ba9b3143c6b","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"续费 https://baigou999.cc/\r","type":"trojan","server":"bg.guangsu888.cc","port":21862,"udp":true,"password":"febfd1db-9c09-4b61-a482-4ba9b3143c6b","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"香港高速1\r","type":"trojan","server":"bg.guangsu888.cc","port":21863,"udp":true,"password":"febfd1db-9c09-4b61-a482-4ba9b3143c6b","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"香港高速2\r","type":"trojan","server":"bg.guangsu888.cc","port":21866,"udp":true,"password":"febfd1db-9c09-4b61-a482-4ba9b3143c6b","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"联系不上客服，清除缓存，用无痕模式打开网址！！！\r","type":"trojan","server":"bg.guangsu888.cc","port":21891,"udp":true,"password":"febfd1db-9c09-4b61-a482-4ba9b3143c6b","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"日本二 isp 解锁openai\r","type":"trojan","server":"bg.guangsu888.cc","port":21867,"udp":true,"password":"febfd1db-9c09-4b61-a482-4ba9b3143c6b","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"日本三 isp 解锁openai\r","type":"trojan","server":"bg.guangsu888.cc","port":21868,"udp":true,"password":"febfd1db-9c09-4b61-a482-4ba9b3143c6b","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"日本四 isp 解锁openai\r","type":"trojan","server":"bg.guangsu888.cc","port":21869,"udp":true,"password":"febfd1db-9c09-4b61-a482-4ba9b3143c6b","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国一 isp 解锁openai\r","type":"trojan","server":"bg.guangsu888.cc","port":21864,"udp":true,"password":"febfd1db-9c09-4b61-a482-4ba9b3143c6b","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"美国二 isp 解锁openai\r","type":"trojan","server":"bg.guangsu888.cc","port":21865,"udp":true,"password":"febfd1db-9c09-4b61-a482-4ba9b3143c6b","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"越南一 isp 解锁openai\r","type":"trojan","server":"bg.guangsu888.cc","port":21870,"udp":true,"password":"febfd1db-9c09-4b61-a482-4ba9b3143c6b","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"韩国二 isp 解锁openai\r","type":"trojan","server":"bg.guangsu888.cc","port":21871,"udp":true,"password":"febfd1db-9c09-4b61-a482-4ba9b3143c6b","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"韩国三 isp 解锁openai\r","type":"trojan","server":"bg.guangsu888.cc","port":21872,"udp":true,"password":"febfd1db-9c09-4b61-a482-4ba9b3143c6b","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"韩国四 isp 解锁openai\r","type":"trojan","server":"bg.guangsu888.cc","port":21873,"udp":true,"password":"febfd1db-9c09-4b61-a482-4ba9b3143c6b","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"泰国一 isp 解锁openai\r","type":"trojan","server":"bg.guangsu888.cc","port":21874,"udp":true,"password":"febfd1db-9c09-4b61-a482-4ba9b3143c6b","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"泰国二 isp 解锁openai\r","type":"trojan","server":"bg.guangsu888.cc","port":21875,"udp":true,"password":"febfd1db-9c09-4b61-a482-4ba9b3143c6b","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"英国一 isp 解锁openai\r","type":"trojan","server":"bg.guangsu888.cc","port":21876,"udp":true,"password":"febfd1db-9c09-4b61-a482-4ba9b3143c6b","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"新加坡隧道\r","type":"trojan","server":"bg.guangsu888.cc","port":21877,"udp":true,"password":"febfd1db-9c09-4b61-a482-4ba9b3143c6b","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"台湾一 isp 解锁openai\r","type":"trojan","server":"bg.guangsu888.cc","port":21878,"udp":true,"password":"febfd1db-9c09-4b61-a482-4ba9b3143c6b","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"opentunnel.net-y13752571000","type":"vmess","server":"sgv-1.openv2ray.com","port":443,"cipher":"auto","uuid":"a40d34c6-b77c-4648-9210-3e8d2f4226b5","alterId":16,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/opentunnel?user=opentunnel.net-y13752571000","headers":{"host":"youtube.com"}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - "剩余流量：0\r"
-      - "距离下次重置剩余：17 天\r"
-      - "套餐到期：2024-12-09\r"
-      - "续费 https://baigou999.cc/\r"
-      - "香港高速1\r"
-      - "香港高速2\r"
-      - "联系不上客服，清除缓存，用无痕模式打开网址！！！\r"
-      - "日本二 isp 解锁openai\r"
-      - "日本三 isp 解锁openai\r"
-      - "日本四 isp 解锁openai\r"
-      - "美国一 isp 解锁openai\r"
-      - "美国二 isp 解锁openai\r"
-      - "越南一 isp 解锁openai\r"
-      - "韩国二 isp 解锁openai\r"
-      - "韩国三 isp 解锁openai\r"
-      - "韩国四 isp 解锁openai\r"
-      - "泰国一 isp 解锁openai\r"
-      - "泰国二 isp 解锁openai\r"
-      - "英国一 isp 解锁openai\r"
-      - "新加坡隧道\r"
-      - "台湾一 isp 解锁openai\r"
+      - opentunnel.net-y13752571000
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - "剩余流量：0\r"
-      - "距离下次重置剩余：17 天\r"
-      - "套餐到期：2024-12-09\r"
-      - "续费 https://baigou999.cc/\r"
-      - "香港高速1\r"
-      - "香港高速2\r"
-      - "联系不上客服，清除缓存，用无痕模式打开网址！！！\r"
-      - "日本二 isp 解锁openai\r"
-      - "日本三 isp 解锁openai\r"
-      - "日本四 isp 解锁openai\r"
-      - "美国一 isp 解锁openai\r"
-      - "美国二 isp 解锁openai\r"
-      - "越南一 isp 解锁openai\r"
-      - "韩国二 isp 解锁openai\r"
-      - "韩国三 isp 解锁openai\r"
-      - "韩国四 isp 解锁openai\r"
-      - "泰国一 isp 解锁openai\r"
-      - "泰国二 isp 解锁openai\r"
-      - "英国一 isp 解锁openai\r"
-      - "新加坡隧道\r"
-      - "台湾一 isp 解锁openai\r"
+      - opentunnel.net-y13752571000
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "剩余流量：0\r"
-      - "距离下次重置剩余：17 天\r"
-      - "套餐到期：2024-12-09\r"
-      - "续费 https://baigou999.cc/\r"
-      - "香港高速1\r"
-      - "香港高速2\r"
-      - "联系不上客服，清除缓存，用无痕模式打开网址！！！\r"
-      - "日本二 isp 解锁openai\r"
-      - "日本三 isp 解锁openai\r"
-      - "日本四 isp 解锁openai\r"
-      - "美国一 isp 解锁openai\r"
-      - "美国二 isp 解锁openai\r"
-      - "越南一 isp 解锁openai\r"
-      - "韩国二 isp 解锁openai\r"
-      - "韩国三 isp 解锁openai\r"
-      - "韩国四 isp 解锁openai\r"
-      - "泰国一 isp 解锁openai\r"
-      - "泰国二 isp 解锁openai\r"
-      - "英国一 isp 解锁openai\r"
-      - "新加坡隧道\r"
-      - "台湾一 isp 解锁openai\r"
+      - opentunnel.net-y13752571000
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - "剩余流量：0\r"
-      - "距离下次重置剩余：17 天\r"
-      - "套餐到期：2024-12-09\r"
-      - "续费 https://baigou999.cc/\r"
-      - "香港高速1\r"
-      - "香港高速2\r"
-      - "联系不上客服，清除缓存，用无痕模式打开网址！！！\r"
-      - "日本二 isp 解锁openai\r"
-      - "日本三 isp 解锁openai\r"
-      - "日本四 isp 解锁openai\r"
-      - "美国一 isp 解锁openai\r"
-      - "美国二 isp 解锁openai\r"
-      - "越南一 isp 解锁openai\r"
-      - "韩国二 isp 解锁openai\r"
-      - "韩国三 isp 解锁openai\r"
-      - "韩国四 isp 解锁openai\r"
-      - "泰国一 isp 解锁openai\r"
-      - "泰国二 isp 解锁openai\r"
-      - "英国一 isp 解锁openai\r"
-      - "新加坡隧道\r"
-      - "台湾一 isp 解锁openai\r"
+      - opentunnel.net-y13752571000
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - "剩余流量：0\r"
-      - "距离下次重置剩余：17 天\r"
-      - "套餐到期：2024-12-09\r"
-      - "续费 https://baigou999.cc/\r"
-      - "香港高速1\r"
-      - "香港高速2\r"
-      - "联系不上客服，清除缓存，用无痕模式打开网址！！！\r"
-      - "日本二 isp 解锁openai\r"
-      - "日本三 isp 解锁openai\r"
-      - "日本四 isp 解锁openai\r"
-      - "美国一 isp 解锁openai\r"
-      - "美国二 isp 解锁openai\r"
-      - "越南一 isp 解锁openai\r"
-      - "韩国二 isp 解锁openai\r"
-      - "韩国三 isp 解锁openai\r"
-      - "韩国四 isp 解锁openai\r"
-      - "泰国一 isp 解锁openai\r"
-      - "泰国二 isp 解锁openai\r"
-      - "英国一 isp 解锁openai\r"
-      - "新加坡隧道\r"
-      - "台湾一 isp 解锁openai\r"
+      - opentunnel.net-y13752571000
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - "剩余流量：0\r"
-      - "距离下次重置剩余：17 天\r"
-      - "套餐到期：2024-12-09\r"
-      - "续费 https://baigou999.cc/\r"
-      - "香港高速1\r"
-      - "香港高速2\r"
-      - "联系不上客服，清除缓存，用无痕模式打开网址！！！\r"
-      - "日本二 isp 解锁openai\r"
-      - "日本三 isp 解锁openai\r"
-      - "日本四 isp 解锁openai\r"
-      - "美国一 isp 解锁openai\r"
-      - "美国二 isp 解锁openai\r"
-      - "越南一 isp 解锁openai\r"
-      - "韩国二 isp 解锁openai\r"
-      - "韩国三 isp 解锁openai\r"
-      - "韩国四 isp 解锁openai\r"
-      - "泰国一 isp 解锁openai\r"
-      - "泰国二 isp 解锁openai\r"
-      - "英国一 isp 解锁openai\r"
-      - "新加坡隧道\r"
-      - "台湾一 isp 解锁openai\r"
+      - opentunnel.net-y13752571000
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -288,27 +148,7 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "剩余流量：0\r"
-      - "距离下次重置剩余：17 天\r"
-      - "套餐到期：2024-12-09\r"
-      - "续费 https://baigou999.cc/\r"
-      - "香港高速1\r"
-      - "香港高速2\r"
-      - "联系不上客服，清除缓存，用无痕模式打开网址！！！\r"
-      - "日本二 isp 解锁openai\r"
-      - "日本三 isp 解锁openai\r"
-      - "日本四 isp 解锁openai\r"
-      - "美国一 isp 解锁openai\r"
-      - "美国二 isp 解锁openai\r"
-      - "越南一 isp 解锁openai\r"
-      - "韩国二 isp 解锁openai\r"
-      - "韩国三 isp 解锁openai\r"
-      - "韩国四 isp 解锁openai\r"
-      - "泰国一 isp 解锁openai\r"
-      - "泰国二 isp 解锁openai\r"
-      - "英国一 isp 解锁openai\r"
-      - "新加坡隧道\r"
-      - "台湾一 isp 解锁openai\r"
+      - opentunnel.net-y13752571000
 
 rules:
 # 本地/局域网地址
