@@ -44,8 +44,6 @@ proxies:
   - {"name":"美国4\r","type":"hysteria2","server":"mg4.gywanglug.xyz","port":21317,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"mg4.gywanglug.xyz","skip-cert-verify":true}
   - {"name":"美国5\r","type":"hysteria2","server":"mg5.gywanglug.xyz","port":24200,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"mg5.gywanglug.xyz","skip-cert-verify":true}
   - {"name":"美国6\r","type":"hysteria2","server":"mg6.gywanglug.xyz","port":25775,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"mg6.gywanglug.xyz","skip-cert-verify":true}
-  - {"name":"新加坡1\r","type":"hysteria2","server":"xjp1.gywanglug.xyz","port":23397,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"xjp1.gywanglug.xyz","skip-cert-verify":true}
-  - {"name":"新加坡2\r","type":"hysteria2","server":"xjp2.gywanglug.xyz","port":25415,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"xjp2.gywanglug.xyz","skip-cert-verify":true}
   - {"name":"香港01","type":"ss","server":"cdn.zx.lilisi.link","port":10001,"password":"a8c46207-0368-4ee1-870e-f8590e9c6218","cipher":"aes-128-gcm"}
   - {"name":"香港02","type":"ss","server":"cdn.zx.lilisi.link","port":10002,"password":"a8c46207-0368-4ee1-870e-f8590e9c6218","cipher":"aes-128-gcm"}
   - {"name":"香港03","type":"ss","server":"cdn.zx.lilisi.link","port":10003,"password":"a8c46207-0368-4ee1-870e-f8590e9c6218","cipher":"aes-128-gcm"}
@@ -79,8 +77,6 @@ proxy-groups:
       - "美国4\r"
       - "美国5\r"
       - "美国6\r"
-      - "新加坡1\r"
-      - "新加坡2\r"
       - 香港01
       - 香港02
       - 香港03
@@ -115,8 +111,6 @@ proxy-groups:
       - "美国4\r"
       - "美国5\r"
       - "美国6\r"
-      - "新加坡1\r"
-      - "新加坡2\r"
       - 香港01
       - 香港02
       - 香港03
