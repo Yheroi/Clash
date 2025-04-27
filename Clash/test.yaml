@@ -1,7 +1,7 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：2025-04-27 18:19:12
+# 创建时间：2025-04-27 18:32:57
 # 使用模版：ACL4SSR.ini
 # 节点数量：6
 # 节点类型：hysteria2
@@ -87,81 +87,81 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"美国1","type":"hysteria2","server":"mg1.gywanglug.xyz","port":24442,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"mg1.gywanglug.xyz","skip-cert-verify":true,"obfs-password":"LNAnPYDfFyesRAVn"}
-  - {"name":"美国2","type":"hysteria2","server":"mg2.gywanglug.xyz","port":25375,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"mg2.gywanglug.xyz","skip-cert-verify":true,"obfs-password":"LNAnPYDfFyesRAVn"}
-  - {"name":"美国3","type":"hysteria2","server":"mg3.gywanglug.xyz","port":21282,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"mg3.gywanglug.xyz","skip-cert-verify":true,"obfs-password":"LNAnPYDfFyesRAVn"}
-  - {"name":"美国4","type":"hysteria2","server":"mg4.gywanglug.xyz","port":23361,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"mg4.gywanglug.xyz","skip-cert-verify":true,"obfs-password":"LNAnPYDfFyesRAVn"}
-  - {"name":"美国5","type":"hysteria2","server":"mg5.gywanglug.xyz","port":21753,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"mg5.gywanglug.xyz","skip-cert-verify":true,"obfs-password":"LNAnPYDfFyesRAVn"}
-  - {"name":"美国6","type":"hysteria2","server":"mg6.gywanglug.xyz","port":21639,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"mg6.gywanglug.xyz","skip-cert-verify":true,"obfs-password":"LNAnPYDfFyesRAVn"}
+  - {"name":"美国1\r\r","type":"hysteria2","server":"mg1.gywanglug.xyz","port":23743,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"mg1.gywanglug.xyz","skip-cert-verify":true,"obfs-password":"LNAnPYDfFyesRAVn"}
+  - {"name":"美国2\r\r","type":"hysteria2","server":"mg2.gywanglug.xyz","port":24577,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"mg2.gywanglug.xyz","skip-cert-verify":true,"obfs-password":"LNAnPYDfFyesRAVn"}
+  - {"name":"美国3\r\r","type":"hysteria2","server":"mg3.gywanglug.xyz","port":23400,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"mg3.gywanglug.xyz","skip-cert-verify":true,"obfs-password":"LNAnPYDfFyesRAVn"}
+  - {"name":"美国4\r\r","type":"hysteria2","server":"mg4.gywanglug.xyz","port":21271,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"mg4.gywanglug.xyz","skip-cert-verify":true,"obfs-password":"LNAnPYDfFyesRAVn"}
+  - {"name":"美国5\r\r","type":"hysteria2","server":"mg5.gywanglug.xyz","port":25023,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"mg5.gywanglug.xyz","skip-cert-verify":true,"obfs-password":"LNAnPYDfFyesRAVn"}
+  - {"name":"美国6\r","type":"hysteria2","server":"mg6.gywanglug.xyz","port":23726,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"mg6.gywanglug.xyz","skip-cert-verify":true,"obfs-password":"LNAnPYDfFyesRAVn"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 美国1
-      - 美国2
-      - 美国3
-      - 美国4
-      - 美国5
-      - 美国6
+      - "美国1\r\r"
+      - "美国2\r\r"
+      - "美国3\r\r"
+      - "美国4\r\r"
+      - "美国5\r\r"
+      - "美国6\r"
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 美国1
-      - 美国2
-      - 美国3
-      - 美国4
-      - 美国5
-      - 美国6
+      - "美国1\r\r"
+      - "美国2\r\r"
+      - "美国3\r\r"
+      - "美国4\r\r"
+      - "美国5\r\r"
+      - "美国6\r"
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 美国1
-      - 美国2
-      - 美国3
-      - 美国4
-      - 美国5
-      - 美国6
+      - "美国1\r\r"
+      - "美国2\r\r"
+      - "美国3\r\r"
+      - "美国4\r\r"
+      - "美国5\r\r"
+      - "美国6\r"
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 美国1
-      - 美国2
-      - 美国3
-      - 美国4
-      - 美国5
-      - 美国6
+      - "美国1\r\r"
+      - "美国2\r\r"
+      - "美国3\r\r"
+      - "美国4\r\r"
+      - "美国5\r\r"
+      - "美国6\r"
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 美国1
-      - 美国2
-      - 美国3
-      - 美国4
-      - 美国5
-      - 美国6
+      - "美国1\r\r"
+      - "美国2\r\r"
+      - "美国3\r\r"
+      - "美国4\r\r"
+      - "美国5\r\r"
+      - "美国6\r"
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 美国1
-      - 美国2
-      - 美国3
-      - 美国4
-      - 美国5
-      - 美国6
+      - "美国1\r\r"
+      - "美国2\r\r"
+      - "美国3\r\r"
+      - "美国4\r\r"
+      - "美国5\r\r"
+      - "美国6\r"
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -184,12 +184,12 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 美国1
-      - 美国2
-      - 美国3
-      - 美国4
-      - 美国5
-      - 美国6
+      - "美国1\r\r"
+      - "美国2\r\r"
+      - "美国3\r\r"
+      - "美国4\r\r"
+      - "美国5\r\r"
+      - "美国6\r"
 
 rules:
 # 本地/局域网地址
