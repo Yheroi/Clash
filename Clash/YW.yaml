@@ -1,83 +1,41 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：2025-04-28 11:12:08
-# 使用模版：test2
-# 节点数量：24
-# 节点类型：hysteria2, vless
-# !!当前配置文件请使用基于 Clash.Meta 内核程序
+# 创建时间：2024-10-31 10:09:56
+# 使用模版：极简
+# 节点数量：12
+# 节点类型：hysteria2
 ####################################
-mixed-port: 7897
+# !!当前配置文件请使用基于 Clash.Meta 内核程序
+# !!当前配置文件请使用基于 Clash.Meta 内核程序
+mixed-port: 7890
 allow-lan: true
 bind-address: '*'
 mode: rule
 log-level: info
 external-controller: 127.0.0.1:9090
-unified-delay: true
-ipv6: true
-profile:
-  store-selected: true
-tun:
-  mtu: 1500
 dns:
   enable: true
   ipv6: false
-  listen: 127.0.0.1:5335
-  use-hosts: false
   default-nameserver:
     - 223.5.5.5
     - 119.29.29.29
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
-  fake-ip-filter:
-    - '*.lan'
-    - time.windows.com
-    - time.nist.gov
-    - time.apple.com
-    - time.asia.apple.com
-    - '*.ntp.org.cn'
-    - pool.ntp.org
-    - ntp.aliyun.com
-    - time1.aliyun.com
-    - music.163.com
-    - '*.music.163.com'
-    - y.qq.com
-    - '*.y.qq.com'
-    - '*.weixin.qq.com'
-    - '*.alipay.com'
-    - '*.taobao.com'
-    - '*.jd.com'
+  use-hosts: true
   nameserver:
-    - https://dns.alidns.com/dns-query
     - https://doh.pub/dns-query
-    - https://cloudflare-dns.com/dns-query
+    - https://dns.alidns.com/dns-query
   fallback:
-    - https://dns.google/dns-query
+    - https://doh.dns.sb/dns-query
+    - https://dns.cloudflare.com/dns-query
+    - https://dns.twnic.tw/dns-query
     - tls://8.8.4.4:853
-  nameserver-policy:
-    geosite:cn: https://dns.alidns.com/dns-query
-    geosite:geolocation-!cn: https://cloudflare-dns.com/dns-query
   fallback-filter:
     geoip: true
-    geoip-code: CN
     ipcidr:
       - 240.0.0.0/4
       - 0.0.0.0/32
-      - 127.0.0.1/32
-    domain:
-      - +.google.com
-      - +.googleapis.com
-      - +.youtube.com
-      - +.facebook.com
-      - +.twitter.com
-      - +.netflix.com
-      - +.amazonaws.com
-      - +.github.com
-      - +.openai.com
-      - +.zoom.us
-  proxy-server-nameserver:
-    - https://dns.alidns.com/dns-query
-    - https://doh.pub/dns-query
 
 proxies:
   - {"name":"剩余流量：948.92 GB\r","type":"hysteria2","server":"mg1.gywanglug.xyz","port":24942,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"mg1.gywanglug.xyz","skip-cert-verify":true,"obfs-password":"LNAnPYDfFyesRAVn"}
@@ -109,7 +67,6 @@ proxy-groups:
     type: select
     proxies:
       - 自动选择
-      - 故障转移
       - "剩余流量：948.92 GB\r"
       - "距离下次重置剩余：24 天\r"
       - "套餐到期：2025-05-22\r"
@@ -137,36 +94,8 @@ proxy-groups:
   - name: 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
-    interval: 86400
-    proxies:
-      - "剩余流量：948.92 GB\r"
-      - "距离下次重置剩余：24 天\r"
-      - "套餐到期：2025-05-22\r"
-      - "最新地址gy888.xyz\r"
-      - "美国1\r"
-      - "美国1-v\r\r"
-      - "美国2\r"
-      - "美国2-v\r\r"
-      - "美国3\r"
-      - "美国3-v\r\r"
-      - "美国4\r"
-      - "美国4-v\r\r"
-      - "美国5\r"
-      - "美国5-v\r\r"
-      - "美国6\r"
-      - "美国6-v\r\r"
-      - "新加坡1\r"
-      - "新加坡2\r"
-      - "澳大利亚\r"
-      - "英国1\r"
-      - "荷兰1\r"
-      - "德国1\r"
-      - "加拿大1\r"
-      - "印度1\r"
-  - name: 故障转移
-    type: fallback
-    url: http://www.gstatic.com/generate_204
-    interval: 7200
+    interval: 300
+    tolerance: 50
     proxies:
       - "剩余流量：948.92 GB\r"
       - "距离下次重置剩余：24 天\r"
@@ -194,8 +123,17 @@ proxy-groups:
       - "印度1\r"
 
 rules:
-  - DOMAIN,wanmeiwl4.xyz,DIRECT
-# 长风网站，自动注入
+  - IP-CIDR,193.31.41.172/32,DIRECT,no-resolve
+  - IP-CIDR,87.121.61.171/32,DIRECT,no-resolve
+  - IP-CIDR,83.147.17.189/32,DIRECT,no-resolve
+  - IP-CIDR,83.147.17.130/32,DIRECT,no-resolve
+  - IP-CIDR,209.200.246.141/32,DIRECT,no-resolve
+  - IP-CIDR,184.174.96.140/32,DIRECT,no-resolve
+  - IP-CIDR,184.174.96.224/32,DIRECT,no-resolve
+  - IP-CIDR,114.38.92.52/32,DIRECT,no-resolve
+  - IP-CIDR,42.200.231.151/32,DIRECT,no-resolve
+  - IP-CIDR,42.200.231.178/32,DIRECT,no-resolve
+  - DOMAIN,209.200.246.194:7001,DIRECT
   - DOMAIN-SUFFIX,v2rayse.com,节点选择
   - DOMAIN-SUFFIX,cff.pw,节点选择
   - DOMAIN-SUFFIX,vpnse.org,节点选择
