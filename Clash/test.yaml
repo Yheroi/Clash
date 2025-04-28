@@ -1,7 +1,7 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：2025-04-28 10:45:58
+# 创建时间：2025-04-28 10:47:32
 # 使用模版：test2
 # 节点数量：18
 # 节点类型：hysteria2, ss
@@ -80,12 +80,12 @@ dns:
     - https://doh.pub/dns-query
 
 proxies:
-  - {"name":"美国1\r","type":"hysteria2","server":"mg1.gywanglug.xyz","port":21261,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"mg1.gywanglug.xyz","skip-cert-verify":true,"obfs-password":"LNAnPYDfFyesRAVn"}
-  - {"name":"美国2\r","type":"hysteria2","server":"mg2.gywanglug.xyz","port":22439,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"mg2.gywanglug.xyz","skip-cert-verify":true,"obfs-password":"LNAnPYDfFyesRAVn"}
-  - {"name":"美国3\r","type":"hysteria2","server":"mg3.gywanglug.xyz","port":25818,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"mg3.gywanglug.xyz","skip-cert-verify":true,"obfs-password":"LNAnPYDfFyesRAVn"}
-  - {"name":"美国4\r","type":"hysteria2","server":"mg4.gywanglug.xyz","port":22808,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"mg4.gywanglug.xyz","skip-cert-verify":true,"obfs-password":"LNAnPYDfFyesRAVn"}
-  - {"name":"美国5\r","type":"hysteria2","server":"mg5.gywanglug.xyz","port":21657,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"mg5.gywanglug.xyz","skip-cert-verify":true,"obfs-password":"LNAnPYDfFyesRAVn"}
-  - {"name":"美国6\r","type":"hysteria2","server":"mg6.gywanglug.xyz","port":24128,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"mg6.gywanglug.xyz","skip-cert-verify":true,"obfs-password":"LNAnPYDfFyesRAVn"}
+  - {"name":"美国1","type":"hysteria2","server":"mg1.gywanglug.xyz","port":21261,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"mg1.gywanglug.xyz","skip-cert-verify":true,"obfs-password":"LNAnPYDfFyesRAVn"}
+  - {"name":"美国2","type":"hysteria2","server":"mg2.gywanglug.xyz","port":22439,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"mg2.gywanglug.xyz","skip-cert-verify":true,"obfs-password":"LNAnPYDfFyesRAVn"}
+  - {"name":"美国3","type":"hysteria2","server":"mg3.gywanglug.xyz","port":25818,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"mg3.gywanglug.xyz","skip-cert-verify":true,"obfs-password":"LNAnPYDfFyesRAVn"}
+  - {"name":"美国4","type":"hysteria2","server":"mg4.gywanglug.xyz","port":22808,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"mg4.gywanglug.xyz","skip-cert-verify":true,"obfs-password":"LNAnPYDfFyesRAVn"}
+  - {"name":"美国5","type":"hysteria2","server":"mg5.gywanglug.xyz","port":21657,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"mg5.gywanglug.xyz","skip-cert-verify":true,"obfs-password":"LNAnPYDfFyesRAVn"}
+  - {"name":"美国6","type":"hysteria2","server":"mg6.gywanglug.xyz","port":24128,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"mg6.gywanglug.xyz","skip-cert-verify":true,"obfs-password":"LNAnPYDfFyesRAVn"}
   - {"name":"印尼01\r\r","type":"ss","server":"cdn.node3.lilisi.link","port":10051,"password":"a8c46207-0368-4ee1-870e-f8590e9c6218","cipher":"aes-128-gcm"}
   - {"name":"印尼02\r\r","type":"ss","server":"cdn.node3.lilisi.link","port":10052,"password":"a8c46207-0368-4ee1-870e-f8590e9c6218","cipher":"aes-128-gcm"}
   - {"name":"台湾01\r\r","type":"ss","server":"cdn.zx.lilisi.link","port":10011,"password":"a8c46207-0368-4ee1-870e-f8590e9c6218","cipher":"aes-128-gcm"}
@@ -104,12 +104,12 @@ proxy-groups:
     proxies:
       - 自动选择
       - 故障转移
-      - "美国1\r"
-      - "美国2\r"
-      - "美国3\r"
-      - "美国4\r"
-      - "美国5\r"
-      - "美国6\r"
+      - 美国1
+      - 美国2
+      - 美国3
+      - 美国4
+      - 美国5
+      - 美国6
       - "印尼01\r\r"
       - "印尼02\r\r"
       - "台湾01\r\r"
@@ -127,12 +127,12 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 86400
     proxies:
-      - "美国1\r"
-      - "美国2\r"
-      - "美国3\r"
-      - "美国4\r"
-      - "美国5\r"
-      - "美国6\r"
+      - 美国1
+      - 美国2
+      - 美国3
+      - 美国4
+      - 美国5
+      - 美国6
       - "印尼01\r\r"
       - "印尼02\r\r"
       - "台湾01\r\r"
@@ -150,12 +150,12 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 7200
     proxies:
-      - "美国1\r"
-      - "美国2\r"
-      - "美国3\r"
-      - "美国4\r"
-      - "美国5\r"
-      - "美国6\r"
+      - 美国1
+      - 美国2
+      - 美国3
+      - 美国4
+      - 美国5
+      - 美国6
       - "印尼01\r\r"
       - "印尼02\r\r"
       - "台湾01\r\r"
