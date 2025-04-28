@@ -1,10 +1,10 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：2025-04-28 10:58:41
+# 创建时间：2025-04-28 10:59:13
 # 使用模版：ACL4SSR_Mini.ini
-# 节点数量：18
-# 节点类型：hysteria2
+# 节点数量：24
+# 节点类型：hysteria2, vless
 # !!当前配置文件请使用基于 Clash.Meta 内核程序
 ####################################
 mixed-port: 7890
@@ -92,11 +92,17 @@ proxies:
   - {"name":"套餐到期：2025-05-22","type":"hysteria2","server":"mg1.gywanglug.xyz","port":23065,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"mg1.gywanglug.xyz","skip-cert-verify":true,"obfs-password":"LNAnPYDfFyesRAVn"}
   - {"name":"最新地址gy888.xyz","type":"hysteria2","server":"mg1.gywanglug.xyz","port":23065,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"mg1.gywanglug.xyz","skip-cert-verify":true,"obfs-password":"LNAnPYDfFyesRAVn"}
   - {"name":"美国1","type":"hysteria2","server":"mg1.gywanglug.xyz","port":21289,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"mg1.gywanglug.xyz","skip-cert-verify":true,"obfs-password":"LNAnPYDfFyesRAVn"}
+  - {"name":"美国1-v","type":"vless","server":"mg11.gywanglug.xyz","port":25888,"udp":true,"uuid":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","tls":true,"servername":"www.webilop.com","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"1jupCbzD9RB34YhWct4C6_I1bx_O5Ct7ZnT5dfCiV18"},"client-fingerprint":"qq"}
   - {"name":"美国2","type":"hysteria2","server":"mg2.gywanglug.xyz","port":23302,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"mg2.gywanglug.xyz","skip-cert-verify":true,"obfs-password":"LNAnPYDfFyesRAVn"}
+  - {"name":"美国2-v","type":"vless","server":"mg22.gywanglug.xyz","port":25034,"udp":true,"uuid":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","tls":true,"servername":"www.webilop.com","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"GcOtIhZbkznrBYohK7rvjV0oVoQvC4y38VIExs6KUwA"},"client-fingerprint":"chrome"}
   - {"name":"美国3","type":"hysteria2","server":"mg3.gywanglug.xyz","port":24777,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"mg3.gywanglug.xyz","skip-cert-verify":true,"obfs-password":"LNAnPYDfFyesRAVn"}
+  - {"name":"美国3-v","type":"vless","server":"mg33.gywanglug.xyz","port":23944,"udp":true,"uuid":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","tls":true,"servername":"www.webilop.com","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"yDkCTYl7Ap0XeU9PNv_kBY9BwQrgYZPIov-MXvpf7R8"},"client-fingerprint":"chrome"}
   - {"name":"美国4","type":"hysteria2","server":"mg4.gywanglug.xyz","port":21614,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"mg4.gywanglug.xyz","skip-cert-verify":true,"obfs-password":"LNAnPYDfFyesRAVn"}
+  - {"name":"美国4-v","type":"vless","server":"mg44.gywanglug.xyz","port":24836,"udp":true,"uuid":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","tls":true,"servername":"www.webilop.com","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"yDkCTYl7Ap0XeU9PNv_kBY9BwQrgYZPIov-MXvpf7R8"},"client-fingerprint":"safari"}
   - {"name":"美国5","type":"hysteria2","server":"mg5.gywanglug.xyz","port":21098,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"mg5.gywanglug.xyz","skip-cert-verify":true,"obfs-password":"LNAnPYDfFyesRAVn"}
+  - {"name":"美国5-v","type":"vless","server":"mg55.gywanglug.xyz","port":24881,"udp":true,"uuid":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","tls":true,"servername":"www.webilop.com","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"kHtBu5SWzLuz79nw0LkDkH4luWft_A-M6MNq4LA-RB4"},"client-fingerprint":"qq"}
   - {"name":"美国6","type":"hysteria2","server":"mg6.gywanglug.xyz","port":21365,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"mg6.gywanglug.xyz","skip-cert-verify":true,"obfs-password":"LNAnPYDfFyesRAVn"}
+  - {"name":"美国6-v","type":"vless","server":"mg66.gywanglug.xyz","port":45445,"udp":true,"uuid":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","tls":true,"servername":"www.webilop.com","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"yDkCTYl7Ap0XeU9PNv_kBY9BwQrgYZPIov-MXvpf7R8"},"client-fingerprint":"chrome"}
   - {"name":"新加坡1","type":"hysteria2","server":"xjp1.gywanglug.xyz","port":22866,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"xjp1.gywanglug.xyz","skip-cert-verify":true}
   - {"name":"新加坡2","type":"hysteria2","server":"xjp2.gywanglug.xyz","port":21418,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"xjp2.gywanglug.xyz","skip-cert-verify":true}
   - {"name":"澳大利亚","type":"hysteria2","server":"au1.gy6688.xyz","port":22637,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"au1.gy6688.xyz","skip-cert-verify":true,"obfs-password":"cP2sbTFOTkuTq1sW"}
@@ -116,11 +122,17 @@ proxy-groups:
       - 套餐到期：2025-05-22
       - 最新地址gy888.xyz
       - 美国1
+      - 美国1-v
       - 美国2
+      - 美国2-v
       - 美国3
+      - 美国3-v
       - 美国4
+      - 美国4-v
       - 美国5
+      - 美国5-v
       - 美国6
+      - 美国6-v
       - 新加坡1
       - 新加坡2
       - 澳大利亚
@@ -140,11 +152,17 @@ proxy-groups:
       - 套餐到期：2025-05-22
       - 最新地址gy888.xyz
       - 美国1
+      - 美国1-v
       - 美国2
+      - 美国2-v
       - 美国3
+      - 美国3-v
       - 美国4
+      - 美国4-v
       - 美国5
+      - 美国5-v
       - 美国6
+      - 美国6-v
       - 新加坡1
       - 新加坡2
       - 澳大利亚
@@ -175,11 +193,17 @@ proxy-groups:
       - 套餐到期：2025-05-22
       - 最新地址gy888.xyz
       - 美国1
+      - 美国1-v
       - 美国2
+      - 美国2-v
       - 美国3
+      - 美国3-v
       - 美国4
+      - 美国4-v
       - 美国5
+      - 美国5-v
       - 美国6
+      - 美国6-v
       - 新加坡1
       - 新加坡2
       - 澳大利亚
