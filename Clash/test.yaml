@@ -1,103 +1,177 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：2024-10-31 10:09:56
-# 使用模版：极简
-# 节点数量：12
+# 创建时间：2025-04-28 10:57:31
+# 使用模版：test2
+# 节点数量：18
 # 节点类型：hysteria2
+# !!当前配置文件请使用基于 Clash.Meta 内核程序
 ####################################
-# !!当前配置文件请使用基于 Clash.Meta 内核程序
-# !!当前配置文件请使用基于 Clash.Meta 内核程序
-mixed-port: 7890
+mixed-port: 7897
 allow-lan: true
 bind-address: '*'
 mode: rule
 log-level: info
 external-controller: 127.0.0.1:9090
+unified-delay: true
+ipv6: true
+profile:
+  store-selected: true
+tun:
+  mtu: 1500
 dns:
   enable: true
   ipv6: false
+  listen: 127.0.0.1:5335
+  use-hosts: false
   default-nameserver:
     - 223.5.5.5
     - 119.29.29.29
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
-  use-hosts: true
+  fake-ip-filter:
+    - '*.lan'
+    - time.windows.com
+    - time.nist.gov
+    - time.apple.com
+    - time.asia.apple.com
+    - '*.ntp.org.cn'
+    - pool.ntp.org
+    - ntp.aliyun.com
+    - time1.aliyun.com
+    - music.163.com
+    - '*.music.163.com'
+    - y.qq.com
+    - '*.y.qq.com'
+    - '*.weixin.qq.com'
+    - '*.alipay.com'
+    - '*.taobao.com'
+    - '*.jd.com'
   nameserver:
-    - https://doh.pub/dns-query
     - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+    - https://cloudflare-dns.com/dns-query
   fallback:
-    - https://doh.dns.sb/dns-query
-    - https://dns.cloudflare.com/dns-query
-    - https://dns.twnic.tw/dns-query
+    - https://dns.google/dns-query
     - tls://8.8.4.4:853
+  nameserver-policy:
+    geosite:cn: https://dns.alidns.com/dns-query
+    geosite:geolocation-!cn: https://cloudflare-dns.com/dns-query
   fallback-filter:
     geoip: true
+    geoip-code: CN
     ipcidr:
       - 240.0.0.0/4
       - 0.0.0.0/32
+      - 127.0.0.1/32
+    domain:
+      - +.google.com
+      - +.googleapis.com
+      - +.youtube.com
+      - +.facebook.com
+      - +.twitter.com
+      - +.netflix.com
+      - +.amazonaws.com
+      - +.github.com
+      - +.openai.com
+      - +.zoom.us
+  proxy-server-nameserver:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
 
 proxies:
+  - {"name":"剩余流量：952.69 GB","type":"hysteria2","server":"mg1.gywanglug.xyz","port":23065,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"mg1.gywanglug.xyz","skip-cert-verify":true,"obfs-password":"LNAnPYDfFyesRAVn"}
+  - {"name":"距离下次重置剩余：25 天","type":"hysteria2","server":"mg1.gywanglug.xyz","port":23065,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"mg1.gywanglug.xyz","skip-cert-verify":true,"obfs-password":"LNAnPYDfFyesRAVn"}
+  - {"name":"套餐到期：2025-05-22","type":"hysteria2","server":"mg1.gywanglug.xyz","port":23065,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"mg1.gywanglug.xyz","skip-cert-verify":true,"obfs-password":"LNAnPYDfFyesRAVn"}
+  - {"name":"最新地址gy888.xyz","type":"hysteria2","server":"mg1.gywanglug.xyz","port":23065,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"mg1.gywanglug.xyz","skip-cert-verify":true,"obfs-password":"LNAnPYDfFyesRAVn"}
   - {"name":"美国1","type":"hysteria2","server":"mg1.gywanglug.xyz","port":21289,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"mg1.gywanglug.xyz","skip-cert-verify":true,"obfs-password":"LNAnPYDfFyesRAVn"}
-  - {"name":"美国1-v","type":"vless","server":"mg11.gywanglug.xyz","port":25888,"udp":true,"uuid":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","tls":true,"servername":"www.webilop.com","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"1jupCbzD9RB34YhWct4C6_I1bx_O5Ct7ZnT5dfCiV18"},"client-fingerprint":"qq"}
-  - {"name":"美国2-v","type":"vless","server":"mg22.gywanglug.xyz","port":25034,"udp":true,"uuid":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","tls":true,"servername":"www.webilop.com","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"GcOtIhZbkznrBYohK7rvjV0oVoQvC4y38VIExs6KUwA"},"client-fingerprint":"chrome"}
   - {"name":"美国2","type":"hysteria2","server":"mg2.gywanglug.xyz","port":23302,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"mg2.gywanglug.xyz","skip-cert-verify":true,"obfs-password":"LNAnPYDfFyesRAVn"}
   - {"name":"美国3","type":"hysteria2","server":"mg3.gywanglug.xyz","port":24777,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"mg3.gywanglug.xyz","skip-cert-verify":true,"obfs-password":"LNAnPYDfFyesRAVn"}
-  - {"name":"美国3-v","type":"vless","server":"mg33.gywanglug.xyz","port":23944,"udp":true,"uuid":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","tls":true,"servername":"www.webilop.com","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"yDkCTYl7Ap0XeU9PNv_kBY9BwQrgYZPIov-MXvpf7R8"},"client-fingerprint":"chrome"}
   - {"name":"美国4","type":"hysteria2","server":"mg4.gywanglug.xyz","port":21614,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"mg4.gywanglug.xyz","skip-cert-verify":true,"obfs-password":"LNAnPYDfFyesRAVn"}
-  - {"name":"美国4-v","type":"vless","server":"mg44.gywanglug.xyz","port":24836,"udp":true,"uuid":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","tls":true,"servername":"www.webilop.com","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"yDkCTYl7Ap0XeU9PNv_kBY9BwQrgYZPIov-MXvpf7R8"},"client-fingerprint":"safari"}
   - {"name":"美国5","type":"hysteria2","server":"mg5.gywanglug.xyz","port":21098,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"mg5.gywanglug.xyz","skip-cert-verify":true,"obfs-password":"LNAnPYDfFyesRAVn"}
-  - {"name":"美国5-v","type":"vless","server":"mg55.gywanglug.xyz","port":24881,"udp":true,"uuid":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","tls":true,"servername":"www.webilop.com","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"kHtBu5SWzLuz79nw0LkDkH4luWft_A-M6MNq4LA-RB4"},"client-fingerprint":"qq"}
-  - {"name":"美国6-v","type":"vless","server":"mg66.gywanglug.xyz","port":45445,"udp":true,"uuid":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","tls":true,"servername":"www.webilop.com","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"yDkCTYl7Ap0XeU9PNv_kBY9BwQrgYZPIov-MXvpf7R8"},"client-fingerprint":"chrome"}
   - {"name":"美国6","type":"hysteria2","server":"mg6.gywanglug.xyz","port":21365,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"mg6.gywanglug.xyz","skip-cert-verify":true,"obfs-password":"LNAnPYDfFyesRAVn"}
+  - {"name":"新加坡1","type":"hysteria2","server":"xjp1.gywanglug.xyz","port":22866,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"xjp1.gywanglug.xyz","skip-cert-verify":true}
+  - {"name":"新加坡2","type":"hysteria2","server":"xjp2.gywanglug.xyz","port":21418,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"xjp2.gywanglug.xyz","skip-cert-verify":true}
+  - {"name":"澳大利亚","type":"hysteria2","server":"au1.gy6688.xyz","port":22637,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"au1.gy6688.xyz","skip-cert-verify":true,"obfs-password":"cP2sbTFOTkuTq1sW"}
+  - {"name":"英国1","type":"hysteria2","server":"yg1.gywanglug.xyz","port":25968,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"yg1.gywanglug.xyz","skip-cert-verify":true}
+  - {"name":"荷兰1","type":"hysteria2","server":"hl1.gywanglug.xyz","port":22108,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"hl1.gywanglug.xyz","skip-cert-verify":true}
+  - {"name":"德国1","type":"hysteria2","server":"dg1.gywanglug.xyz","port":24335,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"dg1.gywanglug.xyz","skip-cert-verify":true}
+  - {"name":"加拿大1","type":"hysteria2","server":"jnd1.gywanglug.xyz","port":21057,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"jnd1.gywanglug.xyz","skip-cert-verify":true}
+  - {"name":"印度1","type":"hysteria2","server":"yd1.gywanglug.xyz","port":25410,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"yd1.gywanglug.xyz","skip-cert-verify":true}
 proxy-groups:
   - name: 节点选择
     type: select
     proxies:
       - 自动选择
+      - 故障转移
+      - 剩余流量：952.69 GB
+      - 距离下次重置剩余：25 天
+      - 套餐到期：2025-05-22
+      - 最新地址gy888.xyz
       - 美国1
-      - 美国1-v
-      - 美国2-v
       - 美国2
       - 美国3
-      - 美国3-v
       - 美国4
-      - 美国4-v
       - 美国5
-      - 美国5-v
-      - 美国6-v
       - 美国6
+      - 新加坡1
+      - 新加坡2
+      - 澳大利亚
+      - 英国1
+      - 荷兰1
+      - 德国1
+      - 加拿大1
+      - 印度1
   - name: 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
-    interval: 300
-    tolerance: 50
+    interval: 86400
     proxies:
+      - 剩余流量：952.69 GB
+      - 距离下次重置剩余：25 天
+      - 套餐到期：2025-05-22
+      - 最新地址gy888.xyz
       - 美国1
-      - 美国1-v
-      - 美国2-v
       - 美国2
       - 美国3
-      - 美国3-v
       - 美国4
-      - 美国4-v
       - 美国5
-      - 美国5-v
-      - 美国6-v
       - 美国6
+      - 新加坡1
+      - 新加坡2
+      - 澳大利亚
+      - 英国1
+      - 荷兰1
+      - 德国1
+      - 加拿大1
+      - 印度1
+  - name: 故障转移
+    type: fallback
+    url: http://www.gstatic.com/generate_204
+    interval: 7200
+    proxies:
+      - 剩余流量：952.69 GB
+      - 距离下次重置剩余：25 天
+      - 套餐到期：2025-05-22
+      - 最新地址gy888.xyz
+      - 美国1
+      - 美国2
+      - 美国3
+      - 美国4
+      - 美国5
+      - 美国6
+      - 新加坡1
+      - 新加坡2
+      - 澳大利亚
+      - 英国1
+      - 荷兰1
+      - 德国1
+      - 加拿大1
+      - 印度1
 
 rules:
-  - IP-CIDR,193.31.41.172/32,DIRECT,no-resolve
-  - IP-CIDR,87.121.61.171/32,DIRECT,no-resolve
-  - IP-CIDR,83.147.17.189/32,DIRECT,no-resolve
-  - IP-CIDR,83.147.17.130/32,DIRECT,no-resolve
-  - IP-CIDR,209.200.246.141/32,DIRECT,no-resolve
-  - IP-CIDR,184.174.96.140/32,DIRECT,no-resolve
-  - IP-CIDR,184.174.96.224/32,DIRECT,no-resolve
-  - IP-CIDR,114.38.92.52/32,DIRECT,no-resolve
-  - IP-CIDR,42.200.231.151/32,DIRECT,no-resolve
-  - IP-CIDR,42.200.231.178/32,DIRECT,no-resolve
-  - DOMAIN,209.200.246.194:7001,DIRECT
+  - DOMAIN,wanmeiwl4.xyz,DIRECT
+# 长风网站，自动注入
   - DOMAIN-SUFFIX,v2rayse.com,节点选择
   - DOMAIN-SUFFIX,cff.pw,节点选择
   - DOMAIN-SUFFIX,vpnse.org,节点选择
