@@ -38,101 +38,71 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"美国1\r","type":"hysteria2","server":"mg1.gywanglug.xyz","port":24442,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"mg1.gywanglug.xyz","skip-cert-verify":true,"obfs-password":"LNAnPYDfFyesRAVn"}
-  - {"name":"美国2\r","type":"hysteria2","server":"mg2.gywanglug.xyz","port":25375,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"mg2.gywanglug.xyz","skip-cert-verify":true,"obfs-password":"LNAnPYDfFyesRAVn"}
-  - {"name":"美国3\r","type":"hysteria2","server":"mg3.gywanglug.xyz","port":21282,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"mg3.gywanglug.xyz","skip-cert-verify":true,"obfs-password":"LNAnPYDfFyesRAVn"}
-  - {"name":"美国4\r","type":"hysteria2","server":"mg4.gywanglug.xyz","port":23361,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"mg4.gywanglug.xyz","skip-cert-verify":true,"obfs-password":"LNAnPYDfFyesRAVn"}
-  - {"name":"美国5\r","type":"hysteria2","server":"mg5.gywanglug.xyz","port":21753,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"mg5.gywanglug.xyz","skip-cert-verify":true,"obfs-password":"LNAnPYDfFyesRAVn"}
-  - {"name":"美国6\r","type":"hysteria2","server":"mg6.gywanglug.xyz","port":21639,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"mg6.gywanglug.xyz","skip-cert-verify":true,"obfs-password":"LNAnPYDfFyesRAVn"}
-  - {"name":"香港01","type":"ss","server":"cdn.zx.lilisi.link","port":10001,"password":"a8c46207-0368-4ee1-870e-f8590e9c6218","cipher":"aes-128-gcm"}
-  - {"name":"香港02","type":"ss","server":"cdn.zx.lilisi.link","port":10002,"password":"a8c46207-0368-4ee1-870e-f8590e9c6218","cipher":"aes-128-gcm"}
-  - {"name":"香港03","type":"ss","server":"cdn.zx.lilisi.link","port":10003,"password":"a8c46207-0368-4ee1-870e-f8590e9c6218","cipher":"aes-128-gcm"}
-  - {"name":"香港04","type":"ss","server":"cdn.zx.lilisi.link","port":10004,"password":"a8c46207-0368-4ee1-870e-f8590e9c6218","cipher":"aes-128-gcm"}
+  - {"name":"美国01","type":"vless","server":"mg11.gywanglug.xyz","port":25888,"uuid":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","tls":true,"servername":"www.webilop.com","flow":"xtls-rprx-vision","network":"tcp"}
+  - {"name":"美国06","type":"vless","server":"mg66.gywanglug.xyz","port":45445,"uuid":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","tls":true,"servername":"www.webilop.com","flow":"xtls-rprx-vision","network":"tcp"}
+  - {"name":"美国02","type":"vless","server":"mg22.gywanglug.xyz","port":25034,"uuid":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","tls":true,"servername":"www.webilop.com","flow":"xtls-rprx-vision","network":"tcp"}
+  - {"name":"美国03","type":"vless","server":"mg33.gywanglug.xyz","port":23944,"uuid":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","tls":true,"servername":"www.webilop.com","flow":"xtls-rprx-vision","network":"tcp"}
+  - {"name":"美国04","type":"vless","server":"mg44.gywanglug.xyz","port":24836,"uuid":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","tls":true,"servername":"www.webilop.com","flow":"xtls-rprx-vision","network":"tcp"}
+  - {"name":"美国05","type":"vless","server":"mg55.gywanglug.xyz","port":24881,"uuid":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","tls":true,"servername":"www.webilop.com","flow":"xtls-rprx-vision","network":"tcp"}
+  - {"name":"印尼01\r\r","type":"ss","server":"cdn.node3.lilisi.link","port":10051,"password":"a8c46207-0368-4ee1-870e-f8590e9c6218","cipher":"aes-128-gcm"}
+  - {"name":"印尼02\r\r","type":"ss","server":"cdn.node3.lilisi.link","port":10052,"password":"a8c46207-0368-4ee1-870e-f8590e9c6218","cipher":"aes-128-gcm"}
+  - {"name":"台湾01\r\r","type":"ss","server":"cdn.zx.lilisi.link","port":10011,"password":"a8c46207-0368-4ee1-870e-f8590e9c6218","cipher":"aes-128-gcm"}
+  - {"name":"台湾05\r\r","type":"ss","server":"cdn.zx.lilisi.link","port":10015,"password":"a8c46207-0368-4ee1-870e-f8590e9c6218","cipher":"aes-128-gcm"}
+  - {"name":"台湾02\r\r","type":"ss","server":"cdn.zx.lilisi.link","port":10012,"password":"a8c46207-0368-4ee1-870e-f8590e9c6218","cipher":"aes-128-gcm"}
+  - {"name":"台湾03\r\r","type":"ss","server":"cdn.zx.lilisi.link","port":10013,"password":"a8c46207-0368-4ee1-870e-f8590e9c6218","cipher":"aes-128-gcm"}
+  - {"name":"台湾04\r\r","type":"ss","server":"cdn.zx.lilisi.link","port":10014,"password":"a8c46207-0368-4ee1-870e-f8590e9c6218","cipher":"aes-128-gcm"}
+  - {"name":"香港01\r\r","type":"ss","server":"cdn.zx.lilisi.link","port":10001,"password":"a8c46207-0368-4ee1-870e-f8590e9c6218","cipher":"aes-128-gcm"}
   - {"name":"香港05","type":"ss","server":"cdn.zx.lilisi.link","port":10005,"password":"a8c46207-0368-4ee1-870e-f8590e9c6218","cipher":"aes-128-gcm"}
-  - {"name":"台湾01","type":"ss","server":"cdn.zx.lilisi.link","port":10011,"password":"a8c46207-0368-4ee1-870e-f8590e9c6218","cipher":"aes-128-gcm"}
-  - {"name":"台湾02","type":"ss","server":"cdn.zx.lilisi.link","port":10012,"password":"a8c46207-0368-4ee1-870e-f8590e9c6218","cipher":"aes-128-gcm"}
-  - {"name":"台湾03","type":"ss","server":"cdn.zx.lilisi.link","port":10013,"password":"a8c46207-0368-4ee1-870e-f8590e9c6218","cipher":"aes-128-gcm"}
-  - {"name":"台湾04","type":"ss","server":"cdn.zx.lilisi.link","port":10014,"password":"a8c46207-0368-4ee1-870e-f8590e9c6218","cipher":"aes-128-gcm"}
-  - {"name":"台湾05","type":"ss","server":"cdn.zx.lilisi.link","port":10015,"password":"a8c46207-0368-4ee1-870e-f8590e9c6218","cipher":"aes-128-gcm"}
-  - {"name":"新加坡01","type":"ss","server":"cdn.node3.lilisi.link","port":10021,"password":"a8c46207-0368-4ee1-870e-f8590e9c6218","cipher":"aes-128-gcm"}
-  - {"name":"新加坡02","type":"ss","server":"cdn.node3.lilisi.link","port":10022,"password":"a8c46207-0368-4ee1-870e-f8590e9c6218","cipher":"aes-128-gcm"}
-  - {"name":"新加坡03","type":"ss","server":"cdn.node3.lilisi.link","port":10023,"password":"a8c46207-0368-4ee1-870e-f8590e9c6218","cipher":"aes-128-gcm"}
-  - {"name":"新加坡04","type":"ss","server":"cdn.node3.lilisi.link","port":10024,"password":"a8c46207-0368-4ee1-870e-f8590e9c6218","cipher":"aes-128-gcm"}
-  - {"name":"新加坡05","type":"ss","server":"cdn.node3.lilisi.link","port":10025,"password":"a8c46207-0368-4ee1-870e-f8590e9c6218","cipher":"aes-128-gcm"}
-  - {"name":"日本01","type":"ss","server":"cdn.node4.lilisi.link","port":20001,"password":"a8c46207-0368-4ee1-870e-f8590e9c6218","cipher":"aes-128-gcm"}
-  - {"name":"日本02","type":"ss","server":"cdn.node4.lilisi.link","port":20002,"password":"a8c46207-0368-4ee1-870e-f8590e9c6218","cipher":"aes-128-gcm"}
-  - {"name":"日本03","type":"ss","server":"cdn.node4.lilisi.link","port":20003,"password":"a8c46207-0368-4ee1-870e-f8590e9c6218","cipher":"aes-128-gcm"}
-  - {"name":"日本04","type":"ss","server":"cdn.node4.lilisi.link","port":20004,"password":"a8c46207-0368-4ee1-870e-f8590e9c6218","cipher":"aes-128-gcm"}
-  - {"name":"日本05","type":"ss","server":"cdn.node4.lilisi.link","port":20005,"password":"a8c46207-0368-4ee1-870e-f8590e9c6218","cipher":"aes-128-gcm"}
-  - {"name":"印尼01","type":"ss","server":"cdn.node3.lilisi.link","port":10051,"password":"a8c46207-0368-4ee1-870e-f8590e9c6218","cipher":"aes-128-gcm"}
-  - {"name":"印尼02","type":"ss","server":"cdn.node3.lilisi.link","port":10052,"password":"a8c46207-0368-4ee1-870e-f8590e9c6218","cipher":"aes-128-gcm"}
+  - {"name":"香港02\r\r","type":"ss","server":"cdn.zx.lilisi.link","port":10002,"password":"a8c46207-0368-4ee1-870e-f8590e9c6218","cipher":"aes-128-gcm"}
+  - {"name":"香港03\r\r","type":"ss","server":"cdn.zx.lilisi.link","port":10003,"password":"a8c46207-0368-4ee1-870e-f8590e9c6218","cipher":"aes-128-gcm"}
+  - {"name":"香港04\r\r","type":"ss","server":"cdn.zx.lilisi.link","port":10004,"password":"a8c46207-0368-4ee1-870e-f8590e9c6218","cipher":"aes-128-gcm"}
 proxy-groups:
   - name: 节点选择
     type: select
     proxies:
       - 自动选择
-      - "美国1\r"
-      - "美国2\r"
-      - "美国3\r"
-      - "美国4\r"
-      - "美国5\r"
-      - "美国6\r"
-      - 香港01
-      - 香港02
-      - 香港03
-      - 香港04
+      - 美国01
+      - 美国06
+      - 美国02
+      - 美国03
+      - 美国04
+      - 美国05
+      - "印尼01\r\r"
+      - "印尼02\r\r"
+      - "台湾01\r\r"
+      - "台湾05\r\r"
+      - "台湾02\r\r"
+      - "台湾03\r\r"
+      - "台湾04\r\r"
+      - "香港01\r\r"
       - 香港05
-      - 台湾01
-      - 台湾02
-      - 台湾03
-      - 台湾04
-      - 台湾05
-      - 新加坡01
-      - 新加坡02
-      - 新加坡03
-      - 新加坡04
-      - 新加坡05
-      - 日本01
-      - 日本02
-      - 日本03
-      - 日本04
-      - 日本05
-      - 印尼01
-      - 印尼02
+      - "香港02\r\r"
+      - "香港03\r\r"
+      - "香港04\r\r"
   - name: 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - "美国1\r"
-      - "美国2\r"
-      - "美国3\r"
-      - "美国4\r"
-      - "美国5\r"
-      - "美国6\r"
-      - 香港01
-      - 香港02
-      - 香港03
-      - 香港04
+      - 美国01
+      - 美国06
+      - 美国02
+      - 美国03
+      - 美国04
+      - 美国05
+      - "印尼01\r\r"
+      - "印尼02\r\r"
+      - "台湾01\r\r"
+      - "台湾05\r\r"
+      - "台湾02\r\r"
+      - "台湾03\r\r"
+      - "台湾04\r\r"
+      - "香港01\r\r"
       - 香港05
-      - 台湾01
-      - 台湾02
-      - 台湾03
-      - 台湾04
-      - 台湾05
-      - 新加坡01
-      - 新加坡02
-      - 新加坡03
-      - 新加坡04
-      - 新加坡05
-      - 日本01
-      - 日本02
-      - 日本03
-      - 日本04
-      - 日本05
-      - 印尼01
-      - 印尼02
+      - "香港02\r\r"
+      - "香港03\r\r"
+      - "香港04\r\r"
 
 rules:
   - IP-CIDR,193.31.41.172/32,DIRECT,no-resolve
