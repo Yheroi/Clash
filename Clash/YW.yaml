@@ -8,6 +8,7 @@
 ####################################
 # !!当前配置文件请使用基于 Clash.Meta 内核程序
 # !!当前配置文件请使用基于 Clash.Meta 内核程序
+# !!当前配置文件请使用基于 Clash.Meta 内核程序
 mixed-port: 7890
 allow-lan: true
 bind-address: '*'
