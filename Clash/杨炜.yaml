@@ -1,6 +1,6 @@
 # 生成地址：v2rayse.com
 # 模版名称：11_local
-# 生成时间：2025-04-29 10:32:47
+# 生成时间：2025-04-29 10:38:27
 # 不要随意改变关键字，否则会导致出错
 # acl4SSR规则
 # 去广告：支持
@@ -143,6 +143,30 @@ proxies:
     password: cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f
     skip-cert-verify: true
     obfs-password: LNAnPYDfFyesRAVn
+  - name: 美国 06
+    port: 23154
+    server: mg6.gywanglug.xyz
+    type: hysteria2
+    udp: true
+    sni: mg6.gywanglug.xyz
+    obfs: salamander
+    password: cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f
+    skip-cert-verify: true
+    obfs-password: LNAnPYDfFyesRAVn
+  - name: 印尼 01
+    port: 10051
+    server: cdn.node3.lilisi.link
+    type: ss
+    udp: true
+    password: a8c46207-0368-4ee1-870e-f8590e9c6218
+    cipher: aes-128-gcm
+  - name: 印尼 02
+    port: 10052
+    server: cdn.node3.lilisi.link
+    type: ss
+    udp: true
+    password: a8c46207-0368-4ee1-870e-f8590e9c6218
+    cipher: aes-128-gcm
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -159,6 +183,9 @@ proxy-groups:
       - 美国 03
       - 美国 04
       - 美国 05
+      - 美国 06
+      - 印尼 01
+      - 印尼 02
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -175,6 +202,9 @@ proxy-groups:
       - 美国 03
       - 美国 04
       - 美国 05
+      - 美国 06
+      - 印尼 01
+      - 印尼 02
 rules:
   - DOMAIN-SUFFIX,t.me,🚀 节点选择
   - DOMAIN-SUFFIX,tdesktop.com,🚀 节点选择
