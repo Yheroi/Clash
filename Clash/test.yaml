@@ -38,89 +38,56 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"剩余流量：938.67 GB\r","type":"hysteria2","server":"mg1.gywanglug.xyz","port":23338,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"mg1.gywanglug.xyz","skip-cert-verify":true,"obfs-password":"LNAnPYDfFyesRAVn"}
-  - {"name":"距离下次重置剩余：23 天\r","type":"hysteria2","server":"mg1.gywanglug.xyz","port":23338,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"mg1.gywanglug.xyz","skip-cert-verify":true,"obfs-password":"LNAnPYDfFyesRAVn"}
-  - {"name":"套餐到期：2025-05-22\r","type":"hysteria2","server":"mg1.gywanglug.xyz","port":23338,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"mg1.gywanglug.xyz","skip-cert-verify":true,"obfs-password":"LNAnPYDfFyesRAVn"}
-  - {"name":"最新地址gy888.xyz\r","type":"hysteria2","server":"mg1.gywanglug.xyz","port":23338,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"mg1.gywanglug.xyz","skip-cert-verify":true,"obfs-password":"LNAnPYDfFyesRAVn"}
-  - {"name":"美国1\r","type":"hysteria2","server":"mg1.gywanglug.xyz","port":24999,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"mg1.gywanglug.xyz","skip-cert-verify":true,"obfs-password":"LNAnPYDfFyesRAVn"}
-  - {"name":"美国1-v\r","type":"vless","server":"mg11.gywanglug.xyz","port":24098,"udp":true,"uuid":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","tls":true,"servername":"www.webilop.com","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"1jupCbzD9RB34YhWct4C6_I1bx_O5Ct7ZnT5dfCiV18"},"client-fingerprint":"edge"}
-  - {"name":"美国2\r","type":"hysteria2","server":"mg2.gywanglug.xyz","port":24307,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"mg2.gywanglug.xyz","skip-cert-verify":true,"obfs-password":"LNAnPYDfFyesRAVn"}
-  - {"name":"美国2-v\r","type":"vless","server":"mg22.gywanglug.xyz","port":24501,"udp":true,"uuid":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","tls":true,"servername":"www.webilop.com","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"GcOtIhZbkznrBYohK7rvjV0oVoQvC4y38VIExs6KUwA"},"client-fingerprint":"ios"}
-  - {"name":"美国3\r","type":"hysteria2","server":"mg3.gywanglug.xyz","port":24308,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"mg3.gywanglug.xyz","skip-cert-verify":true,"obfs-password":"LNAnPYDfFyesRAVn"}
-  - {"name":"美国3-v\r","type":"vless","server":"mg33.gywanglug.xyz","port":25860,"udp":true,"uuid":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","tls":true,"servername":"www.webilop.com","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"yDkCTYl7Ap0XeU9PNv_kBY9BwQrgYZPIov-MXvpf7R8"},"client-fingerprint":"edge"}
-  - {"name":"美国4\r","type":"hysteria2","server":"mg4.gywanglug.xyz","port":23218,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"mg4.gywanglug.xyz","skip-cert-verify":true,"obfs-password":"LNAnPYDfFyesRAVn"}
-  - {"name":"美国4-v\r","type":"vless","server":"mg44.gywanglug.xyz","port":25158,"udp":true,"uuid":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","tls":true,"servername":"www.webilop.com","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"yDkCTYl7Ap0XeU9PNv_kBY9BwQrgYZPIov-MXvpf7R8"},"client-fingerprint":"safari"}
-  - {"name":"美国5\r","type":"hysteria2","server":"mg5.gywanglug.xyz","port":25681,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"mg5.gywanglug.xyz","skip-cert-verify":true,"obfs-password":"LNAnPYDfFyesRAVn"}
-  - {"name":"美国5-v\r","type":"vless","server":"mg55.gywanglug.xyz","port":21441,"udp":true,"uuid":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","tls":true,"servername":"www.webilop.com","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"kHtBu5SWzLuz79nw0LkDkH4luWft_A-M6MNq4LA-RB4"},"client-fingerprint":"qq"}
-  - {"name":"美国6\r","type":"hysteria2","server":"mg6.gywanglug.xyz","port":24638,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"mg6.gywanglug.xyz","skip-cert-verify":true,"obfs-password":"LNAnPYDfFyesRAVn"}
-  - {"name":"美国6-v\r","type":"vless","server":"mg66.gywanglug.xyz","port":45445,"udp":true,"uuid":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","tls":true,"servername":"www.webilop.com","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"yDkCTYl7Ap0XeU9PNv_kBY9BwQrgYZPIov-MXvpf7R8"},"client-fingerprint":"qq"}
-  - {"name":"新加坡1\r","type":"hysteria2","server":"xjp1.gy6688.xyz","port":22619,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"xjp1.gy6688.xyz","skip-cert-verify":true,"obfs-password":"LNAnPYDfFyesRAVn"}
-  - {"name":"新加坡2\r","type":"hysteria2","server":"xjp2.gywanglug.xyz","port":21754,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"xjp2.gywanglug.xyz","skip-cert-verify":true}
-  - {"name":"澳大利亚\r","type":"hysteria2","server":"au1.gy6688.xyz","port":22966,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"au1.gy6688.xyz","skip-cert-verify":true,"obfs-password":"cP2sbTFOTkuTq1sW"}
-  - {"name":"英国1\r","type":"hysteria2","server":"yg1.gy6688.xyz","port":21954,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"yg1.gy6688.xyz","skip-cert-verify":true,"obfs-password":"LNAnPYDfFyesRAVn"}
-  - {"name":"荷兰1\r","type":"hysteria2","server":"hl1.gy6688.xyz","port":24515,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"hl1.gy6688.xyz","skip-cert-verify":true,"obfs-password":"LNAnPYDfFyesRAVn"}
-  - {"name":"德国1\r","type":"hysteria2","server":"dg1.gy6688.xyz","port":23385,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"dg1.gy6688.xyz","skip-cert-verify":true,"obfs-password":"LNAnPYDfFyesRAVn"}
-  - {"name":"加拿大1\r","type":"hysteria2","server":"jnd1.gy6688.xyz","port":21218,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"jnd1.gy6688.xyz","skip-cert-verify":true,"obfs-password":"LNAnPYDfFyesRAVn"}
-  - {"name":"印度1","type":"hysteria2","server":"yd1.gy6688.xyz","port":22820,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"yd1.gy6688.xyz","skip-cert-verify":true,"obfs-password":"LNAnPYDfFyesRAVn"}
+  - {"name":"中国台湾 01","type":"ss","server":"cdn.zx.lilisi.link","port":10011,"password":"a8c46207-0368-4ee1-870e-f8590e9c6218","cipher":"aes-128-gcm"}
+  - {"name":"中国台湾 02","type":"ss","server":"cdn.zx.lilisi.link","port":10012,"password":"a8c46207-0368-4ee1-870e-f8590e9c6218","cipher":"aes-128-gcm"}
+  - {"name":"中国台湾 03","type":"ss","server":"cdn.zx.lilisi.link","port":10013,"password":"a8c46207-0368-4ee1-870e-f8590e9c6218","cipher":"aes-128-gcm"}
+  - {"name":"中国台湾 04","type":"ss","server":"cdn.zx.lilisi.link","port":10014,"password":"a8c46207-0368-4ee1-870e-f8590e9c6218","cipher":"aes-128-gcm"}
+  - {"name":"中国台湾 05","type":"ss","server":"cdn.zx.lilisi.link","port":10015,"password":"a8c46207-0368-4ee1-870e-f8590e9c6218","cipher":"aes-128-gcm"}
+  - {"name":"美国 01","type":"hysteria2","server":"mg1.gywanglug.xyz","port":23588,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"mg1.gywanglug.xyz","skip-cert-verify":true,"obfs-password":"LNAnPYDfFyesRAVn"}
+  - {"name":"美国 02","type":"hysteria2","server":"mg2.gywanglug.xyz","port":23793,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"mg2.gywanglug.xyz","skip-cert-verify":true,"obfs-password":"LNAnPYDfFyesRAVn"}
+  - {"name":"美国 03","type":"hysteria2","server":"mg3.gywanglug.xyz","port":24725,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"mg3.gywanglug.xyz","skip-cert-verify":true,"obfs-password":"LNAnPYDfFyesRAVn"}
+  - {"name":"美国 04","type":"hysteria2","server":"mg4.gywanglug.xyz","port":24868,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"mg4.gywanglug.xyz","skip-cert-verify":true,"obfs-password":"LNAnPYDfFyesRAVn"}
+  - {"name":"美国 05","type":"hysteria2","server":"mg5.gywanglug.xyz","port":24869,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"mg5.gywanglug.xyz","skip-cert-verify":true,"obfs-password":"LNAnPYDfFyesRAVn"}
+  - {"name":"美国 06","type":"hysteria2","server":"mg6.gywanglug.xyz","port":23154,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"mg6.gywanglug.xyz","skip-cert-verify":true,"obfs-password":"LNAnPYDfFyesRAVn"}
+  - {"name":"印尼 01","type":"ss","server":"cdn.node3.lilisi.link","port":10051,"password":"a8c46207-0368-4ee1-870e-f8590e9c6218","cipher":"aes-128-gcm"}
+  - {"name":"印尼 02","type":"ss","server":"cdn.node3.lilisi.link","port":10052,"password":"a8c46207-0368-4ee1-870e-f8590e9c6218","cipher":"aes-128-gcm"}
 proxy-groups:
   - name: 节点选择
     type: select
     proxies:
       - 自动选择
-      - "剩余流量：938.67 GB\r"
-      - "距离下次重置剩余：23 天\r"
-      - "套餐到期：2025-05-22\r"
-      - "最新地址gy888.xyz\r"
-      - "美国1\r"
-      - "美国1-v\r"
-      - "美国2\r"
-      - "美国2-v\r"
-      - "美国3\r"
-      - "美国3-v\r"
-      - "美国4\r"
-      - "美国4-v\r"
-      - "美国5\r"
-      - "美国5-v\r"
-      - "美国6\r"
-      - "美国6-v\r"
-      - "新加坡1\r"
-      - "新加坡2\r"
-      - "澳大利亚\r"
-      - "英国1\r"
-      - "荷兰1\r"
-      - "德国1\r"
-      - "加拿大1\r"
-      - 印度1
+      - 中国台湾 01
+      - 中国台湾 02
+      - 中国台湾 03
+      - 中国台湾 04
+      - 中国台湾 05
+      - 美国 01
+      - 美国 02
+      - 美国 03
+      - 美国 04
+      - 美国 05
+      - 美国 06
+      - 印尼 01
+      - 印尼 02
   - name: 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - "剩余流量：938.67 GB\r"
-      - "距离下次重置剩余：23 天\r"
-      - "套餐到期：2025-05-22\r"
-      - "最新地址gy888.xyz\r"
-      - "美国1\r"
-      - "美国1-v\r"
-      - "美国2\r"
-      - "美国2-v\r"
-      - "美国3\r"
-      - "美国3-v\r"
-      - "美国4\r"
-      - "美国4-v\r"
-      - "美国5\r"
-      - "美国5-v\r"
-      - "美国6\r"
-      - "美国6-v\r"
-      - "新加坡1\r"
-      - "新加坡2\r"
-      - "澳大利亚\r"
-      - "英国1\r"
-      - "荷兰1\r"
-      - "德国1\r"
-      - "加拿大1\r"
-      - 印度1
+      - 中国台湾 01
+      - 中国台湾 02
+      - 中国台湾 03
+      - 中国台湾 04
+      - 中国台湾 05
+      - 美国 01
+      - 美国 02
+      - 美国 03
+      - 美国 04
+      - 美国 05
+      - 美国 06
+      - 印尼 01
+      - 印尼 02
 
 rules:
   - IP-CIDR,193.31.41.172/32,DIRECT,no-resolve
