@@ -1,122 +1,335 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：2024-10-31 10:09:56
-# 使用模版：极简
-# 节点数量：12
-# 节点类型：hysteria2
+# 创建时间：2025-04-29 09:46:44
+# 使用模版：BV
+# 节点数量：24
+# 节点类型：hysteria2, vless
+# !!当前配置文件请使用基于 Clash.Meta 内核程序
 ####################################
-# !!当前配置文件请使用基于 Clash.Meta 内核程序
-# !!当前配置文件请使用基于 Clash.Meta 内核程序
-# !!当前配置文件请使用基于 Clash.Meta 内核程序
-mixed-port: 7890
-allow-lan: true
-bind-address: '*'
+mixed-port: 7897
+allow-lan: false
 mode: rule
 log-level: info
-external-controller: 127.0.0.1:9090
+external-controller: 127.0.0.1:9097
+unified-delay: true
+ipv6: true
+profile:
+  store-selected: true
+tun:
+  mtu: 1500
 dns:
   enable: true
-  ipv6: false
+  ipv6: true
+  use-system-hosts: false
+  listen: 127.0.0.1:5335
   default-nameserver:
-    - 223.5.5.5
-    - 119.29.29.29
+    - 180.76.76.76
+    - 182.254.118.118
+    - 8.8.8.8
+    - 180.184.2.2
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
-  use-hosts: true
+  fake-ip-filter:
+    - '*.lan'
+    - stun.*.*.*
+    - stun.*.*
+    - time.windows.com
+    - time.nist.gov
+    - time.apple.com
+    - time.asia.apple.com
+    - '*.ntp.org.cn'
+    - '*.openwrt.pool.ntp.org'
+    - time1.cloud.tencent.com
+    - time.ustc.edu.cn
+    - pool.ntp.org
+    - ntp.ubuntu.com
+    - ntp.aliyun.com
+    - ntp1.aliyun.com
+    - ntp2.aliyun.com
+    - ntp3.aliyun.com
+    - ntp4.aliyun.com
+    - ntp5.aliyun.com
+    - ntp6.aliyun.com
+    - ntp7.aliyun.com
+    - time1.aliyun.com
+    - time2.aliyun.com
+    - time3.aliyun.com
+    - time4.aliyun.com
+    - time5.aliyun.com
+    - time6.aliyun.com
+    - time7.aliyun.com
+    - '*.time.edu.cn'
+    - time1.apple.com
+    - time2.apple.com
+    - time3.apple.com
+    - time4.apple.com
+    - time5.apple.com
+    - time6.apple.com
+    - time7.apple.com
+    - time1.google.com
+    - time2.google.com
+    - time3.google.com
+    - time4.google.com
+    - music.163.com
+    - '*.music.163.com'
+    - '*.126.net'
+    - musicapi.taihe.com
+    - music.taihe.com
+    - songsearch.kugou.com
+    - trackercdn.kugou.com
+    - '*.kuwo.cn'
+    - api-jooxtt.sanook.com
+    - api.joox.com
+    - joox.com
+    - y.qq.com
+    - '*.y.qq.com'
+    - streamoc.music.tc.qq.com
+    - mobileoc.music.tc.qq.com
+    - isure.stream.qqmusic.qq.com
+    - dl.stream.qqmusic.qq.com
+    - aqqmusic.tc.qq.com
+    - amobile.music.tc.qq.com
+    - '*.xiami.com'
+    - '*.music.migu.cn'
+    - music.migu.cn
+    - '*.msftconnecttest.com'
+    - '*.msftncsi.com'
+    - localhost.ptlogin2.qq.com
+    - '*.*.*.srv.nintendo.net'
+    - '*.*.stun.playstation.net'
+    - xbox.*.*.microsoft.com
+    - '*.ipv6.microsoft.com'
+    - '*.*.xboxlive.com'
+    - speedtest.cros.wr.pvp.net
   nameserver:
-    - https://doh.pub/dns-query
+    - 180.76.76.76
+    - 119.29.29.29
+    - 180.184.1.1
+    - 223.5.5.5
+    - 8.8.8.8
+    - https://223.6.6.6/dns-query#h3=true
     - https://dns.alidns.com/dns-query
+    - https://cloudflare-dns.com/dns-query
+    - https://doh.pub/dns-query
   fallback:
-    - https://doh.dns.sb/dns-query
-    - https://dns.cloudflare.com/dns-query
-    - https://dns.twnic.tw/dns-query
-    - tls://8.8.4.4:853
+    - https://000000.dns.nextdns.io/dns-query
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+    - https://ada.openbld.net/dns-query
+    - https://cloudflare-dns.com/dns-query
+    - https://dns.google/dns-query
   fallback-filter:
     geoip: true
     ipcidr:
       - 240.0.0.0/4
       - 0.0.0.0/32
+      - 127.0.0.1/32
+    domain:
+      - +.google.com
+      - +.facebook.com
+      - +.twitter.com
+      - +.youtube.com
+      - +.xn--ngstr-lra8j.com
+      - +.google.cn
+      - +.googleapis.cn
+      - +.googleapis.com
+      - +.gvt1.com
 
 proxies:
-  - {"name":"美国01","type":"vless","server":"mg11.gywanglug.xyz","port":22133,"udp":true,"uuid":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","tls":true,"servername":"www.webilop.com","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"1jupCbzD9RB34YhWct4C6_I1bx_O5Ct7ZnT5dfCiV18"},"client-fingerprint":"edge"}
-  - {"name":"美国02","type":"vless","server":"mg22.gywanglug.xyz","port":22836,"udp":true,"uuid":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","tls":true,"servername":"www.webilop.com","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"GcOtIhZbkznrBYohK7rvjV0oVoQvC4y38VIExs6KUwA"},"client-fingerprint":"edge"}
-  - {"name":"美国03","type":"vless","server":"mg33.gywanglug.xyz","port":25026,"udp":true,"uuid":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","tls":true,"servername":"www.webilop.com","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"yDkCTYl7Ap0XeU9PNv_kBY9BwQrgYZPIov-MXvpf7R8"},"client-fingerprint":"safari"}
-  - {"name":"美国04","type":"vless","server":"mg44.gywanglug.xyz","port":21944,"udp":true,"uuid":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","tls":true,"servername":"www.webilop.com","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"yDkCTYl7Ap0XeU9PNv_kBY9BwQrgYZPIov-MXvpf7R8"},"client-fingerprint":"ios"}
-  - {"name":"美国05","type":"vless","server":"mg55.gywanglug.xyz","port":23361,"udp":true,"uuid":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","tls":true,"servername":"www.webilop.com","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"kHtBu5SWzLuz79nw0LkDkH4luWft_A-M6MNq4LA-RB4"},"client-fingerprint":"ios"}
-  - {"name":"美国06","type":"vless","server":"mg66.gywanglug.xyz","port":45445,"udp":true,"uuid":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","tls":true,"servername":"www.webilop.com","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"yDkCTYl7Ap0XeU9PNv_kBY9BwQrgYZPIov-MXvpf7R8"},"client-fingerprint":"ios"}
-  - {"name":"印尼01\r\r","type":"ss","server":"cdn.node3.lilisi.link","port":10051,"password":"a8c46207-0368-4ee1-870e-f8590e9c6218","cipher":"aes-128-gcm"}
-  - {"name":"印尼02\r\r","type":"ss","server":"cdn.node3.lilisi.link","port":10052,"password":"a8c46207-0368-4ee1-870e-f8590e9c6218","cipher":"aes-128-gcm"}
-  - {"name":"台湾01\r\r","type":"ss","server":"cdn.zx.lilisi.link","port":10011,"password":"a8c46207-0368-4ee1-870e-f8590e9c6218","cipher":"aes-128-gcm"}
-  - {"name":"台湾02\r\r","type":"ss","server":"cdn.zx.lilisi.link","port":10012,"password":"a8c46207-0368-4ee1-870e-f8590e9c6218","cipher":"aes-128-gcm"}
-  - {"name":"台湾03\r\r","type":"ss","server":"cdn.zx.lilisi.link","port":10013,"password":"a8c46207-0368-4ee1-870e-f8590e9c6218","cipher":"aes-128-gcm"}
-  - {"name":"台湾04\r\r","type":"ss","server":"cdn.zx.lilisi.link","port":10014,"password":"a8c46207-0368-4ee1-870e-f8590e9c6218","cipher":"aes-128-gcm"}
-  - {"name":"台湾05\r\r","type":"ss","server":"cdn.zx.lilisi.link","port":10015,"password":"a8c46207-0368-4ee1-870e-f8590e9c6218","cipher":"aes-128-gcm"}
-  - {"name":"香港01\r\r","type":"ss","server":"cdn.zx.lilisi.link","port":10001,"password":"a8c46207-0368-4ee1-870e-f8590e9c6218","cipher":"aes-128-gcm"}
-  - {"name":"香港02\r\r","type":"ss","server":"cdn.zx.lilisi.link","port":10002,"password":"a8c46207-0368-4ee1-870e-f8590e9c6218","cipher":"aes-128-gcm"}
-  - {"name":"香港03\r\r","type":"ss","server":"cdn.zx.lilisi.link","port":10003,"password":"a8c46207-0368-4ee1-870e-f8590e9c6218","cipher":"aes-128-gcm"}
-  - {"name":"香港04\r\r","type":"ss","server":"cdn.zx.lilisi.link","port":10004,"password":"a8c46207-0368-4ee1-870e-f8590e9c6218","cipher":"aes-128-gcm"}
-  - {"name":"香港05","type":"ss","server":"cdn.zx.lilisi.link","port":10005,"password":"a8c46207-0368-4ee1-870e-f8590e9c6218","cipher":"aes-128-gcm"}
+  - {"name":"剩余流量：938.69 GB\r","type":"hysteria2","server":"mg1.gywanglug.xyz","port":25470,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"mg1.gywanglug.xyz","skip-cert-verify":true,"obfs-password":"LNAnPYDfFyesRAVn"}
+  - {"name":"距离下次重置剩余：23 天\r","type":"hysteria2","server":"mg1.gywanglug.xyz","port":25470,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"mg1.gywanglug.xyz","skip-cert-verify":true,"obfs-password":"LNAnPYDfFyesRAVn"}
+  - {"name":"套餐到期：2025-05-22\r","type":"hysteria2","server":"mg1.gywanglug.xyz","port":25470,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"mg1.gywanglug.xyz","skip-cert-verify":true,"obfs-password":"LNAnPYDfFyesRAVn"}
+  - {"name":"最新地址gy888.xyz\r","type":"hysteria2","server":"mg1.gywanglug.xyz","port":25470,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"mg1.gywanglug.xyz","skip-cert-verify":true,"obfs-password":"LNAnPYDfFyesRAVn"}
+  - {"name":"美国1\r","type":"hysteria2","server":"mg1.gywanglug.xyz","port":22315,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"mg1.gywanglug.xyz","skip-cert-verify":true,"obfs-password":"LNAnPYDfFyesRAVn"}
+  - {"name":"美国1-v\r\r","type":"vless","server":"mg11.gywanglug.xyz","port":24904,"udp":true,"uuid":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","tls":true,"servername":"www.webilop.com","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"1jupCbzD9RB34YhWct4C6_I1bx_O5Ct7ZnT5dfCiV18"},"client-fingerprint":"chrome"}
+  - {"name":"美国2\r","type":"hysteria2","server":"mg2.gywanglug.xyz","port":22899,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"mg2.gywanglug.xyz","skip-cert-verify":true,"obfs-password":"LNAnPYDfFyesRAVn"}
+  - {"name":"美国2-v\r\r","type":"vless","server":"mg22.gywanglug.xyz","port":25235,"udp":true,"uuid":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","tls":true,"servername":"www.webilop.com","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"GcOtIhZbkznrBYohK7rvjV0oVoQvC4y38VIExs6KUwA"},"client-fingerprint":"firefox"}
+  - {"name":"美国3\r","type":"hysteria2","server":"mg3.gywanglug.xyz","port":22496,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"mg3.gywanglug.xyz","skip-cert-verify":true,"obfs-password":"LNAnPYDfFyesRAVn"}
+  - {"name":"美国3-v\r\r","type":"vless","server":"mg33.gywanglug.xyz","port":24522,"udp":true,"uuid":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","tls":true,"servername":"www.webilop.com","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"yDkCTYl7Ap0XeU9PNv_kBY9BwQrgYZPIov-MXvpf7R8"},"client-fingerprint":"firefox"}
+  - {"name":"美国4\r","type":"hysteria2","server":"mg4.gywanglug.xyz","port":22899,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"mg4.gywanglug.xyz","skip-cert-verify":true,"obfs-password":"LNAnPYDfFyesRAVn"}
+  - {"name":"美国4-v\r\r","type":"vless","server":"mg44.gywanglug.xyz","port":25994,"udp":true,"uuid":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","tls":true,"servername":"www.webilop.com","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"yDkCTYl7Ap0XeU9PNv_kBY9BwQrgYZPIov-MXvpf7R8"},"client-fingerprint":"safari"}
+  - {"name":"美国5\r","type":"hysteria2","server":"mg5.gywanglug.xyz","port":24910,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"mg5.gywanglug.xyz","skip-cert-verify":true,"obfs-password":"LNAnPYDfFyesRAVn"}
+  - {"name":"美国5-v\r\r","type":"vless","server":"mg55.gywanglug.xyz","port":23646,"udp":true,"uuid":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","tls":true,"servername":"www.webilop.com","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"kHtBu5SWzLuz79nw0LkDkH4luWft_A-M6MNq4LA-RB4"},"client-fingerprint":"chrome"}
+  - {"name":"美国6\r","type":"hysteria2","server":"mg6.gywanglug.xyz","port":25214,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"mg6.gywanglug.xyz","skip-cert-verify":true,"obfs-password":"LNAnPYDfFyesRAVn"}
+  - {"name":"美国6-v\r\r","type":"vless","server":"mg66.gywanglug.xyz","port":45445,"udp":true,"uuid":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","tls":true,"servername":"www.webilop.com","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"yDkCTYl7Ap0XeU9PNv_kBY9BwQrgYZPIov-MXvpf7R8"},"client-fingerprint":"ios"}
+  - {"name":"新加坡1\r","type":"hysteria2","server":"xjp1.gy6688.xyz","port":23465,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"xjp1.gy6688.xyz","skip-cert-verify":true,"obfs-password":"LNAnPYDfFyesRAVn"}
+  - {"name":"新加坡2\r","type":"hysteria2","server":"xjp2.gywanglug.xyz","port":24241,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"xjp2.gywanglug.xyz","skip-cert-verify":true}
+  - {"name":"澳大利亚\r","type":"hysteria2","server":"au1.gy6688.xyz","port":25668,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"au1.gy6688.xyz","skip-cert-verify":true,"obfs-password":"cP2sbTFOTkuTq1sW"}
+  - {"name":"英国1\r","type":"hysteria2","server":"yg1.gy6688.xyz","port":23426,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"yg1.gy6688.xyz","skip-cert-verify":true,"obfs-password":"LNAnPYDfFyesRAVn"}
+  - {"name":"荷兰1\r","type":"hysteria2","server":"hl1.gy6688.xyz","port":24425,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"hl1.gy6688.xyz","skip-cert-verify":true,"obfs-password":"LNAnPYDfFyesRAVn"}
+  - {"name":"德国1\r","type":"hysteria2","server":"dg1.gy6688.xyz","port":23632,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"dg1.gy6688.xyz","skip-cert-verify":true,"obfs-password":"LNAnPYDfFyesRAVn"}
+  - {"name":"加拿大1\r","type":"hysteria2","server":"jnd1.gy6688.xyz","port":23921,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"jnd1.gy6688.xyz","skip-cert-verify":true,"obfs-password":"LNAnPYDfFyesRAVn"}
+  - {"name":"印度1\r","type":"hysteria2","server":"yd1.gy6688.xyz","port":21005,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"yd1.gy6688.xyz","skip-cert-verify":true,"obfs-password":"LNAnPYDfFyesRAVn"}
 proxy-groups:
   - name: 节点选择
     type: select
     proxies:
-      - 自动选择
-      - 美国01
-      - 美国02
-      - 美国03
-      - 美国04
-      - 美国05
-      - 美国06
-      - "印尼01\r\r"
-      - "印尼02\r\r"
-      - "台湾01\r\r"
-      - "台湾02\r\r"
-      - "台湾03\r\r"
-      - "台湾04\r\r"
-      - "台湾05\r\r"
-      - "香港01\r\r"
-      - "香港02\r\r"
-      - "香港03\r\r"
-      - "香港04\r\r"
-      - 香港05
-  - name: 自动选择
+      - ♻️自动选择
+      - 🔯故障转移
+      - 🔥ChatGPT
+      - Hysteria2
+      - "剩余流量：938.69 GB\r"
+      - "距离下次重置剩余：23 天\r"
+      - "套餐到期：2025-05-22\r"
+      - "最新地址gy888.xyz\r"
+      - "美国1\r"
+      - "美国1-v\r\r"
+      - "美国2\r"
+      - "美国2-v\r\r"
+      - "美国3\r"
+      - "美国3-v\r\r"
+      - "美国4\r"
+      - "美国4-v\r\r"
+      - "美国5\r"
+      - "美国5-v\r\r"
+      - "美国6\r"
+      - "美国6-v\r\r"
+      - "新加坡1\r"
+      - "新加坡2\r"
+      - "澳大利亚\r"
+      - "英国1\r"
+      - "荷兰1\r"
+      - "德国1\r"
+      - "加拿大1\r"
+      - "印度1\r"
+  - name: ♻️自动选择
     type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    tolerance: 50
+    url: http://1.1.1.1
+    interval: 600
     proxies:
-      - 美国01
-      - 美国02
-      - 美国03
-      - 美国04
-      - 美国05
-      - 美国06
-      - "印尼01\r\r"
-      - "印尼02\r\r"
-      - "台湾01\r\r"
-      - "台湾02\r\r"
-      - "台湾03\r\r"
-      - "台湾04\r\r"
-      - "台湾05\r\r"
-      - "香港01\r\r"
-      - "香港02\r\r"
-      - "香港03\r\r"
-      - "香港04\r\r"
-      - 香港05
+      - "剩余流量：938.69 GB\r"
+      - "距离下次重置剩余：23 天\r"
+      - "套餐到期：2025-05-22\r"
+      - "最新地址gy888.xyz\r"
+      - "美国1\r"
+      - "美国1-v\r\r"
+      - "美国2\r"
+      - "美国2-v\r\r"
+      - "美国3\r"
+      - "美国3-v\r\r"
+      - "美国4\r"
+      - "美国4-v\r\r"
+      - "美国5\r"
+      - "美国5-v\r\r"
+      - "美国6\r"
+      - "美国6-v\r\r"
+      - "新加坡1\r"
+      - "新加坡2\r"
+      - "澳大利亚\r"
+      - "英国1\r"
+      - "荷兰1\r"
+      - "德国1\r"
+      - "加拿大1\r"
+      - "印度1\r"
+  - name: 🔯故障转移
+    type: fallback
+    url: http://1.1.1.1
+    interval: 450
+    proxies:
+      - "剩余流量：938.69 GB\r"
+      - "距离下次重置剩余：23 天\r"
+      - "套餐到期：2025-05-22\r"
+      - "最新地址gy888.xyz\r"
+      - "美国1\r"
+      - "美国1-v\r\r"
+      - "美国2\r"
+      - "美国2-v\r\r"
+      - "美国3\r"
+      - "美国3-v\r\r"
+      - "美国4\r"
+      - "美国4-v\r\r"
+      - "美国5\r"
+      - "美国5-v\r\r"
+      - "美国6\r"
+      - "美国6-v\r\r"
+      - "新加坡1\r"
+      - "新加坡2\r"
+      - "澳大利亚\r"
+      - "英国1\r"
+      - "荷兰1\r"
+      - "德国1\r"
+      - "加拿大1\r"
+      - "印度1\r"
+  - name: Hysteria2
+    type: select
+    proxies: []
+  - name: 🔥ChatGPT
+    type: select
+    proxies:
+      - "剩余流量：938.69 GB\r"
+      - "距离下次重置剩余：23 天\r"
+      - "套餐到期：2025-05-22\r"
+      - "最新地址gy888.xyz\r"
+      - "美国1\r"
+      - "美国1-v\r\r"
+      - "美国2\r"
+      - "美国2-v\r\r"
+      - "美国3\r"
+      - "美国3-v\r\r"
+      - "美国4\r"
+      - "美国4-v\r\r"
+      - "美国5\r"
+      - "美国5-v\r\r"
+      - "美国6\r"
+      - "美国6-v\r\r"
+      - "新加坡1\r"
+      - "新加坡2\r"
+      - "澳大利亚\r"
+      - "英国1\r"
+      - "荷兰1\r"
+      - "德国1\r"
+      - "加拿大1\r"
+      - "印度1\r"
 
 rules:
-  - IP-CIDR,193.31.41.172/32,DIRECT,no-resolve
-  - IP-CIDR,87.121.61.171/32,DIRECT,no-resolve
-  - IP-CIDR,83.147.17.189/32,DIRECT,no-resolve
-  - IP-CIDR,83.147.17.130/32,DIRECT,no-resolve
-  - IP-CIDR,209.200.246.141/32,DIRECT,no-resolve
-  - IP-CIDR,184.174.96.140/32,DIRECT,no-resolve
-  - IP-CIDR,184.174.96.224/32,DIRECT,no-resolve
-  - IP-CIDR,114.38.92.52/32,DIRECT,no-resolve
-  - IP-CIDR,42.200.231.151/32,DIRECT,no-resolve
-  - IP-CIDR,42.200.231.178/32,DIRECT,no-resolve
-  - DOMAIN,209.200.246.194:7001,DIRECT
+  - DOMAIN,subapi.pronetworklink.com,DIRECT
+  - PROCESS-NAME,v2ray,DIRECT
+  - PROCESS-NAME,xray,DIRECT
+  - PROCESS-NAME,naive,DIRECT
+  - PROCESS-NAME,trojan,DIRECT
+  - PROCESS-NAME,trojan-go,DIRECT
+  - PROCESS-NAME,ss-local,DIRECT
+  - PROCESS-NAME,privoxy,DIRECT
+  - PROCESS-NAME,leaf,DIRECT
+  - PROCESS-NAME,v2ray.exe,DIRECT
+  - PROCESS-NAME,xray.exe,DIRECT
+  - PROCESS-NAME,naive.exe,DIRECT
+  - PROCESS-NAME,trojan.exe,DIRECT
+  - PROCESS-NAME,trojan-go.exe,DIRECT
+  - PROCESS-NAME,ss-local.exe,DIRECT
+  - PROCESS-NAME,privoxy.exe,DIRECT
+  - PROCESS-NAME,leaf.exe,DIRECT
+  - PROCESS-NAME,Surge,DIRECT
+  - PROCESS-NAME,Surge 2,DIRECT
+  - PROCESS-NAME,Surge 3,DIRECT
+  - PROCESS-NAME,Surge 4,DIRECT
+  - PROCESS-NAME,Surge%202,DIRECT
+  - PROCESS-NAME,Surge%203,DIRECT
+  - PROCESS-NAME,Surge%204,DIRECT
+  - PROCESS-NAME,Thunder,DIRECT
+  - PROCESS-NAME,DownloadService,DIRECT
+  - PROCESS-NAME,qBittorrent,DIRECT
+  - PROCESS-NAME,Transmission,DIRECT
+  - PROCESS-NAME,fdm,DIRECT
+  - PROCESS-NAME,aria2c,DIRECT
+  - PROCESS-NAME,Folx,DIRECT
+  - PROCESS-NAME,NetTransport,DIRECT
+  - PROCESS-NAME,uTorrent,DIRECT
+  - PROCESS-NAME,WebTorrent,DIRECT
+  - PROCESS-NAME,aria2c.exe,DIRECT
+  - PROCESS-NAME,BitComet.exe,DIRECT
+  - PROCESS-NAME,fdm.exe,DIRECT
+  - PROCESS-NAME,NetTransport.exe,DIRECT
+  - PROCESS-NAME,qbittorrent.exe,DIRECT
+  - PROCESS-NAME,Thunder.exe,DIRECT
+  - PROCESS-NAME,ThunderVIP.exe,DIRECT
+  - PROCESS-NAME,transmission-daemon.exe,DIRECT
+  - PROCESS-NAME,transmission-qt.exe,DIRECT
+  - PROCESS-NAME,uTorrent.exe,DIRECT
+  - PROCESS-NAME,WebTorrent.exe,DIRECT
+  - PROCESS-NAME,aDrive.exe,DIRECT
+# 长风网站，自动注入
   - DOMAIN-SUFFIX,v2rayse.com,节点选择
   - DOMAIN-SUFFIX,cff.pw,节点选择
   - DOMAIN-SUFFIX,vpnse.org,节点选择
@@ -155,6 +368,109 @@ rules:
   - DOMAIN-SUFFIX,apple.com,DIRECT
   - DOMAIN-SUFFIX,apple-cloudkit.com,DIRECT
   - DOMAIN-SUFFIX,apple-mapkit.com,DIRECT
+  - DOMAIN,browser-intake-datadoghq.com,🔥ChatGPT
+  - DOMAIN,chat.openai.com.cdn.cloudflare.net,🔥ChatGPT
+  - DOMAIN,gemini.google.com,🔥ChatGPT
+  - DOMAIN,openai-api.arkoselabs.com,🔥ChatGPT
+  - DOMAIN,openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net,🔥ChatGPT
+  - DOMAIN,openaicomproductionae4b.blob.core.windows.net,🔥ChatGPT
+  - DOMAIN,production-openaicom-storage.azureedge.net,🔥ChatGPT
+  - DOMAIN,static.cloudflareinsights.com,🔥ChatGPT
+  - DOMAIN-SUFFIX,ai.com,🔥ChatGPT
+  - DOMAIN-SUFFIX,algolia.net,🔥ChatGPT
+  - DOMAIN-SUFFIX,api.statsig.com,🔥ChatGPT
+  - DOMAIN-SUFFIX,auth0.com,🔥ChatGPT
+  - DOMAIN-SUFFIX,chatgpt.com,🔥ChatGPT
+  - DOMAIN-SUFFIX,chatgpt.livekit.cloud,🔥ChatGPT
+  - DOMAIN-SUFFIX,client-api.arkoselabs.com,🔥ChatGPT
+  - DOMAIN-SUFFIX,events.statsigapi.net,🔥ChatGPT
+  - DOMAIN-SUFFIX,featuregates.org,🔥ChatGPT
+  - DOMAIN-SUFFIX,host.livekit.cloud,🔥ChatGPT
+  - DOMAIN-SUFFIX,identrust.com,🔥ChatGPT
+  - DOMAIN-SUFFIX,intercom.io,🔥ChatGPT
+  - DOMAIN-SUFFIX,intercomcdn.com,🔥ChatGPT
+  - DOMAIN-SUFFIX,launchdarkly.com,🔥ChatGPT
+  - DOMAIN-SUFFIX,oaistatic.com,🔥ChatGPT
+  - DOMAIN-SUFFIX,oaiusercontent.com,🔥ChatGPT
+  - DOMAIN-SUFFIX,observeit.net,🔥ChatGPT
+  - DOMAIN-SUFFIX,openai.com,🔥ChatGPT
+  - DOMAIN-SUFFIX,openaiapi-site.azureedge.net,🔥ChatGPT
+  - DOMAIN-SUFFIX,openaicom.imgix.net,🔥ChatGPT
+  - DOMAIN-SUFFIX,segment.io,🔥ChatGPT
+  - DOMAIN-SUFFIX,sentry.io,🔥ChatGPT
+  - DOMAIN-SUFFIX,stripe.com,🔥ChatGPT
+  - DOMAIN-SUFFIX,turn.livekit.cloud,🔥ChatGPT
+  - DOMAIN-SUFFIX,sora.com,🔥ChatGPT
+  - DOMAIN-KEYWORD,openai,🔥ChatGPT
+  - DOMAIN,api.msn.com,🔥ChatGPT
+  - DOMAIN,api.statsig.com,🔥ChatGPT
+  - DOMAIN,assets.msn.com,🔥ChatGPT
+  - DOMAIN,browser-intake-datadoghq.com,🔥ChatGPT
+  - DOMAIN,chat.openai.com.cdn.cloudflare.net,🔥ChatGPT
+  - DOMAIN,copilot.microsoft.com,🔥ChatGPT
+  - DOMAIN,gateway.bingviz.microsoft.net,🔥ChatGPT
+  - DOMAIN,gateway.bingviz.microsoftapp.net,🔥ChatGPT
+  - DOMAIN,in.appcenter.ms,🔥ChatGPT
+  - DOMAIN,location.microsoft.com,🔥ChatGPT
+  - DOMAIN,odc.officeapps.live.com,🔥ChatGPT
+  - DOMAIN,openai-api.arkoselabs.com,🔥ChatGPT
+  - DOMAIN,openaicomproductionae4b.blob.core.windows.net,🔥ChatGPT
+  - DOMAIN,production-openaicom-storage.azureedge.net,🔥ChatGPT
+  - DOMAIN,r.bing.com,🔥ChatGPT
+  - DOMAIN,self.events.data.microsoft.com,🔥ChatGPT
+  - DOMAIN,services.bingapis.com,🔥ChatGPT
+  - DOMAIN,static.cloudflareinsights.com,🔥ChatGPT
+  - DOMAIN,sydney.bing.com,🔥ChatGPT
+  - DOMAIN,www.bing.com,🔥ChatGPT
+  - DOMAIN-SUFFIX,algolia.net,🔥ChatGPT
+  - DOMAIN-SUFFIX,api.microsoftapp.net,🔥ChatGPT
+  - DOMAIN-SUFFIX,auth0.com,🔥ChatGPT
+  - DOMAIN-SUFFIX,bing-shopping.microsoft-falcon.io,🔥ChatGPT
+  - DOMAIN-SUFFIX,challenges.cloudflare.com,🔥ChatGPT
+  - DOMAIN-SUFFIX,chatgpt.com,🔥ChatGPT
+  - DOMAIN-SUFFIX,chatgpt.livekit.cloud,🔥ChatGPT
+  - DOMAIN-SUFFIX,client-api.arkoselabs.com,🔥ChatGPT
+  - DOMAIN-SUFFIX,edgeservices.bing.com,🔥ChatGPT
+  - DOMAIN-SUFFIX,events.statsigapi.net,🔥ChatGPT
+  - DOMAIN-SUFFIX,featuregates.org,🔥ChatGPT
+  - DOMAIN-SUFFIX,host.livekit.cloud,🔥ChatGPT
+  - DOMAIN-SUFFIX,identrust.com,🔥ChatGPT
+  - DOMAIN-SUFFIX,intercom.io,🔥ChatGPT
+  - DOMAIN-SUFFIX,intercomcdn.com,🔥ChatGPT
+  - DOMAIN-SUFFIX,launchdarkly.com,🔥ChatGPT
+  - DOMAIN-SUFFIX,oaistatic.com,🔥ChatGPT
+  - DOMAIN-SUFFIX,oaiusercontent.com,🔥ChatGPT
+  - DOMAIN-SUFFIX,observeit.net,🔥ChatGPT
+  - DOMAIN-SUFFIX,openai.com,🔥ChatGPT
+  - DOMAIN-SUFFIX,openaiapi-site.azureedge.net,🔥ChatGPT
+  - DOMAIN-SUFFIX,openaicom.imgix.net,🔥ChatGPT
+  - DOMAIN-SUFFIX,segment.io,🔥ChatGPT
+  - DOMAIN-SUFFIX,sentry.io,🔥ChatGPT
+  - DOMAIN-SUFFIX,stripe.com,🔥ChatGPT
+  - DOMAIN-SUFFIX,turn.livekit.cloud,🔥ChatGPT
+  - DOMAIN-KEYWORD,openaicom-api,🔥ChatGPT
+  - DOMAIN,ai.google.dev,🔥ChatGPT
+  - DOMAIN,alkalimakersuite-pa.clients6.google.com,🔥ChatGPT
+  - DOMAIN,makersuite.google.com,🔥ChatGPT
+  - DOMAIN-SUFFIX,bard.google.com,🔥ChatGPT
+  - DOMAIN-SUFFIX,deepmind.com,🔥ChatGPT
+  - DOMAIN-SUFFIX,deepmind.google,🔥ChatGPT
+  - DOMAIN-SUFFIX,gemini.google.com,🔥ChatGPT
+  - DOMAIN-SUFFIX,generativeai.google,🔥ChatGPT
+  - DOMAIN-SUFFIX,proactivebackend-pa.googleapis.com,🔥ChatGPT
+  - DOMAIN-SUFFIX,apis.google.com,🔥ChatGPT
+  - DOMAIN-KEYWORD,colab,🔥ChatGPT
+  - DOMAIN-KEYWORD,developerprofiles,🔥ChatGPT
+  - DOMAIN-KEYWORD,generativelanguage,🔥ChatGPT
+  - DOMAIN,cdn.usefathom.com,🔥ChatGPT
+  - DOMAIN-SUFFIX,anthropic.com,🔥ChatGPT
+  - DOMAIN-SUFFIX,claude.ai,🔥ChatGPT
+  - DOMAIN-SUFFIX,razie.ai,🔥ChatGPT
+  - DOMAIN-SUFFIX,razie.aws.intellij.net,🔥ChatGPT
+  - DOMAIN-SUFFIX,etbrains.ai,🔥ChatGPT
+  - DOMAIN-SUFFIX,meta.com,🔥ChatGPT
+  - DOMAIN-SUFFIX,cn,DIRECT
+  - DOMAIN-KEYWORD,-cn,DIRECT
   - DOMAIN-SUFFIX,126.com,DIRECT
   - DOMAIN-SUFFIX,126.net,DIRECT
   - DOMAIN-SUFFIX,127.net,DIRECT
@@ -208,7 +524,6 @@ rules:
   - DOMAIN-SUFFIX,le.com,DIRECT
   - DOMAIN-SUFFIX,lecloud.com,DIRECT
   - DOMAIN-SUFFIX,lemicp.com,DIRECT
-  - DOMAIN-SUFFIX,licdn.com,DIRECT
   - DOMAIN-SUFFIX,luoo.net,DIRECT
   - DOMAIN-SUFFIX,meituan.com,DIRECT
   - DOMAIN-SUFFIX,meituan.net,DIRECT
@@ -280,6 +595,14 @@ rules:
   - DOMAIN-SUFFIX,zhimg.com,DIRECT
   - DOMAIN-SUFFIX,zimuzu.tv,DIRECT
   - DOMAIN-SUFFIX,zoho.com,DIRECT
+  - DOMAIN,fastly-download.epicgames.com,DIRECT
+  - DOMAIN,epicgames-download1.akamaized.net,DIRECT
+  - DOMAIN,steamcdn-a.akamaihd.net,DIRECT
+  - DOMAIN-SUFFIX,steamserver.net,DIRECT
+  - DOMAIN-SUFFIX,cm.steampowered.com,DIRECT
+  - DOMAIN-SUFFIX,synology.com,DIRECT
+  - DOMAIN-SUFFIX,dyndns.org,DIRECT
+  - DOMAIN-SUFFIX,egdownload.fastly-edge.com,DIRECT
   - DOMAIN-KEYWORD,amazon,节点选择
   - DOMAIN-KEYWORD,google,节点选择
   - DOMAIN-KEYWORD,gmail,节点选择
@@ -294,6 +617,22 @@ rules:
   - DOMAIN-KEYWORD,blogspot,节点选择
   - DOMAIN-SUFFIX,youtu.be,节点选择
   - DOMAIN-KEYWORD,whatsapp,节点选择
+  - DOMAIN-SUFFIX,ipleak.net,节点选择
+  - DOMAIN-SUFFIX,browserscan.net,节点选择
+  - DOMAIN-SUFFIX,surfsharkdns.com,节点选择
+  - DOMAIN-SUFFIX,edns.ip-api.com,节点选择
+  - DOMAIN-SUFFIX,dnsleaktest.com,节点选择
+  - DOMAIN-SUFFIX,dnsleak.com,节点选择
+  - DOMAIN-SUFFIX,expressvpn.com,节点选择
+  - DOMAIN-SUFFIX,nordvpn.com,节点选择
+  - DOMAIN-SUFFIX,surfshark.com,节点选择
+  - DOMAIN-SUFFIX,perfect-privacy.com,节点选择
+  - DOMAIN-SUFFIX,browserleaks.com,节点选择
+  - DOMAIN-SUFFIX,browserleaks.org,节点选择
+  - DOMAIN-SUFFIX,browserleaks.net,节点选择
+  - DOMAIN-SUFFIX,vpnunlimited.com,节点选择
+  - DOMAIN-SUFFIX,whoer.net,节点选择
+  - DOMAIN-SUFFIX,whrq.net,节点选择
   - DOMAIN-KEYWORD,admarvel,REJECT
   - DOMAIN-KEYWORD,admaster,REJECT
   - DOMAIN-KEYWORD,adsage,REJECT
@@ -321,6 +660,8 @@ rules:
   - DOMAIN-SUFFIX,vungle.com,REJECT
   - DOMAIN-KEYWORD,wlmonitor,REJECT
   - DOMAIN-KEYWORD,zjtoolbar,REJECT
+  - DOMAIN-SUFFIX,linkedin.com,节点选择
+  - DOMAIN-SUFFIX,licdn.com,节点选择
   - DOMAIN-SUFFIX,9to5mac.com,节点选择
   - DOMAIN-SUFFIX,abpchina.org,节点选择
   - DOMAIN-SUFFIX,adblockplus.org,节点选择
@@ -342,7 +683,6 @@ rules:
   - DOMAIN-SUFFIX,aspnetcdn.com,节点选择
   - DOMAIN-SUFFIX,att.com,节点选择
   - DOMAIN-SUFFIX,awsstatic.com,节点选择
-  - DOMAIN-SUFFIX,azureedge.net,节点选择
   - DOMAIN-SUFFIX,azurewebsites.net,节点选择
   - DOMAIN-SUFFIX,bing.com,节点选择
   - DOMAIN-SUFFIX,bintray.com,节点选择
@@ -451,7 +791,6 @@ rules:
   - DOMAIN-SUFFIX,kat.cr,节点选择
   - DOMAIN-SUFFIX,klip.me,节点选择
   - DOMAIN-SUFFIX,libsyn.com,节点选择
-  - DOMAIN-SUFFIX,linkedin.com,节点选择
   - DOMAIN-SUFFIX,line-apps.com,节点选择
   - DOMAIN-SUFFIX,linode.com,节点选择
   - DOMAIN-SUFFIX,lithium.com,节点选择
@@ -591,8 +930,16 @@ rules:
   - DOMAIN-SUFFIX,ying.com,节点选择
   - DOMAIN-SUFFIX,yoyo.org,节点选择
   - DOMAIN-SUFFIX,ytimg.com,节点选择
+  - DOMAIN-SUFFIX,signal.org,节点选择
+  - DOMAIN-SUFFIX,whispersystems.org,节点选择
+  - DOMAIN-SUFFIX,cangku.moe,节点选择
+  - DOMAIN-SUFFIX,tradingview.com,节点选择
+  - DOMAIN-SUFFIX,x.com,节点选择
+  - DOMAIN-SUFFIX,asmr.one,节点选择
   - DOMAIN-SUFFIX,telegra.ph,节点选择
   - DOMAIN-SUFFIX,telegram.org,节点选择
+  - DOMAIN-SUFFIX,t.me,节点选择
+  - DOMAIN-SUFFIX,telegram.me,节点选择
   - IP-CIDR,91.108.4.0/22,节点选择,no-resolve
   - IP-CIDR,91.108.8.0/21,节点选择,no-resolve
   - IP-CIDR,91.108.16.0/22,节点选择,no-resolve
@@ -630,7 +977,5 @@ rules:
   - IP-CIDR,100.64.0.0/10,DIRECT
   - IP-CIDR,224.0.0.0/4,DIRECT
   - IP-CIDR6,fe80::/10,DIRECT
-  - DOMAIN-SUFFIX,cn,DIRECT
-  - DOMAIN-KEYWORD,-cn,DIRECT
   - GEOIP,CN,DIRECT
   - MATCH,节点选择
