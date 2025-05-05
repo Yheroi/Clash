@@ -1,6 +1,6 @@
 # 模版名称：A1.ini
 # 模版最后更新日期：2025/05/05 17:53:08
-# 配置生成日期：2025-05-05 09:59:02
+# 配置生成日期：2025-05-05 14:01:17
 
 mixed-port: 7890
 allow-lan: false
@@ -106,10 +106,10 @@ proxies:
     password: a8c46207-0368-4ee1-870e-f8590e9c6218
     ip-version: dual
     cipher: aes-128-gcm
-  - name: "美国 01\r\r"
+  - name: 美国 01
     type: hysteria2
     server: mg1.gywanglug.xyz
-    port: 23679
+    port: 21212
     tls: true
     password: cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f
     sni: mg1.gywanglug.xyz
@@ -117,20 +117,20 @@ proxies:
     skip-cert-verify: true
     fast-open: false
     ip-version: dual
-  - name: "美国 02\r\r"
+  - name: 美国 02
     type: hysteria2
     server: mg2.gywanglug.xyz
-    port: 24428
+    port: 24314
     tls: true
     password: cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f
     sni: mg2.gywanglug.xyz
     skip-cert-verify: true
     fast-open: false
     ip-version: dual
-  - name: "美国 03\r"
+  - name: 美国 03
     type: hysteria2
     server: mg3.gywanglug.xyz
-    port: 22272
+    port: 22788
     tls: true
     password: cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f
     sni: mg3.gywanglug.xyz
@@ -138,48 +138,6 @@ proxies:
     skip-cert-verify: true
     fast-open: false
     ip-version: dual
-  - name: 美国 04
-    type: tuic
-    server: mg4.gywanglug.xyz
-    port: 8443
-    uuid: cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f
-    tls: true
-    password: cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f
-    sni: mg4.gywanglug.xyz
-    alpn:
-      - h3
-    skip-cert-verify: true
-    ip-version: dual
-    udp-relay-mode: quic
-    congestion-controller: bbr
-  - name: 美国 05
-    type: tuic
-    server: mg5.gywanglug.xyz
-    port: 443
-    uuid: cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f
-    tls: true
-    password: cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f
-    sni: mg5.gywanglug.xyz
-    alpn:
-      - h3
-    skip-cert-verify: true
-    ip-version: dual
-    udp-relay-mode: native
-    congestion-controller: bbr
-  - name: 美国 06
-    type: tuic
-    server: mg6.gywanglug.xyz
-    port: 443
-    uuid: cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f
-    tls: true
-    password: cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f
-    sni: mg6.gywanglug.xyz
-    alpn:
-      - h3
-    skip-cert-verify: true
-    ip-version: dual
-    udp-relay-mode: native
-    congestion-controller: bbr
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -193,12 +151,9 @@ proxy-groups:
       - "中国台湾 05\r\r\r"
       - "印尼 01\r\r\r"
       - "印尼 02\r\r\r"
-      - "美国 01\r\r"
-      - "美国 02\r\r"
-      - "美国 03\r"
-      - 美国 04
-      - 美国 05
-      - 美国 06
+      - 美国 01
+      - 美国 02
+      - 美国 03
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -212,12 +167,9 @@ proxy-groups:
       - "中国台湾 05\r\r\r"
       - "印尼 01\r\r\r"
       - "印尼 02\r\r\r"
-      - "美国 01\r\r"
-      - "美国 02\r\r"
-      - "美国 03\r"
-      - 美国 04
-      - 美国 05
-      - 美国 06
+      - 美国 01
+      - 美国 02
+      - 美国 03
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -242,12 +194,9 @@ proxy-groups:
       - "中国台湾 05\r\r\r"
       - "印尼 01\r\r\r"
       - "印尼 02\r\r\r"
-      - "美国 01\r\r"
-      - "美国 02\r\r"
-      - "美国 03\r"
-      - 美国 04
-      - 美国 05
-      - 美国 06
+      - 美国 01
+      - 美国 02
+      - 美国 03
 rules:
 # 本地/局域网地址
 # 参考：https://en.wikipedia.org/wiki/Reserved_IP_addresses
