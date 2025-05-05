@@ -1,6 +1,6 @@
 # 模版名称：ACL4SSR_Mini.ini
 # 模版最后更新日期：2025/02/12 01:49:29
-# 配置生成日期：2025-05-05 09:37:15
+# 配置生成日期：2025-05-05 09:43:44
 
 mixed-port: 7890
 allow-lan: false
@@ -50,6 +50,62 @@ tun:
     - 1.1.1.1
     - 1.0.0.1
 proxies:
+  - name: 中国台湾 01
+    type: ss
+    server: cdn.node1.lilisi.link
+    port: 10011
+    tls: false
+    password: a8c46207-0368-4ee1-870e-f8590e9c6218
+    ip-version: dual
+    cipher: aes-128-gcm
+  - name: 中国台湾 02
+    type: ss
+    server: cdn.node1.lilisi.link
+    port: 10012
+    tls: false
+    password: a8c46207-0368-4ee1-870e-f8590e9c6218
+    ip-version: dual
+    cipher: aes-128-gcm
+  - name: 中国台湾 03
+    type: ss
+    server: cdn.node1.lilisi.link
+    port: 10013
+    tls: false
+    password: a8c46207-0368-4ee1-870e-f8590e9c6218
+    ip-version: dual
+    cipher: aes-128-gcm
+  - name: 中国台湾 04
+    type: ss
+    server: cdn.node1.lilisi.link
+    port: 10014
+    tls: false
+    password: a8c46207-0368-4ee1-870e-f8590e9c6218
+    ip-version: dual
+    cipher: aes-128-gcm
+  - name: 中国台湾 05
+    type: ss
+    server: cdn.node1.lilisi.link
+    port: 10015
+    tls: false
+    password: a8c46207-0368-4ee1-870e-f8590e9c6218
+    ip-version: dual
+    cipher: aes-128-gcm
+  - name: 印尼 01
+    type: ss
+    server: cdn.node1.lilisi.link
+    port: 10051
+    tls: false
+    password: a8c46207-0368-4ee1-870e-f8590e9c6218
+    ip-version: dual
+    cipher: aes-128-gcm
+  - name: 印尼 02
+    type: ss
+    server: cdn.node1.lilisi.link
+    port: 10052
+    tls: false
+    password: a8c46207-0368-4ee1-870e-f8590e9c6218
+    ip-version: dual
+    cipher: aes-128-gcm
   - name: 美国 01
     type: hysteria2
     server: mg1.gywanglug.xyz
@@ -129,74 +185,12 @@ proxies:
     ip-version: dual
     udp-relay-mode: native
     congestion-controller: bbr
-  - name: 中国台湾 01
-    type: ss
-    server: cdn.node1.lilisi.link
-    port: 10011
-    tls: false
-    password: a8c46207-0368-4ee1-870e-f8590e9c6218
-    ip-version: dual
-    cipher: aes-128-gcm
-  - name: 中国台湾 02
-    type: ss
-    server: cdn.node1.lilisi.link
-    port: 10012
-    tls: false
-    password: a8c46207-0368-4ee1-870e-f8590e9c6218
-    ip-version: dual
-    cipher: aes-128-gcm
-  - name: 中国台湾 03
-    type: ss
-    server: cdn.node1.lilisi.link
-    port: 10013
-    tls: false
-    password: a8c46207-0368-4ee1-870e-f8590e9c6218
-    ip-version: dual
-    cipher: aes-128-gcm
-  - name: 中国台湾 04
-    type: ss
-    server: cdn.node1.lilisi.link
-    port: 10014
-    tls: false
-    password: a8c46207-0368-4ee1-870e-f8590e9c6218
-    ip-version: dual
-    cipher: aes-128-gcm
-  - name: 中国台湾 05
-    type: ss
-    server: cdn.node1.lilisi.link
-    port: 10015
-    tls: false
-    password: a8c46207-0368-4ee1-870e-f8590e9c6218
-    ip-version: dual
-    cipher: aes-128-gcm
-  - name: 印尼 01
-    type: ss
-    server: cdn.node1.lilisi.link
-    port: 10051
-    tls: false
-    password: a8c46207-0368-4ee1-870e-f8590e9c6218
-    ip-version: dual
-    cipher: aes-128-gcm
-  - name: 印尼 02
-    type: ss
-    server: cdn.node1.lilisi.link
-    port: 10052
-    tls: false
-    password: a8c46207-0368-4ee1-870e-f8590e9c6218
-    ip-version: dual
-    cipher: aes-128-gcm
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 美国 01
-      - 美国 02
-      - 美国 03
-      - 美国 04
-      - 美国 05
-      - 美国 06
       - 中国台湾 01
       - 中国台湾 02
       - 中国台湾 03
@@ -204,18 +198,18 @@ proxy-groups:
       - 中国台湾 05
       - 印尼 01
       - 印尼 02
+      - 美国 01
+      - 美国 02
+      - 美国 03
+      - 美国 04
+      - 美国 05
+      - 美国 06
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 5000
     proxies:
-      - 美国 01
-      - 美国 02
-      - 美国 03
-      - 美国 04
-      - 美国 05
-      - 美国 06
       - 中国台湾 01
       - 中国台湾 02
       - 中国台湾 03
@@ -223,6 +217,12 @@ proxy-groups:
       - 中国台湾 05
       - 印尼 01
       - 印尼 02
+      - 美国 01
+      - 美国 02
+      - 美国 03
+      - 美国 04
+      - 美国 05
+      - 美国 06
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -240,12 +240,6 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 美国 01
-      - 美国 02
-      - 美国 03
-      - 美国 04
-      - 美国 05
-      - 美国 06
       - 中国台湾 01
       - 中国台湾 02
       - 中国台湾 03
@@ -253,6 +247,12 @@ proxy-groups:
       - 中国台湾 05
       - 印尼 01
       - 印尼 02
+      - 美国 01
+      - 美国 02
+      - 美国 03
+      - 美国 04
+      - 美国 05
+      - 美国 06
 rules:
 # 本地/局域网地址
 # 参考：https://en.wikipedia.org/wiki/Reserved_IP_addresses
