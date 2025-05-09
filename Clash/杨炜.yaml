@@ -109,7 +109,7 @@ proxies:
   - name: 美国 01
     type: hysteria2
     server: mg1.gywanglug.xyz
-    port: 21424
+    port: 24285
     tls: true
     password: cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f
     sni: mg1.gywanglug.xyz
@@ -118,22 +118,24 @@ proxies:
     skip-cert-verify: true
     fast-open: false
     ip-version: dual
-    ports: 21000-26000
+    ports: '24285'
   - name: 美国 02
     type: hysteria2
     server: mg2.gywanglug.xyz
-    port: 23943
+    port: 22952
     tls: true
     password: cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f
     sni: mg2.gywanglug.xyz
+    obfs: salamander
+    obfs-password: LNAnPYDfFyesRAVn
     skip-cert-verify: true
     fast-open: false
     ip-version: dual
-    ports: 21000-26000
+    ports: '22952'
   - name: 美国 03
     type: hysteria2
     server: mg3.gywanglug.xyz
-    port: 24068
+    port: 25153
     tls: true
     password: cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f
     sni: mg3.gywanglug.xyz
@@ -142,7 +144,7 @@ proxies:
     skip-cert-verify: true
     fast-open: false
     ip-version: dual
-    ports: 21000-26000
+    ports: '25153'
   - name: 美国 04
     type: tuic
     server: mg4.gywanglug.xyz
