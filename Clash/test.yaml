@@ -1,10 +1,10 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：2025-05-09 17:23:01
+# 创建时间：2025-05-09 17:34:24
 # 使用模版：ACL4SSR_Mini.ini
-# 节点数量：13
-# 节点类型：ss, hysteria2, tuic
+# 节点数量：6
+# 节点类型：hysteria2, tuic
 # !!当前配置文件请使用基于 Clash.Meta 内核程序
 ####################################
 mixed-port: 7890
@@ -87,35 +87,21 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"中国台湾 01\r\r\r\r\r\r\r","type":"ss","server":"cdn.node1.lilisi.link","port":10011,"password":"a8c46207-0368-4ee1-870e-f8590e9c6218","cipher":"aes-128-gcm"}
-  - {"name":"中国台湾 02\r\r\r\r\r\r\r","type":"ss","server":"cdn.node1.lilisi.link","port":10012,"password":"a8c46207-0368-4ee1-870e-f8590e9c6218","cipher":"aes-128-gcm"}
-  - {"name":"中国台湾 03\r\r\r\r\r\r\r","type":"ss","server":"cdn.node1.lilisi.link","port":10013,"password":"a8c46207-0368-4ee1-870e-f8590e9c6218","cipher":"aes-128-gcm"}
-  - {"name":"中国台湾 04\r\r\r\r\r\r\r","type":"ss","server":"cdn.node1.lilisi.link","port":10014,"password":"a8c46207-0368-4ee1-870e-f8590e9c6218","cipher":"aes-128-gcm"}
-  - {"name":"中国台湾 05\r\r\r\r\r\r\r","type":"ss","server":"cdn.node1.lilisi.link","port":10015,"password":"a8c46207-0368-4ee1-870e-f8590e9c6218","cipher":"aes-128-gcm"}
-  - {"name":"印尼 01\r\r\r\r\r\r\r","type":"ss","server":"cdn.node1.lilisi.link","port":10051,"password":"a8c46207-0368-4ee1-870e-f8590e9c6218","cipher":"aes-128-gcm"}
-  - {"name":"印尼 02\r\r\r\r\r","type":"ss","server":"cdn.node1.lilisi.link","port":10052,"password":"a8c46207-0368-4ee1-870e-f8590e9c6218","cipher":"aes-128-gcm"}
-  - {"name":"美国 01","type":"hysteria2","server":"mg1.gywanglug.xyz","port":23618,"skip-cert-verify":true}
-  - {"name":"美国 02","type":"hysteria2","server":"mg2.gywanglug.xyz","port":24410,"skip-cert-verify":true}
-  - {"name":"美国 03","type":"hysteria2","server":"mg3.gywanglug.xyz","port":22764,"skip-cert-verify":true}
-  - {"name":"defaultName_1","type":"tuic","server":"mg4.gywanglug.xyz","port":8443}
-  - {"name":"defaultName_2","type":"tuic","server":"mg5.gywanglug.xyz","port":443}
-  - {"name":"defaultName_3","type":"tuic","server":"mg6.gywanglug.xyz","port":443}
+  - {"name":"美国1","type":"hysteria2","server":"mg1.gywanglug.xyz","port":22270,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"mg1.gywanglug.xyz","skip-cert-verify":true,"obfs-password":"LNAnPYDfFyesRAVn"}
+  - {"name":"美国2","type":"hysteria2","server":"mg2.gywanglug.xyz","port":22795,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"mg2.gywanglug.xyz","skip-cert-verify":true,"obfs-password":"LNAnPYDfFyesRAVn"}
+  - {"name":"美国3","type":"hysteria2","server":"mg3.gywanglug.xyz","port":21111,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"mg3.gywanglug.xyz","skip-cert-verify":true,"obfs-password":"LNAnPYDfFyesRAVn"}
+  - {"name":"defaultName_1","type":"tuic","server":"mg4.gywanglug.xyz","port":8443,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","uuid":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","alpn":["h3"],"udp-relay-mode":"quic","congestion-controller":"bbr"}
+  - {"name":"defaultName_2","type":"tuic","server":"mg5.gywanglug.xyz","port":443,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","uuid":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","alpn":["h3"],"udp-relay-mode":"native","congestion-controller":"bbr"}
+  - {"name":"defaultName_3","type":"tuic","server":"mg6.gywanglug.xyz","port":443,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","uuid":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","alpn":["h3"],"udp-relay-mode":"native","congestion-controller":"bbr"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - "中国台湾 01\r\r\r\r\r\r\r"
-      - "中国台湾 02\r\r\r\r\r\r\r"
-      - "中国台湾 03\r\r\r\r\r\r\r"
-      - "中国台湾 04\r\r\r\r\r\r\r"
-      - "中国台湾 05\r\r\r\r\r\r\r"
-      - "印尼 01\r\r\r\r\r\r\r"
-      - "印尼 02\r\r\r\r\r"
-      - 美国 01
-      - 美国 02
-      - 美国 03
+      - 美国1
+      - 美国2
+      - 美国3
       - defaultName_1
       - defaultName_2
       - defaultName_3
@@ -125,16 +111,9 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - "中国台湾 01\r\r\r\r\r\r\r"
-      - "中国台湾 02\r\r\r\r\r\r\r"
-      - "中国台湾 03\r\r\r\r\r\r\r"
-      - "中国台湾 04\r\r\r\r\r\r\r"
-      - "中国台湾 05\r\r\r\r\r\r\r"
-      - "印尼 01\r\r\r\r\r\r\r"
-      - "印尼 02\r\r\r\r\r"
-      - 美国 01
-      - 美国 02
-      - 美国 03
+      - 美国1
+      - 美国2
+      - 美国3
       - defaultName_1
       - defaultName_2
       - defaultName_3
@@ -155,16 +134,9 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "中国台湾 01\r\r\r\r\r\r\r"
-      - "中国台湾 02\r\r\r\r\r\r\r"
-      - "中国台湾 03\r\r\r\r\r\r\r"
-      - "中国台湾 04\r\r\r\r\r\r\r"
-      - "中国台湾 05\r\r\r\r\r\r\r"
-      - "印尼 01\r\r\r\r\r\r\r"
-      - "印尼 02\r\r\r\r\r"
-      - 美国 01
-      - 美国 02
-      - 美国 03
+      - 美国1
+      - 美国2
+      - 美国3
       - defaultName_1
       - defaultName_2
       - defaultName_3
