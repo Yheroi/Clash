@@ -1,6 +1,6 @@
 # 模版名称：A1.ini
 # 模版最后更新日期：2025/05/05 17:53:08
-# 配置生成日期：2025-05-09 17:36:46
+# 配置生成日期：2025-05-09 17:51:04
 
 mixed-port: 7890
 allow-lan: false
@@ -50,53 +50,24 @@ tun:
     - 1.1.1.1
     - 1.0.0.1
 proxies:
-  - name: "美国1\r"
-    type: hysteria2
-    server: mg1.gywanglug.xyz
-    port: 22321
-    tls: true
-    password: cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f
-    sni: mg1.gywanglug.xyz
-    obfs: salamander
-    obfs-password: LNAnPYDfFyesRAVn
-    skip-cert-verify: true
-    fast-open: false
-    ip-version: dual
-    ports: '22321'
-  - name: "美国2\r"
-    type: hysteria2
-    server: mg2.gywanglug.xyz
-    port: 25470
-    tls: true
-    password: cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f
-    sni: mg2.gywanglug.xyz
-    obfs: salamander
-    obfs-password: LNAnPYDfFyesRAVn
-    skip-cert-verify: true
-    fast-open: false
-    ip-version: dual
-    ports: '25470'
   - name: "美国3\r"
-    type: hysteria2
-    server: mg3.gywanglug.xyz
-    port: 24365
+    type: tuic
+    server: mg4.gywanglug.xyz
+    port: '8443'
     tls: true
     password: cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f
-    sni: mg3.gywanglug.xyz
+    sni: mg4.gywanglug.xyz
     obfs: salamander
     obfs-password: LNAnPYDfFyesRAVn
     skip-cert-verify: true
     fast-open: false
     ip-version: dual
-    ports: '24365'
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - "美国1\r"
-      - "美国2\r"
       - "美国3\r"
   - name: ♻️ 自动选择
     type: url-test
@@ -104,8 +75,6 @@ proxy-groups:
     interval: 300
     tolerance: 5000
     proxies:
-      - "美国1\r"
-      - "美国2\r"
       - "美国3\r"
   - name: 🎯 全球直连
     type: select
@@ -124,8 +93,6 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "美国1\r"
-      - "美国2\r"
       - "美国3\r"
 rules:
 # 本地/局域网地址
