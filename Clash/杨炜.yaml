@@ -1,6 +1,6 @@
 # 模版名称：A1.ini
 # 模版最后更新日期：2025/05/05 17:53:08
-# 配置生成日期：2025-05-09
+# 配置生成日期：2025-05-05 14:15:03
 
 mixed-port: 7890
 allow-lan: false
@@ -109,7 +109,7 @@ proxies:
   - name: 美国 01
     type: hysteria2
     server: mg1.gywanglug.xyz
-    port: 21424
+    port: 23141
     tls: true
     password: cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f
     sni: mg1.gywanglug.xyz
@@ -122,7 +122,7 @@ proxies:
   - name: 美国 02
     type: hysteria2
     server: mg2.gywanglug.xyz
-    port: 22952
+    port: 23773
     tls: true
     password: cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f
     sni: mg2.gywanglug.xyz
@@ -131,11 +131,11 @@ proxies:
     skip-cert-verify: true
     fast-open: false
     ip-version: dual
-    ports: '22952'
+    ports: 21000-26000
   - name: 美国 03
     type: hysteria2
     server: mg2.gywanglug.xyz
-    port: 22952
+    port: 23763
     tls: true
     password: cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f
     sni: mg2.gywanglug.xyz
@@ -144,7 +144,7 @@ proxies:
     skip-cert-verify: true
     fast-open: false
     ip-version: dual
-    ports: '22952'
+    ports: 21000-26000
   - name: 美国 04
     type: tuic
     server: mg4.gywanglug.xyz
