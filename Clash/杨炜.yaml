@@ -1,6 +1,6 @@
 # 模版名称：A1.ini
 # 模版最后更新日期：2025/05/05 17:53:08
-# 配置生成日期：2025-05-22 14:44:58
+# 配置生成日期：2025-05-22 14:52:58 latest
 
 mixed-port: 7890
 allow-lan: false
@@ -154,7 +154,7 @@ proxies:
     fast-open: false
     ip-version: dual
     ports: 21000-26000
-    - name: 美国 05
+  - name: 美国 05
     type: tuic
     server: mg5.gywanglug.xyz
     port: 443
@@ -168,10 +168,10 @@ proxies:
     ip-version: dual
     udp-relay-mode: native
     congestion-controller: bbr
-    - name: 美国 06
+  - name: 美国 06
     type: tuic
-    server: mg6.gywanglug.xyz
-    port: 443
+    server: mg4.gywanglug.xyz
+    port: 8443
     uuid: cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f
     tls: true
     password: cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f
