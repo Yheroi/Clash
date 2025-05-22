@@ -1,6 +1,6 @@
 # 模版名称：A1.ini
 # 模版最后更新日期：2025/05/05 17:53:08
-# 配置生成日期：2025-05-22 14:40:15
+# 配置生成日期：2025-05-22 14:44:58
 
 mixed-port: 7890
 allow-lan: false
@@ -110,7 +110,6 @@ proxies:
     type: trojan
     server: mg7.gy6688.xyz
     port: 443
-    network: tcp
     tls: true
     password: cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f
     sni: mg7.gy6688.xyz
@@ -128,22 +127,8 @@ proxies:
     skip-cert-verify: true
     fast-open: false
     ip-version: dual
+    ports: 21000-26000
   - name: 美国 03
-    type: vless
-    server: mg11.gywanglug.xyz
-    port: 8443
-    uuid: cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f
-    network: tcp
-    tls: true
-    servername: www.apple.com.cn
-    flow: xtls-rprx-vision
-    skip-cert-verify: true
-    client-fingerprint: edge
-    reality-opts:
-      public-key: 1jupCbzD9RB34YhWct4C6_I1bx_O5Ct7ZnT5dfCiV18
-    ip-version: dual
-    udp: true
-  - name: 美国 04
     type: hysteria2
     server: mg2.gywanglug.xyz
     port: 24706
@@ -155,22 +140,8 @@ proxies:
     skip-cert-verify: true
     fast-open: false
     ip-version: dual
-  - name: 美国 05
-    type: vless
-    server: mg22.gywanglug.xyz
-    port: 8443
-    uuid: cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f
-    network: tcp
-    tls: true
-    servername: businessmadesimple.com
-    flow: xtls-rprx-vision
-    skip-cert-verify: true
-    client-fingerprint: firefox
-    reality-opts:
-      public-key: GcOtIhZbkznrBYohK7rvjV0oVoQvC4y38VIExs6KUwA
-    ip-version: dual
-    udp: true
-  - name: 美国 06
+    ports: 21000-26000
+  - name: 美国 04
     type: hysteria2
     server: mg3.gywanglug.xyz
     port: 21132
@@ -182,66 +153,35 @@ proxies:
     skip-cert-verify: true
     fast-open: false
     ip-version: dual
-  - name: 美国 07
-    type: vless
-    server: mg33.gywanglug.xyz
-    port: 8443
+    ports: 21000-26000
+    - name: 美国 05
+    type: tuic
+    server: mg5.gywanglug.xyz
+    port: 443
     uuid: cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f
-    network: tcp
     tls: true
-    servername: www.thewilliamvale.com
-    flow: xtls-rprx-vision
+    password: cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f
+    sni: mg5.gywanglug.xyz
+    alpn:
+      - h3
     skip-cert-verify: true
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: yDkCTYl7Ap0XeU9PNv_kBY9BwQrgYZPIov-MXvpf7R8
     ip-version: dual
-    udp: true
-  - name: 美国 08
-    type: vless
-    server: mg44.gywanglug.xyz
-    port: 8443
+    udp-relay-mode: native
+    congestion-controller: bbr
+    - name: 美国 06
+    type: tuic
+    server: mg6.gywanglug.xyz
+    port: 443
     uuid: cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f
-    network: tcp
     tls: true
-    servername: www.apple.com.cn
-    flow: xtls-rprx-vision
+    password: cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f
+    sni: mg6.gywanglug.xyz
+    alpn:
+      - h3
     skip-cert-verify: true
-    client-fingerprint: firefox
-    reality-opts:
-      public-key: yDkCTYl7Ap0XeU9PNv_kBY9BwQrgYZPIov-MXvpf7R8
     ip-version: dual
-    udp: true
-  - name: 美国 09
-    type: vless
-    server: mg55.gywanglug.xyz
-    port: 8443
-    uuid: cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f
-    network: tcp
-    tls: true
-    servername: www.apple.com.cn
-    flow: xtls-rprx-vision
-    skip-cert-verify: true
-    client-fingerprint: ios
-    reality-opts:
-      public-key: kHtBu5SWzLuz79nw0LkDkH4luWft_A-M6MNq4LA-RB4
-    ip-version: dual
-    udp: true
-  - name: 美国 10
-    type: vless
-    server: mg66.gywanglug.xyz
-    port: 45445
-    uuid: cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f
-    network: tcp
-    tls: true
-    servername: www.webilop.com
-    flow: xtls-rprx-vision
-    skip-cert-verify: true
-    client-fingerprint: qq
-    reality-opts:
-      public-key: yDkCTYl7Ap0XeU9PNv_kBY9BwQrgYZPIov-MXvpf7R8
-    ip-version: dual
-    udp: true
+    udp-relay-mode: native
+    congestion-controller: bbr 
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -261,10 +201,6 @@ proxy-groups:
       - 美国 04
       - 美国 05
       - 美国 06
-      - 美国 07
-      - 美国 08
-      - 美国 09
-      - 美国 10
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -284,10 +220,6 @@ proxy-groups:
       - 美国 04
       - 美国 05
       - 美国 06
-      - 美国 07
-      - 美国 08
-      - 美国 09
-      - 美国 10
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -318,10 +250,6 @@ proxy-groups:
       - 美国 04
       - 美国 05
       - 美国 06
-      - 美国 07
-      - 美国 08
-      - 美国 09
-      - 美国 10
 rules:
 # 本地/局域网地址
 # 参考：https://en.wikipedia.org/wiki/Reserved_IP_addresses
