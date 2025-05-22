@@ -1,6 +1,6 @@
 # 模版名称：A1.ini
 # 模版最后更新日期：2025/05/05 17:53:08
-# 配置生成日期：2025-05-05 14:15:03
+# 配置生成日期：2025-05-22 14:38:28
 
 mixed-port: 7890
 allow-lan: false
@@ -50,7 +50,7 @@ tun:
     - 1.1.1.1
     - 1.0.0.1
 proxies:
-  - name: "中国台湾 01\r\r\r\r\r"
+  - name: "中国台湾 01\r\r\r\r\r\r"
     type: ss
     server: cdn.node1.lilisi.link
     port: 10011
@@ -58,7 +58,7 @@ proxies:
     password: a8c46207-0368-4ee1-870e-f8590e9c6218
     ip-version: dual
     cipher: aes-128-gcm
-  - name: "中国台湾 02\r\r\r\r\r"
+  - name: "中国台湾 02\r\r\r\r\r\r"
     type: ss
     server: cdn.node1.lilisi.link
     port: 10012
@@ -66,7 +66,7 @@ proxies:
     password: a8c46207-0368-4ee1-870e-f8590e9c6218
     ip-version: dual
     cipher: aes-128-gcm
-  - name: "中国台湾 03\r\r\r\r\r"
+  - name: "中国台湾 03\r\r\r\r\r\r"
     type: ss
     server: cdn.node1.lilisi.link
     port: 10013
@@ -74,7 +74,7 @@ proxies:
     password: a8c46207-0368-4ee1-870e-f8590e9c6218
     ip-version: dual
     cipher: aes-128-gcm
-  - name: "中国台湾 04\r\r\r\r\r"
+  - name: "中国台湾 04\r\r\r\r\r\r"
     type: ss
     server: cdn.node1.lilisi.link
     port: 10014
@@ -82,7 +82,7 @@ proxies:
     password: a8c46207-0368-4ee1-870e-f8590e9c6218
     ip-version: dual
     cipher: aes-128-gcm
-  - name: "中国台湾 05\r\r\r\r\r"
+  - name: "中国台湾 05\r\r\r\r\r\r"
     type: ss
     server: cdn.node1.lilisi.link
     port: 10015
@@ -90,7 +90,7 @@ proxies:
     password: a8c46207-0368-4ee1-870e-f8590e9c6218
     ip-version: dual
     cipher: aes-128-gcm
-  - name: "印尼 01\r\r\r\r\r"
+  - name: "印尼 01\r\r\r\r\r\r"
     type: ss
     server: cdn.node1.lilisi.link
     port: 10051
@@ -107,9 +107,18 @@ proxies:
     ip-version: dual
     cipher: aes-128-gcm
   - name: 美国 01
+    type: trojan
+    server: mg7.gy6688.xyz
+    port: 443
+    tls: true
+    password: cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f
+    sni: mg7.gy6688.xyz
+    skip-cert-verify: true
+    ip-version: dual
+  - name: 美国 02
     type: hysteria2
     server: mg1.gywanglug.xyz
-    port: 23141
+    port: 23502
     tls: true
     password: cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f
     sni: mg1.gywanglug.xyz
@@ -119,92 +128,48 @@ proxies:
     fast-open: false
     ip-version: dual
     ports: 21000-26000
-  - name: 美国 02
-    type: hysteria2
-    server: mg2.gywanglug.xyz
-    port: 23773
-    tls: true
-    password: cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f
-    sni: mg2.gywanglug.xyz
-    obfs: salamander
-    obfs-password: LNAnPYDfFyesRAVn
-    skip-cert-verify: true
-    fast-open: false
-    ip-version: dual
-    ports: 21000-26000
-  - name: 美国 03
-    type: hysteria2
-    server: mg2.gywanglug.xyz
-    port: 23763
-    tls: true
-    password: cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f
-    sni: mg2.gywanglug.xyz
-    obfs: salamander
-    obfs-password: LNAnPYDfFyesRAVn
-    skip-cert-verify: true
-    fast-open: false
-    ip-version: dual
-    ports: 21000-26000
   - name: 美国 04
-    type: tuic
-    server: mg4.gywanglug.xyz
-    port: 8443
-    uuid: cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f
+    type: hysteria2
+    server: mg2.gywanglug.xyz
+    port: 24706
     tls: true
     password: cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f
-    sni: mg4.gywanglug.xyz
-    alpn:
-      - h3
+    sni: mg2.gywanglug.xyz
+    obfs: salamander
+    obfs-password: LNAnPYDfFyesRAVn
     skip-cert-verify: true
+    fast-open: false
     ip-version: dual
-    udp-relay-mode: quic
-    congestion-controller: bbr
-  - name: 美国 05
-    type: tuic
-    server: mg5.gywanglug.xyz
-    port: 443
-    uuid: cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f
-    tls: true
-    password: cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f
-    sni: mg5.gywanglug.xyz
-    alpn:
-      - h3
-    skip-cert-verify: true
-    ip-version: dual
-    udp-relay-mode: native
-    congestion-controller: bbr
+    ports: 21000-26000
   - name: 美国 06
-    type: tuic
-    server: mg6.gywanglug.xyz
-    port: 443
-    uuid: cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f
+    type: hysteria2
+    server: mg3.gywanglug.xyz
+    port: 21132
     tls: true
     password: cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f
-    sni: mg6.gywanglug.xyz
-    alpn:
-      - h3
+    sni: mg3.gywanglug.xyz
+    obfs: salamander
+    obfs-password: LNAnPYDfFyesRAVn
     skip-cert-verify: true
+    fast-open: false
     ip-version: dual
-    udp-relay-mode: native
-    congestion-controller: bbr
+    ports: 21000-26000
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - "中国台湾 01\r\r\r\r\r"
-      - "中国台湾 02\r\r\r\r\r"
-      - "中国台湾 03\r\r\r\r\r"
-      - "中国台湾 04\r\r\r\r\r"
-      - "中国台湾 05\r\r\r\r\r"
-      - "印尼 01\r\r\r\r\r"
+      - "中国台湾 01\r\r\r\r\r\r"
+      - "中国台湾 02\r\r\r\r\r\r"
+      - "中国台湾 03\r\r\r\r\r\r"
+      - "中国台湾 04\r\r\r\r\r\r"
+      - "中国台湾 05\r\r\r\r\r\r"
+      - "印尼 01\r\r\r\r\r\r"
       - "印尼 02\r\r\r\r"
       - 美国 01
       - 美国 02
-      - 美国 03
       - 美国 04
-      - 美国 05
       - 美国 06
   - name: ♻️ 自动选择
     type: url-test
@@ -212,18 +177,16 @@ proxy-groups:
     interval: 300
     tolerance: 5000
     proxies:
-      - "中国台湾 01\r\r\r\r\r"
-      - "中国台湾 02\r\r\r\r\r"
-      - "中国台湾 03\r\r\r\r\r"
-      - "中国台湾 04\r\r\r\r\r"
-      - "中国台湾 05\r\r\r\r\r"
-      - "印尼 01\r\r\r\r\r"
+      - "中国台湾 01\r\r\r\r\r\r"
+      - "中国台湾 02\r\r\r\r\r\r"
+      - "中国台湾 03\r\r\r\r\r\r"
+      - "中国台湾 04\r\r\r\r\r\r"
+      - "中国台湾 05\r\r\r\r\r\r"
+      - "印尼 01\r\r\r\r\r\r"
       - "印尼 02\r\r\r\r"
       - 美国 01
       - 美国 02
-      - 美国 03
       - 美国 04
-      - 美国 05
       - 美国 06
   - name: 🎯 全球直连
     type: select
@@ -242,18 +205,16 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "中国台湾 01\r\r\r\r\r"
-      - "中国台湾 02\r\r\r\r\r"
-      - "中国台湾 03\r\r\r\r\r"
-      - "中国台湾 04\r\r\r\r\r"
-      - "中国台湾 05\r\r\r\r\r"
-      - "印尼 01\r\r\r\r\r"
+      - "中国台湾 01\r\r\r\r\r\r"
+      - "中国台湾 02\r\r\r\r\r\r"
+      - "中国台湾 03\r\r\r\r\r\r"
+      - "中国台湾 04\r\r\r\r\r\r"
+      - "中国台湾 05\r\r\r\r\r\r"
+      - "印尼 01\r\r\r\r\r\r"
       - "印尼 02\r\r\r\r"
       - 美国 01
       - 美国 02
-      - 美国 03
       - 美国 04
-      - 美国 05
       - 美国 06
 rules:
 # 本地/局域网地址
