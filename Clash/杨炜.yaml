@@ -1,6 +1,6 @@
 # 模版名称：A1.ini
 # 模版最后更新日期：2025/05/05 17:53:08
-# 配置生成日期：2025-05-22 14:52:58 latest
+# 配置生成日期：2025-06-03 11:20:31
 
 mixed-port: 7890
 allow-lan: false
@@ -50,176 +50,235 @@ tun:
     - 1.1.1.1
     - 1.0.0.1
 proxies:
-  - name: "中国台湾 01\r\r\r\r\r\r"
+  - name: 🇨🇳中国台湾 01
     type: ss
-    server: cdn.node1.lilisi.link
+    server: cdn.zx.lilisi.link
     port: 10011
     tls: false
-    password: a8c46207-0368-4ee1-870e-f8590e9c6218
+    password: 05c3ff18-688a-36f3-bef0-ec9d2da2e3ae
     ip-version: dual
     cipher: aes-128-gcm
-  - name: "中国台湾 02\r\r\r\r\r\r"
+  - name: 🇨🇳中国台湾 02
     type: ss
-    server: cdn.node1.lilisi.link
+    server: cdn.zx.lilisi.link
     port: 10012
     tls: false
-    password: a8c46207-0368-4ee1-870e-f8590e9c6218
+    password: 05c3ff18-688a-36f3-bef0-ec9d2da2e3ae
     ip-version: dual
     cipher: aes-128-gcm
-  - name: "中国台湾 03\r\r\r\r\r\r"
+  - name: 🇨🇳中国台湾 03
     type: ss
-    server: cdn.node1.lilisi.link
+    server: cdn.zx.lilisi.link
     port: 10013
     tls: false
-    password: a8c46207-0368-4ee1-870e-f8590e9c6218
+    password: 05c3ff18-688a-36f3-bef0-ec9d2da2e3ae
     ip-version: dual
     cipher: aes-128-gcm
-  - name: "中国台湾 04\r\r\r\r\r\r"
+  - name: 🇨🇳中国台湾 04
     type: ss
-    server: cdn.node1.lilisi.link
+    server: cdn.zx.lilisi.link
     port: 10014
     tls: false
-    password: a8c46207-0368-4ee1-870e-f8590e9c6218
+    password: 05c3ff18-688a-36f3-bef0-ec9d2da2e3ae
     ip-version: dual
     cipher: aes-128-gcm
-  - name: "中国台湾 05\r\r\r\r\r\r"
+  - name: 🇨🇳中国台湾 05
     type: ss
-    server: cdn.node1.lilisi.link
+    server: cdn.zx.lilisi.link
     port: 10015
     tls: false
-    password: a8c46207-0368-4ee1-870e-f8590e9c6218
+    password: 05c3ff18-688a-36f3-bef0-ec9d2da2e3ae
     ip-version: dual
     cipher: aes-128-gcm
-  - name: "印尼 01\r\r\r\r\r\r"
+  - name: 🇮🇩印尼 01
     type: ss
-    server: cdn.node1.lilisi.link
+    server: cdn.node3.lilisi.link
     port: 10051
     tls: false
-    password: a8c46207-0368-4ee1-870e-f8590e9c6218
+    password: 05c3ff18-688a-36f3-bef0-ec9d2da2e3ae
     ip-version: dual
     cipher: aes-128-gcm
-  - name: "印尼 02\r\r\r\r"
+  - name: 🇮🇩印尼 02
     type: ss
-    server: cdn.node1.lilisi.link
+    server: cdn.node3.lilisi.link
     port: 10052
     tls: false
-    password: a8c46207-0368-4ee1-870e-f8590e9c6218
+    password: 05c3ff18-688a-36f3-bef0-ec9d2da2e3ae
     ip-version: dual
     cipher: aes-128-gcm
-  - name: 美国 01
-    type: trojan
-    server: mg7.gy6688.xyz
-    port: 443
-    tls: true
-    password: cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f
-    sni: mg7.gy6688.xyz
-    skip-cert-verify: true
-    ip-version: dual
-  - name: 美国 02
+  - name: 🇺🇸美国 01
     type: hysteria2
-    server: mg1.gywanglug.xyz
-    port: 23502
+    server: uuk1.tok8888.com
+    port: 23289
     tls: true
     password: cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f
-    sni: mg1.gywanglug.xyz
+    sni: uuk1.tok8888.com
     obfs: salamander
     obfs-password: LNAnPYDfFyesRAVn
     skip-cert-verify: true
     fast-open: false
     ip-version: dual
     ports: 21000-26000
-  - name: 美国 03
+  - name: 🇺🇸美国 02
     type: hysteria2
-    server: mg2.gywanglug.xyz
-    port: 24706
+    server: uuk2.tok8888.com
+    port: 25876
     tls: true
     password: cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f
-    sni: mg2.gywanglug.xyz
+    sni: uuk2.tok8888.com
     obfs: salamander
     obfs-password: LNAnPYDfFyesRAVn
     skip-cert-verify: true
     fast-open: false
     ip-version: dual
     ports: 21000-26000
-  - name: 美国 04
+  - name: 🇺🇸美国 03
     type: hysteria2
-    server: mg3.gywanglug.xyz
-    port: 21132
+    server: uuk3.tok8888.com
+    port: 22006
     tls: true
     password: cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f
-    sni: mg3.gywanglug.xyz
+    sni: uuk3.tok8888.com
     obfs: salamander
     obfs-password: LNAnPYDfFyesRAVn
     skip-cert-verify: true
     fast-open: false
     ip-version: dual
     ports: 21000-26000
-  - name: 美国 05
-    type: tuic
-    server: mg5.gywanglug.xyz
-    port: 443
-    uuid: cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f
-    tls: true
-    password: cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f
-    sni: mg5.gywanglug.xyz
-    alpn:
-      - h3
-    skip-cert-verify: true
-    ip-version: dual
-    udp-relay-mode: native
-    congestion-controller: bbr
-  - name: 美国 06
-    type: tuic
-    server: mg4.gywanglug.xyz
+  - name: 🇺🇸美国 04
+    type: vless
+    server: uuk4v.tok8888.com
     port: 8443
     uuid: cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f
+    network: tcp
     tls: true
-    password: cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f
-    sni: mg6.gywanglug.xyz
-    alpn:
-      - h3
+    servername: www.apple.com.cn
+    flow: xtls-rprx-vision
     skip-cert-verify: true
+    client-fingerprint: ios
+    reality-opts:
+      public-key: yDkCTYl7Ap0XeU9PNv_kBY9BwQrgYZPIov-MXvpf7R8
     ip-version: dual
-    udp-relay-mode: native
-    congestion-controller: bbr 
+    udp: true
+  - name: 🇺🇸美国 05
+    type: vless
+    server: uuk5v.tok8888.com
+    port: 8443
+    uuid: cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f
+    network: tcp
+    tls: true
+    servername: www.apple.com.cn
+    flow: xtls-rprx-vision
+    skip-cert-verify: true
+    client-fingerprint: ios
+    reality-opts:
+      public-key: kHtBu5SWzLuz79nw0LkDkH4luWft_A-M6MNq4LA-RB4
+    ip-version: dual
+    udp: true
+  - name: 🇺🇸美国 06
+    type: vless
+    server: uuk6v.tok8888.com
+    port: 45445
+    uuid: cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f
+    network: tcp
+    tls: true
+    servername: www.webilop.com
+    flow: xtls-rprx-vision
+    skip-cert-verify: true
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: yDkCTYl7Ap0XeU9PNv_kBY9BwQrgYZPIov-MXvpf7R8
+    ip-version: dual
+    udp: true
+  - name: 🇺🇸美国 07
+    type: vless
+    server: uuk1v.tok8888.com
+    port: 8443
+    uuid: cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f
+    network: tcp
+    tls: true
+    servername: www.apple.com.cn
+    flow: xtls-rprx-vision
+    skip-cert-verify: true
+    client-fingerprint: edge
+    reality-opts:
+      public-key: 1jupCbzD9RB34YhWct4C6_I1bx_O5Ct7ZnT5dfCiV18
+    ip-version: dual
+    udp: true
+  - name: 🇺🇸美国 08
+    type: vless
+    server: uuk2v.tok8888.com
+    port: 8443
+    uuid: cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f
+    network: tcp
+    tls: true
+    servername: businessmadesimple.com
+    flow: xtls-rprx-vision
+    skip-cert-verify: true
+    client-fingerprint: qq
+    reality-opts:
+      public-key: GcOtIhZbkznrBYohK7rvjV0oVoQvC4y38VIExs6KUwA
+    ip-version: dual
+    udp: true
+  - name: 🇺🇸美国 09
+    type: vless
+    server: uuk3v.tok8888.com
+    port: 8443
+    uuid: cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f
+    network: tcp
+    tls: true
+    servername: www.thewilliamvale.com
+    flow: xtls-rprx-vision
+    skip-cert-verify: true
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: yDkCTYl7Ap0XeU9PNv_kBY9BwQrgYZPIov-MXvpf7R8
+    ip-version: dual
+    udp: true
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - "中国台湾 01\r\r\r\r\r\r"
-      - "中国台湾 02\r\r\r\r\r\r"
-      - "中国台湾 03\r\r\r\r\r\r"
-      - "中国台湾 04\r\r\r\r\r\r"
-      - "中国台湾 05\r\r\r\r\r\r"
-      - "印尼 01\r\r\r\r\r\r"
-      - "印尼 02\r\r\r\r"
-      - 美国 01
-      - 美国 02
-      - 美国 03
-      - 美国 04
-      - 美国 05
-      - 美国 06
+      - 🇨🇳中国台湾 01
+      - 🇨🇳中国台湾 02
+      - 🇨🇳中国台湾 03
+      - 🇨🇳中国台湾 04
+      - 🇨🇳中国台湾 05
+      - 🇮🇩印尼 01
+      - 🇮🇩印尼 02
+      - 🇺🇸美国 01
+      - 🇺🇸美国 02
+      - 🇺🇸美国 03
+      - 🇺🇸美国 04
+      - 🇺🇸美国 05
+      - 🇺🇸美国 06
+      - 🇺🇸美国 07
+      - 🇺🇸美国 08
+      - 🇺🇸美国 09
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 5000
     proxies:
-      - "中国台湾 01\r\r\r\r\r\r"
-      - "中国台湾 02\r\r\r\r\r\r"
-      - "中国台湾 03\r\r\r\r\r\r"
-      - "中国台湾 04\r\r\r\r\r\r"
-      - "中国台湾 05\r\r\r\r\r\r"
-      - "印尼 01\r\r\r\r\r\r"
-      - "印尼 02\r\r\r\r"
-      - 美国 01
-      - 美国 02
-      - 美国 03
-      - 美国 04
-      - 美国 05
-      - 美国 06
+      - 🇨🇳中国台湾 01
+      - 🇨🇳中国台湾 02
+      - 🇨🇳中国台湾 03
+      - 🇨🇳中国台湾 04
+      - 🇨🇳中国台湾 05
+      - 🇮🇩印尼 01
+      - 🇮🇩印尼 02
+      - 🇺🇸美国 01
+      - 🇺🇸美国 02
+      - 🇺🇸美国 03
+      - 🇺🇸美国 04
+      - 🇺🇸美国 05
+      - 🇺🇸美国 06
+      - 🇺🇸美国 07
+      - 🇺🇸美国 08
+      - 🇺🇸美国 09
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -237,19 +296,22 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "中国台湾 01\r\r\r\r\r\r"
-      - "中国台湾 02\r\r\r\r\r\r"
-      - "中国台湾 03\r\r\r\r\r\r"
-      - "中国台湾 04\r\r\r\r\r\r"
-      - "中国台湾 05\r\r\r\r\r\r"
-      - "印尼 01\r\r\r\r\r\r"
-      - "印尼 02\r\r\r\r"
-      - 美国 01
-      - 美国 02
-      - 美国 03
-      - 美国 04
-      - 美国 05
-      - 美国 06
+      - 🇨🇳中国台湾 01
+      - 🇨🇳中国台湾 02
+      - 🇨🇳中国台湾 03
+      - 🇨🇳中国台湾 04
+      - 🇨🇳中国台湾 05
+      - 🇮🇩印尼 01
+      - 🇮🇩印尼 02
+      - 🇺🇸美国 01
+      - 🇺🇸美国 02
+      - 🇺🇸美国 03
+      - 🇺🇸美国 04
+      - 🇺🇸美国 05
+      - 🇺🇸美国 06
+      - 🇺🇸美国 07
+      - 🇺🇸美国 08
+      - 🇺🇸美国 09
 rules:
 # 本地/局域网地址
 # 参考：https://en.wikipedia.org/wiki/Reserved_IP_addresses
