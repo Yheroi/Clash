@@ -50,7 +50,7 @@ tun:
     - 1.1.1.1
     - 1.0.0.1
 proxies:
-  - name: 🇨🇳中国台湾 01
+  - name: 🇨🇳 中国台湾 01
     type: ss
     server: cdn.zx.lilisi.link
     port: 10011
@@ -58,7 +58,7 @@ proxies:
     password: 05c3ff18-688a-36f3-bef0-ec9d2da2e3ae
     ip-version: dual
     cipher: aes-128-gcm
-  - name: 🇨🇳中国台湾 02
+  - name: 🇨🇳 中国台湾 02
     type: ss
     server: cdn.zx.lilisi.link
     port: 10012
@@ -66,7 +66,7 @@ proxies:
     password: 05c3ff18-688a-36f3-bef0-ec9d2da2e3ae
     ip-version: dual
     cipher: aes-128-gcm
-  - name: 🇨🇳中国台湾 03
+  - name: 🇨🇳 中国台湾 03
     type: ss
     server: cdn.zx.lilisi.link
     port: 10013
@@ -74,7 +74,7 @@ proxies:
     password: 05c3ff18-688a-36f3-bef0-ec9d2da2e3ae
     ip-version: dual
     cipher: aes-128-gcm
-  - name: 🇨🇳中国台湾 04
+  - name: 🇨🇳 中国台湾 04
     type: ss
     server: cdn.zx.lilisi.link
     port: 10014
@@ -82,7 +82,7 @@ proxies:
     password: 05c3ff18-688a-36f3-bef0-ec9d2da2e3ae
     ip-version: dual
     cipher: aes-128-gcm
-  - name: 🇨🇳中国台湾 05
+  - name: 🇨🇳 中国台湾 05
     type: ss
     server: cdn.zx.lilisi.link
     port: 10015
@@ -90,7 +90,7 @@ proxies:
     password: 05c3ff18-688a-36f3-bef0-ec9d2da2e3ae
     ip-version: dual
     cipher: aes-128-gcm
-  - name: 🇮🇩印尼 01
+  - name: 🇮🇩 印尼 01
     type: ss
     server: cdn.node3.lilisi.link
     port: 10051
@@ -98,7 +98,7 @@ proxies:
     password: 05c3ff18-688a-36f3-bef0-ec9d2da2e3ae
     ip-version: dual
     cipher: aes-128-gcm
-  - name: 🇮🇩印尼 02
+  - name: 🇮🇩 印尼 02
     type: ss
     server: cdn.node3.lilisi.link
     port: 10052
@@ -106,7 +106,7 @@ proxies:
     password: 05c3ff18-688a-36f3-bef0-ec9d2da2e3ae
     ip-version: dual
     cipher: aes-128-gcm
-  - name: 🇺🇸美国 01
+  - name: 🇺🇸 美国 01
     type: hysteria2
     server: uuk1.tok8888.com
     port: 23289
@@ -119,7 +119,7 @@ proxies:
     fast-open: false
     ip-version: dual
     ports: 21000-26000
-  - name: 🇺🇸美国 02
+  - name: 🇺🇸 美国 02
     type: hysteria2
     server: uuk2.tok8888.com
     port: 25876
@@ -132,7 +132,7 @@ proxies:
     fast-open: false
     ip-version: dual
     ports: 21000-26000
-  - name: 🇺🇸美国 03
+  - name: 🇺🇸 美国 03
     type: hysteria2
     server: uuk3.tok8888.com
     port: 22006
@@ -145,7 +145,7 @@ proxies:
     fast-open: false
     ip-version: dual
     ports: 21000-26000
-  - name: 🇺🇸美国 04
+  - name: 🇺🇸 美国 04
     type: vless
     server: uuk4v.tok8888.com
     port: 8443
@@ -160,7 +160,7 @@ proxies:
       public-key: yDkCTYl7Ap0XeU9PNv_kBY9BwQrgYZPIov-MXvpf7R8
     ip-version: dual
     udp: true
-  - name: 🇺🇸美国 05
+  - name: 🇺🇸 美国 05
     type: vless
     server: uuk5v.tok8888.com
     port: 8443
@@ -175,7 +175,7 @@ proxies:
       public-key: kHtBu5SWzLuz79nw0LkDkH4luWft_A-M6MNq4LA-RB4
     ip-version: dual
     udp: true
-  - name: 🇺🇸美国 06
+  - name: 🇺🇸 美国 06
     type: vless
     server: uuk6v.tok8888.com
     port: 45445
@@ -190,7 +190,7 @@ proxies:
       public-key: yDkCTYl7Ap0XeU9PNv_kBY9BwQrgYZPIov-MXvpf7R8
     ip-version: dual
     udp: true
-  - name: 🇺🇸美国 07
+  - name: 🇺🇸 美国 07
     type: vless
     server: uuk1v.tok8888.com
     port: 8443
@@ -205,7 +205,7 @@ proxies:
       public-key: 1jupCbzD9RB34YhWct4C6_I1bx_O5Ct7ZnT5dfCiV18
     ip-version: dual
     udp: true
-  - name: 🇺🇸美国 08
+  - name: 🇺🇸 美国 08
     type: vless
     server: uuk2v.tok8888.com
     port: 8443
@@ -220,7 +220,7 @@ proxies:
       public-key: GcOtIhZbkznrBYohK7rvjV0oVoQvC4y38VIExs6KUwA
     ip-version: dual
     udp: true
-  - name: 🇺🇸美国 09
+  - name: 🇺🇸 美国 09
     type: vless
     server: uuk3v.tok8888.com
     port: 8443
@@ -241,44 +241,44 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇨🇳中国台湾 01
-      - 🇨🇳中国台湾 02
-      - 🇨🇳中国台湾 03
-      - 🇨🇳中国台湾 04
-      - 🇨🇳中国台湾 05
-      - 🇮🇩印尼 01
-      - 🇮🇩印尼 02
-      - 🇺🇸美国 01
-      - 🇺🇸美国 02
-      - 🇺🇸美国 03
-      - 🇺🇸美国 04
-      - 🇺🇸美国 05
-      - 🇺🇸美国 06
-      - 🇺🇸美国 07
-      - 🇺🇸美国 08
-      - 🇺🇸美国 09
+      - 🇨🇳 中国台湾 01
+      - 🇨🇳 中国台湾 02
+      - 🇨🇳 中国台湾 03
+      - 🇨🇳 中国台湾 04
+      - 🇨🇳 中国台湾 05
+      - 🇮🇩 印尼 01
+      - 🇮🇩 印尼 02
+      - 🇺🇸 美国 01
+      - 🇺🇸 美国 02
+      - 🇺🇸 美国 03
+      - 🇺🇸 美国 04
+      - 🇺🇸 美国 05
+      - 🇺🇸 美国 06
+      - 🇺🇸 美国 07
+      - 🇺🇸 美国 08
+      - 🇺🇸 美国 09
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 5000
     proxies:
-      - 🇨🇳中国台湾 01
-      - 🇨🇳中国台湾 02
-      - 🇨🇳中国台湾 03
-      - 🇨🇳中国台湾 04
-      - 🇨🇳中国台湾 05
-      - 🇮🇩印尼 01
-      - 🇮🇩印尼 02
-      - 🇺🇸美国 01
-      - 🇺🇸美国 02
-      - 🇺🇸美国 03
-      - 🇺🇸美国 04
-      - 🇺🇸美国 05
-      - 🇺🇸美国 06
-      - 🇺🇸美国 07
-      - 🇺🇸美国 08
-      - 🇺🇸美国 09
+      - 🇨🇳 中国台湾 01
+      - 🇨🇳 中国台湾 02
+      - 🇨🇳 中国台湾 03
+      - 🇨🇳 中国台湾 04
+      - 🇨🇳 中国台湾 05
+      - 🇮🇩 印尼 01
+      - 🇮🇩 印尼 02
+      - 🇺🇸 美国 01
+      - 🇺🇸 美国 02
+      - 🇺🇸 美国 03
+      - 🇺🇸 美国 04
+      - 🇺🇸 美国 05
+      - 🇺🇸 美国 06
+      - 🇺🇸 美国 07
+      - 🇺🇸 美国 08
+      - 🇺🇸 美国 09
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -296,22 +296,22 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇨🇳中国台湾 01
-      - 🇨🇳中国台湾 02
-      - 🇨🇳中国台湾 03
-      - 🇨🇳中国台湾 04
-      - 🇨🇳中国台湾 05
-      - 🇮🇩印尼 01
-      - 🇮🇩印尼 02
-      - 🇺🇸美国 01
-      - 🇺🇸美国 02
-      - 🇺🇸美国 03
-      - 🇺🇸美国 04
-      - 🇺🇸美国 05
-      - 🇺🇸美国 06
-      - 🇺🇸美国 07
-      - 🇺🇸美国 08
-      - 🇺🇸美国 09
+      - 🇨🇳 中国台湾 01
+      - 🇨🇳 中国台湾 02
+      - 🇨🇳 中国台湾 03
+      - 🇨🇳 中国台湾 04
+      - 🇨🇳 中国台湾 05
+      - 🇮🇩 印尼 01
+      - 🇮🇩 印尼 02
+      - 🇺🇸 美国 01
+      - 🇺🇸 美国 02
+      - 🇺🇸 美国 03
+      - 🇺🇸 美国 04
+      - 🇺🇸 美国 05
+      - 🇺🇸 美国 06
+      - 🇺🇸 美国 07
+      - 🇺🇸 美国 08
+      - 🇺🇸 美国 09
 rules:
 # 本地/局域网地址
 # 参考：https://en.wikipedia.org/wiki/Reserved_IP_addresses
