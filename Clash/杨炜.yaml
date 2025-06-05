@@ -1,6 +1,6 @@
 # 模版名称：A1.ini
 # 模版最后更新日期：2025/05/05 17:53:08
-# 配置生成日期：2025-06-05 10:01:06
+# 配置生成日期：2025-06-05 10:04:51
 
 mixed-port: 7890
 allow-lan: false
@@ -50,70 +50,63 @@ tun:
     - 1.1.1.1
     - 1.0.0.1
 proxies:
-  - name: 🇨🇳 中国台湾 01
+  - name: "🇨🇳 中国台湾 01\r"
     type: ss
     server: cdn.zx.lilisi.link
     port: 10011
     tls: false
     password: 05c3ff18-688a-36f3-bef0-ec9d2da2e3ae
     ip-version: dual
-    udp: true
     cipher: aes-128-gcm
-  - name: 🇨🇳 中国台湾 02
+  - name: "🇨🇳 中国台湾 02\r"
     type: ss
     server: cdn.zx.lilisi.link
     port: 10012
     tls: false
     password: 05c3ff18-688a-36f3-bef0-ec9d2da2e3ae
     ip-version: dual
-    udp: true
     cipher: aes-128-gcm
-  - name: 🇨🇳 中国台湾 03
+  - name: "🇨🇳 中国台湾 03\r"
     type: ss
     server: cdn.zx.lilisi.link
     port: 10013
     tls: false
     password: 05c3ff18-688a-36f3-bef0-ec9d2da2e3ae
     ip-version: dual
-    udp: true
     cipher: aes-128-gcm
-  - name: 🇨🇳 中国台湾 04
+  - name: "🇨🇳 中国台湾 04\r"
     type: ss
     server: cdn.zx.lilisi.link
     port: 10014
     tls: false
     password: 05c3ff18-688a-36f3-bef0-ec9d2da2e3ae
     ip-version: dual
-    udp: true
     cipher: aes-128-gcm
-  - name: 🇨🇳 中国台湾 05
+  - name: "🇨🇳 中国台湾 05\r"
     type: ss
     server: cdn.zx.lilisi.link
     port: 10015
     tls: false
     password: 05c3ff18-688a-36f3-bef0-ec9d2da2e3ae
     ip-version: dual
-    udp: true
     cipher: aes-128-gcm
-  - name: 🇮🇩 印尼 01_1
+  - name: 🇮🇩 印尼 01
     type: ss
     server: cdn.node3.lilisi.link
     port: 10051
     tls: false
     password: 05c3ff18-688a-36f3-bef0-ec9d2da2e3ae
     ip-version: dual
-    udp: true
     cipher: aes-128-gcm
-  - name: 🇮🇩 印尼 01_2
+  - name: 🇮🇩 印尼 02
     type: ss
     server: cdn.node3.lilisi.link
     port: 10052
     tls: false
     password: 05c3ff18-688a-36f3-bef0-ec9d2da2e3ae
     ip-version: dual
-    udp: true
     cipher: aes-128-gcm
-  - name: 🇺🇸 美国 01
+  - name: "🇺🇸 美国 01\r"
     type: hysteria2
     server: uuk1.tok8888.com
     port: 23257
@@ -125,9 +118,7 @@ proxies:
     skip-cert-verify: true
     fast-open: false
     ip-version: dual
-    udp: true
-    ports: 21000-26000
-  - name: 🇺🇸 美国 02
+  - name: "🇺🇸 美国 02\r"
     type: hysteria2
     server: uuk2.tok8888.com
     port: 23012
@@ -139,8 +130,6 @@ proxies:
     skip-cert-verify: true
     fast-open: false
     ip-version: dual
-    udp: true
-    ports: 21000-26000
   - name: 🇺🇸 美国 03
     type: hysteria2
     server: uuk3.tok8888.com
@@ -153,23 +142,21 @@ proxies:
     skip-cert-verify: true
     fast-open: false
     ip-version: dual
-    udp: true
-    ports: 21000-26000
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇨🇳 中国台湾 01
-      - 🇨🇳 中国台湾 02
-      - 🇨🇳 中国台湾 03
-      - 🇨🇳 中国台湾 04
-      - 🇨🇳 中国台湾 05
-      - 🇮🇩 印尼 01_1
-      - 🇮🇩 印尼 01_2
-      - 🇺🇸 美国 01
-      - 🇺🇸 美国 02
+      - "🇨🇳 中国台湾 01\r"
+      - "🇨🇳 中国台湾 02\r"
+      - "🇨🇳 中国台湾 03\r"
+      - "🇨🇳 中国台湾 04\r"
+      - "🇨🇳 中国台湾 05\r"
+      - 🇮🇩 印尼 01
+      - 🇮🇩 印尼 02
+      - "🇺🇸 美国 01\r"
+      - "🇺🇸 美国 02\r"
       - 🇺🇸 美国 03
   - name: ♻️ 自动选择
     type: url-test
@@ -177,15 +164,15 @@ proxy-groups:
     interval: 300
     tolerance: 5000
     proxies:
-      - 🇨🇳 中国台湾 01
-      - 🇨🇳 中国台湾 02
-      - 🇨🇳 中国台湾 03
-      - 🇨🇳 中国台湾 04
-      - 🇨🇳 中国台湾 05
-      - 🇮🇩 印尼 01_1
-      - 🇮🇩 印尼 01_2
-      - 🇺🇸 美国 01
-      - 🇺🇸 美国 02
+      - "🇨🇳 中国台湾 01\r"
+      - "🇨🇳 中国台湾 02\r"
+      - "🇨🇳 中国台湾 03\r"
+      - "🇨🇳 中国台湾 04\r"
+      - "🇨🇳 中国台湾 05\r"
+      - 🇮🇩 印尼 01
+      - 🇮🇩 印尼 02
+      - "🇺🇸 美国 01\r"
+      - "🇺🇸 美国 02\r"
       - 🇺🇸 美国 03
   - name: 🎯 全球直连
     type: select
@@ -204,15 +191,15 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇨🇳 中国台湾 01
-      - 🇨🇳 中国台湾 02
-      - 🇨🇳 中国台湾 03
-      - 🇨🇳 中国台湾 04
-      - 🇨🇳 中国台湾 05
-      - 🇮🇩 印尼 01_1
-      - 🇮🇩 印尼 01_2
-      - 🇺🇸 美国 01
-      - 🇺🇸 美国 02
+      - "🇨🇳 中国台湾 01\r"
+      - "🇨🇳 中国台湾 02\r"
+      - "🇨🇳 中国台湾 03\r"
+      - "🇨🇳 中国台湾 04\r"
+      - "🇨🇳 中国台湾 05\r"
+      - 🇮🇩 印尼 01
+      - 🇮🇩 印尼 02
+      - "🇺🇸 美国 01\r"
+      - "🇺🇸 美国 02\r"
       - 🇺🇸 美国 03
 rules:
 # 本地/局域网地址
