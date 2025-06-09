@@ -1,6 +1,6 @@
 # 模版名称：A1.ini
 # 模版最后更新日期：2025/05/05 17:53:08
-# 配置生成日期：2025-06-05 10:04:51
+# 配置生成日期：2025-06-09 11:17:36
 
 mixed-port: 7890
 allow-lan: false
@@ -50,7 +50,7 @@ tun:
     - 1.1.1.1
     - 1.0.0.1
 proxies:
-  - name: "🇨🇳 中国台湾 01\r"
+  - name: "🇨🇳 中国台湾 01\r\r"
     type: ss
     server: cdn.zx.lilisi.link
     port: 10011
@@ -58,7 +58,7 @@ proxies:
     password: 05c3ff18-688a-36f3-bef0-ec9d2da2e3ae
     ip-version: dual
     cipher: aes-128-gcm
-  - name: "🇨🇳 中国台湾 02\r"
+  - name: "🇨🇳 中国台湾 02\r\r"
     type: ss
     server: cdn.zx.lilisi.link
     port: 10012
@@ -66,7 +66,7 @@ proxies:
     password: 05c3ff18-688a-36f3-bef0-ec9d2da2e3ae
     ip-version: dual
     cipher: aes-128-gcm
-  - name: "🇨🇳 中国台湾 03\r"
+  - name: "🇨🇳 中国台湾 03\r\r"
     type: ss
     server: cdn.zx.lilisi.link
     port: 10013
@@ -74,7 +74,7 @@ proxies:
     password: 05c3ff18-688a-36f3-bef0-ec9d2da2e3ae
     ip-version: dual
     cipher: aes-128-gcm
-  - name: "🇨🇳 中国台湾 04\r"
+  - name: "🇨🇳 中国台湾 04\r\r"
     type: ss
     server: cdn.zx.lilisi.link
     port: 10014
@@ -82,7 +82,7 @@ proxies:
     password: 05c3ff18-688a-36f3-bef0-ec9d2da2e3ae
     ip-version: dual
     cipher: aes-128-gcm
-  - name: "🇨🇳 中国台湾 05\r"
+  - name: "🇨🇳 中国台湾 05\r\r"
     type: ss
     server: cdn.zx.lilisi.link
     port: 10015
@@ -90,7 +90,7 @@ proxies:
     password: 05c3ff18-688a-36f3-bef0-ec9d2da2e3ae
     ip-version: dual
     cipher: aes-128-gcm
-  - name: 🇮🇩 印尼 01
+  - name: "🇮🇩 印尼 01\r"
     type: ss
     server: cdn.node3.lilisi.link
     port: 10051
@@ -98,7 +98,7 @@ proxies:
     password: 05c3ff18-688a-36f3-bef0-ec9d2da2e3ae
     ip-version: dual
     cipher: aes-128-gcm
-  - name: 🇮🇩 印尼 02
+  - name: "🇮🇩 印尼 02\r"
     type: ss
     server: cdn.node3.lilisi.link
     port: 10052
@@ -109,7 +109,7 @@ proxies:
   - name: "🇺🇸 美国 01\r"
     type: hysteria2
     server: uuk1.tok8888.com
-    port: 23257
+    port: '23548'
     tls: true
     password: cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f
     sni: uuk1.tok8888.com
@@ -121,7 +121,7 @@ proxies:
   - name: "🇺🇸 美国 02\r"
     type: hysteria2
     server: uuk2.tok8888.com
-    port: 23012
+    port: '22335'
     tls: true
     password: cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f
     sni: uuk2.tok8888.com
@@ -133,7 +133,7 @@ proxies:
   - name: 🇺🇸 美国 03
     type: hysteria2
     server: uuk3.tok8888.com
-    port: 22697
+    port: '22016'
     tls: true
     password: cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f
     sni: uuk3.tok8888.com
@@ -148,13 +148,13 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - "🇨🇳 中国台湾 01\r"
-      - "🇨🇳 中国台湾 02\r"
-      - "🇨🇳 中国台湾 03\r"
-      - "🇨🇳 中国台湾 04\r"
-      - "🇨🇳 中国台湾 05\r"
-      - 🇮🇩 印尼 01
-      - 🇮🇩 印尼 02
+      - "🇨🇳 中国台湾 01\r\r"
+      - "🇨🇳 中国台湾 02\r\r"
+      - "🇨🇳 中国台湾 03\r\r"
+      - "🇨🇳 中国台湾 04\r\r"
+      - "🇨🇳 中国台湾 05\r\r"
+      - "🇮🇩 印尼 01\r"
+      - "🇮🇩 印尼 02\r"
       - "🇺🇸 美国 01\r"
       - "🇺🇸 美国 02\r"
       - 🇺🇸 美国 03
@@ -164,13 +164,13 @@ proxy-groups:
     interval: 300
     tolerance: 5000
     proxies:
-      - "🇨🇳 中国台湾 01\r"
-      - "🇨🇳 中国台湾 02\r"
-      - "🇨🇳 中国台湾 03\r"
-      - "🇨🇳 中国台湾 04\r"
-      - "🇨🇳 中国台湾 05\r"
-      - 🇮🇩 印尼 01
-      - 🇮🇩 印尼 02
+      - "🇨🇳 中国台湾 01\r\r"
+      - "🇨🇳 中国台湾 02\r\r"
+      - "🇨🇳 中国台湾 03\r\r"
+      - "🇨🇳 中国台湾 04\r\r"
+      - "🇨🇳 中国台湾 05\r\r"
+      - "🇮🇩 印尼 01\r"
+      - "🇮🇩 印尼 02\r"
       - "🇺🇸 美国 01\r"
       - "🇺🇸 美国 02\r"
       - 🇺🇸 美国 03
@@ -191,13 +191,13 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "🇨🇳 中国台湾 01\r"
-      - "🇨🇳 中国台湾 02\r"
-      - "🇨🇳 中国台湾 03\r"
-      - "🇨🇳 中国台湾 04\r"
-      - "🇨🇳 中国台湾 05\r"
-      - 🇮🇩 印尼 01
-      - 🇮🇩 印尼 02
+      - "🇨🇳 中国台湾 01\r\r"
+      - "🇨🇳 中国台湾 02\r\r"
+      - "🇨🇳 中国台湾 03\r\r"
+      - "🇨🇳 中国台湾 04\r\r"
+      - "🇨🇳 中国台湾 05\r\r"
+      - "🇮🇩 印尼 01\r"
+      - "🇮🇩 印尼 02\r"
       - "🇺🇸 美国 01\r"
       - "🇺🇸 美国 02\r"
       - 🇺🇸 美国 03
