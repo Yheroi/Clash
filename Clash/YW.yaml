@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：2025-09-08 10:53:09
+# 创建时间：2025-09-08 10:54:04
 # 使用模版：2
-# 节点数量：20
+# 节点数量：2
 # 节点类型：hysteria2
 # !!当前配置文件请使用基于 Clash.Meta 内核程序
 ####################################
@@ -80,102 +80,30 @@ dns:
     - https://doh.pub/dns-query
 
 proxies:
-  - {"name":"中国_1","type":"hysteria2","server":"yue-hk.yuetoto.net","port":21026,"password":"fee755e2-6b4f-481f-9799-9c20dfa6e8f7","skip-cert-verify":true}
-  - {"name":"中国_2","type":"hysteria2","server":"yue-hk.yuetoto.net","port":21037,"password":"fee755e2-6b4f-481f-9799-9c20dfa6e8f7","skip-cert-verify":true}
-  - {"name":"中国_3","type":"hysteria2","server":"yue-tw.yuetoto.net","port":21037,"password":"fee755e2-6b4f-481f-9799-9c20dfa6e8f7","skip-cert-verify":true}
-  - {"name":"中国_4","type":"hysteria2","server":"yue-tw.yuetoto.net","port":21014,"password":"fee755e2-6b4f-481f-9799-9c20dfa6e8f7","skip-cert-verify":true}
-  - {"name":"日本_1","type":"hysteria2","server":"yue-jp.yuetoto.net","port":21089,"password":"fee755e2-6b4f-481f-9799-9c20dfa6e8f7","skip-cert-verify":true}
-  - {"name":"日本_2","type":"hysteria2","server":"yue-jp.yuetoto.net","port":21068,"password":"fee755e2-6b4f-481f-9799-9c20dfa6e8f7","skip-cert-verify":true}
-  - {"name":"韩国_1","type":"hysteria2","server":"yue-kr.yuetoto.net","port":21057,"password":"fee755e2-6b4f-481f-9799-9c20dfa6e8f7","skip-cert-verify":true}
-  - {"name":"韩国_2","type":"hysteria2","server":"yue-kr.yuetoto.net","port":21089,"password":"fee755e2-6b4f-481f-9799-9c20dfa6e8f7","skip-cert-verify":true}
-  - {"name":"法国_1","type":"hysteria2","server":"yue-sg.yuetoto.net","port":21010,"password":"fee755e2-6b4f-481f-9799-9c20dfa6e8f7","skip-cert-verify":true}
-  - {"name":"法国_2","type":"hysteria2","server":"yue-sg.yuetoto.net","port":21059,"password":"fee755e2-6b4f-481f-9799-9c20dfa6e8f7","skip-cert-verify":true}
-  - {"name":"美国_1","type":"hysteria2","server":"yue-us.yuetoto.net","port":21062,"password":"fee755e2-6b4f-481f-9799-9c20dfa6e8f7","skip-cert-verify":true}
-  - {"name":"美国_2","type":"hysteria2","server":"yue-us.yuetoto.net","port":21075,"password":"fee755e2-6b4f-481f-9799-9c20dfa6e8f7","skip-cert-verify":true}
-  - {"name":"越南_1","type":"hysteria2","server":"yue-vn.yuetoto.net","port":21064,"password":"fee755e2-6b4f-481f-9799-9c20dfa6e8f7","skip-cert-verify":true}
-  - {"name":"越南_2","type":"hysteria2","server":"yue-vn.yuetoto.net","port":21063,"password":"fee755e2-6b4f-481f-9799-9c20dfa6e8f7","skip-cert-verify":true}
-  - {"name":"俄罗斯_1","type":"hysteria2","server":"yue-ru.yuetoto.net","port":21016,"password":"fee755e2-6b4f-481f-9799-9c20dfa6e8f7","skip-cert-verify":true}
-  - {"name":"俄罗斯_2","type":"hysteria2","server":"yue-ru.yuetoto.net","port":21086,"password":"fee755e2-6b4f-481f-9799-9c20dfa6e8f7","skip-cert-verify":true}
-  - {"name":"伊朗_1","type":"hysteria2","server":"yue-tr.yuetoto.net","port":21067,"password":"fee755e2-6b4f-481f-9799-9c20dfa6e8f7","skip-cert-verify":true}
-  - {"name":"伊朗_2","type":"hysteria2","server":"yue-tr.yuetoto.net","port":21090,"password":"fee755e2-6b4f-481f-9799-9c20dfa6e8f7","skip-cert-verify":true}
-  - {"name":"俄罗斯_3","type":"hysteria2","server":"yue-ng.yuetoto.net","port":21099,"password":"fee755e2-6b4f-481f-9799-9c20dfa6e8f7","skip-cert-verify":true}
-  - {"name":"俄罗斯_4","type":"hysteria2","server":"yue-ng.yuetoto.net","port":21083,"password":"fee755e2-6b4f-481f-9799-9c20dfa6e8f7","skip-cert-verify":true}
+  - {"name":"中国香港01","type":"hysteria2","server":"yue-hk.yuetoto.net","port":21026,"skip-cert-verify":true}
+  - {"name":"中国香港02","type":"hysteria2","server":"yue-hk.yuetoto.net","port":21037,"skip-cert-verify":true}
 proxy-groups:
   - name: 公益网络.com
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 中国_1
-      - 中国_2
-      - 中国_3
-      - 中国_4
-      - 日本_1
-      - 日本_2
-      - 韩国_1
-      - 韩国_2
-      - 法国_1
-      - 法国_2
-      - 美国_1
-      - 美国_2
-      - 越南_1
-      - 越南_2
-      - 俄罗斯_1
-      - 俄罗斯_2
-      - 伊朗_1
-      - 伊朗_2
-      - 俄罗斯_3
-      - 俄罗斯_4
+      - 中国香港01
+      - 中国香港02
   - name: 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 86400
     proxies:
-      - 中国_1
-      - 中国_2
-      - 中国_3
-      - 中国_4
-      - 日本_1
-      - 日本_2
-      - 韩国_1
-      - 韩国_2
-      - 法国_1
-      - 法国_2
-      - 美国_1
-      - 美国_2
-      - 越南_1
-      - 越南_2
-      - 俄罗斯_1
-      - 俄罗斯_2
-      - 伊朗_1
-      - 伊朗_2
-      - 俄罗斯_3
-      - 俄罗斯_4
+      - 中国香港01
+      - 中国香港02
   - name: 故障转移
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 7200
     proxies:
-      - 中国_1
-      - 中国_2
-      - 中国_3
-      - 中国_4
-      - 日本_1
-      - 日本_2
-      - 韩国_1
-      - 韩国_2
-      - 法国_1
-      - 法国_2
-      - 美国_1
-      - 美国_2
-      - 越南_1
-      - 越南_2
-      - 俄罗斯_1
-      - 俄罗斯_2
-      - 伊朗_1
-      - 伊朗_2
-      - 俄罗斯_3
-      - 俄罗斯_4
+      - 中国香港01
+      - 中国香港02
 
 rules:
   - DOMAIN,wanmeiwl3.xyz,DIRECT
