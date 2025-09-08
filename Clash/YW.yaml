@@ -1,141 +1,83 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：2025-04-29 09:46:44
-# 使用模版：BV
-# 节点数量：24
-# 节点类型：hysteria2, vless
+# 创建时间：2025-09-08 10:53:09
+# 使用模版：2
+# 节点数量：20
+# 节点类型：hysteria2
 # !!当前配置文件请使用基于 Clash.Meta 内核程序
 ####################################
-# !!当前配置文件请使用基于 Clash.Meta 内核程序
 mixed-port: 7897
-allow-lan: false
+allow-lan: true
+bind-address: '*'
 mode: rule
 log-level: info
-external-controller: 127.0.0.1:9097
+external-controller: 127.0.0.1:9090
 unified-delay: true
-ipv6: true
+ipv6: false
 profile:
   store-selected: true
 tun:
   mtu: 1500
 dns:
   enable: true
-  ipv6: true
-  use-system-hosts: false
+  ipv6: false
   listen: 127.0.0.1:5335
+  use-hosts: false
   default-nameserver:
-    - 180.76.76.76
-    - 182.254.118.118
-    - 8.8.8.8
-    - 180.184.2.2
+    - 223.5.5.5
+    - 119.29.29.29
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
   fake-ip-filter:
     - '*.lan'
-    - stun.*.*.*
-    - stun.*.*
     - time.windows.com
     - time.nist.gov
     - time.apple.com
     - time.asia.apple.com
     - '*.ntp.org.cn'
-    - '*.openwrt.pool.ntp.org'
-    - time1.cloud.tencent.com
-    - time.ustc.edu.cn
     - pool.ntp.org
-    - ntp.ubuntu.com
     - ntp.aliyun.com
-    - ntp1.aliyun.com
-    - ntp2.aliyun.com
-    - ntp3.aliyun.com
-    - ntp4.aliyun.com
-    - ntp5.aliyun.com
-    - ntp6.aliyun.com
-    - ntp7.aliyun.com
     - time1.aliyun.com
-    - time2.aliyun.com
-    - time3.aliyun.com
-    - time4.aliyun.com
-    - time5.aliyun.com
-    - time6.aliyun.com
-    - time7.aliyun.com
-    - '*.time.edu.cn'
-    - time1.apple.com
-    - time2.apple.com
-    - time3.apple.com
-    - time4.apple.com
-    - time5.apple.com
-    - time6.apple.com
-    - time7.apple.com
-    - time1.google.com
-    - time2.google.com
-    - time3.google.com
-    - time4.google.com
     - music.163.com
     - '*.music.163.com'
-    - '*.126.net'
-    - musicapi.taihe.com
-    - music.taihe.com
-    - songsearch.kugou.com
-    - trackercdn.kugou.com
-    - '*.kuwo.cn'
-    - api-jooxtt.sanook.com
-    - api.joox.com
-    - joox.com
     - y.qq.com
     - '*.y.qq.com'
-    - streamoc.music.tc.qq.com
-    - mobileoc.music.tc.qq.com
-    - isure.stream.qqmusic.qq.com
-    - dl.stream.qqmusic.qq.com
-    - aqqmusic.tc.qq.com
-    - amobile.music.tc.qq.com
-    - '*.xiami.com'
-    - '*.music.migu.cn'
-    - music.migu.cn
-    - '*.msftconnecttest.com'
-    - '*.msftncsi.com'
-    - localhost.ptlogin2.qq.com
-    - '*.*.*.srv.nintendo.net'
-    - '*.*.stun.playstation.net'
-    - xbox.*.*.microsoft.com
-    - '*.ipv6.microsoft.com'
-    - '*.*.xboxlive.com'
-    - speedtest.cros.wr.pvp.net
+    - '*.weixin.qq.com'
+    - '*.alipay.com'
+    - '*.taobao.com'
+    - '*.jd.com'
   nameserver:
-    - 180.76.76.76
-    - 119.29.29.29
-    - 180.184.1.1
-    - 223.5.5.5
-    - 8.8.8.8
-    - https://223.6.6.6/dns-query#h3=true
     - https://dns.alidns.com/dns-query
-    - https://cloudflare-dns.com/dns-query
     - https://doh.pub/dns-query
+    - https://cloudflare-dns.com/dns-query
   fallback:
-    - https://000000.dns.nextdns.io/dns-query
-    - https://dns.alidns.com/dns-query
-    - https://doh.pub/dns-query
-    - https://ada.openbld.net/dns-query
-    - https://cloudflare-dns.com/dns-query
     - https://dns.google/dns-query
+    - tls://8.8.4.4:853
+  nameserver-policy:
+    geosite:cn: https://dns.alidns.com/dns-query
+    geosite:geolocation-!cn: https://cloudflare-dns.com/dns-query
   fallback-filter:
     geoip: true
+    geoip-code: CN
     ipcidr:
       - 240.0.0.0/4
       - 0.0.0.0/32
       - 127.0.0.1/32
     domain:
       - +.google.com
+      - +.googleapis.com
+      - +.youtube.com
       - +.facebook.com
       - +.twitter.com
-      - +.youtube.com
-      - +.xn--ngstr-lra8j.com
-      - +.google.cn
-      - +.googleapis.cn
-      - +.googleapis.com
-      - +.gvt1.com
+      - +.netflix.com
+      - +.amazonaws.com
+      - +.github.com
+      - +.openai.com
+      - +.zoom.us
+  proxy-server-nameserver:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
 
 proxies:
   - {"name":"中国_1","type":"hysteria2","server":"yue-hk.yuetoto.net","port":21026,"password":"fee755e2-6b4f-481f-9799-9c20dfa6e8f7","skip-cert-verify":true}
@@ -159,13 +101,11 @@ proxies:
   - {"name":"俄罗斯_3","type":"hysteria2","server":"yue-ng.yuetoto.net","port":21099,"password":"fee755e2-6b4f-481f-9799-9c20dfa6e8f7","skip-cert-verify":true}
   - {"name":"俄罗斯_4","type":"hysteria2","server":"yue-ng.yuetoto.net","port":21083,"password":"fee755e2-6b4f-481f-9799-9c20dfa6e8f7","skip-cert-verify":true}
 proxy-groups:
-  - name: 节点选择
+  - name: 公益网络.com
     type: select
     proxies:
-      - ♻️自动选择
-      - 🔯故障转移
-      - 🔥ChatGPT
-      - Hysteria2
+      - 自动选择
+      - 故障转移
       - 中国_1
       - 中国_2
       - 中国_3
@@ -186,10 +126,10 @@ proxy-groups:
       - 伊朗_2
       - 俄罗斯_3
       - 俄罗斯_4
-  - name: ♻️自动选择
+  - name: 自动选择
     type: url-test
-    url: http://1.1.1.1
-    interval: 600
+    url: http://www.gstatic.com/generate_204
+    interval: 86400
     proxies:
       - 中国_1
       - 中国_2
@@ -211,36 +151,10 @@ proxy-groups:
       - 伊朗_2
       - 俄罗斯_3
       - 俄罗斯_4
-  - name: 🔯故障转移
+  - name: 故障转移
     type: fallback
-    url: http://1.1.1.1
-    interval: 450
-    proxies:
-      - 中国_1
-      - 中国_2
-      - 中国_3
-      - 中国_4
-      - 日本_1
-      - 日本_2
-      - 韩国_1
-      - 韩国_2
-      - 法国_1
-      - 法国_2
-      - 美国_1
-      - 美国_2
-      - 越南_1
-      - 越南_2
-      - 俄罗斯_1
-      - 俄罗斯_2
-      - 伊朗_1
-      - 伊朗_2
-      - 俄罗斯_3
-      - 俄罗斯_4
-  - name: Hysteria2
-    type: select
-    proxies: []
-  - name: 🔥ChatGPT
-    type: select
+    url: http://www.gstatic.com/generate_204
+    interval: 7200
     proxies:
       - 中国_1
       - 中国_2
@@ -264,74 +178,30 @@ proxy-groups:
       - 俄罗斯_4
 
 rules:
-  - DOMAIN,subapi.pronetworklink.com,DIRECT
-  - PROCESS-NAME,v2ray,DIRECT
-  - PROCESS-NAME,xray,DIRECT
-  - PROCESS-NAME,naive,DIRECT
-  - PROCESS-NAME,trojan,DIRECT
-  - PROCESS-NAME,trojan-go,DIRECT
-  - PROCESS-NAME,ss-local,DIRECT
-  - PROCESS-NAME,privoxy,DIRECT
-  - PROCESS-NAME,leaf,DIRECT
-  - PROCESS-NAME,v2ray.exe,DIRECT
-  - PROCESS-NAME,xray.exe,DIRECT
-  - PROCESS-NAME,naive.exe,DIRECT
-  - PROCESS-NAME,trojan.exe,DIRECT
-  - PROCESS-NAME,trojan-go.exe,DIRECT
-  - PROCESS-NAME,ss-local.exe,DIRECT
-  - PROCESS-NAME,privoxy.exe,DIRECT
-  - PROCESS-NAME,leaf.exe,DIRECT
-  - PROCESS-NAME,Surge,DIRECT
-  - PROCESS-NAME,Surge 2,DIRECT
-  - PROCESS-NAME,Surge 3,DIRECT
-  - PROCESS-NAME,Surge 4,DIRECT
-  - PROCESS-NAME,Surge%202,DIRECT
-  - PROCESS-NAME,Surge%203,DIRECT
-  - PROCESS-NAME,Surge%204,DIRECT
-  - PROCESS-NAME,Thunder,DIRECT
-  - PROCESS-NAME,DownloadService,DIRECT
-  - PROCESS-NAME,qBittorrent,DIRECT
-  - PROCESS-NAME,Transmission,DIRECT
-  - PROCESS-NAME,fdm,DIRECT
-  - PROCESS-NAME,aria2c,DIRECT
-  - PROCESS-NAME,Folx,DIRECT
-  - PROCESS-NAME,NetTransport,DIRECT
-  - PROCESS-NAME,uTorrent,DIRECT
-  - PROCESS-NAME,WebTorrent,DIRECT
-  - PROCESS-NAME,aria2c.exe,DIRECT
-  - PROCESS-NAME,BitComet.exe,DIRECT
-  - PROCESS-NAME,fdm.exe,DIRECT
-  - PROCESS-NAME,NetTransport.exe,DIRECT
-  - PROCESS-NAME,qbittorrent.exe,DIRECT
-  - PROCESS-NAME,Thunder.exe,DIRECT
-  - PROCESS-NAME,ThunderVIP.exe,DIRECT
-  - PROCESS-NAME,transmission-daemon.exe,DIRECT
-  - PROCESS-NAME,transmission-qt.exe,DIRECT
-  - PROCESS-NAME,uTorrent.exe,DIRECT
-  - PROCESS-NAME,WebTorrent.exe,DIRECT
-  - PROCESS-NAME,aDrive.exe,DIRECT
-  - DOMAIN-SUFFIX,v2rayse.com,节点选择
-  - DOMAIN-SUFFIX,cff.pw,节点选择
-  - DOMAIN-SUFFIX,vpnse.org,节点选择
-  - DOMAIN-SUFFIX,cfmem.com,节点选择
-  - DOMAIN-SUFFIX,services.googleapis.cn,节点选择
-  - DOMAIN-SUFFIX,xn--ngstr-lra8j.com,节点选择
+  - DOMAIN,wanmeiwl3.xyz,DIRECT
+# 长风网站，自动注入
+  - DOMAIN-SUFFIX,v2rayse.com,公益网络.com
+  - DOMAIN-SUFFIX,cff.pw,公益网络.com
+  - DOMAIN-SUFFIX,vpnse.org,公益网络.com
+  - DOMAIN-SUFFIX,cfmem.com,公益网络.com
+  - DOMAIN-SUFFIX,services.googleapis.cn,公益网络.com
+  - DOMAIN-SUFFIX,xn--ngstr-lra8j.com,公益网络.com
   - DOMAIN,safebrowsing.urlsec.qq.com,DIRECT
   - DOMAIN,safebrowsing.googleapis.com,DIRECT
-  - DOMAIN,developer.apple.com,节点选择
-  - DOMAIN-SUFFIX,digicert.com,节点选择
-  - DOMAIN,ocsp.apple.com,节点选择
-  - DOMAIN,ocsp.comodoca.com,节点选择
-  - DOMAIN,ocsp.usertrust.com,节点选择
-  - DOMAIN,ocsp.sectigo.com,节点选择
-  - DOMAIN,ocsp.verisign.net,节点选择
-  - DOMAIN-SUFFIX,apple-dns.net,节点选择
-  - DOMAIN,testflight.apple.com,节点选择
-  - DOMAIN,sandbox.itunes.apple.com,节点选择
-  - DOMAIN,itunes.apple.com,节点选择
-  - DOMAIN-SUFFIX,apps.apple.com,节点选择
-  - DOMAIN-SUFFIX,blobstore.apple.com,节点选择
-  - DOMAIN,cvws.icloud-content.com,节点选择
+  - DOMAIN,developer.apple.com,公益网络.com
+  - DOMAIN-SUFFIX,digicert.com,公益网络.com
+  - DOMAIN,ocsp.apple.com,公益网络.com
+  - DOMAIN,ocsp.comodoca.com,公益网络.com
+  - DOMAIN,ocsp.usertrust.com,公益网络.com
+  - DOMAIN,ocsp.sectigo.com,公益网络.com
+  - DOMAIN,ocsp.verisign.net,公益网络.com
+  - DOMAIN-SUFFIX,apple-dns.net,公益网络.com
+  - DOMAIN,testflight.apple.com,公益网络.com
+  - DOMAIN,sandbox.itunes.apple.com,公益网络.com
+  - DOMAIN,itunes.apple.com,公益网络.com
+  - DOMAIN-SUFFIX,apps.apple.com,公益网络.com
+  - DOMAIN-SUFFIX,blobstore.apple.com,公益网络.com
+  - DOMAIN,cvws.icloud-content.com,公益网络.com
   - DOMAIN-SUFFIX,mzstatic.com,DIRECT
   - DOMAIN-SUFFIX,itunes.apple.com,DIRECT
   - DOMAIN-SUFFIX,icloud.com,DIRECT
@@ -348,109 +218,6 @@ rules:
   - DOMAIN-SUFFIX,apple.com,DIRECT
   - DOMAIN-SUFFIX,apple-cloudkit.com,DIRECT
   - DOMAIN-SUFFIX,apple-mapkit.com,DIRECT
-  - DOMAIN,browser-intake-datadoghq.com,🔥ChatGPT
-  - DOMAIN,chat.openai.com.cdn.cloudflare.net,🔥ChatGPT
-  - DOMAIN,gemini.google.com,🔥ChatGPT
-  - DOMAIN,openai-api.arkoselabs.com,🔥ChatGPT
-  - DOMAIN,openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net,🔥ChatGPT
-  - DOMAIN,openaicomproductionae4b.blob.core.windows.net,🔥ChatGPT
-  - DOMAIN,production-openaicom-storage.azureedge.net,🔥ChatGPT
-  - DOMAIN,static.cloudflareinsights.com,🔥ChatGPT
-  - DOMAIN-SUFFIX,ai.com,🔥ChatGPT
-  - DOMAIN-SUFFIX,algolia.net,🔥ChatGPT
-  - DOMAIN-SUFFIX,api.statsig.com,🔥ChatGPT
-  - DOMAIN-SUFFIX,auth0.com,🔥ChatGPT
-  - DOMAIN-SUFFIX,chatgpt.com,🔥ChatGPT
-  - DOMAIN-SUFFIX,chatgpt.livekit.cloud,🔥ChatGPT
-  - DOMAIN-SUFFIX,client-api.arkoselabs.com,🔥ChatGPT
-  - DOMAIN-SUFFIX,events.statsigapi.net,🔥ChatGPT
-  - DOMAIN-SUFFIX,featuregates.org,🔥ChatGPT
-  - DOMAIN-SUFFIX,host.livekit.cloud,🔥ChatGPT
-  - DOMAIN-SUFFIX,identrust.com,🔥ChatGPT
-  - DOMAIN-SUFFIX,intercom.io,🔥ChatGPT
-  - DOMAIN-SUFFIX,intercomcdn.com,🔥ChatGPT
-  - DOMAIN-SUFFIX,launchdarkly.com,🔥ChatGPT
-  - DOMAIN-SUFFIX,oaistatic.com,🔥ChatGPT
-  - DOMAIN-SUFFIX,oaiusercontent.com,🔥ChatGPT
-  - DOMAIN-SUFFIX,observeit.net,🔥ChatGPT
-  - DOMAIN-SUFFIX,openai.com,🔥ChatGPT
-  - DOMAIN-SUFFIX,openaiapi-site.azureedge.net,🔥ChatGPT
-  - DOMAIN-SUFFIX,openaicom.imgix.net,🔥ChatGPT
-  - DOMAIN-SUFFIX,segment.io,🔥ChatGPT
-  - DOMAIN-SUFFIX,sentry.io,🔥ChatGPT
-  - DOMAIN-SUFFIX,stripe.com,🔥ChatGPT
-  - DOMAIN-SUFFIX,turn.livekit.cloud,🔥ChatGPT
-  - DOMAIN-SUFFIX,sora.com,🔥ChatGPT
-  - DOMAIN-KEYWORD,openai,🔥ChatGPT
-  - DOMAIN,api.msn.com,🔥ChatGPT
-  - DOMAIN,api.statsig.com,🔥ChatGPT
-  - DOMAIN,assets.msn.com,🔥ChatGPT
-  - DOMAIN,browser-intake-datadoghq.com,🔥ChatGPT
-  - DOMAIN,chat.openai.com.cdn.cloudflare.net,🔥ChatGPT
-  - DOMAIN,copilot.microsoft.com,🔥ChatGPT
-  - DOMAIN,gateway.bingviz.microsoft.net,🔥ChatGPT
-  - DOMAIN,gateway.bingviz.microsoftapp.net,🔥ChatGPT
-  - DOMAIN,in.appcenter.ms,🔥ChatGPT
-  - DOMAIN,location.microsoft.com,🔥ChatGPT
-  - DOMAIN,odc.officeapps.live.com,🔥ChatGPT
-  - DOMAIN,openai-api.arkoselabs.com,🔥ChatGPT
-  - DOMAIN,openaicomproductionae4b.blob.core.windows.net,🔥ChatGPT
-  - DOMAIN,production-openaicom-storage.azureedge.net,🔥ChatGPT
-  - DOMAIN,r.bing.com,🔥ChatGPT
-  - DOMAIN,self.events.data.microsoft.com,🔥ChatGPT
-  - DOMAIN,services.bingapis.com,🔥ChatGPT
-  - DOMAIN,static.cloudflareinsights.com,🔥ChatGPT
-  - DOMAIN,sydney.bing.com,🔥ChatGPT
-  - DOMAIN,www.bing.com,🔥ChatGPT
-  - DOMAIN-SUFFIX,algolia.net,🔥ChatGPT
-  - DOMAIN-SUFFIX,api.microsoftapp.net,🔥ChatGPT
-  - DOMAIN-SUFFIX,auth0.com,🔥ChatGPT
-  - DOMAIN-SUFFIX,bing-shopping.microsoft-falcon.io,🔥ChatGPT
-  - DOMAIN-SUFFIX,challenges.cloudflare.com,🔥ChatGPT
-  - DOMAIN-SUFFIX,chatgpt.com,🔥ChatGPT
-  - DOMAIN-SUFFIX,chatgpt.livekit.cloud,🔥ChatGPT
-  - DOMAIN-SUFFIX,client-api.arkoselabs.com,🔥ChatGPT
-  - DOMAIN-SUFFIX,edgeservices.bing.com,🔥ChatGPT
-  - DOMAIN-SUFFIX,events.statsigapi.net,🔥ChatGPT
-  - DOMAIN-SUFFIX,featuregates.org,🔥ChatGPT
-  - DOMAIN-SUFFIX,host.livekit.cloud,🔥ChatGPT
-  - DOMAIN-SUFFIX,identrust.com,🔥ChatGPT
-  - DOMAIN-SUFFIX,intercom.io,🔥ChatGPT
-  - DOMAIN-SUFFIX,intercomcdn.com,🔥ChatGPT
-  - DOMAIN-SUFFIX,launchdarkly.com,🔥ChatGPT
-  - DOMAIN-SUFFIX,oaistatic.com,🔥ChatGPT
-  - DOMAIN-SUFFIX,oaiusercontent.com,🔥ChatGPT
-  - DOMAIN-SUFFIX,observeit.net,🔥ChatGPT
-  - DOMAIN-SUFFIX,openai.com,🔥ChatGPT
-  - DOMAIN-SUFFIX,openaiapi-site.azureedge.net,🔥ChatGPT
-  - DOMAIN-SUFFIX,openaicom.imgix.net,🔥ChatGPT
-  - DOMAIN-SUFFIX,segment.io,🔥ChatGPT
-  - DOMAIN-SUFFIX,sentry.io,🔥ChatGPT
-  - DOMAIN-SUFFIX,stripe.com,🔥ChatGPT
-  - DOMAIN-SUFFIX,turn.livekit.cloud,🔥ChatGPT
-  - DOMAIN-KEYWORD,openaicom-api,🔥ChatGPT
-  - DOMAIN,ai.google.dev,🔥ChatGPT
-  - DOMAIN,alkalimakersuite-pa.clients6.google.com,🔥ChatGPT
-  - DOMAIN,makersuite.google.com,🔥ChatGPT
-  - DOMAIN-SUFFIX,bard.google.com,🔥ChatGPT
-  - DOMAIN-SUFFIX,deepmind.com,🔥ChatGPT
-  - DOMAIN-SUFFIX,deepmind.google,🔥ChatGPT
-  - DOMAIN-SUFFIX,gemini.google.com,🔥ChatGPT
-  - DOMAIN-SUFFIX,generativeai.google,🔥ChatGPT
-  - DOMAIN-SUFFIX,proactivebackend-pa.googleapis.com,🔥ChatGPT
-  - DOMAIN-SUFFIX,apis.google.com,🔥ChatGPT
-  - DOMAIN-KEYWORD,colab,🔥ChatGPT
-  - DOMAIN-KEYWORD,developerprofiles,🔥ChatGPT
-  - DOMAIN-KEYWORD,generativelanguage,🔥ChatGPT
-  - DOMAIN,cdn.usefathom.com,🔥ChatGPT
-  - DOMAIN-SUFFIX,anthropic.com,🔥ChatGPT
-  - DOMAIN-SUFFIX,claude.ai,🔥ChatGPT
-  - DOMAIN-SUFFIX,razie.ai,🔥ChatGPT
-  - DOMAIN-SUFFIX,razie.aws.intellij.net,🔥ChatGPT
-  - DOMAIN-SUFFIX,etbrains.ai,🔥ChatGPT
-  - DOMAIN-SUFFIX,meta.com,🔥ChatGPT
-  - DOMAIN-SUFFIX,cn,DIRECT
-  - DOMAIN-KEYWORD,-cn,DIRECT
   - DOMAIN-SUFFIX,126.com,DIRECT
   - DOMAIN-SUFFIX,126.net,DIRECT
   - DOMAIN-SUFFIX,127.net,DIRECT
@@ -504,6 +271,7 @@ rules:
   - DOMAIN-SUFFIX,le.com,DIRECT
   - DOMAIN-SUFFIX,lecloud.com,DIRECT
   - DOMAIN-SUFFIX,lemicp.com,DIRECT
+  - DOMAIN-SUFFIX,licdn.com,DIRECT
   - DOMAIN-SUFFIX,luoo.net,DIRECT
   - DOMAIN-SUFFIX,meituan.com,DIRECT
   - DOMAIN-SUFFIX,meituan.net,DIRECT
@@ -575,44 +343,20 @@ rules:
   - DOMAIN-SUFFIX,zhimg.com,DIRECT
   - DOMAIN-SUFFIX,zimuzu.tv,DIRECT
   - DOMAIN-SUFFIX,zoho.com,DIRECT
-  - DOMAIN,fastly-download.epicgames.com,DIRECT
-  - DOMAIN,epicgames-download1.akamaized.net,DIRECT
-  - DOMAIN,steamcdn-a.akamaihd.net,DIRECT
-  - DOMAIN-SUFFIX,steamserver.net,DIRECT
-  - DOMAIN-SUFFIX,cm.steampowered.com,DIRECT
-  - DOMAIN-SUFFIX,synology.com,DIRECT
-  - DOMAIN-SUFFIX,dyndns.org,DIRECT
-  - DOMAIN-SUFFIX,egdownload.fastly-edge.com,DIRECT
-  - DOMAIN-KEYWORD,amazon,节点选择
-  - DOMAIN-KEYWORD,google,节点选择
-  - DOMAIN-KEYWORD,gmail,节点选择
-  - DOMAIN-KEYWORD,youtube,节点选择
-  - DOMAIN-KEYWORD,facebook,节点选择
-  - DOMAIN-SUFFIX,fb.me,节点选择
-  - DOMAIN-SUFFIX,fbcdn.net,节点选择
-  - DOMAIN-KEYWORD,twitter,节点选择
-  - DOMAIN-KEYWORD,instagram,节点选择
-  - DOMAIN-KEYWORD,dropbox,节点选择
-  - DOMAIN-SUFFIX,twimg.com,节点选择
-  - DOMAIN-KEYWORD,blogspot,节点选择
-  - DOMAIN-SUFFIX,youtu.be,节点选择
-  - DOMAIN-KEYWORD,whatsapp,节点选择
-  - DOMAIN-SUFFIX,ipleak.net,节点选择
-  - DOMAIN-SUFFIX,browserscan.net,节点选择
-  - DOMAIN-SUFFIX,surfsharkdns.com,节点选择
-  - DOMAIN-SUFFIX,edns.ip-api.com,节点选择
-  - DOMAIN-SUFFIX,dnsleaktest.com,节点选择
-  - DOMAIN-SUFFIX,dnsleak.com,节点选择
-  - DOMAIN-SUFFIX,expressvpn.com,节点选择
-  - DOMAIN-SUFFIX,nordvpn.com,节点选择
-  - DOMAIN-SUFFIX,surfshark.com,节点选择
-  - DOMAIN-SUFFIX,perfect-privacy.com,节点选择
-  - DOMAIN-SUFFIX,browserleaks.com,节点选择
-  - DOMAIN-SUFFIX,browserleaks.org,节点选择
-  - DOMAIN-SUFFIX,browserleaks.net,节点选择
-  - DOMAIN-SUFFIX,vpnunlimited.com,节点选择
-  - DOMAIN-SUFFIX,whoer.net,节点选择
-  - DOMAIN-SUFFIX,whrq.net,节点选择
+  - DOMAIN-KEYWORD,amazon,公益网络.com
+  - DOMAIN-KEYWORD,google,公益网络.com
+  - DOMAIN-KEYWORD,gmail,公益网络.com
+  - DOMAIN-KEYWORD,youtube,公益网络.com
+  - DOMAIN-KEYWORD,facebook,公益网络.com
+  - DOMAIN-SUFFIX,fb.me,公益网络.com
+  - DOMAIN-SUFFIX,fbcdn.net,公益网络.com
+  - DOMAIN-KEYWORD,twitter,公益网络.com
+  - DOMAIN-KEYWORD,instagram,公益网络.com
+  - DOMAIN-KEYWORD,dropbox,公益网络.com
+  - DOMAIN-SUFFIX,twimg.com,公益网络.com
+  - DOMAIN-KEYWORD,blogspot,公益网络.com
+  - DOMAIN-SUFFIX,youtu.be,公益网络.com
+  - DOMAIN-KEYWORD,whatsapp,公益网络.com
   - DOMAIN-KEYWORD,admarvel,REJECT
   - DOMAIN-KEYWORD,admaster,REJECT
   - DOMAIN-KEYWORD,adsage,REJECT
@@ -640,312 +384,304 @@ rules:
   - DOMAIN-SUFFIX,vungle.com,REJECT
   - DOMAIN-KEYWORD,wlmonitor,REJECT
   - DOMAIN-KEYWORD,zjtoolbar,REJECT
-  - DOMAIN-SUFFIX,linkedin.com,节点选择
-  - DOMAIN-SUFFIX,licdn.com,节点选择
-  - DOMAIN-SUFFIX,9to5mac.com,节点选择
-  - DOMAIN-SUFFIX,abpchina.org,节点选择
-  - DOMAIN-SUFFIX,adblockplus.org,节点选择
-  - DOMAIN-SUFFIX,adobe.com,节点选择
-  - DOMAIN-SUFFIX,akamaized.net,节点选择
-  - DOMAIN-SUFFIX,alfredapp.com,节点选择
-  - DOMAIN-SUFFIX,amplitude.com,节点选择
-  - DOMAIN-SUFFIX,ampproject.org,节点选择
-  - DOMAIN-SUFFIX,android.com,节点选择
-  - DOMAIN-SUFFIX,angularjs.org,节点选择
-  - DOMAIN-SUFFIX,aolcdn.com,节点选择
-  - DOMAIN-SUFFIX,apkpure.com,节点选择
-  - DOMAIN-SUFFIX,appledaily.com,节点选择
-  - DOMAIN-SUFFIX,appshopper.com,节点选择
-  - DOMAIN-SUFFIX,appspot.com,节点选择
-  - DOMAIN-SUFFIX,arcgis.com,节点选择
-  - DOMAIN-SUFFIX,archive.org,节点选择
-  - DOMAIN-SUFFIX,armorgames.com,节点选择
-  - DOMAIN-SUFFIX,aspnetcdn.com,节点选择
-  - DOMAIN-SUFFIX,att.com,节点选择
-  - DOMAIN-SUFFIX,awsstatic.com,节点选择
-  - DOMAIN-SUFFIX,azurewebsites.net,节点选择
-  - DOMAIN-SUFFIX,bing.com,节点选择
-  - DOMAIN-SUFFIX,bintray.com,节点选择
-  - DOMAIN-SUFFIX,bit.com,节点选择
-  - DOMAIN-SUFFIX,bit.ly,节点选择
-  - DOMAIN-SUFFIX,bitbucket.org,节点选择
-  - DOMAIN-SUFFIX,bjango.com,节点选择
-  - DOMAIN-SUFFIX,bkrtx.com,节点选择
-  - DOMAIN-SUFFIX,blog.com,节点选择
-  - DOMAIN-SUFFIX,blogcdn.com,节点选择
-  - DOMAIN-SUFFIX,blogger.com,节点选择
-  - DOMAIN-SUFFIX,blogsmithmedia.com,节点选择
-  - DOMAIN-SUFFIX,blogspot.com,节点选择
-  - DOMAIN-SUFFIX,blogspot.hk,节点选择
-  - DOMAIN-SUFFIX,bloomberg.com,节点选择
-  - DOMAIN-SUFFIX,box.com,节点选择
-  - DOMAIN-SUFFIX,box.net,节点选择
-  - DOMAIN-SUFFIX,cachefly.net,节点选择
-  - DOMAIN-SUFFIX,chromium.org,节点选择
-  - DOMAIN-SUFFIX,cl.ly,节点选择
-  - DOMAIN-SUFFIX,cloudflare.com,节点选择
-  - DOMAIN-SUFFIX,cloudfront.net,节点选择
-  - DOMAIN-SUFFIX,cloudmagic.com,节点选择
-  - DOMAIN-SUFFIX,cmail19.com,节点选择
-  - DOMAIN-SUFFIX,cnet.com,节点选择
-  - DOMAIN-SUFFIX,cocoapods.org,节点选择
-  - DOMAIN-SUFFIX,comodoca.com,节点选择
-  - DOMAIN-SUFFIX,crashlytics.com,节点选择
-  - DOMAIN-SUFFIX,culturedcode.com,节点选择
-  - DOMAIN-SUFFIX,d.pr,节点选择
-  - DOMAIN-SUFFIX,danilo.to,节点选择
-  - DOMAIN-SUFFIX,dayone.me,节点选择
-  - DOMAIN-SUFFIX,db.tt,节点选择
-  - DOMAIN-SUFFIX,deskconnect.com,节点选择
-  - DOMAIN-SUFFIX,disq.us,节点选择
-  - DOMAIN-SUFFIX,disqus.com,节点选择
-  - DOMAIN-SUFFIX,disquscdn.com,节点选择
-  - DOMAIN-SUFFIX,dnsimple.com,节点选择
-  - DOMAIN-SUFFIX,docker.com,节点选择
-  - DOMAIN-SUFFIX,dribbble.com,节点选择
-  - DOMAIN-SUFFIX,droplr.com,节点选择
-  - DOMAIN-SUFFIX,duckduckgo.com,节点选择
-  - DOMAIN-SUFFIX,dueapp.com,节点选择
-  - DOMAIN-SUFFIX,dytt8.net,节点选择
-  - DOMAIN-SUFFIX,edgecastcdn.net,节点选择
-  - DOMAIN-SUFFIX,edgekey.net,节点选择
-  - DOMAIN-SUFFIX,edgesuite.net,节点选择
-  - DOMAIN-SUFFIX,engadget.com,节点选择
-  - DOMAIN-SUFFIX,entrust.net,节点选择
-  - DOMAIN-SUFFIX,eurekavpt.com,节点选择
-  - DOMAIN-SUFFIX,evernote.com,节点选择
-  - DOMAIN-SUFFIX,fabric.io,节点选择
-  - DOMAIN-SUFFIX,fast.com,节点选择
-  - DOMAIN-SUFFIX,fastly.net,节点选择
-  - DOMAIN-SUFFIX,fc2.com,节点选择
-  - DOMAIN-SUFFIX,feedburner.com,节点选择
-  - DOMAIN-SUFFIX,feedly.com,节点选择
-  - DOMAIN-SUFFIX,feedsportal.com,节点选择
-  - DOMAIN-SUFFIX,fiftythree.com,节点选择
-  - DOMAIN-SUFFIX,firebaseio.com,节点选择
-  - DOMAIN-SUFFIX,flexibits.com,节点选择
-  - DOMAIN-SUFFIX,flickr.com,节点选择
-  - DOMAIN-SUFFIX,flipboard.com,节点选择
-  - DOMAIN-SUFFIX,g.co,节点选择
-  - DOMAIN-SUFFIX,gabia.net,节点选择
-  - DOMAIN-SUFFIX,geni.us,节点选择
-  - DOMAIN-SUFFIX,gfx.ms,节点选择
-  - DOMAIN-SUFFIX,ggpht.com,节点选择
-  - DOMAIN-SUFFIX,ghostnoteapp.com,节点选择
-  - DOMAIN-SUFFIX,git.io,节点选择
-  - DOMAIN-KEYWORD,github,节点选择
-  - DOMAIN-SUFFIX,globalsign.com,节点选择
-  - DOMAIN-SUFFIX,gmodules.com,节点选择
-  - DOMAIN-SUFFIX,godaddy.com,节点选择
-  - DOMAIN-SUFFIX,golang.org,节点选择
-  - DOMAIN-SUFFIX,gongm.in,节点选择
-  - DOMAIN-SUFFIX,goo.gl,节点选择
-  - DOMAIN-SUFFIX,goodreaders.com,节点选择
-  - DOMAIN-SUFFIX,goodreads.com,节点选择
-  - DOMAIN-SUFFIX,gravatar.com,节点选择
-  - DOMAIN-SUFFIX,gstatic.com,节点选择
-  - DOMAIN-SUFFIX,gvt0.com,节点选择
-  - DOMAIN-SUFFIX,hockeyapp.net,节点选择
-  - DOMAIN-SUFFIX,hotmail.com,节点选择
-  - DOMAIN-SUFFIX,icons8.com,节点选择
-  - DOMAIN-SUFFIX,ifixit.com,节点选择
-  - DOMAIN-SUFFIX,ift.tt,节点选择
-  - DOMAIN-SUFFIX,ifttt.com,节点选择
-  - DOMAIN-SUFFIX,iherb.com,节点选择
-  - DOMAIN-SUFFIX,imageshack.us,节点选择
-  - DOMAIN-SUFFIX,img.ly,节点选择
-  - DOMAIN-SUFFIX,imgur.com,节点选择
-  - DOMAIN-SUFFIX,imore.com,节点选择
-  - DOMAIN-SUFFIX,instapaper.com,节点选择
-  - DOMAIN-SUFFIX,ipn.li,节点选择
-  - DOMAIN-SUFFIX,is.gd,节点选择
-  - DOMAIN-SUFFIX,issuu.com,节点选择
-  - DOMAIN-SUFFIX,itgonglun.com,节点选择
-  - DOMAIN-SUFFIX,itun.es,节点选择
-  - DOMAIN-SUFFIX,ixquick.com,节点选择
-  - DOMAIN-SUFFIX,j.mp,节点选择
-  - DOMAIN-SUFFIX,js.revsci.net,节点选择
-  - DOMAIN-SUFFIX,jshint.com,节点选择
-  - DOMAIN-SUFFIX,jtvnw.net,节点选择
-  - DOMAIN-SUFFIX,justgetflux.com,节点选择
-  - DOMAIN-SUFFIX,kat.cr,节点选择
-  - DOMAIN-SUFFIX,klip.me,节点选择
-  - DOMAIN-SUFFIX,libsyn.com,节点选择
-  - DOMAIN-SUFFIX,line-apps.com,节点选择
-  - DOMAIN-SUFFIX,linode.com,节点选择
-  - DOMAIN-SUFFIX,lithium.com,节点选择
-  - DOMAIN-SUFFIX,littlehj.com,节点选择
-  - DOMAIN-SUFFIX,live.com,节点选择
-  - DOMAIN-SUFFIX,live.net,节点选择
-  - DOMAIN-SUFFIX,livefilestore.com,节点选择
-  - DOMAIN-SUFFIX,llnwd.net,节点选择
-  - DOMAIN-SUFFIX,macid.co,节点选择
-  - DOMAIN-SUFFIX,macromedia.com,节点选择
-  - DOMAIN-SUFFIX,macrumors.com,节点选择
-  - DOMAIN-SUFFIX,mashable.com,节点选择
-  - DOMAIN-SUFFIX,mathjax.org,节点选择
-  - DOMAIN-SUFFIX,medium.com,节点选择
-  - DOMAIN-SUFFIX,mega.co.nz,节点选择
-  - DOMAIN-SUFFIX,mega.nz,节点选择
-  - DOMAIN-SUFFIX,megaupload.com,节点选择
-  - DOMAIN-SUFFIX,microsofttranslator.com,节点选择
-  - DOMAIN-SUFFIX,mindnode.com,节点选择
-  - DOMAIN-SUFFIX,mobile01.com,节点选择
-  - DOMAIN-SUFFIX,modmyi.com,节点选择
-  - DOMAIN-SUFFIX,msedge.net,节点选择
-  - DOMAIN-SUFFIX,myfontastic.com,节点选择
-  - DOMAIN-SUFFIX,name.com,节点选择
-  - DOMAIN-SUFFIX,nextmedia.com,节点选择
-  - DOMAIN-SUFFIX,nsstatic.net,节点选择
-  - DOMAIN-SUFFIX,nssurge.com,节点选择
-  - DOMAIN-SUFFIX,nyt.com,节点选择
-  - DOMAIN-SUFFIX,nytimes.com,节点选择
-  - DOMAIN-SUFFIX,omnigroup.com,节点选择
-  - DOMAIN-SUFFIX,onedrive.com,节点选择
-  - DOMAIN-SUFFIX,onenote.com,节点选择
-  - DOMAIN-SUFFIX,ooyala.com,节点选择
-  - DOMAIN-SUFFIX,openvpn.net,节点选择
-  - DOMAIN-SUFFIX,openwrt.org,节点选择
-  - DOMAIN-SUFFIX,orkut.com,节点选择
-  - DOMAIN-SUFFIX,osxdaily.com,节点选择
-  - DOMAIN-SUFFIX,outlook.com,节点选择
-  - DOMAIN-SUFFIX,ow.ly,节点选择
-  - DOMAIN-SUFFIX,paddleapi.com,节点选择
-  - DOMAIN-SUFFIX,parallels.com,节点选择
-  - DOMAIN-SUFFIX,parse.com,节点选择
-  - DOMAIN-SUFFIX,pdfexpert.com,节点选择
-  - DOMAIN-SUFFIX,periscope.tv,节点选择
-  - DOMAIN-SUFFIX,pinboard.in,节点选择
-  - DOMAIN-SUFFIX,pinterest.com,节点选择
-  - DOMAIN-SUFFIX,pixelmator.com,节点选择
-  - DOMAIN-SUFFIX,pixiv.net,节点选择
-  - DOMAIN-SUFFIX,playpcesor.com,节点选择
-  - DOMAIN-SUFFIX,playstation.com,节点选择
-  - DOMAIN-SUFFIX,playstation.com.hk,节点选择
-  - DOMAIN-SUFFIX,playstation.net,节点选择
-  - DOMAIN-SUFFIX,playstationnetwork.com,节点选择
-  - DOMAIN-SUFFIX,pushwoosh.com,节点选择
-  - DOMAIN-SUFFIX,rime.im,节点选择
-  - DOMAIN-SUFFIX,servebom.com,节点选择
-  - DOMAIN-SUFFIX,sfx.ms,节点选择
-  - DOMAIN-SUFFIX,shadowsocks.org,节点选择
-  - DOMAIN-SUFFIX,sharethis.com,节点选择
-  - DOMAIN-SUFFIX,shazam.com,节点选择
-  - DOMAIN-SUFFIX,skype.com,节点选择
-  - DOMAIN-SUFFIX,smartdns节点选择.com,节点选择
-  - DOMAIN-SUFFIX,smartmailcloud.com,节点选择
-  - DOMAIN-SUFFIX,sndcdn.com,节点选择
-  - DOMAIN-SUFFIX,sony.com,节点选择
-  - DOMAIN-SUFFIX,soundcloud.com,节点选择
-  - DOMAIN-SUFFIX,sourceforge.net,节点选择
-  - DOMAIN-SUFFIX,spotify.com,节点选择
-  - DOMAIN-SUFFIX,squarespace.com,节点选择
-  - DOMAIN-SUFFIX,sstatic.net,节点选择
-  - DOMAIN-SUFFIX,st.luluku.pw,节点选择
-  - DOMAIN-SUFFIX,stackoverflow.com,节点选择
-  - DOMAIN-SUFFIX,startpage.com,节点选择
-  - DOMAIN-SUFFIX,staticflickr.com,节点选择
-  - DOMAIN-SUFFIX,steamcommunity.com,节点选择
-  - DOMAIN-SUFFIX,symauth.com,节点选择
-  - DOMAIN-SUFFIX,symcb.com,节点选择
-  - DOMAIN-SUFFIX,symcd.com,节点选择
-  - DOMAIN-SUFFIX,tapbots.com,节点选择
-  - DOMAIN-SUFFIX,tapbots.net,节点选择
-  - DOMAIN-SUFFIX,tdesktop.com,节点选择
-  - DOMAIN-SUFFIX,techcrunch.com,节点选择
-  - DOMAIN-SUFFIX,techsmith.com,节点选择
-  - DOMAIN-SUFFIX,thepiratebay.org,节点选择
-  - DOMAIN-SUFFIX,theverge.com,节点选择
-  - DOMAIN-SUFFIX,time.com,节点选择
-  - DOMAIN-SUFFIX,timeinc.net,节点选择
-  - DOMAIN-SUFFIX,tiny.cc,节点选择
-  - DOMAIN-SUFFIX,tinypic.com,节点选择
-  - DOMAIN-SUFFIX,tmblr.co,节点选择
-  - DOMAIN-SUFFIX,todoist.com,节点选择
-  - DOMAIN-SUFFIX,trello.com,节点选择
-  - DOMAIN-SUFFIX,trustasiassl.com,节点选择
-  - DOMAIN-SUFFIX,tumblr.co,节点选择
-  - DOMAIN-SUFFIX,tumblr.com,节点选择
-  - DOMAIN-SUFFIX,tweetdeck.com,节点选择
-  - DOMAIN-SUFFIX,tweetmarker.net,节点选择
-  - DOMAIN-SUFFIX,twitch.tv,节点选择
-  - DOMAIN-SUFFIX,txmblr.com,节点选择
-  - DOMAIN-SUFFIX,typekit.net,节点选择
-  - DOMAIN-SUFFIX,ubertags.com,节点选择
-  - DOMAIN-SUFFIX,ublock.org,节点选择
-  - DOMAIN-SUFFIX,ubnt.com,节点选择
-  - DOMAIN-SUFFIX,ulyssesapp.com,节点选择
-  - DOMAIN-SUFFIX,urchin.com,节点选择
-  - DOMAIN-SUFFIX,usertrust.com,节点选择
-  - DOMAIN-SUFFIX,v.gd,节点选择
-  - DOMAIN-SUFFIX,v2ex.com,节点选择
-  - DOMAIN-SUFFIX,vimeo.com,节点选择
-  - DOMAIN-SUFFIX,vimeocdn.com,节点选择
-  - DOMAIN-SUFFIX,vine.co,节点选择
-  - DOMAIN-SUFFIX,vivaldi.com,节点选择
-  - DOMAIN-SUFFIX,vox-cdn.com,节点选择
-  - DOMAIN-SUFFIX,vsco.co,节点选择
-  - DOMAIN-SUFFIX,vultr.com,节点选择
-  - DOMAIN-SUFFIX,w.org,节点选择
-  - DOMAIN-SUFFIX,w3schools.com,节点选择
-  - DOMAIN-SUFFIX,webtype.com,节点选择
-  - DOMAIN-SUFFIX,wikiwand.com,节点选择
-  - DOMAIN-SUFFIX,wikileaks.org,节点选择
-  - DOMAIN-SUFFIX,wikimedia.org,节点选择
-  - DOMAIN-SUFFIX,wikipedia.com,节点选择
-  - DOMAIN-SUFFIX,wikipedia.org,节点选择
-  - DOMAIN-SUFFIX,windows.com,节点选择
-  - DOMAIN-SUFFIX,windows.net,节点选择
-  - DOMAIN-SUFFIX,wire.com,节点选择
-  - DOMAIN-SUFFIX,wordpress.com,节点选择
-  - DOMAIN-SUFFIX,workflowy.com,节点选择
-  - DOMAIN-SUFFIX,wp.com,节点选择
-  - DOMAIN-SUFFIX,wsj.com,节点选择
-  - DOMAIN-SUFFIX,wsj.net,节点选择
-  - DOMAIN-SUFFIX,xda-developers.com,节点选择
-  - DOMAIN-SUFFIX,xeeno.com,节点选择
-  - DOMAIN-SUFFIX,xiti.com,节点选择
-  - DOMAIN-SUFFIX,yahoo.com,节点选择
-  - DOMAIN-SUFFIX,yimg.com,节点选择
-  - DOMAIN-SUFFIX,ying.com,节点选择
-  - DOMAIN-SUFFIX,yoyo.org,节点选择
-  - DOMAIN-SUFFIX,ytimg.com,节点选择
-  - DOMAIN-SUFFIX,signal.org,节点选择
-  - DOMAIN-SUFFIX,whispersystems.org,节点选择
-  - DOMAIN-SUFFIX,cangku.moe,节点选择
-  - DOMAIN-SUFFIX,tradingview.com,节点选择
-  - DOMAIN-SUFFIX,x.com,节点选择
-  - DOMAIN-SUFFIX,asmr.one,节点选择
-  - DOMAIN-SUFFIX,telegra.ph,节点选择
-  - DOMAIN-SUFFIX,telegram.org,节点选择
-  - DOMAIN-SUFFIX,t.me,节点选择
-  - DOMAIN-SUFFIX,telegram.me,节点选择
-  - IP-CIDR,91.108.4.0/22,节点选择,no-resolve
-  - IP-CIDR,91.108.8.0/21,节点选择,no-resolve
-  - IP-CIDR,91.108.16.0/22,节点选择,no-resolve
-  - IP-CIDR,91.108.56.0/22,节点选择,no-resolve
-  - IP-CIDR,149.154.160.0/20,节点选择,no-resolve
-  - IP-CIDR6,2001:67c:4e8::/48,节点选择,no-resolve
-  - IP-CIDR6,2001:b28:f23d::/48,节点选择,no-resolve
-  - IP-CIDR6,2001:b28:f23f::/48,节点选择,no-resolve
-  - IP-CIDR,120.232.181.162/32,节点选择,no-resolve
-  - IP-CIDR,120.241.147.226/32,节点选择,no-resolve
-  - IP-CIDR,120.253.253.226/32,节点选择,no-resolve
-  - IP-CIDR,120.253.255.162/32,节点选择,no-resolve
-  - IP-CIDR,120.253.255.34/32,节点选择,no-resolve
-  - IP-CIDR,120.253.255.98/32,节点选择,no-resolve
-  - IP-CIDR,180.163.150.162/32,节点选择,no-resolve
-  - IP-CIDR,180.163.150.34/32,节点选择,no-resolve
-  - IP-CIDR,180.163.151.162/32,节点选择,no-resolve
-  - IP-CIDR,180.163.151.34/32,节点选择,no-resolve
-  - IP-CIDR,203.208.39.0/24,节点选择,no-resolve
-  - IP-CIDR,203.208.40.0/24,节点选择,no-resolve
-  - IP-CIDR,203.208.41.0/24,节点选择,no-resolve
-  - IP-CIDR,203.208.43.0/24,节点选择,no-resolve
-  - IP-CIDR,203.208.50.0/24,节点选择,no-resolve
-  - IP-CIDR,220.181.174.162/32,节点选择,no-resolve
-  - IP-CIDR,220.181.174.226/32,节点选择,no-resolve
-  - IP-CIDR,220.181.174.34/32,节点选择,no-resolve
+  - DOMAIN-SUFFIX,9to5mac.com,公益网络.com
+  - DOMAIN-SUFFIX,abpchina.org,公益网络.com
+  - DOMAIN-SUFFIX,adblockplus.org,公益网络.com
+  - DOMAIN-SUFFIX,adobe.com,公益网络.com
+  - DOMAIN-SUFFIX,akamaized.net,公益网络.com
+  - DOMAIN-SUFFIX,alfredapp.com,公益网络.com
+  - DOMAIN-SUFFIX,amplitude.com,公益网络.com
+  - DOMAIN-SUFFIX,ampproject.org,公益网络.com
+  - DOMAIN-SUFFIX,android.com,公益网络.com
+  - DOMAIN-SUFFIX,angularjs.org,公益网络.com
+  - DOMAIN-SUFFIX,aolcdn.com,公益网络.com
+  - DOMAIN-SUFFIX,apkpure.com,公益网络.com
+  - DOMAIN-SUFFIX,appledaily.com,公益网络.com
+  - DOMAIN-SUFFIX,appshopper.com,公益网络.com
+  - DOMAIN-SUFFIX,appspot.com,公益网络.com
+  - DOMAIN-SUFFIX,arcgis.com,公益网络.com
+  - DOMAIN-SUFFIX,archive.org,公益网络.com
+  - DOMAIN-SUFFIX,armorgames.com,公益网络.com
+  - DOMAIN-SUFFIX,aspnetcdn.com,公益网络.com
+  - DOMAIN-SUFFIX,att.com,公益网络.com
+  - DOMAIN-SUFFIX,awsstatic.com,公益网络.com
+  - DOMAIN-SUFFIX,azureedge.net,公益网络.com
+  - DOMAIN-SUFFIX,azurewebsites.net,公益网络.com
+  - DOMAIN-SUFFIX,bing.com,公益网络.com
+  - DOMAIN-SUFFIX,bintray.com,公益网络.com
+  - DOMAIN-SUFFIX,bit.com,公益网络.com
+  - DOMAIN-SUFFIX,bit.ly,公益网络.com
+  - DOMAIN-SUFFIX,bitbucket.org,公益网络.com
+  - DOMAIN-SUFFIX,bjango.com,公益网络.com
+  - DOMAIN-SUFFIX,bkrtx.com,公益网络.com
+  - DOMAIN-SUFFIX,blog.com,公益网络.com
+  - DOMAIN-SUFFIX,blogcdn.com,公益网络.com
+  - DOMAIN-SUFFIX,blogger.com,公益网络.com
+  - DOMAIN-SUFFIX,blogsmithmedia.com,公益网络.com
+  - DOMAIN-SUFFIX,blogspot.com,公益网络.com
+  - DOMAIN-SUFFIX,blogspot.hk,公益网络.com
+  - DOMAIN-SUFFIX,bloomberg.com,公益网络.com
+  - DOMAIN-SUFFIX,box.com,公益网络.com
+  - DOMAIN-SUFFIX,box.net,公益网络.com
+  - DOMAIN-SUFFIX,cachefly.net,公益网络.com
+  - DOMAIN-SUFFIX,chromium.org,公益网络.com
+  - DOMAIN-SUFFIX,cl.ly,公益网络.com
+  - DOMAIN-SUFFIX,cloudflare.com,公益网络.com
+  - DOMAIN-SUFFIX,cloudfront.net,公益网络.com
+  - DOMAIN-SUFFIX,cloudmagic.com,公益网络.com
+  - DOMAIN-SUFFIX,cmail19.com,公益网络.com
+  - DOMAIN-SUFFIX,cnet.com,公益网络.com
+  - DOMAIN-SUFFIX,cocoapods.org,公益网络.com
+  - DOMAIN-SUFFIX,comodoca.com,公益网络.com
+  - DOMAIN-SUFFIX,crashlytics.com,公益网络.com
+  - DOMAIN-SUFFIX,culturedcode.com,公益网络.com
+  - DOMAIN-SUFFIX,d.pr,公益网络.com
+  - DOMAIN-SUFFIX,danilo.to,公益网络.com
+  - DOMAIN-SUFFIX,dayone.me,公益网络.com
+  - DOMAIN-SUFFIX,db.tt,公益网络.com
+  - DOMAIN-SUFFIX,deskconnect.com,公益网络.com
+  - DOMAIN-SUFFIX,disq.us,公益网络.com
+  - DOMAIN-SUFFIX,disqus.com,公益网络.com
+  - DOMAIN-SUFFIX,disquscdn.com,公益网络.com
+  - DOMAIN-SUFFIX,dnsimple.com,公益网络.com
+  - DOMAIN-SUFFIX,docker.com,公益网络.com
+  - DOMAIN-SUFFIX,dribbble.com,公益网络.com
+  - DOMAIN-SUFFIX,droplr.com,公益网络.com
+  - DOMAIN-SUFFIX,duckduckgo.com,公益网络.com
+  - DOMAIN-SUFFIX,dueapp.com,公益网络.com
+  - DOMAIN-SUFFIX,dytt8.net,公益网络.com
+  - DOMAIN-SUFFIX,edgecastcdn.net,公益网络.com
+  - DOMAIN-SUFFIX,edgekey.net,公益网络.com
+  - DOMAIN-SUFFIX,edgesuite.net,公益网络.com
+  - DOMAIN-SUFFIX,engadget.com,公益网络.com
+  - DOMAIN-SUFFIX,entrust.net,公益网络.com
+  - DOMAIN-SUFFIX,eurekavpt.com,公益网络.com
+  - DOMAIN-SUFFIX,evernote.com,公益网络.com
+  - DOMAIN-SUFFIX,fabric.io,公益网络.com
+  - DOMAIN-SUFFIX,fast.com,公益网络.com
+  - DOMAIN-SUFFIX,fastly.net,公益网络.com
+  - DOMAIN-SUFFIX,fc2.com,公益网络.com
+  - DOMAIN-SUFFIX,feedburner.com,公益网络.com
+  - DOMAIN-SUFFIX,feedly.com,公益网络.com
+  - DOMAIN-SUFFIX,feedsportal.com,公益网络.com
+  - DOMAIN-SUFFIX,fiftythree.com,公益网络.com
+  - DOMAIN-SUFFIX,firebaseio.com,公益网络.com
+  - DOMAIN-SUFFIX,flexibits.com,公益网络.com
+  - DOMAIN-SUFFIX,flickr.com,公益网络.com
+  - DOMAIN-SUFFIX,flipboard.com,公益网络.com
+  - DOMAIN-SUFFIX,g.co,公益网络.com
+  - DOMAIN-SUFFIX,gabia.net,公益网络.com
+  - DOMAIN-SUFFIX,geni.us,公益网络.com
+  - DOMAIN-SUFFIX,gfx.ms,公益网络.com
+  - DOMAIN-SUFFIX,ggpht.com,公益网络.com
+  - DOMAIN-SUFFIX,ghostnoteapp.com,公益网络.com
+  - DOMAIN-SUFFIX,git.io,公益网络.com
+  - DOMAIN-KEYWORD,github,公益网络.com
+  - DOMAIN-SUFFIX,globalsign.com,公益网络.com
+  - DOMAIN-SUFFIX,gmodules.com,公益网络.com
+  - DOMAIN-SUFFIX,godaddy.com,公益网络.com
+  - DOMAIN-SUFFIX,golang.org,公益网络.com
+  - DOMAIN-SUFFIX,gongm.in,公益网络.com
+  - DOMAIN-SUFFIX,goo.gl,公益网络.com
+  - DOMAIN-SUFFIX,goodreaders.com,公益网络.com
+  - DOMAIN-SUFFIX,goodreads.com,公益网络.com
+  - DOMAIN-SUFFIX,gravatar.com,公益网络.com
+  - DOMAIN-SUFFIX,gstatic.com,公益网络.com
+  - DOMAIN-SUFFIX,gvt0.com,公益网络.com
+  - DOMAIN-SUFFIX,hockeyapp.net,公益网络.com
+  - DOMAIN-SUFFIX,hotmail.com,公益网络.com
+  - DOMAIN-SUFFIX,icons8.com,公益网络.com
+  - DOMAIN-SUFFIX,ifixit.com,公益网络.com
+  - DOMAIN-SUFFIX,ift.tt,公益网络.com
+  - DOMAIN-SUFFIX,ifttt.com,公益网络.com
+  - DOMAIN-SUFFIX,iherb.com,公益网络.com
+  - DOMAIN-SUFFIX,imageshack.us,公益网络.com
+  - DOMAIN-SUFFIX,img.ly,公益网络.com
+  - DOMAIN-SUFFIX,imgur.com,公益网络.com
+  - DOMAIN-SUFFIX,imore.com,公益网络.com
+  - DOMAIN-SUFFIX,instapaper.com,公益网络.com
+  - DOMAIN-SUFFIX,ipn.li,公益网络.com
+  - DOMAIN-SUFFIX,is.gd,公益网络.com
+  - DOMAIN-SUFFIX,issuu.com,公益网络.com
+  - DOMAIN-SUFFIX,itgonglun.com,公益网络.com
+  - DOMAIN-SUFFIX,itun.es,公益网络.com
+  - DOMAIN-SUFFIX,ixquick.com,公益网络.com
+  - DOMAIN-SUFFIX,j.mp,公益网络.com
+  - DOMAIN-SUFFIX,js.revsci.net,公益网络.com
+  - DOMAIN-SUFFIX,jshint.com,公益网络.com
+  - DOMAIN-SUFFIX,jtvnw.net,公益网络.com
+  - DOMAIN-SUFFIX,justgetflux.com,公益网络.com
+  - DOMAIN-SUFFIX,kat.cr,公益网络.com
+  - DOMAIN-SUFFIX,klip.me,公益网络.com
+  - DOMAIN-SUFFIX,libsyn.com,公益网络.com
+  - DOMAIN-SUFFIX,linkedin.com,公益网络.com
+  - DOMAIN-SUFFIX,line-apps.com,公益网络.com
+  - DOMAIN-SUFFIX,linode.com,公益网络.com
+  - DOMAIN-SUFFIX,lithium.com,公益网络.com
+  - DOMAIN-SUFFIX,littlehj.com,公益网络.com
+  - DOMAIN-SUFFIX,live.com,公益网络.com
+  - DOMAIN-SUFFIX,live.net,公益网络.com
+  - DOMAIN-SUFFIX,livefilestore.com,公益网络.com
+  - DOMAIN-SUFFIX,llnwd.net,公益网络.com
+  - DOMAIN-SUFFIX,macid.co,公益网络.com
+  - DOMAIN-SUFFIX,macromedia.com,公益网络.com
+  - DOMAIN-SUFFIX,macrumors.com,公益网络.com
+  - DOMAIN-SUFFIX,mashable.com,公益网络.com
+  - DOMAIN-SUFFIX,mathjax.org,公益网络.com
+  - DOMAIN-SUFFIX,medium.com,公益网络.com
+  - DOMAIN-SUFFIX,mega.co.nz,公益网络.com
+  - DOMAIN-SUFFIX,mega.nz,公益网络.com
+  - DOMAIN-SUFFIX,megaupload.com,公益网络.com
+  - DOMAIN-SUFFIX,microsofttranslator.com,公益网络.com
+  - DOMAIN-SUFFIX,mindnode.com,公益网络.com
+  - DOMAIN-SUFFIX,mobile01.com,公益网络.com
+  - DOMAIN-SUFFIX,modmyi.com,公益网络.com
+  - DOMAIN-SUFFIX,msedge.net,公益网络.com
+  - DOMAIN-SUFFIX,myfontastic.com,公益网络.com
+  - DOMAIN-SUFFIX,name.com,公益网络.com
+  - DOMAIN-SUFFIX,nextmedia.com,公益网络.com
+  - DOMAIN-SUFFIX,nsstatic.net,公益网络.com
+  - DOMAIN-SUFFIX,nssurge.com,公益网络.com
+  - DOMAIN-SUFFIX,nyt.com,公益网络.com
+  - DOMAIN-SUFFIX,nytimes.com,公益网络.com
+  - DOMAIN-SUFFIX,omnigroup.com,公益网络.com
+  - DOMAIN-SUFFIX,onedrive.com,公益网络.com
+  - DOMAIN-SUFFIX,onenote.com,公益网络.com
+  - DOMAIN-SUFFIX,ooyala.com,公益网络.com
+  - DOMAIN-SUFFIX,openvpn.net,公益网络.com
+  - DOMAIN-SUFFIX,openwrt.org,公益网络.com
+  - DOMAIN-SUFFIX,orkut.com,公益网络.com
+  - DOMAIN-SUFFIX,osxdaily.com,公益网络.com
+  - DOMAIN-SUFFIX,outlook.com,公益网络.com
+  - DOMAIN-SUFFIX,ow.ly,公益网络.com
+  - DOMAIN-SUFFIX,paddleapi.com,公益网络.com
+  - DOMAIN-SUFFIX,parallels.com,公益网络.com
+  - DOMAIN-SUFFIX,parse.com,公益网络.com
+  - DOMAIN-SUFFIX,pdfexpert.com,公益网络.com
+  - DOMAIN-SUFFIX,periscope.tv,公益网络.com
+  - DOMAIN-SUFFIX,pinboard.in,公益网络.com
+  - DOMAIN-SUFFIX,pinterest.com,公益网络.com
+  - DOMAIN-SUFFIX,pixelmator.com,公益网络.com
+  - DOMAIN-SUFFIX,pixiv.net,公益网络.com
+  - DOMAIN-SUFFIX,playpcesor.com,公益网络.com
+  - DOMAIN-SUFFIX,playstation.com,公益网络.com
+  - DOMAIN-SUFFIX,playstation.com.hk,公益网络.com
+  - DOMAIN-SUFFIX,playstation.net,公益网络.com
+  - DOMAIN-SUFFIX,playstationnetwork.com,公益网络.com
+  - DOMAIN-SUFFIX,pushwoosh.com,公益网络.com
+  - DOMAIN-SUFFIX,rime.im,公益网络.com
+  - DOMAIN-SUFFIX,servebom.com,公益网络.com
+  - DOMAIN-SUFFIX,sfx.ms,公益网络.com
+  - DOMAIN-SUFFIX,shadowsocks.org,公益网络.com
+  - DOMAIN-SUFFIX,sharethis.com,公益网络.com
+  - DOMAIN-SUFFIX,shazam.com,公益网络.com
+  - DOMAIN-SUFFIX,skype.com,公益网络.com
+  - DOMAIN-SUFFIX,smartdns公益网络.com.com,公益网络.com
+  - DOMAIN-SUFFIX,smartmailcloud.com,公益网络.com
+  - DOMAIN-SUFFIX,sndcdn.com,公益网络.com
+  - DOMAIN-SUFFIX,sony.com,公益网络.com
+  - DOMAIN-SUFFIX,soundcloud.com,公益网络.com
+  - DOMAIN-SUFFIX,sourceforge.net,公益网络.com
+  - DOMAIN-SUFFIX,spotify.com,公益网络.com
+  - DOMAIN-SUFFIX,squarespace.com,公益网络.com
+  - DOMAIN-SUFFIX,sstatic.net,公益网络.com
+  - DOMAIN-SUFFIX,st.luluku.pw,公益网络.com
+  - DOMAIN-SUFFIX,stackoverflow.com,公益网络.com
+  - DOMAIN-SUFFIX,startpage.com,公益网络.com
+  - DOMAIN-SUFFIX,staticflickr.com,公益网络.com
+  - DOMAIN-SUFFIX,steamcommunity.com,公益网络.com
+  - DOMAIN-SUFFIX,symauth.com,公益网络.com
+  - DOMAIN-SUFFIX,symcb.com,公益网络.com
+  - DOMAIN-SUFFIX,symcd.com,公益网络.com
+  - DOMAIN-SUFFIX,tapbots.com,公益网络.com
+  - DOMAIN-SUFFIX,tapbots.net,公益网络.com
+  - DOMAIN-SUFFIX,tdesktop.com,公益网络.com
+  - DOMAIN-SUFFIX,techcrunch.com,公益网络.com
+  - DOMAIN-SUFFIX,techsmith.com,公益网络.com
+  - DOMAIN-SUFFIX,thepiratebay.org,公益网络.com
+  - DOMAIN-SUFFIX,theverge.com,公益网络.com
+  - DOMAIN-SUFFIX,time.com,公益网络.com
+  - DOMAIN-SUFFIX,timeinc.net,公益网络.com
+  - DOMAIN-SUFFIX,tiny.cc,公益网络.com
+  - DOMAIN-SUFFIX,tinypic.com,公益网络.com
+  - DOMAIN-SUFFIX,tmblr.co,公益网络.com
+  - DOMAIN-SUFFIX,todoist.com,公益网络.com
+  - DOMAIN-SUFFIX,trello.com,公益网络.com
+  - DOMAIN-SUFFIX,trustasiassl.com,公益网络.com
+  - DOMAIN-SUFFIX,tumblr.co,公益网络.com
+  - DOMAIN-SUFFIX,tumblr.com,公益网络.com
+  - DOMAIN-SUFFIX,tweetdeck.com,公益网络.com
+  - DOMAIN-SUFFIX,tweetmarker.net,公益网络.com
+  - DOMAIN-SUFFIX,twitch.tv,公益网络.com
+  - DOMAIN-SUFFIX,txmblr.com,公益网络.com
+  - DOMAIN-SUFFIX,typekit.net,公益网络.com
+  - DOMAIN-SUFFIX,ubertags.com,公益网络.com
+  - DOMAIN-SUFFIX,ublock.org,公益网络.com
+  - DOMAIN-SUFFIX,ubnt.com,公益网络.com
+  - DOMAIN-SUFFIX,ulyssesapp.com,公益网络.com
+  - DOMAIN-SUFFIX,urchin.com,公益网络.com
+  - DOMAIN-SUFFIX,usertrust.com,公益网络.com
+  - DOMAIN-SUFFIX,v.gd,公益网络.com
+  - DOMAIN-SUFFIX,v2ex.com,公益网络.com
+  - DOMAIN-SUFFIX,vimeo.com,公益网络.com
+  - DOMAIN-SUFFIX,vimeocdn.com,公益网络.com
+  - DOMAIN-SUFFIX,vine.co,公益网络.com
+  - DOMAIN-SUFFIX,vivaldi.com,公益网络.com
+  - DOMAIN-SUFFIX,vox-cdn.com,公益网络.com
+  - DOMAIN-SUFFIX,vsco.co,公益网络.com
+  - DOMAIN-SUFFIX,vultr.com,公益网络.com
+  - DOMAIN-SUFFIX,w.org,公益网络.com
+  - DOMAIN-SUFFIX,w3schools.com,公益网络.com
+  - DOMAIN-SUFFIX,webtype.com,公益网络.com
+  - DOMAIN-SUFFIX,wikiwand.com,公益网络.com
+  - DOMAIN-SUFFIX,wikileaks.org,公益网络.com
+  - DOMAIN-SUFFIX,wikimedia.org,公益网络.com
+  - DOMAIN-SUFFIX,wikipedia.com,公益网络.com
+  - DOMAIN-SUFFIX,wikipedia.org,公益网络.com
+  - DOMAIN-SUFFIX,windows.com,公益网络.com
+  - DOMAIN-SUFFIX,windows.net,公益网络.com
+  - DOMAIN-SUFFIX,wire.com,公益网络.com
+  - DOMAIN-SUFFIX,wordpress.com,公益网络.com
+  - DOMAIN-SUFFIX,workflowy.com,公益网络.com
+  - DOMAIN-SUFFIX,wp.com,公益网络.com
+  - DOMAIN-SUFFIX,wsj.com,公益网络.com
+  - DOMAIN-SUFFIX,wsj.net,公益网络.com
+  - DOMAIN-SUFFIX,xda-developers.com,公益网络.com
+  - DOMAIN-SUFFIX,xeeno.com,公益网络.com
+  - DOMAIN-SUFFIX,xiti.com,公益网络.com
+  - DOMAIN-SUFFIX,yahoo.com,公益网络.com
+  - DOMAIN-SUFFIX,yimg.com,公益网络.com
+  - DOMAIN-SUFFIX,ying.com,公益网络.com
+  - DOMAIN-SUFFIX,yoyo.org,公益网络.com
+  - DOMAIN-SUFFIX,ytimg.com,公益网络.com
+  - DOMAIN-SUFFIX,telegra.ph,公益网络.com
+  - DOMAIN-SUFFIX,telegram.org,公益网络.com
+  - IP-CIDR,91.108.4.0/22,公益网络.com,no-resolve
+  - IP-CIDR,91.108.8.0/21,公益网络.com,no-resolve
+  - IP-CIDR,91.108.16.0/22,公益网络.com,no-resolve
+  - IP-CIDR,91.108.56.0/22,公益网络.com,no-resolve
+  - IP-CIDR,149.154.160.0/20,公益网络.com,no-resolve
+  - IP-CIDR6,2001:67c:4e8::/48,公益网络.com,no-resolve
+  - IP-CIDR6,2001:b28:f23d::/48,公益网络.com,no-resolve
+  - IP-CIDR6,2001:b28:f23f::/48,公益网络.com,no-resolve
+  - IP-CIDR,120.232.181.162/32,公益网络.com,no-resolve
+  - IP-CIDR,120.241.147.226/32,公益网络.com,no-resolve
+  - IP-CIDR,120.253.253.226/32,公益网络.com,no-resolve
+  - IP-CIDR,120.253.255.162/32,公益网络.com,no-resolve
+  - IP-CIDR,120.253.255.34/32,公益网络.com,no-resolve
+  - IP-CIDR,120.253.255.98/32,公益网络.com,no-resolve
+  - IP-CIDR,180.163.150.162/32,公益网络.com,no-resolve
+  - IP-CIDR,180.163.150.34/32,公益网络.com,no-resolve
+  - IP-CIDR,180.163.151.162/32,公益网络.com,no-resolve
+  - IP-CIDR,180.163.151.34/32,公益网络.com,no-resolve
+  - IP-CIDR,203.208.39.0/24,公益网络.com,no-resolve
+  - IP-CIDR,203.208.40.0/24,公益网络.com,no-resolve
+  - IP-CIDR,203.208.41.0/24,公益网络.com,no-resolve
+  - IP-CIDR,203.208.43.0/24,公益网络.com,no-resolve
+  - IP-CIDR,203.208.50.0/24,公益网络.com,no-resolve
+  - IP-CIDR,220.181.174.162/32,公益网络.com,no-resolve
+  - IP-CIDR,220.181.174.226/32,公益网络.com,no-resolve
+  - IP-CIDR,220.181.174.34/32,公益网络.com,no-resolve
   - DOMAIN,injections.adguard.org,DIRECT
   - DOMAIN,local.adguard.org,DIRECT
   - DOMAIN-SUFFIX,local,DIRECT
@@ -957,5 +693,7 @@ rules:
   - IP-CIDR,100.64.0.0/10,DIRECT
   - IP-CIDR,224.0.0.0/4,DIRECT
   - IP-CIDR6,fe80::/10,DIRECT
+  - DOMAIN-SUFFIX,cn,DIRECT
+  - DOMAIN-KEYWORD,-cn,DIRECT
   - GEOIP,CN,DIRECT
-  - MATCH,节点选择
+  - MATCH,公益网络.com
