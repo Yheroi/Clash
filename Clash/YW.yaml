@@ -7,6 +7,7 @@
 # 节点类型：hysteria2, vless
 # !!当前配置文件请使用基于 Clash.Meta 内核程序
 ####################################
+# !!当前配置文件请使用基于 Clash.Meta 内核程序
 mixed-port: 7897
 allow-lan: false
 mode: rule
@@ -137,30 +138,26 @@ dns:
       - +.gvt1.com
 
 proxies:
-  - {"name":"剩余流量：938.69 GB\r","type":"hysteria2","server":"mg1.gywanglug.xyz","port":25470,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"mg1.gywanglug.xyz","skip-cert-verify":true,"obfs-password":"LNAnPYDfFyesRAVn"}
-  - {"name":"距离下次重置剩余：23 天\r","type":"hysteria2","server":"mg1.gywanglug.xyz","port":25470,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"mg1.gywanglug.xyz","skip-cert-verify":true,"obfs-password":"LNAnPYDfFyesRAVn"}
-  - {"name":"套餐到期：2025-05-22\r","type":"hysteria2","server":"mg1.gywanglug.xyz","port":25470,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"mg1.gywanglug.xyz","skip-cert-verify":true,"obfs-password":"LNAnPYDfFyesRAVn"}
-  - {"name":"最新地址gy888.xyz\r","type":"hysteria2","server":"mg1.gywanglug.xyz","port":25470,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"mg1.gywanglug.xyz","skip-cert-verify":true,"obfs-password":"LNAnPYDfFyesRAVn"}
-  - {"name":"美国1\r","type":"hysteria2","server":"mg1.gywanglug.xyz","port":22315,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"mg1.gywanglug.xyz","skip-cert-verify":true,"obfs-password":"LNAnPYDfFyesRAVn"}
-  - {"name":"美国1-v\r\r","type":"vless","server":"mg11.gywanglug.xyz","port":24904,"udp":true,"uuid":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","tls":true,"servername":"www.webilop.com","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"1jupCbzD9RB34YhWct4C6_I1bx_O5Ct7ZnT5dfCiV18"},"client-fingerprint":"chrome"}
-  - {"name":"美国2\r","type":"hysteria2","server":"mg2.gywanglug.xyz","port":22899,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"mg2.gywanglug.xyz","skip-cert-verify":true,"obfs-password":"LNAnPYDfFyesRAVn"}
-  - {"name":"美国2-v\r\r","type":"vless","server":"mg22.gywanglug.xyz","port":25235,"udp":true,"uuid":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","tls":true,"servername":"www.webilop.com","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"GcOtIhZbkznrBYohK7rvjV0oVoQvC4y38VIExs6KUwA"},"client-fingerprint":"firefox"}
-  - {"name":"美国3\r","type":"hysteria2","server":"mg3.gywanglug.xyz","port":22496,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"mg3.gywanglug.xyz","skip-cert-verify":true,"obfs-password":"LNAnPYDfFyesRAVn"}
-  - {"name":"美国3-v\r\r","type":"vless","server":"mg33.gywanglug.xyz","port":24522,"udp":true,"uuid":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","tls":true,"servername":"www.webilop.com","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"yDkCTYl7Ap0XeU9PNv_kBY9BwQrgYZPIov-MXvpf7R8"},"client-fingerprint":"firefox"}
-  - {"name":"美国4\r","type":"hysteria2","server":"mg4.gywanglug.xyz","port":22899,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"mg4.gywanglug.xyz","skip-cert-verify":true,"obfs-password":"LNAnPYDfFyesRAVn"}
-  - {"name":"美国4-v\r\r","type":"vless","server":"mg44.gywanglug.xyz","port":25994,"udp":true,"uuid":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","tls":true,"servername":"www.webilop.com","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"yDkCTYl7Ap0XeU9PNv_kBY9BwQrgYZPIov-MXvpf7R8"},"client-fingerprint":"safari"}
-  - {"name":"美国5\r","type":"hysteria2","server":"mg5.gywanglug.xyz","port":24910,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"mg5.gywanglug.xyz","skip-cert-verify":true,"obfs-password":"LNAnPYDfFyesRAVn"}
-  - {"name":"美国5-v\r\r","type":"vless","server":"mg55.gywanglug.xyz","port":23646,"udp":true,"uuid":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","tls":true,"servername":"www.webilop.com","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"kHtBu5SWzLuz79nw0LkDkH4luWft_A-M6MNq4LA-RB4"},"client-fingerprint":"chrome"}
-  - {"name":"美国6\r","type":"hysteria2","server":"mg6.gywanglug.xyz","port":25214,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"mg6.gywanglug.xyz","skip-cert-verify":true,"obfs-password":"LNAnPYDfFyesRAVn"}
-  - {"name":"美国6-v\r\r","type":"vless","server":"mg66.gywanglug.xyz","port":45445,"udp":true,"uuid":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","tls":true,"servername":"www.webilop.com","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"yDkCTYl7Ap0XeU9PNv_kBY9BwQrgYZPIov-MXvpf7R8"},"client-fingerprint":"ios"}
-  - {"name":"新加坡1\r","type":"hysteria2","server":"xjp1.gy6688.xyz","port":23465,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"xjp1.gy6688.xyz","skip-cert-verify":true,"obfs-password":"LNAnPYDfFyesRAVn"}
-  - {"name":"新加坡2\r","type":"hysteria2","server":"xjp2.gywanglug.xyz","port":24241,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"xjp2.gywanglug.xyz","skip-cert-verify":true}
-  - {"name":"澳大利亚\r","type":"hysteria2","server":"au1.gy6688.xyz","port":25668,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"au1.gy6688.xyz","skip-cert-verify":true,"obfs-password":"cP2sbTFOTkuTq1sW"}
-  - {"name":"英国1\r","type":"hysteria2","server":"yg1.gy6688.xyz","port":23426,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"yg1.gy6688.xyz","skip-cert-verify":true,"obfs-password":"LNAnPYDfFyesRAVn"}
-  - {"name":"荷兰1\r","type":"hysteria2","server":"hl1.gy6688.xyz","port":24425,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"hl1.gy6688.xyz","skip-cert-verify":true,"obfs-password":"LNAnPYDfFyesRAVn"}
-  - {"name":"德国1\r","type":"hysteria2","server":"dg1.gy6688.xyz","port":23632,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"dg1.gy6688.xyz","skip-cert-verify":true,"obfs-password":"LNAnPYDfFyesRAVn"}
-  - {"name":"加拿大1\r","type":"hysteria2","server":"jnd1.gy6688.xyz","port":23921,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"jnd1.gy6688.xyz","skip-cert-verify":true,"obfs-password":"LNAnPYDfFyesRAVn"}
-  - {"name":"印度1\r","type":"hysteria2","server":"yd1.gy6688.xyz","port":21005,"password":"cde6e30b-6c8b-4113-bca0-2f9aecbb7d8f","sni":"yd1.gy6688.xyz","skip-cert-verify":true,"obfs-password":"LNAnPYDfFyesRAVn"}
+  - {"name":"中国_1","type":"hysteria2","server":"yue-hk.yuetoto.net","port":21026,"password":"fee755e2-6b4f-481f-9799-9c20dfa6e8f7","skip-cert-verify":true}
+  - {"name":"中国_2","type":"hysteria2","server":"yue-hk.yuetoto.net","port":21037,"password":"fee755e2-6b4f-481f-9799-9c20dfa6e8f7","skip-cert-verify":true}
+  - {"name":"中国_3","type":"hysteria2","server":"yue-tw.yuetoto.net","port":21037,"password":"fee755e2-6b4f-481f-9799-9c20dfa6e8f7","skip-cert-verify":true}
+  - {"name":"中国_4","type":"hysteria2","server":"yue-tw.yuetoto.net","port":21014,"password":"fee755e2-6b4f-481f-9799-9c20dfa6e8f7","skip-cert-verify":true}
+  - {"name":"日本_1","type":"hysteria2","server":"yue-jp.yuetoto.net","port":21089,"password":"fee755e2-6b4f-481f-9799-9c20dfa6e8f7","skip-cert-verify":true}
+  - {"name":"日本_2","type":"hysteria2","server":"yue-jp.yuetoto.net","port":21068,"password":"fee755e2-6b4f-481f-9799-9c20dfa6e8f7","skip-cert-verify":true}
+  - {"name":"韩国_1","type":"hysteria2","server":"yue-kr.yuetoto.net","port":21057,"password":"fee755e2-6b4f-481f-9799-9c20dfa6e8f7","skip-cert-verify":true}
+  - {"name":"韩国_2","type":"hysteria2","server":"yue-kr.yuetoto.net","port":21089,"password":"fee755e2-6b4f-481f-9799-9c20dfa6e8f7","skip-cert-verify":true}
+  - {"name":"法国_1","type":"hysteria2","server":"yue-sg.yuetoto.net","port":21010,"password":"fee755e2-6b4f-481f-9799-9c20dfa6e8f7","skip-cert-verify":true}
+  - {"name":"法国_2","type":"hysteria2","server":"yue-sg.yuetoto.net","port":21059,"password":"fee755e2-6b4f-481f-9799-9c20dfa6e8f7","skip-cert-verify":true}
+  - {"name":"美国_1","type":"hysteria2","server":"yue-us.yuetoto.net","port":21062,"password":"fee755e2-6b4f-481f-9799-9c20dfa6e8f7","skip-cert-verify":true}
+  - {"name":"美国_2","type":"hysteria2","server":"yue-us.yuetoto.net","port":21075,"password":"fee755e2-6b4f-481f-9799-9c20dfa6e8f7","skip-cert-verify":true}
+  - {"name":"越南_1","type":"hysteria2","server":"yue-vn.yuetoto.net","port":21064,"password":"fee755e2-6b4f-481f-9799-9c20dfa6e8f7","skip-cert-verify":true}
+  - {"name":"越南_2","type":"hysteria2","server":"yue-vn.yuetoto.net","port":21063,"password":"fee755e2-6b4f-481f-9799-9c20dfa6e8f7","skip-cert-verify":true}
+  - {"name":"俄罗斯_1","type":"hysteria2","server":"yue-ru.yuetoto.net","port":21016,"password":"fee755e2-6b4f-481f-9799-9c20dfa6e8f7","skip-cert-verify":true}
+  - {"name":"俄罗斯_2","type":"hysteria2","server":"yue-ru.yuetoto.net","port":21086,"password":"fee755e2-6b4f-481f-9799-9c20dfa6e8f7","skip-cert-verify":true}
+  - {"name":"伊朗_1","type":"hysteria2","server":"yue-tr.yuetoto.net","port":21067,"password":"fee755e2-6b4f-481f-9799-9c20dfa6e8f7","skip-cert-verify":true}
+  - {"name":"伊朗_2","type":"hysteria2","server":"yue-tr.yuetoto.net","port":21090,"password":"fee755e2-6b4f-481f-9799-9c20dfa6e8f7","skip-cert-verify":true}
+  - {"name":"俄罗斯_3","type":"hysteria2","server":"yue-ng.yuetoto.net","port":21099,"password":"fee755e2-6b4f-481f-9799-9c20dfa6e8f7","skip-cert-verify":true}
+  - {"name":"俄罗斯_4","type":"hysteria2","server":"yue-ng.yuetoto.net","port":21083,"password":"fee755e2-6b4f-481f-9799-9c20dfa6e8f7","skip-cert-verify":true}
 proxy-groups:
   - name: 节点选择
     type: select
@@ -169,118 +166,102 @@ proxy-groups:
       - 🔯故障转移
       - 🔥ChatGPT
       - Hysteria2
-      - "剩余流量：938.69 GB\r"
-      - "距离下次重置剩余：23 天\r"
-      - "套餐到期：2025-05-22\r"
-      - "最新地址gy888.xyz\r"
-      - "美国1\r"
-      - "美国1-v\r\r"
-      - "美国2\r"
-      - "美国2-v\r\r"
-      - "美国3\r"
-      - "美国3-v\r\r"
-      - "美国4\r"
-      - "美国4-v\r\r"
-      - "美国5\r"
-      - "美国5-v\r\r"
-      - "美国6\r"
-      - "美国6-v\r\r"
-      - "新加坡1\r"
-      - "新加坡2\r"
-      - "澳大利亚\r"
-      - "英国1\r"
-      - "荷兰1\r"
-      - "德国1\r"
-      - "加拿大1\r"
-      - "印度1\r"
+      - 中国_1
+      - 中国_2
+      - 中国_3
+      - 中国_4
+      - 日本_1
+      - 日本_2
+      - 韩国_1
+      - 韩国_2
+      - 法国_1
+      - 法国_2
+      - 美国_1
+      - 美国_2
+      - 越南_1
+      - 越南_2
+      - 俄罗斯_1
+      - 俄罗斯_2
+      - 伊朗_1
+      - 伊朗_2
+      - 俄罗斯_3
+      - 俄罗斯_4
   - name: ♻️自动选择
     type: url-test
     url: http://1.1.1.1
     interval: 600
     proxies:
-      - "剩余流量：938.69 GB\r"
-      - "距离下次重置剩余：23 天\r"
-      - "套餐到期：2025-05-22\r"
-      - "最新地址gy888.xyz\r"
-      - "美国1\r"
-      - "美国1-v\r\r"
-      - "美国2\r"
-      - "美国2-v\r\r"
-      - "美国3\r"
-      - "美国3-v\r\r"
-      - "美国4\r"
-      - "美国4-v\r\r"
-      - "美国5\r"
-      - "美国5-v\r\r"
-      - "美国6\r"
-      - "美国6-v\r\r"
-      - "新加坡1\r"
-      - "新加坡2\r"
-      - "澳大利亚\r"
-      - "英国1\r"
-      - "荷兰1\r"
-      - "德国1\r"
-      - "加拿大1\r"
-      - "印度1\r"
+      - 中国_1
+      - 中国_2
+      - 中国_3
+      - 中国_4
+      - 日本_1
+      - 日本_2
+      - 韩国_1
+      - 韩国_2
+      - 法国_1
+      - 法国_2
+      - 美国_1
+      - 美国_2
+      - 越南_1
+      - 越南_2
+      - 俄罗斯_1
+      - 俄罗斯_2
+      - 伊朗_1
+      - 伊朗_2
+      - 俄罗斯_3
+      - 俄罗斯_4
   - name: 🔯故障转移
     type: fallback
     url: http://1.1.1.1
     interval: 450
     proxies:
-      - "剩余流量：938.69 GB\r"
-      - "距离下次重置剩余：23 天\r"
-      - "套餐到期：2025-05-22\r"
-      - "最新地址gy888.xyz\r"
-      - "美国1\r"
-      - "美国1-v\r\r"
-      - "美国2\r"
-      - "美国2-v\r\r"
-      - "美国3\r"
-      - "美国3-v\r\r"
-      - "美国4\r"
-      - "美国4-v\r\r"
-      - "美国5\r"
-      - "美国5-v\r\r"
-      - "美国6\r"
-      - "美国6-v\r\r"
-      - "新加坡1\r"
-      - "新加坡2\r"
-      - "澳大利亚\r"
-      - "英国1\r"
-      - "荷兰1\r"
-      - "德国1\r"
-      - "加拿大1\r"
-      - "印度1\r"
+      - 中国_1
+      - 中国_2
+      - 中国_3
+      - 中国_4
+      - 日本_1
+      - 日本_2
+      - 韩国_1
+      - 韩国_2
+      - 法国_1
+      - 法国_2
+      - 美国_1
+      - 美国_2
+      - 越南_1
+      - 越南_2
+      - 俄罗斯_1
+      - 俄罗斯_2
+      - 伊朗_1
+      - 伊朗_2
+      - 俄罗斯_3
+      - 俄罗斯_4
   - name: Hysteria2
     type: select
     proxies: []
   - name: 🔥ChatGPT
     type: select
     proxies:
-      - "剩余流量：938.69 GB\r"
-      - "距离下次重置剩余：23 天\r"
-      - "套餐到期：2025-05-22\r"
-      - "最新地址gy888.xyz\r"
-      - "美国1\r"
-      - "美国1-v\r\r"
-      - "美国2\r"
-      - "美国2-v\r\r"
-      - "美国3\r"
-      - "美国3-v\r\r"
-      - "美国4\r"
-      - "美国4-v\r\r"
-      - "美国5\r"
-      - "美国5-v\r\r"
-      - "美国6\r"
-      - "美国6-v\r\r"
-      - "新加坡1\r"
-      - "新加坡2\r"
-      - "澳大利亚\r"
-      - "英国1\r"
-      - "荷兰1\r"
-      - "德国1\r"
-      - "加拿大1\r"
-      - "印度1\r"
+      - 中国_1
+      - 中国_2
+      - 中国_3
+      - 中国_4
+      - 日本_1
+      - 日本_2
+      - 韩国_1
+      - 韩国_2
+      - 法国_1
+      - 法国_2
+      - 美国_1
+      - 美国_2
+      - 越南_1
+      - 越南_2
+      - 俄罗斯_1
+      - 俄罗斯_2
+      - 伊朗_1
+      - 伊朗_2
+      - 俄罗斯_3
+      - 俄罗斯_4
 
 rules:
   - DOMAIN,subapi.pronetworklink.com,DIRECT
@@ -329,7 +310,6 @@ rules:
   - PROCESS-NAME,uTorrent.exe,DIRECT
   - PROCESS-NAME,WebTorrent.exe,DIRECT
   - PROCESS-NAME,aDrive.exe,DIRECT
-# 长风网站，自动注入
   - DOMAIN-SUFFIX,v2rayse.com,节点选择
   - DOMAIN-SUFFIX,cff.pw,节点选择
   - DOMAIN-SUFFIX,vpnse.org,节点选择
