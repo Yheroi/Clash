@@ -1,10 +1,10 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：2025-09-08 10:55:23
+# 创建时间：2025-09-08 10:59:49
 # 使用模版：2
-# 节点数量：2
-# 节点类型：hysteria2
+# 节点数量：45
+# 节点类型：hysteria2, ss
 # !!当前配置文件请使用基于 Clash.Meta 内核程序
 ####################################
 mixed-port: 7897
@@ -80,30 +80,202 @@ dns:
     - https://doh.pub/dns-query
 
 proxies:
-  - {"name":"中国香港01","type":"hysteria2","server":"yue-hk.yuetoto.net","port":21026,"skip-cert-verify":true}
-  - {"name":"中国香港02","type":"hysteria2","server":"yue-hk.yuetoto.net","port":21037,"skip-cert-verify":true}
+  - {"name":"剩余流量：166.46 GB","type":"hysteria2","server":"yue-hk.yuetoto.net","port":21023,"password":"fee755e2-6b4f-481f-9799-9c20dfa6e8f7","skip-cert-verify":false}
+  - {"name":"距离下次重置剩余：27 天","type":"hysteria2","server":"yue-hk.yuetoto.net","port":21023,"password":"fee755e2-6b4f-481f-9799-9c20dfa6e8f7","skip-cert-verify":false}
+  - {"name":"套餐到期：2025-10-04","type":"hysteria2","server":"yue-hk.yuetoto.net","port":21023,"password":"fee755e2-6b4f-481f-9799-9c20dfa6e8f7","skip-cert-verify":false}
+  - {"name":"官网：yue.to","type":"hysteria2","server":"yue-hk.yuetoto.net","port":21023,"password":"fee755e2-6b4f-481f-9799-9c20dfa6e8f7","skip-cert-verify":false}
+  - {"name":"群组：@yue_to","type":"hysteria2","server":"yue-hk.yuetoto.net","port":21038,"password":"fee755e2-6b4f-481f-9799-9c20dfa6e8f7","skip-cert-verify":false}
+  - {"name":"悦 · 🇭🇰 香港1","type":"hysteria2","server":"yue-hk.yuetoto.net","port":21026,"password":"fee755e2-6b4f-481f-9799-9c20dfa6e8f7","skip-cert-verify":false}
+  - {"name":"悦 · 🇭🇰 香港2","type":"hysteria2","server":"yue-hk.yuetoto.net","port":21037,"password":"fee755e2-6b4f-481f-9799-9c20dfa6e8f7","skip-cert-verify":false}
+  - {"name":"悦 · 🇭🇰 香港3","type":"ss","server":"yue-zz.yuetoto.net","port":22001,"udp":true,"password":"ZjZmYjhhMTM3MTYwYzk4ZQ==:ZmVlNzU1ZTItNmI0Zi00OA==","cipher":"2022-blake3-aes-128-gcm"}
+  - {"name":"悦 · 🇭🇰 香港4","type":"ss","server":"yue-zz.yuetoto.net","port":22002,"udp":true,"password":"ZjZmYjhhMTM3MTYwYzk4ZQ==:ZmVlNzU1ZTItNmI0Zi00OA==","cipher":"2022-blake3-aes-128-gcm"}
+  - {"name":"悦 · 🇹🇼 台湾1","type":"hysteria2","server":"yue-tw.yuetoto.net","port":21037,"password":"fee755e2-6b4f-481f-9799-9c20dfa6e8f7","skip-cert-verify":false}
+  - {"name":"悦 · 🇹🇼 台湾2","type":"hysteria2","server":"yue-tw.yuetoto.net","port":21014,"password":"fee755e2-6b4f-481f-9799-9c20dfa6e8f7","skip-cert-verify":false}
+  - {"name":"悦 · 🇹🇼 台湾3","type":"ss","server":"yue-zz.yuetoto.net","port":22003,"udp":true,"password":"ZjZmYjhhMTM3MTYwYzk4ZQ==:ZmVlNzU1ZTItNmI0Zi00OA==","cipher":"2022-blake3-aes-128-gcm"}
+  - {"name":"悦 · 🇹🇼 台湾4","type":"ss","server":"yue-zz.yuetoto.net","port":22004,"udp":true,"password":"ZjZmYjhhMTM3MTYwYzk4ZQ==:ZmVlNzU1ZTItNmI0Zi00OA==","cipher":"2022-blake3-aes-128-gcm"}
+  - {"name":"悦 · 🇯🇵 日本1","type":"hysteria2","server":"yue-jp.yuetoto.net","port":21089,"password":"fee755e2-6b4f-481f-9799-9c20dfa6e8f7","skip-cert-verify":false}
+  - {"name":"悦 · 🇯🇵 日本2","type":"hysteria2","server":"yue-jp.yuetoto.net","port":21068,"password":"fee755e2-6b4f-481f-9799-9c20dfa6e8f7","skip-cert-verify":false}
+  - {"name":"悦 · 🇯🇵 日本3","type":"ss","server":"yue-zz.yuetoto.net","port":22005,"udp":true,"password":"ZjZmYjhhMTM3MTYwYzk4ZQ==:ZmVlNzU1ZTItNmI0Zi00OA==","cipher":"2022-blake3-aes-128-gcm"}
+  - {"name":"悦 · 🇯🇵 日本4","type":"ss","server":"yue-zz.yuetoto.net","port":22006,"udp":true,"password":"ZjZmYjhhMTM3MTYwYzk4ZQ==:ZmVlNzU1ZTItNmI0Zi00OA==","cipher":"2022-blake3-aes-128-gcm"}
+  - {"name":"悦 · 🇰🇷 韩国1","type":"hysteria2","server":"yue-kr.yuetoto.net","port":21057,"password":"fee755e2-6b4f-481f-9799-9c20dfa6e8f7","skip-cert-verify":false}
+  - {"name":"悦 · 🇰🇷 韩国2","type":"hysteria2","server":"yue-kr.yuetoto.net","port":21089,"password":"fee755e2-6b4f-481f-9799-9c20dfa6e8f7","skip-cert-verify":false}
+  - {"name":"悦 · 🇰🇷 韩国3","type":"ss","server":"yue-zz.yuetoto.net","port":22007,"udp":true,"password":"ZjZmYjhhMTM3MTYwYzk4ZQ==:ZmVlNzU1ZTItNmI0Zi00OA==","cipher":"2022-blake3-aes-128-gcm"}
+  - {"name":"悦 · 🇰🇷 韩国4","type":"ss","server":"yue-zz.yuetoto.net","port":22008,"udp":true,"password":"ZjZmYjhhMTM3MTYwYzk4ZQ==:ZmVlNzU1ZTItNmI0Zi00OA==","cipher":"2022-blake3-aes-128-gcm"}
+  - {"name":"悦 · 🇸🇬 新加坡1","type":"hysteria2","server":"yue-sg.yuetoto.net","port":21010,"password":"fee755e2-6b4f-481f-9799-9c20dfa6e8f7","skip-cert-verify":false}
+  - {"name":"悦 · 🇸🇬 新加坡2","type":"hysteria2","server":"yue-sg.yuetoto.net","port":21059,"password":"fee755e2-6b4f-481f-9799-9c20dfa6e8f7","skip-cert-verify":false}
+  - {"name":"悦 · 🇸🇬 新加坡3","type":"ss","server":"yue-zz.yuetoto.net","port":22009,"udp":true,"password":"ZjZmYjhhMTM3MTYwYzk4ZQ==:ZmVlNzU1ZTItNmI0Zi00OA==","cipher":"2022-blake3-aes-128-gcm"}
+  - {"name":"悦 · 🇸🇬 新加坡4","type":"ss","server":"yue-zz.yuetoto.net","port":22010,"udp":true,"password":"ZjZmYjhhMTM3MTYwYzk4ZQ==:ZmVlNzU1ZTItNmI0Zi00OA==","cipher":"2022-blake3-aes-128-gcm"}
+  - {"name":"悦 · 🇺🇸 美国1","type":"hysteria2","server":"yue-us.yuetoto.net","port":21062,"password":"fee755e2-6b4f-481f-9799-9c20dfa6e8f7","skip-cert-verify":false}
+  - {"name":"悦 · 🇺🇸 美国2","type":"hysteria2","server":"yue-us.yuetoto.net","port":21075,"password":"fee755e2-6b4f-481f-9799-9c20dfa6e8f7","skip-cert-verify":false}
+  - {"name":"悦 · 🇺🇸 美国3","type":"ss","server":"yue-zz.yuetoto.net","port":22011,"udp":true,"password":"ZjZmYjhhMTM3MTYwYzk4ZQ==:ZmVlNzU1ZTItNmI0Zi00OA==","cipher":"2022-blake3-aes-128-gcm"}
+  - {"name":"悦 · 🇺🇸 美国4","type":"ss","server":"yue-zz.yuetoto.net","port":22012,"udp":true,"password":"ZjZmYjhhMTM3MTYwYzk4ZQ==:ZmVlNzU1ZTItNmI0Zi00OA==","cipher":"2022-blake3-aes-128-gcm"}
+  - {"name":"悦 · 🇻🇳 越南1","type":"hysteria2","server":"yue-vn.yuetoto.net","port":21064,"password":"fee755e2-6b4f-481f-9799-9c20dfa6e8f7","skip-cert-verify":false}
+  - {"name":"悦 · 🇻🇳 越南2","type":"hysteria2","server":"yue-vn.yuetoto.net","port":21063,"password":"fee755e2-6b4f-481f-9799-9c20dfa6e8f7","skip-cert-verify":false}
+  - {"name":"悦 · 🇻🇳 越南3","type":"ss","server":"yue-zz.yuetoto.net","port":22013,"udp":true,"password":"ZjZmYjhhMTM3MTYwYzk4ZQ==:ZmVlNzU1ZTItNmI0Zi00OA==","cipher":"2022-blake3-aes-128-gcm"}
+  - {"name":"悦 · 🇻🇳 越南4","type":"ss","server":"yue-zz.yuetoto.net","port":22014,"udp":true,"password":"ZjZmYjhhMTM3MTYwYzk4ZQ==:ZmVlNzU1ZTItNmI0Zi00OA==","cipher":"2022-blake3-aes-128-gcm"}
+  - {"name":"悦 · 🇷🇺 俄罗斯1","type":"hysteria2","server":"yue-ru.yuetoto.net","port":21016,"password":"fee755e2-6b4f-481f-9799-9c20dfa6e8f7","skip-cert-verify":false}
+  - {"name":"悦 · 🇷🇺 俄罗斯2","type":"hysteria2","server":"yue-ru.yuetoto.net","port":21086,"password":"fee755e2-6b4f-481f-9799-9c20dfa6e8f7","skip-cert-verify":false}
+  - {"name":"悦 · 🇷🇺 俄罗斯3","type":"ss","server":"yue-zz.yuetoto.net","port":22015,"udp":true,"password":"ZjZmYjhhMTM3MTYwYzk4ZQ==:ZmVlNzU1ZTItNmI0Zi00OA==","cipher":"2022-blake3-aes-128-gcm"}
+  - {"name":"悦 · 🇷🇺 俄罗斯4","type":"ss","server":"yue-zz.yuetoto.net","port":22016,"udp":true,"password":"ZjZmYjhhMTM3MTYwYzk4ZQ==:ZmVlNzU1ZTItNmI0Zi00OA==","cipher":"2022-blake3-aes-128-gcm"}
+  - {"name":"悦 · 🇹🇷 土耳其1","type":"hysteria2","server":"yue-tr.yuetoto.net","port":21067,"password":"fee755e2-6b4f-481f-9799-9c20dfa6e8f7","skip-cert-verify":false}
+  - {"name":"悦 · 🇹🇷 土耳其2","type":"hysteria2","server":"yue-tr.yuetoto.net","port":21090,"password":"fee755e2-6b4f-481f-9799-9c20dfa6e8f7","skip-cert-verify":false}
+  - {"name":"悦 · 🇹🇷 土耳其3","type":"ss","server":"yue-zz.yuetoto.net","port":22017,"udp":true,"password":"ZjZmYjhhMTM3MTYwYzk4ZQ==:ZmVlNzU1ZTItNmI0Zi00OA==","cipher":"2022-blake3-aes-128-gcm"}
+  - {"name":"悦 · 🇹🇷 土耳其4","type":"ss","server":"yue-zz.yuetoto.net","port":22018,"udp":true,"password":"ZjZmYjhhMTM3MTYwYzk4ZQ==:ZmVlNzU1ZTItNmI0Zi00OA==","cipher":"2022-blake3-aes-128-gcm"}
+  - {"name":"悦 · 🇳🇬 尼日利亚1","type":"hysteria2","server":"yue-ng.yuetoto.net","port":21099,"password":"fee755e2-6b4f-481f-9799-9c20dfa6e8f7","skip-cert-verify":false}
+  - {"name":"悦 · 🇳🇬 尼日利亚2","type":"hysteria2","server":"yue-ng.yuetoto.net","port":21083,"password":"fee755e2-6b4f-481f-9799-9c20dfa6e8f7","skip-cert-verify":false}
+  - {"name":"悦 · 🇳🇬 尼日利亚3","type":"ss","server":"yue-zz.yuetoto.net","port":22019,"udp":true,"password":"ZjZmYjhhMTM3MTYwYzk4ZQ==:ZmVlNzU1ZTItNmI0Zi00OA==","cipher":"2022-blake3-aes-128-gcm"}
+  - {"name":"悦 · 🇳🇬 尼日利亚4","type":"ss","server":"yue-zz.yuetoto.net","port":22020,"udp":true,"password":"ZjZmYjhhMTM3MTYwYzk4ZQ==:ZmVlNzU1ZTItNmI0Zi00OA==","cipher":"2022-blake3-aes-128-gcm"}
 proxy-groups:
   - name: 公益网络.com
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 中国香港01
-      - 中国香港02
+      - 剩余流量：166.46 GB
+      - 距离下次重置剩余：27 天
+      - 套餐到期：2025-10-04
+      - 官网：yue.to
+      - 群组：@yue_to
+      - 悦 · 🇭🇰 香港1
+      - 悦 · 🇭🇰 香港2
+      - 悦 · 🇭🇰 香港3
+      - 悦 · 🇭🇰 香港4
+      - 悦 · 🇹🇼 台湾1
+      - 悦 · 🇹🇼 台湾2
+      - 悦 · 🇹🇼 台湾3
+      - 悦 · 🇹🇼 台湾4
+      - 悦 · 🇯🇵 日本1
+      - 悦 · 🇯🇵 日本2
+      - 悦 · 🇯🇵 日本3
+      - 悦 · 🇯🇵 日本4
+      - 悦 · 🇰🇷 韩国1
+      - 悦 · 🇰🇷 韩国2
+      - 悦 · 🇰🇷 韩国3
+      - 悦 · 🇰🇷 韩国4
+      - 悦 · 🇸🇬 新加坡1
+      - 悦 · 🇸🇬 新加坡2
+      - 悦 · 🇸🇬 新加坡3
+      - 悦 · 🇸🇬 新加坡4
+      - 悦 · 🇺🇸 美国1
+      - 悦 · 🇺🇸 美国2
+      - 悦 · 🇺🇸 美国3
+      - 悦 · 🇺🇸 美国4
+      - 悦 · 🇻🇳 越南1
+      - 悦 · 🇻🇳 越南2
+      - 悦 · 🇻🇳 越南3
+      - 悦 · 🇻🇳 越南4
+      - 悦 · 🇷🇺 俄罗斯1
+      - 悦 · 🇷🇺 俄罗斯2
+      - 悦 · 🇷🇺 俄罗斯3
+      - 悦 · 🇷🇺 俄罗斯4
+      - 悦 · 🇹🇷 土耳其1
+      - 悦 · 🇹🇷 土耳其2
+      - 悦 · 🇹🇷 土耳其3
+      - 悦 · 🇹🇷 土耳其4
+      - 悦 · 🇳🇬 尼日利亚1
+      - 悦 · 🇳🇬 尼日利亚2
+      - 悦 · 🇳🇬 尼日利亚3
+      - 悦 · 🇳🇬 尼日利亚4
   - name: 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 86400
     proxies:
-      - 中国香港01
-      - 中国香港02
+      - 剩余流量：166.46 GB
+      - 距离下次重置剩余：27 天
+      - 套餐到期：2025-10-04
+      - 官网：yue.to
+      - 群组：@yue_to
+      - 悦 · 🇭🇰 香港1
+      - 悦 · 🇭🇰 香港2
+      - 悦 · 🇭🇰 香港3
+      - 悦 · 🇭🇰 香港4
+      - 悦 · 🇹🇼 台湾1
+      - 悦 · 🇹🇼 台湾2
+      - 悦 · 🇹🇼 台湾3
+      - 悦 · 🇹🇼 台湾4
+      - 悦 · 🇯🇵 日本1
+      - 悦 · 🇯🇵 日本2
+      - 悦 · 🇯🇵 日本3
+      - 悦 · 🇯🇵 日本4
+      - 悦 · 🇰🇷 韩国1
+      - 悦 · 🇰🇷 韩国2
+      - 悦 · 🇰🇷 韩国3
+      - 悦 · 🇰🇷 韩国4
+      - 悦 · 🇸🇬 新加坡1
+      - 悦 · 🇸🇬 新加坡2
+      - 悦 · 🇸🇬 新加坡3
+      - 悦 · 🇸🇬 新加坡4
+      - 悦 · 🇺🇸 美国1
+      - 悦 · 🇺🇸 美国2
+      - 悦 · 🇺🇸 美国3
+      - 悦 · 🇺🇸 美国4
+      - 悦 · 🇻🇳 越南1
+      - 悦 · 🇻🇳 越南2
+      - 悦 · 🇻🇳 越南3
+      - 悦 · 🇻🇳 越南4
+      - 悦 · 🇷🇺 俄罗斯1
+      - 悦 · 🇷🇺 俄罗斯2
+      - 悦 · 🇷🇺 俄罗斯3
+      - 悦 · 🇷🇺 俄罗斯4
+      - 悦 · 🇹🇷 土耳其1
+      - 悦 · 🇹🇷 土耳其2
+      - 悦 · 🇹🇷 土耳其3
+      - 悦 · 🇹🇷 土耳其4
+      - 悦 · 🇳🇬 尼日利亚1
+      - 悦 · 🇳🇬 尼日利亚2
+      - 悦 · 🇳🇬 尼日利亚3
+      - 悦 · 🇳🇬 尼日利亚4
   - name: 故障转移
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 7200
     proxies:
-      - 中国香港01
-      - 中国香港02
+      - 剩余流量：166.46 GB
+      - 距离下次重置剩余：27 天
+      - 套餐到期：2025-10-04
+      - 官网：yue.to
+      - 群组：@yue_to
+      - 悦 · 🇭🇰 香港1
+      - 悦 · 🇭🇰 香港2
+      - 悦 · 🇭🇰 香港3
+      - 悦 · 🇭🇰 香港4
+      - 悦 · 🇹🇼 台湾1
+      - 悦 · 🇹🇼 台湾2
+      - 悦 · 🇹🇼 台湾3
+      - 悦 · 🇹🇼 台湾4
+      - 悦 · 🇯🇵 日本1
+      - 悦 · 🇯🇵 日本2
+      - 悦 · 🇯🇵 日本3
+      - 悦 · 🇯🇵 日本4
+      - 悦 · 🇰🇷 韩国1
+      - 悦 · 🇰🇷 韩国2
+      - 悦 · 🇰🇷 韩国3
+      - 悦 · 🇰🇷 韩国4
+      - 悦 · 🇸🇬 新加坡1
+      - 悦 · 🇸🇬 新加坡2
+      - 悦 · 🇸🇬 新加坡3
+      - 悦 · 🇸🇬 新加坡4
+      - 悦 · 🇺🇸 美国1
+      - 悦 · 🇺🇸 美国2
+      - 悦 · 🇺🇸 美国3
+      - 悦 · 🇺🇸 美国4
+      - 悦 · 🇻🇳 越南1
+      - 悦 · 🇻🇳 越南2
+      - 悦 · 🇻🇳 越南3
+      - 悦 · 🇻🇳 越南4
+      - 悦 · 🇷🇺 俄罗斯1
+      - 悦 · 🇷🇺 俄罗斯2
+      - 悦 · 🇷🇺 俄罗斯3
+      - 悦 · 🇷🇺 俄罗斯4
+      - 悦 · 🇹🇷 土耳其1
+      - 悦 · 🇹🇷 土耳其2
+      - 悦 · 🇹🇷 土耳其3
+      - 悦 · 🇹🇷 土耳其4
+      - 悦 · 🇳🇬 尼日利亚1
+      - 悦 · 🇳🇬 尼日利亚2
+      - 悦 · 🇳🇬 尼日利亚3
+      - 悦 · 🇳🇬 尼日利亚4
 
 rules:
   - DOMAIN,wanmeiwl3.xyz,DIRECT
